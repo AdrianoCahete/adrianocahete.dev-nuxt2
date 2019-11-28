@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <div>OPhoto</div>
+      <div>Photo</div>
       <h1>Name</h1>
       <p>Info</p>
     </div>
@@ -12,7 +12,6 @@
       Links
     </div>
   </div>
-
 </template>
 
 <script>
