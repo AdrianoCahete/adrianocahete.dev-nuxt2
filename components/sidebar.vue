@@ -20,3 +20,9 @@ export default {
   // page component definitions
 }
 </script>
+
+<style lang="stylus">
+// :root {
+//   --colorPrimary: #35495e;
+// }
+</style>
