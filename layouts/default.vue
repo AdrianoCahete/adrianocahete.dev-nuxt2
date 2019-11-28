@@ -1,8 +1,18 @@
 <template>
   <div>
+    <sidebar-menu />
     <nuxt />
   </div>
 </template>
+
+<script>
+import sidebarMenu from '~/components/sidebar'
+export default {
+  components: {
+    sidebarMenu
+  }
+}
+</script>
 
 <style>
 html {
