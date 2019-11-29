@@ -1,9 +1,11 @@
+/* eslint-disable no-labels */
 export default {
   mode: 'universal',
 
   // Headers of the page
   head: {
     title: process.env.npm_package_name || '',
+    titleTemplate: '%s @ Adriano Cahete\'s Portfolio ',
     meta: [
       { charset: 'utf-8' },
       { name: 'X-UA-Compatible', content: 'IE=edge' },
@@ -31,7 +33,21 @@ export default {
   },
 
   // Customize the progress-bar color
+  // https://nuxtjs.org/api/configuration-loading
   loading: { color: '#fff' },
+
+  pageTransition: {
+    name: 'page',
+    mode: 'out-in'
+    // beforeEnter(el) {
+    //   console.log('Before enter...');
+    // }
+  },
+
+  layoutTransition: {
+    name: 'layout',
+    mode: 'out-in'
+  },
 
   // Global CSS
   css: [
@@ -65,6 +81,7 @@ export default {
   build: {
     // You can extend webpack config here
     extend (config, ctx) {
+
     }
   }
 }
