@@ -1,20 +1,20 @@
 <template>
-  <div class="sidebar">
-    <div class="headerInfo">
+  <section class="sidebar">
+    <section class="headerInfo">
       <div>Photo</div>
       <h1>Name</h1>
       <p>Info</p>
-    </div>
-    <div class="menu">
+    </section>
+    <nav class="menu">
       <a href="#home" @click="newTitle = !newTitle">Home</a>
       <a href="#work">Work</a>
       <a href="#projects">Projects</a>
-      <a href="#writings">Writings</a>
-    </div>
-    <div class="links">
+      <!-- <a href="#writings">Writings</a> -->
+    </nav>
+    <section class="links">
       Links
-    </div>
-  </div>
+    </section>
+  </section>
 </template>
 
 <script>

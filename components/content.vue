@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <pageHome />
-    <div id="work" class="section">
+    <section id="work" class="section">
       <h1 class="title">Work Experience</h1>
       <p class="description">I have over 9 years of experience in UI/UX design, UI Development and know the basics of a few Front End and Backend languages</p>
 
@@ -25,18 +25,29 @@
         </ul>
       </div>
 
-    </div>
-    <div id="projects" class="section">
-      Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects
-      Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects
-      Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects
-      Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects
-      Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects
-      Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects
-      Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects
-      Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects
-    </div>
-    <div id="writings" class="section">
+    </section>
+    <section id="projects" class="section">
+      <div class="card">
+        <h2 class="cardTitle">Project 001</h2>
+        <h3 class="cardSubTitle">This website?</h3>
+        <ul class="cardItems">
+          <li>a</li>
+          <li>b</li>
+          <li>c</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="cardTitle">Project 002</h2>
+        <h3 class="cardSubTitle">past work</h3>
+        <ul class="cardItems">
+          <li>a</li>
+          <li>b</li>
+          <li>c</li>
+        </ul>
+      </div>
+    </section>
+    <!-- <section id="writings" class="section">
       writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings
       writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings
       writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings
@@ -47,7 +58,7 @@
       writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings
       writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings
       writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings
-    </div>
+    </section> -->
   </div>
 </template>
 
