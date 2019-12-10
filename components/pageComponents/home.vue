@@ -1,6 +1,6 @@
 <template>
     <section id="home" class="section isCentered">
-      <logo />
+      <!-- <logo /> -->
       <h1 class="title">
         Adriano Cahete
       </h1>
@@ -9,6 +9,7 @@
       </p>
       <p>
         currently working at <a href="#">SAI Global</a>
+        <!-- TODO: Move to component with variables -->
       </p>
       <!-- You can ignore this code, it's just a "quick" workaround to say to you that it's a WI project... -->
       <!-- It's a auto deploy from a master branch in Github, so this is why I need this warning... -->
@@ -31,7 +32,10 @@ export default {
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         //{ hid: 'description', name: 'description', content: 'Adriano\'s Cahete Portfolio' }
-      ]
+      ],
+      bodyAttrs: {
+        class: 'home'
+      }
     }
   }
 }

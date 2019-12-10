@@ -83,6 +83,7 @@ export default {
   align-items: center;
   text-align: center;
   margin: 0 auto;
+  margin-left: 20vw; // Get from vars
   width: 80vw;
   scroll-snap-type: y mandatory;
   scroll-snap-align: start;

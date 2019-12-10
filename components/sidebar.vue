@@ -20,7 +20,6 @@
 <script>
 export default {
   // layout: 'blog'
-
 }
 </script>
 
@@ -31,13 +30,13 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 20vw;
+  width: 20vw; // Move to Vars
   max-width: 20%;
   height: 100vh;
-  position sticky;
+  position fixed;
   top: 0;
   left: 0;
-  background: linear-gradient(90deg, rgba(33, 33, 33, .5) 0%, rgba(57, 57, 57, .5) 50%, var(--bgColor) 100%);
+  background-image: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 10%, var(--bgColor) 100%);
 
   .menu {
     display: flex;
@@ -57,5 +56,4 @@ export default {
     }
   }
 }
-
 </style>
