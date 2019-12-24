@@ -24,7 +24,6 @@
           <li>c</li>
         </ul>
       </div>
-
     </section>
     <section id="projects" class="section">
       <div class="card">
@@ -69,7 +68,7 @@ export default {
   // layout: 'blog'
   components: {
     pageHome
-  },
+  }
 }
 </script>
 
