@@ -1,13 +1,14 @@
 <template>
   <section class="sidebar">
     <section class="headerInfo">
-      <userAvatar :user="AdrianoCahete" />
+      <userAvatar v-bind:userName="AdrianoCahete" />
       <h1>Adriano Cahete</h1>
       <p>User Interface Developer, User Interface & User Experience Designer</p>
       <p>currently working at SAI Global</p>
     </section>
     <nav class="menu">
       <!-- <a href="#home" @click="newTitle = !newTitle" :class="{'active': isActive}">Home</a> -->
+      <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
       <a href="#home">Home</a>
       <a href="#work"> Work</a>
       <a href="#projects">Projects</a>
