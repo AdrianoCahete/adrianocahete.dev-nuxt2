@@ -1,11 +1,7 @@
 <template>
   <div class="avatar">
-    <!-- TODO: Create a prop type -->
-    <!-- <img :title="userName" :src="'https://github.com/'userName'.png'"> -->
-    <!-- <img :src="'https://github.com/'+ userName + '.png'"> -->
-    <!-- <img :src="'require(`https://github.com/${userName.toLowerCase()}.png`)'"> -->
-
-    <img src="https://github.com/AdrianoCahete.png">
+    <img :src="'https://github.com/'+ userName + '.png'">
+    <!-- <img src="https://github.com/AdrianoCahete.png"> -->
   </div>
 </template>
 
@@ -20,9 +16,9 @@ export default {
   //      return { userName: "AdrianoCahete" }
   //  }
 
-  // props: {
-  //   userName
-  // }
+  props: {
+    'userName': String
+  }
 }
 </script>
 
