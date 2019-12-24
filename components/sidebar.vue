@@ -1,7 +1,8 @@
 <template>
   <section class="sidebar">
     <section class="headerInfo">
-      <userAvatar v-bind:userName="AdrianoCahete" />
+      <!-- <userAvatar v-bind:userName="AdrianoCahete" /> -->
+      <userAvatar />
       <h1>Adriano Cahete</h1>
       <p>User Interface Developer, User Interface & User Experience Designer</p>
       <p>currently working at SAI Global</p>
