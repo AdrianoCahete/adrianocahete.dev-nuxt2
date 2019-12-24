@@ -1,23 +1,17 @@
 <template>
   <div class="avatar">
     <img :src="'https://github.com/'+ userName + '.png'">
-    <!-- <img src="https://github.com/AdrianoCahete.png"> -->
   </div>
 </template>
 
 <script>
 export default {
-  //  components: {
-  //      userAvatar: {
-  //          props: ['user'] // ??
-  //      }
-  //  }
-  //  data () {
-  //      return { userName: "AdrianoCahete" }
-  //  }
-
   props: {
-    'userName': String
+    'userName': {
+      type: String,
+      required: true,
+      default: 'Github'
+    }
   }
 }
 </script>
