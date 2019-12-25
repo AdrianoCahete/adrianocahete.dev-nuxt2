@@ -5,8 +5,7 @@
     <pageProjects />
 
     <!-- TODO: Move to components -->
-    <!--
-      <section id="writings" class="section">
+    <section id="writings" class="section">
       writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings
       writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings
       writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings
@@ -17,7 +16,7 @@
       writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings
       writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings
       writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings
-    </section> -->
+    </section>
   </div>
 </template>
 

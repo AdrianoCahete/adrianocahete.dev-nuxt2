@@ -12,7 +12,7 @@
       <a href="#home">Home</a>
       <a href="#work"> Work</a>
       <a href="#projects">Projects</a>
-      <!-- <a href="#writings">Writings</a> -->
+      <a href="#writings">Writings</a>
     </nav>
     <section class="links">
       <!-- Add norel props -->
