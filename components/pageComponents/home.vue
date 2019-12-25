@@ -25,10 +25,10 @@ export default {
 
   head () {
     return {
-      title: 'Home',
-      bodyAttrs: {
-        class: 'home'
-      }
+      // title: 'Home',
+      // bodyAttrs: {
+      //   class: 'home'
+      // }
     }
   }
 }

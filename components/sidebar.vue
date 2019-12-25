@@ -2,6 +2,7 @@
   <section class="sidebar">
     <section class="headerInfo">
       <userAvatar user-name="AdrianoCahete" />
+      <!-- TODO: Move to Component -->
       <h1>Adriano Cahete</h1>
       <p>User Interface Developer, User Interface & User Experience Designer</p>
       <p>currently working at SAI Global</p>
@@ -12,10 +13,11 @@
       <a href="#home">Home</a>
       <a href="#work"> Work</a>
       <a href="#projects">Projects</a>
-      <a href="#writings">Writings</a>
+      <!-- <a href="#writings">Writings</a> -->
     </nav>
     <section class="links">
-      <!-- Add norel props -->
+      <!-- TODO: Add norel props -->
+      <!-- TODO: Move to Component -->
       <a href="#" target="_blank">G</a>
       <a href="#" target="_blank">L</a>
       <a href="#" target="#">?</a>

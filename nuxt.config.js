@@ -5,7 +5,8 @@ export default {
   // Headers of the page
   head: {
     title: process.env.npm_package_name || '',
-    titleTemplate: '%s @ Adriano Cahete\'s Portfolio ',
+    // titleTemplate: '%s @ Adriano Cahete\'s Portfolio ',
+    titleTemplate: 'Adriano Cahete\'s Portfolio ',
     meta: [
       { charset: 'utf-8' },
       { name: 'X-UA-Compatible', content: 'IE=edge' },

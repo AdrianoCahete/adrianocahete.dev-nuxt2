@@ -108,9 +108,9 @@ export default {
 
   head () {
     return {
-      title: 'Projects',
-      meta: [
-      ]
+      // title: 'Projects',
+      // meta: [
+      // ],
       // bodyAttrs: {
       //   class: 'work'
       // }
