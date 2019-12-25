@@ -1,52 +1,12 @@
 <template>
   <div class="content">
     <pageHome />
-    <section id="work" class="section">
-      <h1 class="title">Work Experience</h1>
-      <p class="description">I have over 9 years of experience in UI/UX design, UI Development and know the basics of a few Front End and Backend languages</p>
+    <pageWork />
+    <pageProjects />
 
-      <div class="card">
-        <h2 class="cardTitle">Company 1</h2>
-        <h3 class="cardSubTitle">Work Position</h3>
-        <ul class="cardItems">
-          <li>a</li>
-          <li>b</li>
-          <li>c</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2 class="cardTitle">Company 2</h2>
-        <h3 class="cardSubTitle">Work Position</h3>
-        <ul class="cardItems">
-          <li>a</li>
-          <li>b</li>
-          <li>c</li>
-        </ul>
-      </div>
-    </section>
-    <section id="projects" class="section">
-      <div class="card">
-        <h2 class="cardTitle">Project 001</h2>
-        <h3 class="cardSubTitle">This website?</h3>
-        <ul class="cardItems">
-          <li>a</li>
-          <li>b</li>
-          <li>c</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2 class="cardTitle">Project 002</h2>
-        <h3 class="cardSubTitle">past work</h3>
-        <ul class="cardItems">
-          <li>a</li>
-          <li>b</li>
-          <li>c</li>
-        </ul>
-      </div>
-    </section>
-    <!-- <section id="writings" class="section">
+    <!-- TODO: Move to components -->
+    <!--
+      <section id="writings" class="section">
       writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings
       writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings
       writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings writings
@@ -63,11 +23,15 @@
 
 <script>
 import pageHome from '~/components/pageComponents/home.vue'
+import pageWork from '~/components/pageComponents/work.vue'
+import pageProjects from '~/components/pageComponents/projects.vue'
 
 export default {
   // layout: 'blog'
   components: {
-    pageHome
+    pageHome,
+    pageWork,
+    pageProjects
   }
 }
 </script>

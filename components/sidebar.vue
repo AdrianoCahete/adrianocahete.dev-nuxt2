@@ -15,8 +15,10 @@
       <!-- <a href="#writings">Writings</a> -->
     </nav>
     <section class="links">
+      <!-- Add norel props -->
       <a href="#" target="_blank">G</a>
       <a href="#" target="_blank">L</a>
+      <a href="#" target="#">?</a>
     </section>
   </section>
 </template>
