@@ -7,10 +7,10 @@
       <p>User Interface Developer, User Interface & User Experience Designer</p>
       <p>currently working at SAI Global</p>
     </section>
-    <nav class="menu">
+    <nav id="nav" class="menu">
       <!-- <a href="#home" @click="newTitle = !newTitle" :class="{'active': isActive}">Home</a> -->
       <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
-      <a href="#home">Home</a>
+      <a href="#home" class="is-active">Home</a>
       <a href="#work"> Work</a>
       <a href="#projects">Projects</a>
       <!-- <a href="#writings">Writings</a> -->
@@ -29,7 +29,6 @@
 import userAvatar from '~/components/userAvatar.vue'
 
 export default {
-  // layout: 'blog'
   components: {
     userAvatar
   }
@@ -71,7 +70,7 @@ export default {
       }
 
       &:active,
-      &.active {
+      &.is-active {
         text-decoration: underline;
       }
     }

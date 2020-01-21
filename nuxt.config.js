@@ -62,6 +62,7 @@ export default {
   // Plugins to load before mounting the App
   plugins: [
     // '~/plugins/common.js'
+    '~/plugins/scrollspy'
   ],
 
   // Nuxt.js dev-modules
