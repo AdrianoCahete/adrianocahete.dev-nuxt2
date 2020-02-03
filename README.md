@@ -1,6 +1,10 @@
 # adrianocahete.dev
+> My 2020 Portofolio (I hope so)
 
-> My portfolio
+## Deploy
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bffddeca-83de-4641-807a-ac12aa617fae/deploy-status)](https://app.netlify.com/sites/adrianocahete-dev/deploys)
+
+All the deploys are automatically to Netlify.
 
 ## Build Setup
 
