@@ -13,6 +13,7 @@
       <a href="#home" class="is-active">Home</a>
       <a href="#work"> Work</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
       <!-- <a href="#writings">Writings</a> -->
     </nav>
     <section class="links">
@@ -45,6 +46,7 @@ export default {
   width: 20vw; // Move to Vars
   padding: 5vh 3vw;
   max-width: 20%;
+  min-height: 100%;
   height: 100vh;
   position fixed;
   top: 0;
@@ -64,6 +66,7 @@ export default {
     a {
       text-decoration: none;
       text-transform: uppercase;
+      height: 3rem;
 
       &:hover {
         text-decoration: underline;

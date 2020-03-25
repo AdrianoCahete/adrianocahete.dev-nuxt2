@@ -3,6 +3,7 @@
     <pageHome />
     <pageWork />
     <pageProjects />
+    <pageSkills />
 
     <!-- TODO: Move to components -->
     <!-- <section id="writings" class="section">
@@ -24,13 +25,15 @@
 import pageHome from '~/components/pageComponents/home.vue'
 import pageWork from '~/components/pageComponents/work.vue'
 import pageProjects from '~/components/pageComponents/projects.vue'
+import pageSkills from '~/components/pageComponents/skills.vue'
 
 export default {
   // layout: 'blog'
   components: {
     pageHome,
     pageWork,
-    pageProjects
+    pageProjects,
+    pageSkills
   }
 }
 </script>
