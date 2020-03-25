@@ -9,8 +9,11 @@
       </h2>
       <!-- <a href="https://github.com/AdrianoCahete/adrianocahete.dev" /> -->
       <h3 class="cardSubTitle">
-        Made with NuxtJS (VueJS) and auto deployed from Netlify.
+        Made with NuxtJS (VueJS) and auto deployed on Netlify
       </h3>
+      <a href="https://app.netlify.com/sites/adrianocahete-dev/deploys" target="_blank" rel="nofollow,noopener,external">
+        <img src="https://api.netlify.com/api/v1/badges/bffddeca-83de-4641-807a-ac12aa617fae/deploy-status" alt="Netlify Status">
+      </a>
       <ul class="cardItems">
         <li>Scoped styles</li>
         <li>Vue Components</li>
@@ -99,15 +102,14 @@ export default {
 <style lang="stylus" scoped>
   @import '~assets/styles/components/card.styl'
 
+  .title {
+    display: block;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
 
-.title {
-  display: block;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
-.description {
-  margin-top: 1rem;
-  margin-bottom: @margin-top;
-}
+  .description {
+    margin-top: 1rem;
+    margin-bottom: @margin-top;
+  }
 </style>

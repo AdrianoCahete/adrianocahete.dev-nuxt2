@@ -13,7 +13,7 @@
     </p>
     <!-- You can ignore this code, it's just a "quick" workaround to say to you that it's a WIP project... -->
     <!-- It's a auto deploy from a master branch in Github, so this is why I need this warning... -->
-    <h2><i>As you can see, this is a working in progress portfolio...</i></h2>
+    <!-- <h2><i>As you can see, this is a working in progress portfolio...</i></h2> -->
   </section>
 </template>
 
