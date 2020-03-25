@@ -10,25 +10,31 @@
     <!-- TODO: Move Work cards to component -->
     <div class="card">
       <h2 class="cardTitle">
-        Company 1
+        Lead User Interface/User Experience Designer & UI Developer
       </h2>
       <h3 class="cardSubTitle">
-        Work Position
+        SAI Global (US/Netherlands)
       </h3>
+      <h4>
+        2017 - Today | Partially Remote
+      </h4>
       <ul class="cardItems">
-        <li>a</li>
-        <li>b</li>
-        <li>c</li>
+        <li>SAI Digital Risk 360</li>
+        <li>SAI RIsk Intelligence</li>
+        <li>SAI BWise Vendor Risk Management 360</li>
       </ul>
     </div>
 
     <div class="card">
       <h2 class="cardTitle">
-        Company 2
+        FrontEnd UI/UX & FrontEnd Developer
       </h2>
       <h3 class="cardSubTitle">
-        Work Position
+        Modulo Security Solutions (Brazil)
       </h3>
+      <h4>
+        2012-2016 | Partially Remote
+      </h4>
       <ul class="cardItems">
         <li>a</li>
         <li>b</li>
