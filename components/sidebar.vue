@@ -17,21 +17,21 @@
       <!-- <a href="#writings">Writings</a> -->
     </nav>
     <section class="links">
-      <!-- TODO: Add norel props -->
-      <!-- TODO: Move to Component -->
-      <a href="#" target="_blank">G</a>
-      <a href="#" target="_blank">L</a>
-      <a href="#" target="#">?</a>
+      <svgLinks url="https://github.com/AdrianoCahete" icon="github" />
+      <svgLinks url="https://www.linkedin.com/in/adrianocahete/" icon="linkedin" />
+      <!-- <a href="#" target="#">?</a> -->
     </section>
   </section>
 </template>
 
 <script>
-import userAvatar from '~/components/userAvatar.vue'
+import userAvatar from '~/components/common/userAvatar.vue'
+import svgLinks from '~/components/common/svgLinks.vue'
 
 export default {
   components: {
-    userAvatar
+    userAvatar,
+    svgLinks
   }
 }
 </script>
@@ -62,8 +62,12 @@ export default {
   .menu {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-decoration: none;
       text-transform: uppercase;
       height: 3rem;
@@ -81,6 +85,7 @@ export default {
 
   .links {
     margin-top: 2vh;
+    fill: var(--textColor, #ffffff);
   }
 }
 </style>

@@ -1,8 +1,5 @@
 <template>
-  <!-- <div class="avatar">
-    <img :src="'https://github.com/'+ userName + '.png'">
-  </div> -->
-  <a :href="targetURL" target="_blank" rel="nofollow,noopener,external">
+  <a :href="url" :title="icon" target="_blank" rel="nofollow,noopener,external">
     <svg class="">
       <use :xlink:href="'#'+ icon"></use>
     </svg>
@@ -12,7 +9,7 @@
 <script>
 export default {
   props: {
-    'targetURL': {
+    'url': {
       type: String,
       required: true,
       default: '#'
@@ -27,5 +24,9 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+  svg {
+    width: 24px;
+    height: @width;
+    fill: var(--textColor, #ffffff);
+  }
 </style>
