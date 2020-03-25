@@ -1,5 +1,5 @@
 <template>
-  <a :href="url" :title="icon" target="_blank" rel="nofollow,noopener,external">
+  <a :href="url" :title="title" target="_blank" rel="nofollow,noopener,external">
     <svg class="">
       <use :xlink:href="'#'+ icon"></use>
     </svg>
@@ -18,6 +18,10 @@ export default {
       type: String,
       required: true,
       default: ''
+    },
+    'title': {
+      type: String,
+      default: ''
     }
   }
 }
@@ -28,5 +32,10 @@ export default {
     width: 24px;
     height: @width;
     fill: var(--textColor, #ffffff);
+
+    &:hover {
+      fill: var(--primaryColor, rgba(255, 255, 255, .5));
+      transition: .3s ease fill;
+    }
   }
 </style>

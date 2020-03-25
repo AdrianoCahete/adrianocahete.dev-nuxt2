@@ -17,8 +17,9 @@
       <!-- <a href="#writings">Writings</a> -->
     </nav>
     <section class="links">
-      <svgLinks url="https://github.com/AdrianoCahete" icon="github" />
-      <svgLinks url="https://www.linkedin.com/in/adrianocahete/" icon="linkedin" />
+      <svgLinks url="https://github.com/AdrianoCahete" icon="github" title="Github" />
+      <svgLinks url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
+      <svgLinks url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
       <!-- <a href="#" target="#">?</a> -->
     </section>
   </section>
@@ -79,6 +80,8 @@ export default {
       &:active,
       &.is-active {
         text-decoration: underline;
+        color: var(--primaryColor, rgba(255, 255, 255, .5));
+        transition: .3s ease color;
       }
     }
   }

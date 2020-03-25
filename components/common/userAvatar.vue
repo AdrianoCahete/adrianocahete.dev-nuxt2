@@ -24,7 +24,7 @@ export default {
       min-height: 80px;
       background-color: var(--textColor, #ffffff);
       border-radius: 50%;
-      border: 2px solid #ccc; // Move to vars
+      border: 2px solid var(--primaryColor, #FFFFFF);
       // TODO: Create animation on render
     }
   }

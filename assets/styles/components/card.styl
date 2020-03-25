@@ -1,0 +1,45 @@
+.card {
+  margin-top: 2rem;
+  padding-left: 2rem;
+  padding-top: .5rem;
+  padding-bottom: .8rem;
+  border-left: 1px solid #ccc;
+
+  .cardTitle,
+  .cardSubTitle,
+  .cardInfo {
+    font-weight: normal;
+  }
+
+  .cardTitle {
+    color: var(--primaryColor, #FFFFFF);
+  }
+
+  .cardSubTitle {
+    font-size: 1.8rem;
+  }
+
+  .cardInfo {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .cardItems {
+    list-style-type: circle;
+    padding-left: 2rem;
+  }
+
+  &.minor {
+    .cardTitle {
+      font-size: 1.8rem;
+    }
+
+    .cardSubTitle {
+      font-size: 1.5rem;
+    }
+
+    .cardInfo {
+      font-size: 1.3rem;
+    }
+  }
+}
