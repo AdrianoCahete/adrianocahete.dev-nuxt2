@@ -1,7 +1,7 @@
 {
   "name": "adrianocahete.dev",
-  "version": "0.0.1",
-  "description": "My portfolio",
+  "version": "1.0.0",
+  "description": "Adriano Cahete's Portfolio",
   "author": "Adriano Cahete",
   "private": true,
   "scripts": {
@@ -22,7 +22,6 @@
     "eslint": "^6.1.0",
     "eslint-plugin-nuxt": ">=0.4.2",
     "stylus": "^0.54.7",
-    "stylus-loader": "^3.0.2",
-    "vue2-scrollspy": "^2.3.1"
+    "stylus-loader": "^3.0.2"
   }
 }
