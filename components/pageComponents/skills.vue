@@ -6,6 +6,33 @@
     <p class="description">
       --
     </p>
+    <div>
+      <h1>
+        Knowledge / Soft Skills
+      </h1>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+      </ul>
+    </div>
+    <div>
+      <h1>
+        Basic
+      </h1>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+      </ul>
+    </div>
+    <div>
+      <h1>
+        Advanced
+      </h1>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+      </ul>
+    </div>
   </section>
 </template>
 

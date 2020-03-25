@@ -7,7 +7,7 @@
       I have over 9 years of experience in UI/UX design, UI Development and know the basics of a few Front End and Backend languages
     </p>
 
-    <!-- TODO: Move Work cards to component -->
+    <!-- TODO: Move Cards to component (Work and Projects) -->
     <div class="card">
       <h2 class="cardTitle">
         Lead User Interface/User Experience Designer & UI Developer
@@ -63,37 +63,5 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.title {
-  display: block;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
-.description {
-  margin-top: 1rem;
-  margin-bottom: @margin-top;
-}
-
-.card {
-  margin-top: 2rem;
-  padding-left: 2rem;
-  padding-top: .5rem;
-  padding-bottom: .8rem;
-  border-left: 1px solid #ccc;
-
-  .cardTitle,
-  .cardSubTitle,
-  .cardInfo {
-    font-weight: normal;
-  }
-
-  .cardInfo {
-    margin-bottom: 1rem;
-  }
-
-  .cardItems {
-    list-style-type: circle;
-    padding-left: 2rem;
-  }
-}
+  @import '~assets/styles/components/card.styl'
 </style>

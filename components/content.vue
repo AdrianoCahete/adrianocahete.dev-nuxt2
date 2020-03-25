@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@import '~assets/styles/components/section.styl';
+@import '~assets/styles/components/section.styl'
 
 .content {
   display: flex;
