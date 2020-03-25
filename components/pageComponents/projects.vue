@@ -1,5 +1,8 @@
 <template>
   <section id="projects" class="section">
+    <h1 class="title">
+      Projects
+    </h1>
     <div class="card">
       <h2 class="cardTitle">
         Project 001

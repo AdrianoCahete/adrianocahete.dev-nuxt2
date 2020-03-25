@@ -15,7 +15,7 @@
       <h3 class="cardSubTitle">
         SAI Global (US/Netherlands)
       </h3>
-      <h4>
+      <h4 class="cardInfo">
         2017 - Today | Partially Remote
       </h4>
       <ul class="cardItems">
@@ -32,13 +32,12 @@
       <h3 class="cardSubTitle">
         Modulo Security Solutions (Brazil)
       </h3>
-      <h4>
+      <h4 class="cardInfo">
         2012-2016 | Partially Remote
       </h4>
       <ul class="cardItems">
-        <li>a</li>
-        <li>b</li>
-        <li>c</li>
+        <li>Modulo Risk Manager</li>
+        <li>Command and Control Integrated System</li>
       </ul>
     </div>
   </section>
@@ -68,5 +67,33 @@ export default {
   display: block;
   font-weight: 300;
   letter-spacing: 1px;
+}
+
+.description {
+  margin-top: 1rem;
+  margin-bottom: @margin-top;
+}
+
+.card {
+  margin-top: 2rem;
+  padding-left: 2rem;
+  padding-top: .5rem;
+  padding-bottom: .8rem;
+  border-left: 1px solid #ccc;
+
+  .cardTitle,
+  .cardSubTitle,
+  .cardInfo {
+    font-weight: normal;
+  }
+
+  .cardInfo {
+    margin-bottom: 1rem;
+  }
+
+  .cardItems {
+    list-style-type: circle;
+    padding-left: 2rem;
+  }
 }
 </style>
