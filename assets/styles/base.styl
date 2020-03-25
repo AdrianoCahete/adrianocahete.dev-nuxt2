@@ -1,12 +1,15 @@
 
 // TODO: Respect user theme Dark/Light
 /*!
+
   CSS made for use in Adriano Cahete's Portfolio https://adrianocahete.dev/
-  
+
 */
+
 :root {
   --colorPrimary: #35495e;
   --bgColor: rgba(36, 41, 46, 1);
+  --textColor: rgba(255, 255, 255, 1);
 }
 
 html {
@@ -21,7 +24,7 @@ html {
   box-sizing: border-box;
   height: 100vh;
   background-color: var(--bgColor);
-  color: #fff;
+  color: var(--textColor, #ffffff);
   scrollbar-color: rgba(255, 255, 255, .8) @background-color; // <Thumb> <Track> -- Browser Customizations
   scrollbar-width: thin;  // Browser Customizations
   scroll-behavior: smooth;
@@ -82,7 +85,7 @@ body {
 
 
 a {
-  color: #fff;
+  color: var(--textColor, #ffffff);
 }
 
 // Utils
