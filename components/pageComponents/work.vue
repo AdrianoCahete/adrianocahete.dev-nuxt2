@@ -64,4 +64,16 @@ export default {
 
 <style lang="stylus" scoped>
   @import '~assets/styles/components/card.styl'
+
+
+.title {
+  display: block;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.description {
+  margin-top: 1rem;
+  margin-bottom: @margin-top;
+}
 </style>

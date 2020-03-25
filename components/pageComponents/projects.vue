@@ -7,6 +7,7 @@
       <h2 class="cardTitle">
         This portfolio
       </h2>
+      <!-- <a href="https://github.com/AdrianoCahete/adrianocahete.dev" /> -->
       <h3 class="cardSubTitle">
         Made with NuxtJS (VueJS) and auto deployed from Netlify.
       </h3>
@@ -20,8 +21,8 @@
     <div class="card">
       <h2 class="cardTitle">
         Webfont Generator CLI
-        <!-- <a href="https://github.com/AdrianoCahete/webfont-generator-cli" /> -->
       </h2>
+      <!-- <a href="https://github.com/AdrianoCahete/webfont-generator-cli" /> -->
       <h3 class="cardSubTitle">
         Forked from a somewhat abondoned tool to generate font-icons from SVG's for use in some work projects.
       </h3>
@@ -46,24 +47,9 @@
       </ul>
     </div>
 
-    <div class="card minor">
+    <div class="card">
       <h2 class="cardTitle">
-        [Minor] Google Chrome Lighthouse
-      </h2>
-      <h3 class="cardSubTitle">
-        Small fixes for CLI version of Chrome Lighthouse on Windows
-      </h3>
-      <!-- <a href="https://github.com/GoogleChrome/lighthouse/pull/1307" /> -->
-      <ul class="cardItems">
-        <li>a</li>
-        <li>b</li>
-        <li>c</li>
-      </ul>
-    </div>
-
-    <div class="card minor">
-      <h2 class="cardTitle">
-        [Minor] RocketChat
+        RocketChat
       </h2>
       <!-- <a href="https://github.com/RocketChat/Rocket.Chat/pulls?q=is%3Apr+sort%3Aupdated-desc+is%3Aclosed+author%3AAdrianoCahete" /> -->
       <h3 class="cardSubTitle">
@@ -76,31 +62,16 @@
       </ul>
     </div>
 
-    <div class="card">
+    <div class="card minor">
       <h2 class="cardTitle">
-        Project 006
+        [Minor] Google Chrome Lighthouse
       </h2>
+      <!-- <a href="https://github.com/GoogleChrome/lighthouse/pull/1307" /> -->
       <h3 class="cardSubTitle">
-        past work
+        Small fixes for CLI
       </h3>
       <ul class="cardItems">
-        <li>a</li>
-        <li>b</li>
-        <li>c</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2 class="cardTitle">
-        Project 007
-      </h2>
-      <h3 class="cardSubTitle">
-        past work
-      </h3>
-      <ul class="cardItems">
-        <li>a</li>
-        <li>b</li>
-        <li>c</li>
+        <li>Fixes on CLI version on Windows OS</li>
       </ul>
     </div>
   </section>
@@ -127,4 +98,16 @@ export default {
 
 <style lang="stylus" scoped>
   @import '~assets/styles/components/card.styl'
+
+
+.title {
+  display: block;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.description {
+  margin-top: 1rem;
+  margin-bottom: @margin-top;
+}
 </style>
