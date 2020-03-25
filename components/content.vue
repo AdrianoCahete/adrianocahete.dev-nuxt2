@@ -51,6 +51,5 @@ export default {
   margin-left: 20vw; // Get from vars
   width: 80vw;
   scroll-snap-type: y mandatory;
-  scroll-snap-align: start;
 }
 </style>
