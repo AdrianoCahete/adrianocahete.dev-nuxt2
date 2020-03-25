@@ -55,10 +55,7 @@ export default {
 
   // Global CSS
   css: [
-    // '~assets/argon/vendor/nucleo/css/nucleo.css',
     // '@fortawesome/fontawesome-free/css/all.css',
-    // '~assets/argon/scss/argon.scss',
-    // 'bootstrap-vue/dist/bootstrap-vue.css',
     // '~assets/transitions.css'
   ],
 
