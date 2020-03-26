@@ -4,7 +4,7 @@
       Projects
     </h1>
     <p class="description">
-      Almost all of UI's that I made these years are under a NDA, so I'm working to make them availiable here with stakeholders permissions.
+      Almost all of UI's that I made these years are under a NDA, so I'm working to make them publicly available here with stakeholders permissions.
     </p>
     <div class="card">
       <h2 class="cardTitle">

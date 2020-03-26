@@ -56,7 +56,7 @@ export default {
   position fixed;
   top: 0;
   left: 0;
-  background-image: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 10%, var(--bgColor) 100%);
+  background-color: rgba(25, 25, 25, 1);
 
   .headerInfo {
     p {
