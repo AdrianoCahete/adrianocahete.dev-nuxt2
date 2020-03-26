@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <section class="content">
     <pageHome />
     <pageWork />
     <pageProjects />
@@ -7,7 +7,7 @@
 
     <!-- TODO: Move to components -->
     <!-- <section id="writings" class="section"></section> -->
-  </div>
+  </section>
 </template>
 
 <script>

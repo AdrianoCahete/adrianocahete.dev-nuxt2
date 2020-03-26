@@ -1,9 +1,16 @@
 <template>
-  <div class="page">
-    <svgLibrary />
-    <sidebar-menu />
-    <pageContent />
-  </div>
+  <fragment>
+    <div v-if="$device.isMobile || $device.isTablet" class="page isMobile">
+      <svgLibrary />
+      <sidebar-menu />
+      <pageContent />
+    </div>
+    <div v-else-if="$device.isDesktop" class="page">
+      <svgLibrary />
+      <sidebar-menu />
+      <pageContent />
+    </div>
+  </fragment>
 </template>
 
 <script>
@@ -23,5 +30,11 @@ export default {
 <style lang="stylus">
 .page {
   display: flex;
+}
+
+.isMobile {
+  flex-direction: column;
+
+  @import '~assets/styles/components/isMobile.styl'
 }
 </style>

@@ -15,7 +15,9 @@
     "npm": "~13.11.0"
   },
   "dependencies": {
-    "nuxt": "^2.12.1"
+    "@nuxtjs/device": "^1.2.7",
+    "nuxt": "^2.12.1",
+    "vue-fragment": "^1.5.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.2",
