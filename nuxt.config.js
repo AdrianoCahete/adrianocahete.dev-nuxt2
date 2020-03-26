@@ -2,7 +2,15 @@
 export default {
   mode: 'universal',
   render: {
-    csp: true // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+    // csp: true
+    // csp: { // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+    //   hashArgorism: 'sha256',
+    //   policies: {
+    //     'script-src': [
+    //       "'sha256-4RS22DYeB7U14dra4KcQYxmwt5HkOInieXK1NUMBmQI='" // this line resolves the violation
+    //     ]
+    //   }
+    // }
   },
 
   // Headers of the page
@@ -11,7 +19,7 @@ export default {
     // titleTemplate: '%s @ Adriano Cahete\'s Portfolio ',
     titleTemplate: 'Adriano Cahete\'s Portfolio ',
     htmlAttrs: {
-      lang: 'en_US'
+      lang: 'en-US'
     },
     meta: [
       { charset: 'utf-8' },
