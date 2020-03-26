@@ -65,7 +65,6 @@ export default {
 <style lang="stylus" scoped>
   @import '~assets/styles/components/card.styl'
 
-
 .title {
   display: block;
   font-weight: 300;

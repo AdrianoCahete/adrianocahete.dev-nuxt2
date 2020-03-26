@@ -95,4 +95,63 @@ export default {
     fill: var(--textColor, #ffffff);
   }
 }
+
+@media (max-width: 1024px) {
+  .sidebar {
+    flex-direction: row;
+    width: 100%;
+    max-width: @width;
+    height: 40px; // TODO: Move to vars
+    padding: 0 1vw;
+    position: sticky;
+    text-align: start;
+    background-image: linear-gradient(180deg, #212121 0%, #212121 10%, var(--bgColor) 100%);
+
+    .avatar {
+      display: none;
+    }
+
+    .headerInfo {
+      font-weight: normal;
+      white-space: nowrap;
+
+      p {
+        display: none;
+      }
+    }
+
+    .menu {
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+
+      a {
+        height: 40px; // TODO: Get from vars
+        padding: 0 2vw;
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+
+      a {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        height: 40px; // TODO: Get from vars
+        padding: 0 1vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .headerInfo {
+    display: none;
+  }
+}
 </style>

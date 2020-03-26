@@ -41,4 +41,11 @@ export default {
   width: 80vw;
   scroll-snap-type: y mandatory;
 }
+
+@media (max-width: 1024px) {
+  .content {
+    margin-left: 0;
+    width: 100vw;
+  }
+}
 </style>

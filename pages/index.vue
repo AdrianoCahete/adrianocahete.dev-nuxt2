@@ -32,9 +32,13 @@ export default {
   display: flex;
 }
 
+@media (max-width: 1024px) {
+  .page {
+    flex-direction: column;
+  }
+}
+
 .isMobile {
   flex-direction: column;
-
-  @import '~assets/styles/components/isMobile.styl'
 }
 </style>
