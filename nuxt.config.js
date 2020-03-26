@@ -10,6 +10,9 @@ export default {
     title: process.env.npm_package_name || '',
     // titleTemplate: '%s @ Adriano Cahete\'s Portfolio ',
     titleTemplate: 'Adriano Cahete\'s Portfolio ',
+    htmlAttrs: {
+      lang: 'en_US'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'X-UA-Compatible', content: 'IE=edge' },

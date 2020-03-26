@@ -1,6 +1,6 @@
 <template>
   <div class="avatar">
-    <img :src="'https://github.com/'+ userName + '.png'">
+    <img :src="'https://github.com/'+ userName + '.png'" :alt="userName">
   </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
     'userName': {
       type: String,
       required: true,
-      default: 'Github'
+      default: 'github'
     }
   }
 }
