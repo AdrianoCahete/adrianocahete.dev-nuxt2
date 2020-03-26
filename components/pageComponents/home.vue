@@ -43,7 +43,7 @@ export default {
 }
 
 .descriptionMain {
-  color: rgba(169, 169, 169, 1);
+  color: var(--grayedOut, #FFFFFF);
 }
 
 @media (max-width: 800px) {

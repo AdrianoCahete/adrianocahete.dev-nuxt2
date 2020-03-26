@@ -2,8 +2,7 @@
   <a
     :href="url"
     :title="title"
-    v-if="hideMobile == false"
-    :class="cssClass"
+    v-bind:class="{ hideOnMobile: hideMobile }"
     target="_blank"
     rel="nofollow,noopener,external"
   >
@@ -27,10 +26,6 @@ export default {
       default: ''
     },
     'title': {
-      type: String,
-      default: ''
-    },
-    'cssClass': {
       type: String,
       default: ''
     },
