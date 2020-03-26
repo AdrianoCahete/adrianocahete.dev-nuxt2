@@ -20,7 +20,7 @@
       <svgLinks url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       <svgLinks url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
       <svgLinks url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
-      <svgLinks url="./Resume-Adriano_Cahete__en_US_2020.03.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
+      <svgLinks url="./resume/Resume-Adriano_Cahete__en_US_2020.03.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
     </section>
     <!-- TODO: Fix flex disposition of about section -->
     <section class="about" style="display: none">
