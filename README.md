@@ -6,6 +6,16 @@
 
 All the changes are automatically deployed to Netlify
 
+
+### Lighthouse Performance
+[![Lighthouse Accessibility Badge](https://github.com/adrianocahete/adrianocahete.dev/raw/master/static/performance/lighthouse_accessibility.svg)](https://adrianocahete.dev/)
+[![Lighthouse Best Practices Badge](https://github.com/adrianocahete/adrianocahete.dev/raw/master/static/performance/lighthouse_best-practices.svg)](https://adrianocahete.dev/)
+[![Lighthouse Performance Badge](https://github.com/adrianocahete/adrianocahete.dev/raw/master/static/performance/lighthouse_performance.svg)](https://adrianocahete.dev/)
+[![Lighthouse PWA Badge](https://github.com/adrianocahete/adrianocahete.dev/raw/master/static/performance/lighthouse_pwa.svg)](https://adrianocahete.dev/)
+[![Lighthouse SEO Badge](https://github.com/adrianocahete/adrianocahete.dev/raw/master/static/performance/lighthouse_seo.svg)](https://adrianocahete.dev/)
+
+
+
 ## Build Setup
 
 ``` bash
