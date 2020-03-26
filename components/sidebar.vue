@@ -19,7 +19,7 @@
     <section class="links">
       <svgLinks url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       <svgLinks url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
-      <svgLinks url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
+      <svgLinks url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" hide-mobile="true" />
       <svgLinks url="./resume/Resume-Adriano_Cahete__en_US_2020.03.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
     </section>
     <!-- TODO: Fix flex disposition of about section -->
@@ -149,9 +149,31 @@ export default {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 580px) {
   .headerInfo {
     display: none;
+  }
+
+  .section {
+    margin-left: 2vw;
+  }
+
+  .sidebar {
+    .menu {
+      justify-content: left;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .section {
+    margin-left: 2vw;
+  }
+
+  .sidebar {
+    .menu {
+      justify-content: left;
+    }
   }
 }
 </style>

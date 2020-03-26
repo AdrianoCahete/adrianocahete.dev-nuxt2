@@ -1,7 +1,7 @@
 <template>
   <section id="home" class="section isCentered">
     <!-- <logo /> -->
-    <h1 class="title">
+    <h1 class="titleMain">
       Adriano Cahete
     </h1>
     <p>
@@ -35,10 +35,16 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.title {
+.titleMain {
   display: block;
   font-weight: 300;
   font-size: 10rem;
   letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+  .titleMain {
+    font-size: 8rem;
+  }
 }
 </style>

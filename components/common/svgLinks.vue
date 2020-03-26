@@ -1,5 +1,12 @@
 <template>
-  <a :href="url" :title="title" target="_blank" rel="nofollow,noopener,external">
+  <a
+    :href="url"
+    :title="title"
+    v-if="hideMobile == false"
+    :class="cssClass"
+    target="_blank"
+    rel="nofollow,noopener,external"
+  >
     <svg class="">
       <use :xlink:href="'#'+ icon"></use>
     </svg>
@@ -22,6 +29,14 @@ export default {
     'title': {
       type: String,
       default: ''
+    },
+    'cssClass': {
+      type: String,
+      default: ''
+    },
+    'hideMobile': {
+      type: Boolean,
+      default: false
     }
   }
 }
