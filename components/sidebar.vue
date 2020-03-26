@@ -19,7 +19,8 @@
     <section class="links">
       <svgLinks url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       <svgLinks url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
-      <svgLinks url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" hide-mobile="true" />
+      <svgLinks v-bind:hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
+      <svgLinks v-bind:hide-mobile="true" url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
       <svgLinks url="./resume/Resume-Adriano_Cahete__en_US_2020.03.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
     </section>
     <!-- TODO: Fix flex disposition of about section -->
