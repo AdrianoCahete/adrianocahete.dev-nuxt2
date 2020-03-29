@@ -1,7 +1,20 @@
-name: Lighthouse CI
-on: push
+name: Audit Pull Request
+on:
+  push:
+    branches:
+      - master
 jobs:
+  wait_deploy:
+    name: Wait for Netlify Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Sleep for 30 seconds
+      uses: jakejarvis/wait-action@master
+      with:
+        time: '30s'
   lighthouse:
+    name: Run Lighthouse on deployed portfolio
+    needs: wait_deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -11,5 +24,5 @@ jobs:
           urls: |
             https://adrianocahete.dev/
           budgetPath: ./budget.json # test performance budgets
-          uploadArtifacts: false # save results as an action artifacts
+          uploadArtifacts: true # save results as an action artifacts
           temporaryPublicStorage: true # upload lighthouse report to the temporary storage
