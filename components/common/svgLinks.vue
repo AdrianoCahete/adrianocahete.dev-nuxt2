@@ -2,7 +2,7 @@
   <a
     :href="url"
     :title="title"
-    v-bind:class="{ hideOnMobile: hideMobile }"
+    :class="{ hideOnMobile: hideMobile }"
     target="_blank"
     rel="nofollow,noopener,external"
   >
@@ -15,21 +15,21 @@
 <script>
 export default {
   props: {
-    'url': {
+    url: {
       type: String,
       required: true,
       default: '#'
     },
-    'icon': {
+    icon: {
       type: String,
       required: true,
       default: ''
     },
-    'title': {
+    title: {
       type: String,
       default: ''
     },
-    'hideMobile': {
+    hideMobile: {
       type: Boolean,
       default: false
     }
@@ -46,6 +46,12 @@ export default {
     &:hover {
       fill: var(--primaryColor, rgba(255, 255, 255, .5));
       transition: .3s ease fill;
+    }
+  }
+
+  .cardLink-Item {
+    svg {
+      height: 15px;
     }
   }
 </style>
