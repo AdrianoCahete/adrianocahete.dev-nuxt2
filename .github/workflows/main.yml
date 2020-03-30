@@ -1,29 +1,28 @@
-name: Audit Pull Request
+name: Audit Deployed
 on:
-  pull_request:
+  push:
     branches:
       - master
 jobs:
-  wait_deploy:
+  waitDeploy:
     name: Wait for Netlify Deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: Sleep for 30 seconds
-      uses: jakejarvis/wait-action@master
-      with:
-        time: '30s'
-  lighthouse:
+    uses: jakepartusch/wait-for-netlify-action@v1
+    id: waitDeploy
+    with:
+      site_name: 'adrianocahete-dev'
+      max_timeout: 30
+  audit:
     name: Run Lighthouse on deployed portfolio
-    needs: wait_deploy
+    needs: waitDeploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v2
+        uses: jakejarvis/lighthouse-action@master
         with:
-          urls: |
-            https://adrianocahete.dev/
-          configPath: '.github/lighthouse/lighthouserc.json'
-          budgetPath: ./budget.json # test performance budgets
-          uploadArtifacts: true # save results as an action artifacts
-          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
+          url: https://adrianocahete.dev/
+      - name: Upload results as an artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: audit
+          path: './audit'
