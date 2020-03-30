@@ -6,6 +6,7 @@ on:
 jobs:
   waitDeploy:
     name: Wait for Netlify Deploy
+    runs-on: ubuntu-latest
     steps:
       - uses: jakepartusch/wait-for-netlify-action@v1
         id: waitDeploy
