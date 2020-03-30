@@ -4,20 +4,14 @@ on:
     branches:
       - master
 jobs:
-  waitDeploy:
-    name: Wait for Netlify Deploy
-    runs-on: ubuntu-latest
-    steps:
-      - uses: jakepartusch/wait-for-netlify-action@v1
-        id: waitDeploy
-        with:
-          site_name: 'adrianocahete-dev'
-          max_timeout: 30
   audit:
     name: Run Lighthouse on deployed portfolio
-    needs: waitDeploy
     runs-on: ubuntu-latest
     steps:
+    - name: Wait for Deploy
+      uses: juliangruber/sleep-action@v1
+      with:
+        time: 30s
     - name: Audit live URL
       uses: jakejarvis/lighthouse-action@master
       with:
