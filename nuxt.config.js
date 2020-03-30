@@ -74,6 +74,7 @@ export default {
   plugins: [
     // '~/plugins/common.js'
     '~/plugins/scrollspy'
+    // '~plugins/vue-js-modal'
   ],
 
   // Nuxt.js dev-modules

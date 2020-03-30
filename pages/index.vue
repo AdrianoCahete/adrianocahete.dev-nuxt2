@@ -1,16 +1,9 @@
 <template>
-  <fragment>
-    <div v-if="$device.isMobile || $device.isTablet" class="page isMobile">
-      <svgLibrary />
-      <sidebar-menu />
-      <pageContent />
-    </div>
-    <div v-else-if="$device.isDesktop" class="page">
-      <svgLibrary />
-      <sidebar-menu />
-      <pageContent />
-    </div>
-  </fragment>
+  <div :class="$device.isMobile || $device.isTablet ? 'page isMobile' : 'page'">
+    <svgLibrary />
+    <sidebar-menu />
+    <pageContent />
+  </div>
 </template>
 
 <script>

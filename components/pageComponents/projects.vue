@@ -6,6 +6,7 @@
     <p class="description">
       Most UIs created by me over the last years are under a non-disclosure agreement, so I'm working with stakeholders to obtain their permission to make them publicly available.
     </p>
+
     <div class="card">
       <h2 class="cardTitle">
         This portfolio <svgLinks url="https://github.com/AdrianoCahete/adrianocahete.dev" icon="oss" title="adrianocahete.dev @ Github" class="cardLink-Item" />
@@ -82,26 +83,44 @@
         <li>Fixes on CLI version on Windows OS</li>
       </ul>
     </div>
+    <!-- <section>
+      <button
+        class="btn"
+        @click="openModal"
+      >
+        Open Modal
+      </button>
+      <modal>
+        teste
+      </modal>
+    </section> -->
   </section>
 </template>
 
 <script>
 import svgLinks from '~/components/common/svgLinks.vue'
+// import modal from '~/components/common/modal.vue'
 
 export default {
   // layout: 'blog'
   components: {
     svgLinks
+    // modal
   },
+
+  // methods: {
+  //   openModal () {
+  //     this.$modal.show(modal, {
+  //       text: 'This text is passed as a property'
+  //     })
+  //   }
+  // },
 
   head () {
     return {
       // title: 'Projects',
-      // meta: [
-      // ],
-      // bodyAttrs: {
-      //   class: 'work'
-      // }
+      // meta: [],
+      // bodyAttrs: {class: 'work'}
     }
   }
 }
