@@ -8,7 +8,6 @@
       <p>currently working at SAI Global</p>
     </section>
     <nav id="nav" class="menu">
-      <!-- <a href="#home" @click="newTitle = !newTitle" :class="{'active': isActive}">Home</a> -->
       <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
       <a href="#home" class="is-active">Home</a>
       <a href="#work"> Work</a>
@@ -17,11 +16,11 @@
       <!-- <a href="#writings">Writings</a> -->
     </nav>
     <section class="links">
-      <svgLinks url="https://github.com/AdrianoCahete" icon="github" title="Github" />
+      <svgLinks :hide-mobile="true" url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       <svgLinks url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
-      <svgLinks v-bind:hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
-      <svgLinks v-bind:hide-mobile="true" url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
-      <svgLinks url="./resume/Resume-Adriano_Cahete__en_US_2020.03.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
+      <svgLinks :hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
+      <svgLinks url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
+      <svgLinks url="./resume/Resume-Adriano_Cahete__en-US_2020.03.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
     </section>
     <!-- TODO: Fix flex disposition of about section -->
     <section class="about" style="display: none">
@@ -57,7 +56,7 @@ export default {
   position fixed;
   top: 0;
   left: 0;
-  background-color: rgba(25, 25, 25, 1);
+  background-color: var(--sidebarColor);
 
   .headerInfo {
     p {

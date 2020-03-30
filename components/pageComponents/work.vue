@@ -4,7 +4,7 @@
       Work Experience
     </h1>
     <p class="description">
-      I have over 9 years of experience in UI/UX design, UI Development and know the basics of a few Front End and Backend languages
+      I have over 8 years of experience in UI/UX design and UI Development and I know the basics of a few Front End and Backend languages
     </p>
 
     <!-- TODO: Move Cards to component (Work and Projects) -->
@@ -16,12 +16,20 @@
         SAI Global (US/Netherlands)
       </h3>
       <h4 class="cardInfo">
-        2017 - Today | Partially Remote
+        Jan 2017 - Present | Partially Remote
       </h4>
       <ul class="cardItems">
-        <li>SAI Digital Risk 360</li>
-        <li>SAI RIsk Intelligence</li>
-        <li>SAI BWise Vendor Risk Management 360</li>
+        <li>
+          SAI360 Digital Risk
+          <svgLinks url="https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity" icon="link" title="SAI360 Digital Risk" class="cardLink-Item" />
+          <!-- <svgLinks url="https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity" icon="behance" title="SAI360 Digital Risk @ Behance" class="cardLink-Item" /> -->
+        </li>
+        <li>
+          SAI360 Risk Intelligence
+        </li>
+        <li>
+          SAI360 BWise Vendor Risk Management
+        </li>
       </ul>
     </div>
 
@@ -33,20 +41,27 @@
         Modulo Security Solutions (Brazil)
       </h3>
       <h4 class="cardInfo">
-        2012-2016 | Partially Remote
+        Oct 2012 - Dec 2016 | Partially Remote
       </h4>
       <ul class="cardItems">
-        <li>Modulo Risk Manager</li>
-        <li>Command and Control Integrated System</li>
+        <li>
+          Modulo Risk Manager
+        </li>
+        <li>
+          Command and Control Integrated System
+        </li>
       </ul>
     </div>
   </section>
 </template>
 
 <script>
+import svgLinks from '~/components/common/svgLinks.vue'
+
 export default {
   // layout: 'blog'
   components: {
+    svgLinks
   },
 
   head () {

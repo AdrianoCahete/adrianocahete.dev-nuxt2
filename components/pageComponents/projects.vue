@@ -4,66 +4,67 @@
       Projects
     </h1>
     <p class="description">
-      Almost all of UI's that I made these years are under a NDA, so I'm working to make them publicly available here with stakeholders permissions.
+      Most UIs created by me over the last years are under a non-disclosure agreement, so I'm working with stakeholders to obtain their permission to make them publicly available.
     </p>
     <div class="card">
       <h2 class="cardTitle">
-        This portfolio
+        This portfolio <svgLinks url="https://github.com/AdrianoCahete/adrianocahete.dev" icon="oss" title="adrianocahete.dev @ Github" class="cardLink-Item" />
       </h2>
-      <!-- <a href="https://github.com/AdrianoCahete/adrianocahete.dev" /> -->
       <h3 class="cardSubTitle">
         Made with NuxtJS (VueJS) and auto deployed on Netlify
       </h3>
-      <a href="https://app.netlify.com/sites/adrianocahete-dev/deploys" target="_blank" rel="nofollow,noopener,external">
-        <img src="https://api.netlify.com/api/v1/badges/bffddeca-83de-4641-807a-ac12aa617fae/deploy-status" alt="Netlify Status">
-      </a>
+      <div class="cardLinks">
+        <a href="https://app.netlify.com/sites/adrianocahete-dev/deploys" target="_blank" rel="nofollow,noopener,external">
+          <img src="https://api.netlify.com/api/v1/badges/bffddeca-83de-4641-807a-ac12aa617fae/deploy-status" alt="Netlify Status">
+        </a>
+      </div>
       <ul class="cardItems">
         <li>Scoped styles</li>
         <li>Vue Components</li>
-        <li>CSS Custom Variables</li>
+        <li>CSS Custom Properties</li>
       </ul>
     </div>
 
     <div class="card">
       <h2 class="cardTitle">
         Webfont Generator CLI
+        <svgLinks url="https://github.com/AdrianoCahete/webfont-generator-cli" icon="link" title="webfont-generator-cli @ Github" class="cardLink-Item" />
       </h2>
-      <!-- <a href="https://github.com/AdrianoCahete/webfont-generator-cli" /> -->
       <h3 class="cardSubTitle">
-        Forked from a somewhat abondoned tool to generate font-icons from SVG's for use in some work projects.
+        Forked a somewhat abandoned tool to generate font-icons from SVGs for use in some work projects.
       </h3>
       <ul class="cardItems">
-        <li>Fixed major issues from original repository</li>
+        <li>Fixed major issues from the original repository</li>
         <li>Tested and merged Pull Requests from original repository</li>
-        <li>Updated documentation to match the actual implementation</li>
+        <li>Updated documentation to match the current implementation</li>
       </ul>
     </div>
 
     <div class="card">
       <h2 class="cardTitle">
         Better Adrena
+        <svgLinks url="https://github.com/AdrianoCahete/AdrenalineLight" icon="link" title="BetterAdrena @ Github" class="cardLink-Item" />
       </h2>
-      <!-- <a href="https://github.com/AdrianoCahete/AdrenalineLight" /> -->
       <h3 class="cardSubTitle">
-        Chrome/Firefox extension to add new functionalities to a brazilian forum
+        Chrome/Firefox extension to add new functionalities to a Brazilian forum
       </h3>
       <ul class="cardItems">
         <li>Applied some styles to make the UI more readable</li>
-        <li>Added another styles and js to create some useful features</li>
+        <li>Added more styles and js content to create some useful features</li>
       </ul>
     </div>
 
     <div class="card">
       <h2 class="cardTitle">
         RocketChat
+        <svgLinks url="https://github.com/RocketChat/Rocket.Chat/search?q=AdrianoCahete&type=Commits" icon="link" title="RocketChat @ Github" class="cardLink-Item" />
       </h2>
-      <!-- <a href="https://github.com/RocketChat/Rocket.Chat/pulls?q=is%3Apr+sort%3Aupdated-desc+is%3Aclosed+author%3AAdrianoCahete" /> -->
       <h3 class="cardSubTitle">
-        Updates on stylesheet architechure and some small UI fixes across project
+        Updated the stylesheet architecture and made some small UI fixes across the project
       </h3>
       <ul class="cardItems">
         <li>Better organization for stylesheets/css variables</li>
-        <li>A few small fixes for Ui issues</li>
+        <li>A few small fixes for UI issues</li>
         <li>UX/UI definitions and implementation for ChatOps feature</li>
       </ul>
     </div>
@@ -71,6 +72,7 @@
     <div class="card minor">
       <h2 class="cardTitle">
         [Minor] Google Chrome Lighthouse
+        <svgLinks url="https://github.com/GoogleChrome/lighthouse/blob/468c10bb9df7ded215b7a3c47e23f48c1af656f7/changelog.md#new-contributors-24" icon="link" title="Google Chrome Lighthouse @ Github" class="cardLink-Item" />
       </h2>
       <!-- <a href="https://github.com/GoogleChrome/lighthouse/pull/1307" /> -->
       <h3 class="cardSubTitle">
@@ -84,9 +86,12 @@
 </template>
 
 <script>
+import svgLinks from '~/components/common/svgLinks.vue'
+
 export default {
   // layout: 'blog'
   components: {
+    svgLinks
   },
 
   head () {

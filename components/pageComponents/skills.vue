@@ -13,8 +13,8 @@
       <div class="listContent">
         <ul class="list colList">
           <li>Microsoft Azure DevOps</li>
-          <li>Work with Remote teams for past ~5 years</li>
-          <li>Consumer focused</li>
+          <li>Working with remote teams for the past ~5 years</li>
+          <li>Customer focused</li>
           <li>English (Read/Write/Speak)</li>
         </ul>
         <ul class="list colList">
@@ -57,7 +57,7 @@
         <ul class="list colList">
           <li>HTML5</li>
           <li>CSS 3/4 (Selectors 3 and 4)</li>
-          <li>CSS Pre-Processors (Stylus/Saas/Less</li>
+          <li>CSS Preprocessors (Stylus/Saas/Less</li>
           <li>CSS Variables (Custom properties)</li>
           <li>Adobe Photoshop</li>
         </ul>
