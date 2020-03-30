@@ -92,7 +92,7 @@ export default {
 
   .links {
     margin-top: 2vh;
-    fill: var(--textColor, #ffffff);
+    fill: var(--sidebarIconColor, #ffffff);
   }
 }
 

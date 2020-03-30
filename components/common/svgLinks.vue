@@ -41,7 +41,7 @@ export default {
   svg {
     width: 24px;
     height: @width;
-    fill: var(--textColor, #ffffff);
+    fill: inherit;
 
     &:hover {
       fill: var(--primaryColor, rgba(255, 255, 255, .5));
@@ -50,6 +50,8 @@ export default {
   }
 
   .cardLink-Item {
+    fill: var(--textColor, #fff);
+
     svg {
       height: 15px;
     }
