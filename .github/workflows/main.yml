@@ -6,23 +6,24 @@ on:
 jobs:
   waitDeploy:
     name: Wait for Netlify Deploy
-    uses: jakepartusch/wait-for-netlify-action@v1
-    id: waitDeploy
-    with:
-      site_name: 'adrianocahete-dev'
-      max_timeout: 30
+    steps:
+      - uses: jakepartusch/wait-for-netlify-action@v1
+        id: waitDeploy
+        with:
+          site_name: 'adrianocahete-dev'
+          max_timeout: 30
   audit:
     name: Run Lighthouse on deployed portfolio
     needs: waitDeploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Audit URLs using Lighthouse
-        uses: jakejarvis/lighthouse-action@master
-        with:
-          url: https://adrianocahete.dev/
-      - name: Upload results as an artifact
-        uses: actions/upload-artifact@master
-        with:
-          name: audit
-          path: './audit'
+    - name: Audit live URL
+      uses: jakejarvis/lighthouse-action@master
+      with:
+        url: 'https://adrianocahete.dev/'
+    - name: Upload results as an artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: report
+        path: './report'
+
