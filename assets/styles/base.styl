@@ -1,16 +1,25 @@
 
-// TODO: Respect user theme Dark/Light
 /*!
 
   CSS made for use in Adriano Cahete's Portfolio https://adrianocahete.dev/
 
 */
 
+
+// TODO: Move to a splitted var file
 :root {
   --primaryColor: rgba(196, 218, 240, 1); //rgba(53, 73, 94, 1);
-  --bgColor: rgba(33, 33, 33, 1);
+
+  --bgColor: rgba(51, 51, 51, 1);
+  --sidebarColor: rgba(40, 40, 40, 1);;
+
   --textColor: rgba(255, 255, 255, 1);
   --grayedOut: rgba(169, 169, 169, 1);
+}
+
+// TODO: Respect user theme Dark/Light
+@media (prefers-color-scheme: light) {
+  --bgColor: rgba(51, 51, 51, 1);
 }
 
 html {
@@ -30,6 +39,7 @@ html {
   scrollbar-width: thin;  // Browser Customizations
   scroll-behavior: smooth;
   overflow-x: hidden;
+  transition: ease all .3s;
 }
 // Scrollbar for Firefox 64+
 // https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color#Browser_compatibility
