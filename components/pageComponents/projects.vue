@@ -23,6 +23,7 @@
         <li>Scoped styles</li>
         <li>Vue Components</li>
         <li>CSS Custom Properties</li>
+        <li>Dark and Light Themes (<a href="https://stackoverflow.com/a/59223868/1032384" target="_blank" rel="nofollow,noopener,external">Try it!</a>)</li>
       </ul>
     </div>
 

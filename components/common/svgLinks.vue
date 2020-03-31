@@ -38,6 +38,10 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+  a {
+    color: var(--sidebarColor, inherit);
+  }
+
   svg {
     width: 24px;
     height: @width;
