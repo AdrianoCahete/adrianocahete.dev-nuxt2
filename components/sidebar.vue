@@ -16,10 +16,10 @@
       <!-- <a href="#writings">Writings</a> -->
     </nav>
     <section class="links">
-      <svgLinks :hide-mobile="true" url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       <svgLinks url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
-      <svgLinks :hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
       <svgLinks url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
+      <svgLinks :hide-mobile="true" url="https://github.com/AdrianoCahete" icon="github" title="Github" />
+      <svgLinks :hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
       <svgLinks url="./resume/Resume-Adriano_Cahete__en-US_2020.03.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
     </section>
     <!-- TODO: Fix flex disposition of about section -->
@@ -76,14 +76,15 @@ export default {
       text-decoration: none;
       text-transform: uppercase;
       height: 3rem;
+      color: var(--navColor);
 
       &:hover {
-        text-decoration: underline;
+        color: var(--navColorHover);
       }
 
       &:active,
       &.is-active {
-        text-decoration: underline;
+        font-weight: bold;
         color: var(--primaryColor, rgba(255, 255, 255, .5));
         transition: .3s ease color;
       }

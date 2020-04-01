@@ -1,4 +1,7 @@
 /* eslint-disable no-labels */
+// import path from 'path'
+// import fs from 'fs'
+
 export default {
   mode: 'universal',
   render: {
@@ -12,6 +15,13 @@ export default {
     //   }
     // }
   },
+
+  // server: {
+  //   https: {
+  //     key: fs.readFileSync(path.resolve(__dirname, 'server.key')),
+  //     cert: fs.readFileSync(path.resolve(__dirname, 'server.crt'))
+  //   }
+  // },
 
   // Headers of the page
   head: {
@@ -95,7 +105,6 @@ export default {
   build: {
     // You can extend webpack config here
     extend (config, ctx) {
-
     }
   }
 }
