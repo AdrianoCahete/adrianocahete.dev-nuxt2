@@ -46,6 +46,8 @@
           <li>WordPress</li>
           <li>PHP</li>
           <li>Microsoft PowerBI</li>
+          <li>Adobe Premiere</li>
+          <li>Adobe After Effects</li>
         </ul>
       </div>
     </div>
