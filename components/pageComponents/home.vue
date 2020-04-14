@@ -21,14 +21,19 @@ export default {
   components: {
   },
 
-  head () {
-    return {
-      // title: 'Home',
-      // bodyAttrs: {
-      //   class: 'home'
-      // }
-    }
-  }
+  // data () {
+  //   return {
+  //     dataLoaded: false
+  //   }
+  // },
+
+  // head () {
+  //   return {
+  //     bodyAttrs: {
+  //       class: this.dataLoaded ? 'loading' : ''
+  //     }
+  //   }
+  // }
 }
 </script>
 

@@ -3,10 +3,6 @@
     <h1 class="title">
       Projects
     </h1>
-    <p class="description">
-      Most UIs created by me over the last years are under a non-disclosure agreement, so I'm working with stakeholders to obtain their permission to make them publicly available.<br>
-      You can see some of these projects here: <a href="https://behance.net/AdrianoCahete/" title="Behance" rel="nofollow,noopener,external">Behance<svgLinks url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" class="cardLink-Item" /></a>
-    </p>
 
     <div class="card">
       <h2 class="cardTitle">
@@ -101,7 +97,6 @@
 
 <script>
 import svgLinks from '~/components/common/svgLinks.vue'
-// import modal from '~/components/common/modal.vue'
 
 export default {
   // layout: 'blog'
@@ -110,19 +105,26 @@ export default {
     // modal
   },
 
+  // data () {
+  //   return {
+  //     isVisible: true
+  //   }
+  // },
+
   // methods: {
-  //   openModal () {
-  //     this.$modal.show(modal, {
-  //       text: 'This text is passed as a property'
-  //     })
+  //   visibilityChanged (isVisible, entry) {
+  //     this.isVisible = isVisible
   //   }
   // },
 
   head () {
     return {
-      // title: 'Projects',
-      // meta: [],
-      // bodyAttrs: {class: 'work'}
+      // title: 'Work',
+      meta: [
+      ]
+      // bodyAttrs: {
+      //   class: 'test123'
+      // }
     }
   }
 }

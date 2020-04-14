@@ -3,94 +3,29 @@
     <h1 class="title">
       Interfaces
     </h1>
-    <!-- <p class="description">
-      General skills, other knowledges
-    </p> -->
-    <div class="listItem">
-      <h3 class="title">
-        Knowledge / Soft Skills
-      </h3>
-      <div class="listContent">
-        <ul class="list colList">
-          <li>Microsoft Azure DevOps</li>
-          <li>Working with remote teams for the past ~5 years</li>
-          <li>Customer focused</li>
-          <li>English (Read/Write/Speak)</li>
-        </ul>
-        <ul class="list colList">
-          <li>Scrum / Kanban / Agile</li>
-          <li>Atlassian Jira/Confluence</li>
-          <li>Quality in mind</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="listItem">
-      <h3 class="title">
-        Basic Notions
-      </h3>
-      <div class="listContent">
-        <ul class="list colList">
-          <li>Javascript</li>
-          <li>jQuery</li>
-          <li>VueJS</li>
-          <li>ReactJS</li>
-          <li>Webpack</li>
-          <li>Python</li>
-          <li>IIS/Apache</li>
-          <li>MS SQLServer/MySQL</li>
-        </ul>
-        <ul class="list colList">
-          <li>C#/.NET/.NET Core</li>
-          <li>ASP.NET (WebForms/MVC)</li>
-          <li>Java (Android)</li>
-          <li>WordPress</li>
-          <li>PHP</li>
-          <li>Microsoft PowerBI</li>
-          <li>Adobe Premiere</li>
-          <li>Adobe After Effects</li>
-        </ul>
-      </div>
-    </div>
-    <div class="listItem">
-      <h3 class="title">
-        Advanced
-      </h3>
-      <div class="listContent">
-        <ul class="list colList">
-          <li>HTML5</li>
-          <li>CSS 3/4 (Selectors 3 and 4)</li>
-          <li>CSS Preprocessors (Stylus/Saas/Less</li>
-          <li>CSS Variables (Custom properties)</li>
-          <li>Adobe Photoshop</li>
-        </ul>
-        <ul class="list colList">
-          <li>Powershell</li>
-          <li>GruntJS</li>
-          <li>NodeJS/npm</li>
-          <li>Adobe XD</li>
-          <li>Sketch</li>
-        </ul>
-      </div>
+    <p class="description">
+      Most UIs created by me over the last years are under a non-disclosure agreement, so I'm working with stakeholders to obtain their permission to make them publicly available.<br>
+      You can see some of these projects below or here: <a href="https://behance.net/AdrianoCahete/" title="Behance" rel="nofollow,noopener,external">Behance<svgLinks url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" class="cardLink-Item" /></a>
+    </p>
+    <div class="uiGrid">
+      <!-- <behanceFrame project-id="94434203" project-name="Modulo-RiskManager-Login-(Sign-in)-Portal-2012-2016" /> -->
+      <behanceLink
+        project-id="94434203"
+        project-name="Modulo-RiskManager-Login-(Sign-in)-Portal-2012-2016"
+        display-name="Modulo RiskManager Login - 2012-2016"
+      />
     </div>
   </section>
 </template>
 
 <script>
-export default {
-  // layout: 'blog'
-  components: {
-  },
+// import behanceFrame from '~/components/common/behance/behanceFrame.vue'
+import behanceLink from '~/components/common/behance/behanceLink.vue'
 
-  head () {
-    return {
-      // title: 'Work',
-      meta: [
-      ]
-      // bodyAttrs: {
-      //   class: 'work'
-      // }
-    }
+export default {
+  components: {
+    // behanceFrame,
+    behanceLink
   }
 }
 </script>
@@ -102,28 +37,8 @@ export default {
   letter-spacing: 1px;
 }
 
-.listItem {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-
-  .title {
-    color: var(--primaryColor, #ffffff);
-  }
-
-  .list {
-    list-style: circle;
-    padding-left: 2rem;
-  }
-
-  .listContent {
-    display: flex;
-
-    .colList {
-      flex: 1;
-      margin-right: 3vw;
-      min-width: 50%;
-      margin-top: 1rem;
-    }
-  }
+.uiGrid {
+  height: 70vh;
+  margin-top: 1vh;
 }
 </style>

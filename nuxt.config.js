@@ -84,6 +84,7 @@ export default {
   plugins: [
     // '~/plugins/common.js'
     '~/plugins/scrollspy'
+    // '~/plugins/observe-visibility'
   ],
 
   // Nuxt.js dev-modules
