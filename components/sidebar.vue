@@ -12,6 +12,7 @@
       <a href="#home" class="is-active">Home</a>
       <a href="#work"> Work</a>
       <a href="#projects">Projects</a>
+      <!-- <a href="#interfaces">Interfaces</a> -->
       <a href="#skills">Skills</a>
       <!-- <a href="#writings">Writings</a> -->
     </nav>
@@ -156,7 +157,7 @@ export default {
   }
 
   .section {
-    margin-left: 2vw;
+    padding-left: 2vw;
   }
 
   .sidebar {
@@ -168,7 +169,7 @@ export default {
 
 @media (max-width: 390px) {
   .section {
-    margin-left: 2vw;
+    padding-left: 2vw;
   }
 
   .sidebar {

@@ -36,6 +36,7 @@
           <li>VueJS</li>
           <li>ReactJS</li>
           <li>Webpack</li>
+          <li>Python</li>
           <li>IIS/Apache</li>
           <li>MS SQLServer/MySQL</li>
         </ul>
