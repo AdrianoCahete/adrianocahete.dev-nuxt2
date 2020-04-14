@@ -7,14 +7,14 @@
 
 
 // TODO: Move to a splitted var file
+// Test bgColors:
+// linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% ); - https://gradienthunt.com/gradient/13685
+// radial-gradient( circle farthest-corner at 50.3% 44.5%,  rgba(116,147,179,1) 0%, rgba(62,83,104,1) 100.2% ); - https://gradienthunt.com/gradient/13674
+//
 :root {
   --primaryColor: rgb(131, 194, 210); // rgba(196, 218, 240, 1)
 
   --bgColor: rgba(51, 51, 51, 1);
-  // Test bgColors:
-  // linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% ); - https://gradienthunt.com/gradient/13685
-  // radial-gradient( circle farthest-corner at 50.3% 44.5%,  rgba(116,147,179,1) 0%, rgba(62,83,104,1) 100.2% ); - https://gradienthunt.com/gradient/13674
-  //
 
   --scrollbarColor: rgba(51, 51, 51, 1);
 
@@ -64,7 +64,7 @@ html {
   background: var(--bgColor);
   background-attachment: fixed;
   color: var(--textColor, #ffffff);
-  scrollbar-color: rgba(255, 255, 255, .8) @background-color; // <Thumb> <Track> -- Browser Customizations
+  scrollbar-color: rgba(255, 255, 255, .8) @background; // <Thumb> <Track> -- Browser Customizations
   scrollbar-width: thin;  // Browser Customizations
   scroll-behavior: smooth;
   overflow-x: hidden;
