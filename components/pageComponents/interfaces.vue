@@ -9,15 +9,14 @@
     </p>
     <div v-if="$device.isMobile">
       <alert
-        message="Pay attention that Behance projects may be problematic to see on the small screens."
+        message="Pay attention that Behance projects may be difficult to view on small screens"
         type="info"
       />
     </div>
-    <alert
-      icon="!"
-      message="Pay attention that Behance projects may be difficult to view on small screens."
+    <!-- <alert
+      message="Pay attention that Behance projects may be difficult to view on small screens"
       type="info"
-    />
+    /> -->
     <div :class="$device.isMobile ? 'uiMobile' : 'uiGrid'">
       <behanceLink
         project-id="95161793"
