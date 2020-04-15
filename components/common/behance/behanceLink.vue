@@ -1,22 +1,41 @@
 <template>
-  <div class="beLink">
+  <div :class="$device.isMobile ? 'beLinkMobile' : 'beLink'">
     <a
+      v-if="!$device.isMobile"
       :href="'https://www.behance.net/gallery/'+ projectId +'/'+ projectName"
       target="_blank"
       rel="nofollow,noopener,external"
+      :title="displayName"
     >
       <img
         :src="'./behance/projects/' + projectId + '.png'"
+        :alt="displayName"
       >
       <span class="projectName">
         {{ displayName }}
       </span>
     </a>
+    <!-- if isMobile -->
+    <a
+      v-if="$device.isMobile"
+      :href="'https://www.behance.net/gallery/'+ projectId +'/'+ projectName"
+      target="_blank"
+      rel="nofollow,noopener,external"
+    >
+      <svgLinks :url="'https://www.behance.net/gallery/'+ projectId +'/'+ projectName" icon="behance" :title="displayName" class="cardLink-Item" />
+      {{ displayName }}
+    </a>
   </div>
 </template>
 
 <script>
+import svgLinks from '~/components/common/svgLinks.vue'
+
 export default {
+  components: {
+    svgLinks
+  },
+
   props: {
     projectId: {
       type: String,
@@ -32,11 +51,12 @@ export default {
       type: String,
       required: true,
       default: ''
+    },
+    projectDate: {
+      type: String,
+      required: false,
+      default: ''
     }
-    // hideMobile: {
-    //   type: Boolean,
-    //   default: false
-    // }
   }
 }
 </script>
@@ -45,6 +65,7 @@ export default {
 .beLink {
   display: flex;
   width: 30%;
+  min-width: 225px;
   height: auto;
 
   a {
@@ -65,12 +86,12 @@ export default {
       transition: ease opacity .5s;
     }
 
-    &:hover {
-      .projectName {
-        opacity: 1;
-        transition: ease opacity .5s;
-      }
-    }
+    // &:hover { // TODO: Fix on Chrome
+    //   .projectName {
+    //     opacity: 1;
+    //     transition: ease opacity .5s;
+    //   }
+    // }
   }
 
   .projectName {
@@ -82,6 +103,19 @@ export default {
     background: linear-gradient(180deg, rgba(57,57,57,0) 0%, rgba(0,0,0,.7) 100%);
     text-shadow: 1px 1px 2px black, 0 0 1rem black, 0 0 0.2rem black;
     text-decoration: none;
+  }
+}
+
+.beLinkMobile {
+  a {
+    display: inline-block;
+    padding: 1vh 0;
+  }
+
+  &:hover {
+    a {
+      text-decoration-color: red;
+    }
   }
 }
 </style>

@@ -2,9 +2,9 @@
   <section class="content">
     <pageHome />
     <pageWork />
+    <pageSkills />
     <pageProjects />
     <pageInterfaces />
-    <pageSkills />
     <!-- <section id="writings" class="section"></section> -->
   </section>
 </template>

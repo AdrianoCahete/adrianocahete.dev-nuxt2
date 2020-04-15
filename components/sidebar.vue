@@ -1,5 +1,5 @@
 <template>
-  <section class="sidebar">
+  <section :class="$device.isMobile ? 'sidebar sidebarMobile' : 'sidebar'">
     <section class="headerInfo">
       <userAvatar user-name="AdrianoCahete" />
       <!-- TODO: Move to Component -->
@@ -9,11 +9,13 @@
     </section>
     <nav id="nav" class="menu">
       <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
+      <!-- TODO: Move to component -->
+      <!-- TODO: Fix scroll clipping part of menu on mobile -->
       <a href="#home" class="is-active">Home</a>
       <a href="#work"> Work</a>
-      <a href="#projects">Projects</a>
-      <a href="#interfaces">Interfaces</a>
       <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#interfaces" :class="$device.isMobile ? 'isHidden' : ''">Interfaces</a>
       <!-- <a href="#writings">Writings</a> -->
     </nav>
     <section class="links">
@@ -95,6 +97,10 @@ export default {
   .links {
     margin-top: 2vh;
     fill: var(--sidebarIconColor, #ffffff);
+  }
+
+  &.sidebarMobile {
+    background-color: var(--scrollbarColor);
   }
 }
 
