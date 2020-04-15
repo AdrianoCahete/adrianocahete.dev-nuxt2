@@ -64,8 +64,9 @@ export default {
 <style lang="stylus" scoped>
 .beLink {
   display: flex;
-  width: 30%;
-  min-width: 225px;
+  width: 225px;
+  min-width: @width; // TODO: Remove it
+  max-width: @width; // TODO: Remove it
   height: auto;
 
   a {
