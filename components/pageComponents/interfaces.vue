@@ -40,12 +40,14 @@
 <script>
 // import behanceFrame from '~/components/common/behance/behanceFrame.vue'
 import behanceLink from '~/components/common/behance/behanceLink.vue'
+import svgLinks from '~/components/common/svgLinks.vue'
 import alert from '~/components/common/alert.vue'
 
 export default {
   components: {
     // behanceFrame,
     behanceLink,
+    svgLinks,
     alert
   }
 }
@@ -63,7 +65,6 @@ export default {
 .uiGrid {
   display: flex;
   flex-wrap:wrap
-  height: 70vh;
   margin-top: 1vh;
 
   > div {

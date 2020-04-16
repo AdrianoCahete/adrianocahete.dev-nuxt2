@@ -64,10 +64,9 @@ export default {
 <style lang="stylus" scoped>
 .beLink {
   display: flex;
-  width: 225px;
-  min-width: @width; // TODO: Remove it
-  max-width: @width; // TODO: Remove it
+  width: 280px;
   height: auto;
+  border: 2px solid var(--scrollbarColor);
 
   a {
     display: flex;

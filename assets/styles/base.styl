@@ -14,10 +14,11 @@
 // radial-gradient( circle 100vw at 16% 12%, rgba(0,201,235,1) 0%, rgba(86, 82, 231, 1) 105% )
 // radial-gradient( circle farthest-corner at 10% 20%, rgba(0,93,133,1) 0%, rgba(0,181,149,1) 90% )
 
+// Default Dark Mode
 :root {
   --primaryColor: rgb(131, 194, 210); // rgba(196, 218, 240, 1)
 
-  --bgColor: radial-gradient( circle farthest-corner at 10% 20%, rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% ); // rgba(51, 51, 51, 1);
+  --bgColor: radial-gradient(circle farthest-corner at 10% 20%, rgba(90, 92, 106, 1) 0%, rgba(32, 45, 58, 1) 81.3% );
 
   --scrollbarColor: rgba(51, 51, 51, 1);
 
@@ -36,12 +37,12 @@
 
 }
 
-// TODO: Respect user theme Dark/Light
+// Light Mode
 @media (prefers-color-scheme: light) {
   :root {
     --primaryColor: rgba(0, 108, 136, 1);
 
-    --bgColor: linear-gradient(to top, #ffffff 0%, #e9edef 100%);
+    --bgColor: radial-gradient(circle farthest-corner at 10% 20%, hsla(0, 0, 100%, .8) 0%, rgba(233, 237, 239, 1) 70% );
 
     --scrollbarColor: rgba(228, 228, 228, .8);
 
