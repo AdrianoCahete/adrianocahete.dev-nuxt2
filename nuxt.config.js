@@ -83,8 +83,9 @@ export default {
   // Plugins to load before mounting the App
   plugins: [
     // '~/plugins/common.js'
-    '~/plugins/scrollspy'
     // '~/plugins/observe-visibility'
+    '~/plugins/scrollspy',
+    '~/plugins/queryStrings'
   ],
 
   // Nuxt.js dev-modules
@@ -99,13 +100,21 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     // '@nuxtjs/axios'
-    '@nuxtjs/device'
+    '@nuxtjs/device',
+    'nuxt-feature-toggle'
   ],
+
+  featureToggle: {
+    queryString: true,
+    toggles: {
+      gaming: false
+    }
+  },
 
   // Build configuration
   build: {
     // You can extend webpack config here
-    extend (config, ctx) {
-    }
+    // extend (config, ctx) {
+    // }
   }
 }

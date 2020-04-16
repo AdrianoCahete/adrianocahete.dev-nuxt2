@@ -18,8 +18,8 @@
 <script>
 export default {
   // layout: 'blog'
-  components: {
-  },
+  // components: {
+  // },
 
   // data () {
   //   return {

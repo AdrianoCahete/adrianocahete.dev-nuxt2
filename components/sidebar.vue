@@ -23,6 +23,9 @@
       <svgLinks url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
       <svgLinks :hide-mobile="true" url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       <svgLinks :hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
+      <!-- <feature-toggle name="gaming" :value="false">
+        <svgLinks url="" icon="behance" title="" />
+      </feature-toggle> -->
       <svgLinks url="./resume/Resume-Adriano_Cahete__en-US_2020.03.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
     </section>
     <!-- TODO: Fix flex disposition of about section -->
@@ -52,7 +55,7 @@ export default {
   align-items: center;
   text-align: center;
   width: 20vw; // Move to Vars
-  padding: 5vh 3vw;
+  padding: 0 2vw;
   max-width: 20%;
   min-height: 100%;
   height: 100vh;
