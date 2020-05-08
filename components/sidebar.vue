@@ -63,6 +63,17 @@ export default {
   top: 0;
   left: 0;
   background-color: var(--sidebarColor);
+  border-right: var(--sidebarBorder);
+
+  &::before {
+    display: flex;
+    content: "";
+    background: rgba(0, 0, 0, .1);
+    filter: blur(4px);
+    height: 100%;
+    position: fixed; // Sticky bugs desktop version
+    width: 20vw;
+  }
 
   .headerInfo {
     p {
@@ -104,6 +115,15 @@ export default {
 
   &.sidebarMobile {
     background-color: var(--scrollbarColor);
+
+    &::before {
+      display: none;
+      // height: 40px;
+      // width: 100%;
+      // top: 0;
+      // border-right: 0;
+      // border-bottom: var(--sidebarBorder);
+    }
   }
 }
 
