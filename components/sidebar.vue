@@ -73,6 +73,7 @@ export default {
     height: 100%;
     position: fixed; // Sticky bugs desktop version
     width: 20vw;
+    z-index: -1;
   }
 
   .headerInfo {
