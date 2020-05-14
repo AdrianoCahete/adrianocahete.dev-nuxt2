@@ -23,7 +23,7 @@
       <svgLinks url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
       <svgLinks :hide-mobile="true" url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       <svgLinks :hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
-      <!-- <feature-toggle name="gaming" :value="false">
+      <!-- <feature-toggle name="gaming" :value="false" prefix="_t">
         <svgLinks url="" icon="behance" title="" />
       </feature-toggle> -->
       <svgLinks url="./resume/Resume-Adriano_Cahete__en-US_2020.03.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
