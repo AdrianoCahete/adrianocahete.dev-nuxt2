@@ -93,7 +93,13 @@ export default {
     // '@nuxtjs/eslint-module'
     // Doc: https://github.com/nuxt-community/stylelint-module
     // '@nuxtjs/stylelint-module'
-    '@nuxtjs/pwa'
+    [
+      '@nuxtjs/pwa', // https://pwa.nuxtjs.org/
+      {
+        icon: false,
+        meta: false
+      }
+    ]
   ],
 
   // Nuxt.js modules
@@ -108,6 +114,18 @@ export default {
     queryString: true,
     toggles: {
       gaming: false
+    }
+  },
+
+  pwa: {
+    workbox: {
+      // Offline
+      offline: true,
+      offlineAnalytics: true,
+      offlineStrategy: 'NetworkFirst'
+    },
+    manifest: {
+      display: 'browser'
     }
   },
 
