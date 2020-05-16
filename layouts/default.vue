@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section :class="$nuxt.isOffline ? 'isOffline' : ''">
     <svgLibrary />
     <nuxt />
   </section>
@@ -17,9 +17,9 @@ export default {
 </script>
 
 <style lang="stylus">
-    @import '~assets/styles/base.styl'
+@import '~assets/styles/base.styl'
 
-    .isMobile {
-      @import '~assets/styles/components/isMobile.styl'
-    }
+.isMobile {
+  @import '~assets/styles/components/isMobile.styl'
+}
 </style>

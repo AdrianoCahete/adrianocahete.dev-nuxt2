@@ -33,18 +33,22 @@ $ npm run start
 $ npm run generate
 ```
 
+## Test SW Locally
+You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.com/a/34161385
+
 ## ToDo
 
 - ~~Move to PWA to accommodate better the content~~ *[Implemented on 2020-05-16]*
-- Add animations to page loading
+- ~~Add animations to page loading~~  *[Implemented on 2020-05-16]*
+- ~~Add an offline mode~~  *[Implemented on 2020-05-16]*
 - Add micro animations to entire portfolio
 - Add a `build date`/`last updated on` string on page
 - Add a toggle to show different information to different industries
 - Make a better error/not found page
-- Add an offline mode
+- Add favicons
 - Move CSS to SASS instead of Stylus ([stylus seems to be deprecated or, at least, stagnated](https://github.com/stylus/stylus/issues/2282))
 - Move `isMobile` function/feature to more global section instead of letting on `page`
-- Move every `div` to `section`
+- Change every `div` to `section`
 - Add a switch to change themes
 - Add more themes than just light/dark theme
 - Add custom themes (add the ability to user modify the theme on-the-fly)

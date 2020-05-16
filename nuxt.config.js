@@ -118,12 +118,11 @@ export default {
   },
 
   pwa: {
-    workbox: {
-      // Offline
-      offline: true,
-      offlineAnalytics: true,
-      offlineStrategy: 'NetworkFirst'
-    },
+    // workbox: {
+    //   // Offline
+    //   offline: true,
+    //   offlineStrategy: 'NetworkFirst'
+    // },
     manifest: {
       display: 'browser'
     }
