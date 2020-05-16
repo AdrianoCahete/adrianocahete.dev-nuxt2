@@ -3,9 +3,6 @@
     <navbar-menu />
     <section class="content">
       <section id="work" class="section">
-        <h1 class="title">
-          Work Experience
-        </h1>
         <p class="description">
           I have over 8 years of experience in UI/UX design and UI Development and I know the basics of a few Front End and Backend languages
         </p>

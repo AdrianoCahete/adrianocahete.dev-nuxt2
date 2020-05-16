@@ -1,7 +1,7 @@
 <template>
   <section :class="$device.isMobile || $device.isTablet ? 'page isMobile' : 'page'">
     <navbar-menu />
-    <section class="content">
+    <section class="content home">
       <section id="home" class="section isCentered">
         <!-- <logo /> -->
         <!-- TODO: Move to component with variables -->
@@ -46,6 +46,10 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~assets/styles/components/section.styl'
+
+.home {
+  animation: fadeIn .5s ease-in;
+}
 
 .titleMain {
   display: block;

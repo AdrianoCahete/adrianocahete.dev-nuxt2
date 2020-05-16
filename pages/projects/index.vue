@@ -3,10 +3,6 @@
     <navbar-menu />
     <section class="content">
       <section id="projects" class="section">
-        <h1 class="title">
-          Projects
-        </h1>
-
         <div class="card">
           <h2 class="cardTitle">
             This portfolio <svgLinks url="https://github.com/AdrianoCahete/adrianocahete.dev" icon="oss" title="adrianocahete.dev @ Github" class="cardLink-Item" />

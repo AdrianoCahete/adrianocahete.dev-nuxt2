@@ -3,9 +3,6 @@
     <navbar-menu />
     <section class="content">
       <section id="skills" class="section">
-        <h1 class="title">
-          Skills
-        </h1>
         <!-- <p class="description">
           General skills, other knowledges
         </p> -->

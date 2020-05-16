@@ -98,6 +98,8 @@ export default {
   }
 
   .headerInfo {
+    animation: fadeIn .5s ease-in;
+
     p {
       font-size: 1.3rem;
     }
@@ -116,6 +118,7 @@ export default {
       text-transform: uppercase;
       height: 3rem;
       color: var(--navColor);
+      animation: fromUp2Down .5s ease-in;
 
       &:hover {
         color: var(--navColorHover);
@@ -133,6 +136,7 @@ export default {
   .links {
     margin-top: 2vh;
     fill: var(--navbarIconColor, #ffffff);
+    animation: fromDown2Up .5s ease-in;
   }
 
   &.navbarMobile {
@@ -162,10 +166,6 @@ export default {
 
     &::before {
       display: none; // TODO: Fix the blur on mobile
-    }
-
-    .avatar {
-      display: none;
     }
 
     .headerInfo {

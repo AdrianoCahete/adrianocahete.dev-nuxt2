@@ -18,14 +18,20 @@ export default {
 
 <style lang="stylus" scoped>
 .avatar {
-    > img {
-      width: 8rem;
-      height: @width;
-      min-height: 80px;
-      background-color: var(--textColor, #ffffff);
-      border-radius: 50%;
-      border: 2px solid var(--primaryColor, #FFFFFF);
-      // TODO: Create animation on render
-    }
+  > img {
+    width: 8rem;
+    height: @width;
+    min-height: 80px;
+    background-color: var(--textColor, #ffffff);
+    border-radius: 50%;
+    border: 2px solid var(--primaryColor, #FFFFFF);
+    animation: fadeIn 1s ease-in;
   }
+}
+
+@media (max-width: 1024px) {
+  .avatar {
+    display: none;
+  }
+}
 </style>

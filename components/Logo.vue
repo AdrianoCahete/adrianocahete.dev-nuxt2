@@ -19,7 +19,7 @@
 </template>
 <style>
 .NuxtLogo {
-  animation: 1s appear;
+  animation: 1s fadeIn;
 }
 
 @keyframes appear {
