@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nuxt",
-    "dev-debug": "cross-env NODE_OPTIONS='--trace-warnings' yarn run dev",
+    "dev-debug": "cross-env NODE_OPTIONS='--trace-warnings' npm run dev",
     "build": "nuxt build",
     "start": "cross-env NODE_ENV=development nuxt start",
     "generate": "nuxt generate",
