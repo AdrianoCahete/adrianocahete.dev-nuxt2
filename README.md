@@ -47,7 +47,7 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - Make a better error/not found page
 - Add favicons
 - Move CSS to SASS instead of Stylus ([stylus seems to be deprecated or, at least, stagnated](https://github.com/stylus/stylus/issues/2282))
-- Move `isMobile` function/feature to more global section instead of letting on `page`
+- Move `isMobile` function/feature to more global scope instead of on `page` scope
 - Change every `div` to `section`
 - Add a switch to change themes
 - Add more themes than just light/dark theme
