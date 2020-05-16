@@ -8,14 +8,12 @@
 </template>
 
 <script>
-import pageWork from '~/components/pageComponents/work.vue'
 import pageProjects from '~/components/pageComponents/projects.vue'
 import pageSkills from '~/components/pageComponents/skills.vue'
 
 export default {
   // layout: 'blog'
   components: {
-    pageWork,
     pageProjects,
     pageSkills
   }

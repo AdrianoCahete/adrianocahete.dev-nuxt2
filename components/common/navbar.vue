@@ -13,7 +13,9 @@
       <nuxt-link to="/">
         Home
       </nuxt-link>
-      <a href="#work"> Work</a>
+      <nuxt-link to="/work">
+        Work
+      </nuxt-link>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <nuxt-link to="/ui" :class="$device.isMobile ? 'isHidden' : ''">
