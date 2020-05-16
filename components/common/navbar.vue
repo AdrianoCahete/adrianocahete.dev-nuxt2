@@ -16,14 +16,16 @@
       <nuxt-link to="/work">
         Work
       </nuxt-link>
-      <a href="#skills">Skills</a>
+      <nuxt-link to="/skills">
+        Skills
+      </nuxt-link>
       <nuxt-link to="/projects">
         Projects
       </nuxt-link>
       <nuxt-link to="/ui" :class="$device.isMobile ? 'isHidden' : ''">
         Interfaces
       </nuxt-link>
-      <nuxt-link to="/test">
+      <nuxt-link v-if="isDevMode" to="/test">
         Error
       </nuxt-link>
       <!-- <a href="#writings">Writings</a> -->
@@ -33,9 +35,11 @@
       <svgLinks url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
       <svgLinks :hide-mobile="true" url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       <svgLinks :hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
-      <!-- <feature-toggle name="gaming" :value="false" prefix="_t">
-        <svgLinks url="" icon="behance" title="" />
-      </feature-toggle> -->
+      <!--
+        <feature-toggle name="gaming" :value="false" prefix="_t">
+          <svgLinks url="" icon="steam" title="" />
+        </feature-toggle>
+      -->
       <svgLinks url="./resume/Resume-Adriano_Cahete__en-US_2020.03.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
     </section>
     <!-- TODO: Fix flex disposition of about section -->
@@ -53,6 +57,11 @@ export default {
   components: {
     userAvatar,
     svgLinks
+  },
+  data () {
+    return {
+      isDevMode: process.env.NODE_ENV === 'development'
+    }
   }
 }
 </script>
@@ -128,7 +137,7 @@ export default {
     background-color: var(--scrollbarColor);
 
     &::before {
-      display: none;
+      display: none; // TODO: Fix the blur on mobile
       // height: 40px;
       // width: 100%;
       // top: 0;
@@ -148,6 +157,10 @@ export default {
     position: sticky;
     text-align: start;
     background-image: linear-gradient(180deg, #212121 0%, #212121 10%, var(--bgColor) 100%);
+
+    &::before {
+      display: none; // TODO: Fix the blur on mobile
+    }
 
     .avatar {
       display: none;
