@@ -1,4 +1,5 @@
 <template>
+  <!-- TODO: Deprecated -- Remove it -->
   <section id="interfaces" class="section">
     <h1 class="title">
       Interfaces

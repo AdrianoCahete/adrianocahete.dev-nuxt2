@@ -39,7 +39,7 @@ export default {
 
 <style lang="stylus" scoped>
   a {
-    color: var(--sidebarIconColorAlt, inherit);
+    color: var(--navbarIconColorAlt, inherit);
   }
 
   svg {

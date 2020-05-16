@@ -21,10 +21,10 @@
 
   --scrollbarColor: rgba(51, 51, 51, 1);
 
-  --sidebarColor: transparent; // rgba(40, 40, 40, 1);
-  --sidebarBorder: 1px solid rgba(58, 66, 79, 1);
-  --sidebarIconColor: rgba(255, 255, 255, 1);
-  --sidebarIconColorAlt: rgba(40, 40, 40, 1);
+  --navbarColor: transparent; // rgba(40, 40, 40, 1);
+  --navbarBorder: 1px solid rgba(58, 66, 79, 1);
+  --navbarIconColor: rgba(255, 255, 255, 1);
+  --navbarIconColorAlt: rgba(40, 40, 40, 1);
 
   --navColor: rgba(255, 255, 255, .5);
   --navColorHover: rgba(255, 255, 255, .8);
@@ -46,10 +46,10 @@
 
     --scrollbarColor: rgba(228, 228, 228, .8);
 
-    --sidebarColor: transparent; // rgba(214, 214, 214, 1);
-    --sidebarBorder: 1px solid rgba(228, 228, 228, 1);
-    --sidebarIconColor: rgba(40, 40, 40, 1);
-    --sidebarIconColorAlt: rgba(214, 214, 214, 1);
+    --navbarColor: transparent; // rgba(214, 214, 214, 1);
+    --navbarBorder: 1px solid rgba(228, 228, 228, 1);
+    --navbarIconColor: rgba(40, 40, 40, 1);
+    --navbarIconColorAlt: rgba(214, 214, 214, 1);
 
     --navColor: rgba(51, 51, 51, .6);
     --navColorHover: rgba(51, 51, 51, .9);
@@ -132,9 +132,41 @@ body {
   opacity: 0;
 }
 
-
 a {
   color: var(--textColor, #ffffff);
+}
+
+.page {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .page {
+    flex-direction: column;
+  }
+}
+
+.isMobile {
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 20vw; // Get from vars
+  width: 80vw;
+  scroll-snap-type: y mandatory;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    margin-left: 0;
+    width: 100vw;
+  }
 }
 
 // Utils

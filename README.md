@@ -1,5 +1,5 @@
 # adrianocahete.dev
-> My 2020 Portofolio
+> My 2020 Portfolio
 
 ## Deploy
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bffddeca-83de-4641-807a-ac12aa617fae/deploy-status)](https://app.netlify.com/sites/adrianocahete-dev/deploys)
@@ -33,4 +33,16 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## ToDo
+
+- Move to PWA to accommodate better the content
+- Move CSS to SASS instead of Stylus ([stylus seems to be deprecated or, at least, stagnated](https://github.com/stylus/stylus/issues/2282))
+- Add a switch to change themes
+- Add more themes than just light/dark theme
+- Add custom themes
+- Move to i18n instead of hardcoded text
+- Add Hotjar to know the user
+- Make styles documentation (using [SassDoc](http://sassdoc.com/) and maybe Docusaurus?)
+- Add CSS regression tests (BackstopJS or Helpscout Barista?)
+- Add Vue code tests
+

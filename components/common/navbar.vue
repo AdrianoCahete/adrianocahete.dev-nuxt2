@@ -1,21 +1,22 @@
 <template>
-  <section :class="$device.isMobile ? 'sidebar sidebarMobile' : 'sidebar'">
+  <section :class="$device.isMobile ? 'navbar navbarMobile' : 'navbar'">
     <section class="headerInfo">
       <userAvatar user-name="AdrianoCahete" />
       <!-- TODO: Move to Component -->
       <h1>Adriano Cahete</h1>
       <p>User Interface Developer, User Interface & User Experience Designer</p>
-      <p>currently working at SAI Global</p>
+      <!-- <p>currently working at SAI Global</p> -->
     </section>
     <nav id="nav" class="menu">
       <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
-      <!-- TODO: Move to component -->
       <!-- TODO: Fix scroll clipping part of menu on mobile -->
       <a href="#home" class="is-active">Home</a>
       <a href="#work"> Work</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#interfaces" :class="$device.isMobile ? 'isHidden' : ''">Interfaces</a>
+      <nuxt-link to="/ui" :class="$device.isMobile ? 'isHidden' : ''">
+        Interfaces
+      </nuxt-link>
       <!-- <a href="#writings">Writings</a> -->
     </nav>
     <section class="links">
@@ -48,7 +49,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.sidebar {
+.navbar {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -62,8 +63,8 @@ export default {
   position fixed;
   top: 0;
   left: 0;
-  background-color: var(--sidebarColor);
-  border-right: var(--sidebarBorder);
+  background-color: var(--navbarColor);
+  border-right: var(--navbarBorder);
 
   &::before {
     display: flex;
@@ -111,10 +112,10 @@ export default {
 
   .links {
     margin-top: 2vh;
-    fill: var(--sidebarIconColor, #ffffff);
+    fill: var(--navbarIconColor, #ffffff);
   }
 
-  &.sidebarMobile {
+  &.navbarMobile {
     background-color: var(--scrollbarColor);
 
     &::before {
@@ -123,13 +124,13 @@ export default {
       // width: 100%;
       // top: 0;
       // border-right: 0;
-      // border-bottom: var(--sidebarBorder);
+      // border-bottom: var(--navbarBorder);
     }
   }
 }
 
 @media (max-width: 1024px) {
-  .sidebar {
+  .navbar {
     flex-direction: row;
     width: 100%;
     max-width: @width;
@@ -190,7 +191,7 @@ export default {
     padding-left: 2vw;
   }
 
-  .sidebar {
+  .navbar {
     .menu {
       justify-content: left;
     }
@@ -202,7 +203,7 @@ export default {
     padding-left: 2vw;
   }
 
-  .sidebar {
+  .navbar {
     .menu {
       justify-content: left;
     }
