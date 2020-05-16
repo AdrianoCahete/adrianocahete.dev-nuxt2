@@ -1,5 +1,5 @@
 <template>
-  <div :class="$device.isMobile || $device.isTablet ? 'page isMobile' : 'page'">
+  <section :class="$device.isMobile || $device.isTablet ? 'page isMobile' : 'page'">
     <navbar-menu />
     <section class="content">
       <section id="interfaces" class="section">
@@ -35,7 +35,7 @@
         </div>
       </section>
     </section>
-  </div>
+  </section>
 </template>
 
 <script>
