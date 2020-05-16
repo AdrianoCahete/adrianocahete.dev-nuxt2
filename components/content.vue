@@ -4,7 +4,6 @@
     <pageWork />
     <pageSkills />
     <pageProjects />
-    <pageInterfaces />
     <!-- <section id="writings" class="section"></section> -->
   </section>
 </template>
@@ -13,7 +12,6 @@
 import pageHome from '~/components/pageComponents/home.vue'
 import pageWork from '~/components/pageComponents/work.vue'
 import pageProjects from '~/components/pageComponents/projects.vue'
-import pageInterfaces from '~/components/pageComponents/interfaces.vue'
 import pageSkills from '~/components/pageComponents/skills.vue'
 
 export default {
@@ -22,7 +20,6 @@ export default {
     pageHome,
     pageWork,
     pageProjects,
-    pageInterfaces,
     pageSkills
   }
 }
