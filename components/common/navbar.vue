@@ -17,9 +17,14 @@
         Work
       </nuxt-link>
       <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
+      <nuxt-link to="/projects">
+        Projects
+      </nuxt-link>
       <nuxt-link to="/ui" :class="$device.isMobile ? 'isHidden' : ''">
         Interfaces
+      </nuxt-link>
+      <nuxt-link to="/test">
+        Error
       </nuxt-link>
       <!-- <a href="#writings">Writings</a> -->
     </nav>

@@ -36,6 +36,7 @@ $ npm run generate
 ## ToDo
 
 - Move to PWA to accommodate better the content
+- Add animations to page loading
 - Add an offline mode
 - Move CSS to SASS instead of Stylus ([stylus seems to be deprecated or, at least, stagnated](https://github.com/stylus/stylus/issues/2282))
 - Move `isMobile` function/feature to more global section instead of letting on `page`
