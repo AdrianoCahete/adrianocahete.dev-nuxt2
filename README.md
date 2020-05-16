@@ -39,6 +39,7 @@ $ npm run generate
 - Add animations to page loading
 - Add micro animations to entire portfolio
 - Add a `build date`/`last updated on` string on page
+- Add a toggle to show different information to different industries
 - Make a better error/not found page
 - Add an offline mode
 - Move CSS to SASS instead of Stylus ([stylus seems to be deprecated or, at least, stagnated](https://github.com/stylus/stylus/issues/2282))

@@ -28,7 +28,9 @@
       <nuxt-link v-if="isDevMode" to="/test">
         Error
       </nuxt-link>
-      <!-- <a href="#writings">Writings</a> -->
+      <!-- <nuxt-link v-if="isDevMode" to="/writings">
+        Writings
+      </nuxt-link> -->
     </nav>
     <section class="links">
       <svgLinks url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />

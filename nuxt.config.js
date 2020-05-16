@@ -27,7 +27,7 @@ export default {
   head: {
     title: process.env.npm_package_name || '',
     // titleTemplate: '%s @ Adriano Cahete\'s Portfolio ',
-    titleTemplate: 'Adriano Cahete\'s Portfolio ',
+    titleTemplate: '%s @ Adriano Cahete\'s Portfolio ',
     htmlAttrs: {
       lang: 'en-US'
     },

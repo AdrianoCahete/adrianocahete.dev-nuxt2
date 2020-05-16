@@ -25,7 +25,7 @@ import navbarMenu from '~/components/common/navbar'
 export default {
   components: {
     navbarMenu
-  }
+  },
 
   // data () {
   //   return {
@@ -33,13 +33,14 @@ export default {
   //   }
   // },
 
-  // head () {
-  //   return {
-  //     bodyAttrs: {
-  //       class: this.dataLoaded ? 'loading' : ''
-  //     }
-  //   }
-  // }
+  head () {
+    return {
+      title: 'Home'
+      // bodyAttrs: {
+      //   class: this.dataLoaded ? 'loading' : ''
+      // }
+    }
+  }
 }
 </script>
 

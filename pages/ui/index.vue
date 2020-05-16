@@ -50,6 +50,16 @@ export default {
     behanceLink,
     svgLinks,
     alert
+  },
+  head () {
+    return {
+      title: 'Interfaces'
+      // meta: [
+      // ]
+      // bodyAttrs: {
+      //   class: 'work'
+      // }
+    }
   }
 }
 </script>

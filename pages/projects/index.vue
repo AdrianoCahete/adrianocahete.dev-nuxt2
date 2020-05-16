@@ -113,7 +113,7 @@ export default {
   },
   head () {
     return {
-      title: 'Work',
+      title: 'Projects',
       meta: [
       ]
       // bodyAttrs: {

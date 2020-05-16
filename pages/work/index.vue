@@ -73,9 +73,9 @@ export default {
 
   head () {
     return {
-      title: 'Work',
-      meta: [
-      ]
+      title: 'Work'
+      // meta: [
+      // ]
       // bodyAttrs: {
       //   class: 'work'
       // }
