@@ -59,7 +59,7 @@ export default {
 
   // Customize the progress-bar color
   // https://nuxtjs.org/api/configuration-loading
-  loading: { color: '#fff' },
+  loading: { color: '#172b4d' },
 
   pageTransition: {
     name: 'page',
@@ -83,7 +83,6 @@ export default {
   // Plugins to load before mounting the App
   plugins: [
     // '~/plugins/common.js'
-    // '~/plugins/observe-visibility'
     '~/plugins/scrollspy',
     '~/plugins/queryStrings'
   ],

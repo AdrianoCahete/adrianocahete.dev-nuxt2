@@ -37,9 +37,11 @@ $ npm run generate
 
 - Move to PWA to accommodate better the content
 - Move CSS to SASS instead of Stylus ([stylus seems to be deprecated or, at least, stagnated](https://github.com/stylus/stylus/issues/2282))
+- Move `isMobile` function/feature to more global section instead of letting on `page`
+- Move every `div` to `section`
 - Add a switch to change themes
 - Add more themes than just light/dark theme
-- Add custom themes
+- Add custom themes (add the ability to user modify the theme on-the-fly)
 - Move to i18n instead of hardcoded text
 - Add Hotjar to know the user
 - Make styles documentation (using [SassDoc](http://sassdoc.com/) and maybe Docusaurus?)

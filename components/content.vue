@@ -1,6 +1,5 @@
 <template>
   <section class="content">
-    <pageHome />
     <pageWork />
     <pageSkills />
     <pageProjects />
@@ -9,7 +8,6 @@
 </template>
 
 <script>
-import pageHome from '~/components/pageComponents/home.vue'
 import pageWork from '~/components/pageComponents/work.vue'
 import pageProjects from '~/components/pageComponents/projects.vue'
 import pageSkills from '~/components/pageComponents/skills.vue'
@@ -17,7 +15,6 @@ import pageSkills from '~/components/pageComponents/skills.vue'
 export default {
   // layout: 'blog'
   components: {
-    pageHome,
     pageWork,
     pageProjects,
     pageSkills

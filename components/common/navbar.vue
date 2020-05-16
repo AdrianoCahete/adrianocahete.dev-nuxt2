@@ -10,7 +10,9 @@
     <nav id="nav" class="menu">
       <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
       <!-- TODO: Fix scroll clipping part of menu on mobile -->
-      <a href="#home" class="is-active">Home</a>
+      <nuxt-link to="/">
+        Home
+      </nuxt-link>
       <a href="#work"> Work</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -102,7 +104,7 @@ export default {
       }
 
       &:active,
-      &.is-active {
+      &.nuxt-link-exact-active {
         font-weight: bold;
         color: var(--primaryColor, rgba(255, 255, 255, .5));
         transition: .3s ease color;

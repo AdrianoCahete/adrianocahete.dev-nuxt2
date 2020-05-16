@@ -39,10 +39,10 @@
 </template>
 
 <script>
+import navbarMenu from '~/components/common/navbar'
 import behanceLink from '~/components/common/behance/behanceLink.vue'
 import svgLinks from '~/components/common/svgLinks.vue'
 import alert from '~/components/common/alert.vue'
-import navbarMenu from '~/components/common/navbar'
 
 export default {
   components: {
