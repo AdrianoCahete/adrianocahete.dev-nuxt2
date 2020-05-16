@@ -1,6 +1,11 @@
 <template>
   <div class="avatar">
-    <img :src="'https://github.com/'+ userName + '.png'" :alt="$nuxt.isOffline ? '' : userName" :title="$nuxt.isOffline ? 'You appear to be offline' : ''">
+    <!-- TODO: Make a default image to load/cache for offline mode -->
+    <img
+      :src="'https://github.com/'+ userName + '.png'"
+      :alt="$nuxt.isOffline ? '' : userName"
+      :title="$nuxt.isOffline ? 'You appear to be offline' : ''"
+    >
   </div>
 </template>
 
@@ -12,6 +17,13 @@ export default {
       required: true,
       default: 'github'
     }
+  },
+  head () {
+    return {
+      script: [
+        { img: 'https://github.com/AdrianoCahete.png' } // TODO: Make a default image to load/cache for offline mode
+      ]
+    }
   }
 }
 </script>
@@ -20,7 +32,7 @@ export default {
 .avatar {
   > img {
     width: 8rem;
-    min-width: @width;
+    max-width: @width;
     height: @width;
     min-height: @height;
     background-color: var(--textColor, #ffffff);
