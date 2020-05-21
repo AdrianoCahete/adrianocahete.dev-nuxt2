@@ -20,9 +20,9 @@ export default {
   },
   head () {
     return {
-      script: [
-        { img: 'https://github.com/AdrianoCahete.png' } // TODO: Make a default image to load/cache for offline mode
-      ]
+      // script: [
+      //   { img: 'https://github.com/AdrianoCahete.png' } // TODO: Make a default image to load/cache for offline mode
+      // ]
     }
   }
 }

@@ -107,7 +107,8 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     // '@nuxtjs/axios'
     '@nuxtjs/device',
-    'nuxt-feature-toggle'
+    'nuxt-feature-toggle',
+    'nuxt-payload-extractor'
   ],
 
   featureToggle: {
