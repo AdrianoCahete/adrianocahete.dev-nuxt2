@@ -20,6 +20,10 @@ jobs:
       uses: juliangruber/sleep-action@v1
       with:
         time: 30s
+    - name: Check performance and generate badges
+      run: |
+        npm install
+        npm run performance
     - name: Audit live URL
       uses: jakejarvis/lighthouse-action@master
       with:
