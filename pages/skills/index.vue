@@ -13,14 +13,15 @@
           <div class="listContent">
             <ul class="list colList">
               <li>Microsoft Azure DevOps</li>
+              <li>Git</li>
               <li>Working with remote teams for the past ~5 years</li>
               <li>Customer focused</li>
-              <li>English (Read/Write/Speak)</li>
             </ul>
             <ul class="list colList">
               <li>Scrum / Kanban / Agile</li>
               <li>Atlassian Jira/Confluence</li>
               <li>Quality in mind</li>
+              <li>English (Read/Write/Speak)</li>
             </ul>
           </div>
         </div>
@@ -34,9 +35,11 @@
               <li>Javascript</li>
               <li>jQuery</li>
               <li>VueJS</li>
+              <li>NuxtJS</li>
               <li>ReactJS</li>
               <li>Webpack</li>
-              <li>Python</li>
+              <li>Algolia Instant Search</li>
+              <li>Github Actions</li>
               <li>IIS/Apache</li>
               <li>MS SQLServer/MySQL</li>
             </ul>
@@ -44,6 +47,7 @@
               <li>C#/.NET/.NET Core</li>
               <li>ASP.NET (WebForms/MVC)</li>
               <li>Java (Android)</li>
+              <li>Python</li>
               <li>WordPress</li>
               <li>PHP</li>
               <li>Microsoft PowerBI</li>
@@ -60,7 +64,7 @@
             <ul class="list colList">
               <li>HTML5</li>
               <li>CSS 3/4 (Selectors 3 and 4)</li>
-              <li>CSS Preprocessors (Stylus/Saas/Less</li>
+              <li>CSS Preprocessors (Stylus/Saas/Less)</li>
               <li>CSS Variables (Custom properties)</li>
               <li>Adobe Photoshop</li>
             </ul>

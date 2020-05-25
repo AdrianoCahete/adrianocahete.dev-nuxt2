@@ -41,6 +41,7 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - ~~Move to PWA to accommodate better the content~~ *[Implemented on 2020-05-16]*
 - ~~Add animations to page loading~~  *[Implemented on 2020-05-16]*
 - ~~Add an offline mode~~  *[Implemented on 2020-05-16]*
+- Generate Lighthouse badges from Github Actions and update the correct files in repository
 - Add micro animations to entire portfolio
 - Add a `build date`/`last updated on` string on page
 - Add a toggle to show different information to different industries
