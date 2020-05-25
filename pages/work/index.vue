@@ -16,7 +16,7 @@
             SAI Global (US/Netherlands)
           </h3>
           <h4 class="cardInfo">
-            Jan 2017 - Present | Remote
+            Jan 2017 - Apr 2020 | Remote
           </h4>
           <ul class="cardItems">
             <li>

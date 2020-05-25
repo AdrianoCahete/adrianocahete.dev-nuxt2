@@ -42,7 +42,7 @@
           <svgLinks url="" icon="steam" title="" />
         </feature-toggle>
       -->
-      <svgLinks url="./resume/Resume-Adriano_Cahete__en-US_2020.03.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
+      <svgLinks url="./resume/Resume-Adriano_Cahete__en-US_2020.05.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
     </section>
     <section v-if="isDevMode" class="isDevMode">
       <svgLinks :hide-mobile="true" url="https://app.netlify.com/sites/adrianocahete-dev/deploys?filter=master" icon="oss" title="Deploy @ Netlify" />
