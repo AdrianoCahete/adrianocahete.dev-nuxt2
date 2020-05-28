@@ -41,6 +41,9 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - ~~Move to PWA to accommodate better the content~~ *[Implemented on 2020-05-16]*
 - ~~Add animations to page loading~~  *[Implemented on 2020-05-16]*
 - ~~Add an offline mode~~  *[Implemented on 2020-05-16]*
+- Add Hotjar to know the user
+- Move to i18n instead of hardcoded text
+- Create specific page for every project
 - Generate Lighthouse badges from Github Actions and update the correct files in repository
 - Add micro animations to entire portfolio
 - Add a `build date`/`last updated on` string on page
@@ -53,9 +56,6 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - Add a switch to change themes
 - Add more themes than just light/dark theme
 - Add custom themes (add the ability to user modify the theme on-the-fly)
-- Move to i18n instead of hardcoded text
-- Add Hotjar to know the user
 - Make styles documentation (using [SassDoc](http://sassdoc.com/) and maybe Docusaurus?)
 - Add CSS regression tests (BackstopJS or Helpscout Barista?)
 - Add Vue code tests
-

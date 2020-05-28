@@ -4,13 +4,13 @@
     <section class="content">
       <section id="work" class="section">
         <p class="description">
-          I have over 8 years of experience in UI/UX design and UI Development and I know the basics of a few Front End and Backend languages
+          I have over 8 years of experience in Product Design and UI Development and I know the basics of a few Front End and Backend languages
         </p>
 
         <!-- TODO: Move Cards to component (Work and Projects) -->
         <div class="card">
           <h2 class="cardTitle">
-            Lead User Interface/User Experience Designer & UI Developer
+            Lead Product Designer & UI Developer
           </h2>
           <h3 class="cardSubTitle">
             SAI Global (US/Netherlands)
@@ -35,7 +35,7 @@
 
         <div class="card">
           <h2 class="cardTitle">
-            FrontEnd UI/UX & FrontEnd Developer
+            UI/UX Designer & FrontEnd Developer
           </h2>
           <h3 class="cardSubTitle">
             Modulo Security Solutions (Brazil)
@@ -62,7 +62,6 @@ import navbarMenu from '~/components/common/navbar'
 import svgLinks from '~/components/common/svgLinks.vue'
 
 export default {
-  // layout: 'blog'
   components: {
     navbarMenu,
     svgLinks

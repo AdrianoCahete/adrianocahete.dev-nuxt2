@@ -4,13 +4,14 @@
       <userAvatar user-name="AdrianoCahete" />
       <!-- TODO: Move to Component -->
       <h1>Adriano Cahete</h1>
-      <p>User Interface Developer, User Interface & User Experience Designer</p>
+      <p>Product Designer & User Interface Developer</p>
       <!-- <p>currently working at SAI Global</p> -->
     </section>
     <nav id="nav" class="menu">
       <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
       <!-- TODO: Fix scroll clipping part of menu on mobile -->
-      <nuxt-link to="/">
+      <!-- TODO: Move Home to Icon instead of text and remove isHidden -->
+      <nuxt-link to="/" :class="$device.isMobile ? 'isIcon isHidden' : ''">
         Home
       </nuxt-link>
       <nuxt-link to="/work">
@@ -133,6 +134,10 @@ export default {
         color: var(--primaryColor, rgba(255, 255, 255, .5));
         transition: .3s ease color;
       }
+
+      &.isIcon {
+        font-size: 0; // TODO: Move to Icon instead of text
+      }
     }
   }
 
@@ -147,11 +152,6 @@ export default {
 
     &::before {
       display: none; // TODO: Fix the blur on mobile
-      // height: 40px;
-      // width: 100%;
-      // top: 0;
-      // border-right: 0;
-      // border-bottom: var(--navbarBorder);
     }
   }
 }

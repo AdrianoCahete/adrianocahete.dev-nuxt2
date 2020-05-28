@@ -1,13 +1,13 @@
 <template>
-  <div :class="'alert ' + 'alert-' + type">
-    <div class="alertIcon">
+  <section :class="'alert ' + 'alert-' + type">
+    <section class="alertIcon">
       <!-- TODO: Add v-if to icon based on type -->
       {{ icon }}
-    </div>
-    <div>
+    </section>
+    <section>
       {{ message }}
-    </div>
-  </div>
+    </section>
+  </section>
 </template>
 
 <script>

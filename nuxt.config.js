@@ -84,7 +84,8 @@ export default {
   // Plugins to load before mounting the App
   plugins: [
     // '~/plugins/common.js'
-    '~/plugins/queryStrings'
+    '~/plugins/queryStrings',
+    '~/plugins/hj'
   ],
 
   // Nuxt.js dev-modules

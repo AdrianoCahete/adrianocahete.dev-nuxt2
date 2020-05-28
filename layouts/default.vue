@@ -25,6 +25,8 @@ export default {
 @import '~assets/styles/base.styl'
 
 .isMobile {
+  flex-direction: column;
+
   @import '~assets/styles/components/isMobile.styl'
 }
 </style>

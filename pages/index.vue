@@ -9,7 +9,7 @@
           Adriano Cahete
         </h1>
         <p class="descriptionMain">
-          I am a <strong>User Interface Developer</strong>, <strong>User Interface</strong> & <strong>User Experience Designer</strong>
+          I am a <strong>Product Designer</strong> & <strong>User Interface Developer</strong>
         </p>
         <!-- <p class="descriptionMain">
           currently working at <a href="#">SAI Global</a>
