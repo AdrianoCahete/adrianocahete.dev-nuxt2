@@ -39,7 +39,10 @@ export default {
       { name: 'author', content: 'Adriano Cahete' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preconnect', href: 'https://in.hotjar.com' },
+      { rel: 'preconnect', href: 'https://script.hotjar.com' },
+      { rel: 'preconnect', href: 'https://vars.hotjar.com' }
     ]
   },
 
