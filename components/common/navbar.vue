@@ -11,7 +11,7 @@
       <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
       <!-- TODO: Fix scroll clipping part of menu on mobile -->
       <!-- TODO: Move Home to Icon instead of text and remove isHidden -->
-      <nuxt-link to="/" :class="$device.isMobile ? 'isIcon isHidden' : ''">
+      <nuxt-link to="/" :class="$device.isMobile ? 'isIcon' : ''">
         Home
       </nuxt-link>
       <nuxt-link to="/work">
@@ -23,7 +23,7 @@
       <nuxt-link to="/projects">
         Projects
       </nuxt-link>
-      <nuxt-link to="/ui" :class="$device.isMobile ? 'isHidden' : ''">
+      <nuxt-link to="/ui">
         Interfaces
       </nuxt-link>
       <nuxt-link v-if="isDevMode" to="/test">
@@ -135,9 +135,9 @@ export default {
         transition: .3s ease color;
       }
 
-      &.isIcon {
-        font-size: 0; // TODO: Move to Icon instead of text
-      }
+      // &.isIcon {
+      //   font-size: 0; // TODO: Move to Icon instead of text
+      // }
     }
   }
 
@@ -156,6 +156,7 @@ export default {
   }
 }
 
+// Small Desktop
 @media (max-width: 1024px) {
   .navbar {
     flex-direction: row;
@@ -209,7 +210,8 @@ export default {
   }
 }
 
-@media (max-width: 580px) {
+// Tablet
+@media (max-width: 670px) {
   .headerInfo {
     display: none;
   }
@@ -221,10 +223,16 @@ export default {
   .navbar {
     .menu {
       justify-content: left;
+      overflow: auto;
     }
+
+    // .links {
+    //   // TODO: Add some gradient to give impression of higher z plane
+    // }
   }
 }
 
+// Phone
 @media (max-width: 390px) {
   .section {
     padding-left: 2vw;
