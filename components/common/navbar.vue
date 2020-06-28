@@ -11,7 +11,7 @@
       <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
       <!-- TODO: Fix scroll clipping part of menu on mobile -->
       <!-- TODO: Move Home to Icon instead of text and remove isHidden -->
-      <nuxt-link to="/" :class="$device.isMobile ? 'isIcon' : ''">
+      <nuxt-link to="/" :class="$device.isMobile ? 'isIcon' : ''" exact>
         Home
       </nuxt-link>
       <nuxt-link to="/work">
@@ -26,8 +26,8 @@
       <nuxt-link to="/ui">
         Interfaces
       </nuxt-link>
-      <nuxt-link v-if="isDevMode" to="/test">
-        Error
+      <nuxt-link v-if="isDevMode" to="/debug">
+        Debug
       </nuxt-link>
       <!-- <nuxt-link v-if="isDevMode" to="/writings">
         Writings
@@ -43,7 +43,7 @@
           <svgLinks url="" icon="steam" title="" />
         </feature-toggle>
       -->
-      <svgLinks url="./resume/Resume-Adriano_Cahete__en-US_2020.05.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
+      <svgLinks url="./resume/[en-US]-Adriano_Cahete__2020.06.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
     </section>
     <section v-if="isDevMode" class="isDevMode">
       <svgLinks :hide-mobile="true" url="https://app.netlify.com/sites/adrianocahete-dev/deploys?filter=master" icon="oss" title="Deploy @ Netlify" />
@@ -90,15 +90,21 @@ export default {
   background-color: var(--navbarColor);
   border-right: var(--navbarBorder);
 
-  &::before {
-    display: flex;
-    content: "";
-    background: rgba(0, 0, 0, .1);
-    filter: blur(4px);
-    height: 100%;
-    position: fixed; // Sticky bugs desktop version
-    width: 20vw;
-    z-index: -1;
+  @supports (backdrop-filter: blur(0px)) {
+    backdrop-filter: blur(160px);
+  }
+
+  @supports not (backdrop-filter: blur(0px)) {
+    &::before {
+      display: flex;
+      content: "";
+      background: rgba(0, 0, 0, .1);
+      filter: blur(4px);
+      height: 100%;
+      position: fixed; // Sticky bugs desktop version
+      width: 20vw;
+      z-index: -1;
+    }
   }
 
   .headerInfo {
@@ -131,7 +137,7 @@ export default {
       &:active,
       &.nuxt-link-exact-active {
         font-weight: bold;
-        color: var(--primaryColor, rgba(255, 255, 255, .5));
+        color: var(--textColor, rgba(255, 255, 255, .5));
         transition: .3s ease color;
       }
 
@@ -148,8 +154,6 @@ export default {
   }
 
   &.navbarMobile {
-    background-color: var(--scrollbarColor);
-
     &::before {
       display: none; // TODO: Fix the blur on mobile
     }
@@ -225,10 +229,6 @@ export default {
       justify-content: left;
       overflow: auto;
     }
-
-    // .links {
-    //   // TODO: Add some gradient to give impression of higher z plane
-    // }
   }
 }
 

@@ -50,12 +50,12 @@ export default {
   },
   head () {
     return {
-      title: 'Interfaces'
+      title: 'Interfaces',
       // meta: [
       // ]
-      // bodyAttrs: {
-      //   class: 'work'
-      // }
+      bodyAttrs: {
+        class: 'page-ui'
+      }
     }
   }
 }
