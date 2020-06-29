@@ -17,7 +17,11 @@ export default {
 
   head () {
     return {
-      title: 'NOPE!'
+      title: 'NOPE!',
+
+      bodyAttrs: {
+        class: 'bg-infinite'
+      }
     }
   }
 }

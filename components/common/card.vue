@@ -1,20 +1,35 @@
 <template>
-  <div class="card">
+  <div class="card" :class="{ isMinor: isMinor }">
     <h2 class="cardTitle">
+      <span v-if="isMinor">[Minor] </span>
       {{ title }}
-      <Icon :url="url" :icon="icon" :title="tooltip" class="cardLink-Item" />
+      <Icon v-if="url" :url="url" :icon="icon" :title="tooltip" class="cardLink-Item" />
     </h2>
     <h3 class="cardSubTitle">
       {{ subtitle }}
     </h3>
+    <h4 v-if="info" class="cardInfo">
+      {{ info }}
+    </h4>
+    <div v-if="supportLink" class="cardLinks">
+      <a :href="supportLink" target="_blank" rel="nofollow,noopener,external">
+        <img v-if="supportImg" :src="supportImg" :alt="supportTooltip">
+      </a>
+    </div>
     <ul class="cardItems">
-      <li>Fixed major issues from the original repository</li>
+      <slot />
     </ul>
   </div>
 </template>
 
 <script>
+import Icon from '~/components/common/Icon.vue'
+
 export default {
+  components: {
+    Icon
+  },
+
   props: {
     title: {
       type: String,
@@ -26,46 +41,95 @@ export default {
       required: true,
       default: ''
     },
+    info: {
+      type: String,
+      required: false,
+      default: ''
+    },
     url: {
       type: String,
-      required: true,
-      default: '#'
+      required: false,
+      default: ''
     },
     icon: {
       type: String,
       required: true,
-      default: '#'
+      default: 'link'
     },
     tooltip: {
       type: String,
       required: true,
       default: ''
+    },
+    supportLink: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    supportImg: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    supportTooltip: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    isMinor: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   }
 }
 </script>
 
 <style lang="stylus" scoped>
-  a {
-    color: var(--navbarIconColorAlt, inherit);
+.card {
+  margin-top: 2rem;
+  padding-left: 2rem;
+  padding-top: .5rem;
+  padding-bottom: .8rem;
+
+  .cardSubTitle,
+  .cardInfo {
+    font-weight: normal;
   }
 
-  svg {
-    width: 24px;
-    height: @width;
-    fill: inherit;
+  .cardTitle {
+    color: var(--textColor, #ffffff);
+    font-weight: 500;
+  }
 
-    &:hover {
-      fill: var(--primaryColor, rgba(255, 255, 255, .5));
-      transition: .3s ease fill;
+  .cardSubTitle {
+    font-size: 1.8rem;
+    color: var(--grayedOut, #FFFFFF);
+    margin-bottom: .5rem;
+  }
+
+  .cardInfo {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .cardItems {
+    list-style-type: circle;
+    padding-left: 2rem;
+  }
+
+  &.isMinor {
+    .cardTitle {
+      font-size: 1.8rem;
+    }
+
+    .cardSubTitle {
+      font-size: 1.5rem;
+    }
+
+    .cardInfo {
+      font-size: 1.3rem;
     }
   }
-
-  .cardLink-Item {
-    fill: var(--textColor, #fff);
-
-    svg {
-      height: 15px;
-    }
-  }
+}
 </style>

@@ -4,54 +4,41 @@
     <section class="content">
       <section id="work" class="section">
         <p class="description">
-          I have over 8 years of experience in Product Design and UI Development and I know the basics of a few Front End and Backend languages
+          I have over 8 years of experience in Product Design and UI Development and I know the basics of a few Front End and Backend languages/frameworks
         </p>
 
-        <!-- TODO: Move Cards to component (Work and Projects) -->
-        <div class="card">
-          <h2 class="cardTitle">
-            Lead Product Designer & UI Developer
-          </h2>
-          <h3 class="cardSubTitle">
-            SAI Global (US/Netherlands)
-          </h3>
-          <h4 class="cardInfo">
-            Jan 2017 - Apr 2020 | Remote
-          </h4>
-          <ul class="cardItems">
-            <li>
-              SAI360 Digital Risk
-              <Icon url="https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity" icon="link" title="SAI360 Digital Risk" class="cardLink-Item" />
-              <!-- <Icon url="https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity" icon="behance" title="SAI360 Digital Risk @ Behance" class="cardLink-Item" /> -->
-            </li>
-            <li>
-              SAI360 Risk Intelligence
-            </li>
-            <li>
-              SAI360 BWise Vendor Risk Management
-            </li>
-          </ul>
-        </div>
+        <Card
+          title="Lead Product Designer & UI Developer"
+          subtitle="SAI Global (US/Netherlands)"
+          info="Jan 2017 - Apr 2020 | Remote"
+        >
+          <li>
+            SAI360 Digital Risk
+            <Icon url="https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity" icon="link" title="SAI360 Digital Risk" class="cardLink-Item" />
+          </li>
+          <li>
+            SAI360 Risk Intelligence
+          </li>
+          <li>
+            SAI360 BWise Vendor Risk Management
+          </li>
+        </Card>
 
-        <div class="card">
-          <h2 class="cardTitle">
-            UI/UX Designer & FrontEnd Developer
-          </h2>
-          <h3 class="cardSubTitle">
-            Modulo Security Solutions (Brazil)
-          </h3>
-          <h4 class="cardInfo">
-            Oct 2012 - Dec 2016 | Partially Remote
-          </h4>
-          <ul class="cardItems">
-            <li>
-              Modulo Risk Manager
-            </li>
-            <li>
-              Command and Control Integrated System
-            </li>
-          </ul>
-        </div>
+        <Card
+          title="UI/UX Designer & FrontEnd Developer"
+          subtitle="Modulo Security Solutions (Brazil)"
+          info="Oct 2012 - Dec 2016 | Partially Remote"
+        >
+          <li>
+            Modulo Risk Manager
+          </li>
+          <li>
+            Modulo Smart Cities
+          </li>
+          <li>
+            Command and Control Integrated System
+          </li>
+        </Card>
       </section>
     </section>
   </div>
@@ -59,36 +46,26 @@
 
 <script>
 import navbarMenu from '~/components/common/navbar'
+import Card from '~/components/common/card.vue'
 import Icon from '~/components/common/Icon.vue'
 
 export default {
   components: {
     navbarMenu,
-    Icon
+    Icon,
+    Card
   },
 
   head () {
     return {
       title: 'Work'
-      // meta: [
-      // ]
-      // bodyAttrs: {
-      //   class: 'work'
-      // }
     }
   }
 }
 </script>
 
 <style lang="stylus" scoped>
-@import '~assets/styles/components/card.styl'
 @import '~assets/styles/components/section.styl'
-
-.title {
-  display: block;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
 
 .description {
   margin-top: 1rem;

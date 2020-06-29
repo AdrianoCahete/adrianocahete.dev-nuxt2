@@ -36,17 +36,18 @@ body {
   background-attachment: fixed;
   background-size: 400% 400%;
   background-position: 0 50%;
-  // transition(background);
   animation: gradient-2 3s ease-in-out 1;
   animation-fill-mode: forwards;
 
   &.page-ui {
     animation: gradient-1 3s ease-in-out 1;
     animation-fill-mode: forwards;
+  }
 
-    // .navbar .menu a.nuxt-link-exact-active {
-    //   color: var(--textColor);
-    // }
+  // Easter egg?
+  &.bg-infinite {
+    animation: gradient-1 5s ease-in-out infinite;
+    animation-direction: alternate;
   }
 }
 
