@@ -41,6 +41,7 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - ~~Add Hotjar to know the user~~ *[Implemented on 2020-05-28]*
 - ~~Fix Navbar on Mobile~~ *[Fixed on 2020-06-26]*
 - ~~Move `isMobile` function/feature to more global scope instead of on `page` scope~~ *[Fixed on 2020-06-29]*
+- Create a changelog
 - Move to latest [Nuxt available](https://nuxtjs.org/guide/release-notes)
 - Try modern mode from latest Nuxt
 - Make a better error/not found page
