@@ -1,6 +1,6 @@
 <template>
   <div :class="$device.isMobile || $device.isTablet ? 'page isMobile' : 'page'">
-    <navbar-menu />
+    <navbar-menu show-avatar />
     <section class="content">
       <section id="work" class="section">
         <p class="description">
@@ -21,8 +21,8 @@
           <ul class="cardItems">
             <li>
               SAI360 Digital Risk
-              <svgLinks url="https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity" icon="link" title="SAI360 Digital Risk" class="cardLink-Item" />
-              <!-- <svgLinks url="https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity" icon="behance" title="SAI360 Digital Risk @ Behance" class="cardLink-Item" /> -->
+              <Icon url="https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity" icon="link" title="SAI360 Digital Risk" class="cardLink-Item" />
+              <!-- <Icon url="https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity" icon="behance" title="SAI360 Digital Risk @ Behance" class="cardLink-Item" /> -->
             </li>
             <li>
               SAI360 Risk Intelligence
@@ -59,12 +59,12 @@
 
 <script>
 import navbarMenu from '~/components/common/navbar'
-import svgLinks from '~/components/common/svgLinks.vue'
+import Icon from '~/components/common/Icon.vue'
 
 export default {
   components: {
     navbarMenu,
-    svgLinks
+    Icon
   },
 
   head () {

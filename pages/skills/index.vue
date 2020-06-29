@@ -1,6 +1,6 @@
 <template>
   <section :class="$device.isMobile || $device.isTablet ? 'page isMobile' : 'page'">
-    <navbar-menu />
+    <navbar-menu show-avatar />
     <section class="content">
       <section id="skills" class="section">
         <!-- <p class="description">

@@ -1,6 +1,6 @@
 <template>
   <section :class="$device.isMobile ? 'navbar navbarMobile' : 'navbar'">
-    <section class="headerInfo">
+    <section class="headerInfo" :class="showAvatar ? '' : ' noAvatar'">
       <userAvatar user-name="AdrianoCahete" />
       <!-- TODO: Move to Component -->
       <h1>Adriano Cahete</h1>
@@ -9,7 +9,6 @@
     </section>
     <nav id="nav" class="menu">
       <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
-      <!-- TODO: Fix scroll clipping part of menu on mobile -->
       <!-- TODO: Move Home to Icon instead of text and remove isHidden -->
       <nuxt-link to="/" :class="$device.isMobile ? 'isIcon' : ''" exact>
         Home
@@ -34,36 +33,42 @@
       </nuxt-link> -->
     </nav>
     <section class="links">
-      <svgLinks url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
-      <svgLinks url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
-      <svgLinks :hide-mobile="true" url="https://github.com/AdrianoCahete" icon="github" title="Github" />
-      <svgLinks :hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
+      <Icon url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
+      <Icon url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
+      <Icon :hide-mobile="true" url="https://github.com/AdrianoCahete" icon="github" title="Github" />
+      <Icon :hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
       <!--
         <feature-toggle name="gaming" :value="false" prefix="_t">
-          <svgLinks url="" icon="steam" title="" />
+          <Icon url="" icon="steam" title="" />
         </feature-toggle>
       -->
-      <svgLinks url="./resume/[en-US]-Adriano_Cahete__2020.06.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
-    </section>
-    <section v-if="isDevMode" class="isDevMode">
-      <svgLinks :hide-mobile="true" url="https://app.netlify.com/sites/adrianocahete-dev/deploys?filter=master" icon="oss" title="Deploy @ Netlify" />
+      <Icon url="./resume/[en-US]-Adriano_Cahete__2020.06.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
     </section>
     <!-- TODO: Fix flex disposition of about section -->
     <section class="about" style="display: none">
-      <svgLinks url="https://github.com/AdrianoCahete/adrianocahete.dev" icon="github" title="This site is OpenSourced @ Github" />
+      <Icon url="https://github.com/AdrianoCahete/adrianocahete.dev" icon="github" title="This site is OpenSourced @ Github" />
     </section>
   </section>
 </template>
 
 <script>
 import userAvatar from '~/components/common/userAvatar.vue'
-import svgLinks from '~/components/common/svgLinks.vue'
+import Icon from '~/components/common/Icon.vue'
 
 export default {
   components: {
     userAvatar,
-    svgLinks
+    Icon
   },
+
+  props: {
+    showAvatar: {
+      type: Boolean,
+      required: false,
+      default: false
+    }
+  },
+
   data () {
     return {
       isDevMode: process.env.NODE_ENV === 'development'
@@ -108,10 +113,20 @@ export default {
   }
 
   .headerInfo {
-    animation: fadeIn .5s ease-in;
+    opacity: 0;
+
+    &:not(.noAvatar) {
+      animation: fadeIn .5s ease-in;
+      animation-fill-mode: forwards;
+    }
 
     p {
       font-size: 1.3rem;
+    }
+
+    &.noAvatar {
+      opacity: 0;
+      pointer-events none;
     }
   }
 

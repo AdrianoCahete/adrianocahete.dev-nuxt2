@@ -1,11 +1,11 @@
 <template>
   <section :class="$device.isMobile || $device.isTablet ? 'page isMobile' : 'page'">
-    <navbar-menu />
+    <navbar-menu show-avatar />
     <section class="content">
       <section id="interfaces" class="section">
         <p class="description">
           Most UIs created by me over the last years are under a non-disclosure agreement, so I'm working with stakeholders to obtain their permission to make them publicly available.<br>
-          You can see some of these projects below or on <a href="https://behance.net/AdrianoCahete/" title="Behance" rel="nofollow,noopener,external">Behance<svgLinks url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" class="cardLink-Item" /></a>
+          You can see some of these projects below or on <a href="https://behance.net/AdrianoCahete/" title="Behance" rel="nofollow,noopener,external">Behance<Icon url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" class="cardLink-Item" /></a>
         </p>
         <div v-if="$device.isMobile">
           <alert
@@ -38,14 +38,14 @@
 <script>
 import navbarMenu from '~/components/common/navbar'
 import behanceLink from '~/components/common/behance/behanceLink.vue'
-import svgLinks from '~/components/common/svgLinks.vue'
+import Icon from '~/components/common/Icon.vue'
 import alert from '~/components/common/alert.vue'
 
 export default {
   components: {
     navbarMenu,
     behanceLink,
-    svgLinks,
+    Icon,
     alert
   },
   head () {

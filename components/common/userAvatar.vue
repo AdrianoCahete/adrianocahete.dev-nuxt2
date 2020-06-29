@@ -37,7 +37,7 @@ export default {
     min-height: @height;
     background-color: var(--textColor, #ffffff);
     border-radius: 50%;
-    border: 2px solid var(--primaryColor, #FFFFFF);
+    border: 2px solid var(--defaultBorderColor, #FFFFFF);
     animation: fadeIn 1s ease-in;
     overflow: hidden;
   }

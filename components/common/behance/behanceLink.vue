@@ -22,18 +22,18 @@
       target="_blank"
       rel="nofollow,noopener,external"
     >
-      <svgLinks :url="'https://www.behance.net/gallery/'+ projectId +'/'+ projectName" icon="behance" :title="displayName" class="cardLink-Item" />
+      <Icon :url="'https://www.behance.net/gallery/'+ projectId +'/'+ projectName" icon="behance" :title="displayName" class="cardLink-Item" />
       {{ displayName }}
     </a>
   </div>
 </template>
 
 <script>
-import svgLinks from '~/components/common/svgLinks.vue'
+import Icon from '~/components/common/Icon.vue'
 
 export default {
   components: {
-    svgLinks
+    Icon
   },
 
   props: {

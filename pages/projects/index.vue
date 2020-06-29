@@ -1,11 +1,11 @@
 <template>
   <section :class="$device.isMobile || $device.isTablet ? 'page isMobile' : 'page'">
-    <navbar-menu />
+    <navbar-menu show-avatar />
     <section class="content">
       <section id="projects" class="section">
         <div class="card">
           <h2 class="cardTitle">
-            This portfolio <svgLinks url="https://github.com/AdrianoCahete/adrianocahete.dev" icon="oss" title="adrianocahete.dev @ Github" class="cardLink-Item" />
+            This portfolio <Icon url="https://github.com/AdrianoCahete/adrianocahete.dev" icon="oss" title="adrianocahete.dev @ Github" class="cardLink-Item" />
           </h2>
           <h3 class="cardSubTitle">
             Made with NuxtJS (VueJS) and auto deployed on Netlify
@@ -19,14 +19,14 @@
             <li>Scoped styles</li>
             <li>Vue Components</li>
             <li>CSS Custom Properties</li>
-            <li>Dark and Light Themes (<a href="https://stackoverflow.com/a/59223868/1032384" target="_blank" rel="nofollow,noopener,external">Try it!</a>)</li>
+            <!-- <li>Dark and Light Themes (<a href="https://stackoverflow.com/a/59223868/1032384" target="_blank" rel="nofollow,noopener,external">Try it!</a>)</li> -->
           </ul>
         </div>
 
         <div class="card">
           <h2 class="cardTitle">
             Webfont Generator CLI
-            <svgLinks url="https://github.com/AdrianoCahete/webfont-generator-cli" icon="link" title="webfont-generator-cli @ Github" class="cardLink-Item" />
+            <Icon url="https://github.com/AdrianoCahete/webfont-generator-cli" icon="link" title="webfont-generator-cli @ Github" class="cardLink-Item" />
           </h2>
           <h3 class="cardSubTitle">
             Forked a somewhat abandoned tool to generate font-icons from SVGs for use in some work projects.
@@ -41,7 +41,7 @@
         <div class="card">
           <h2 class="cardTitle">
             Better Adrena
-            <svgLinks url="https://github.com/AdrianoCahete/AdrenalineLight" icon="link" title="BetterAdrena @ Github" class="cardLink-Item" />
+            <Icon url="https://github.com/AdrianoCahete/AdrenalineLight" icon="link" title="BetterAdrena @ Github" class="cardLink-Item" />
           </h2>
           <h3 class="cardSubTitle">
             Chrome/Firefox extension to add new functionalities to a Brazilian forum
@@ -55,7 +55,7 @@
         <div class="card">
           <h2 class="cardTitle">
             RocketChat
-            <svgLinks url="https://github.com/RocketChat/Rocket.Chat/search?q=AdrianoCahete&type=Commits" icon="link" title="RocketChat @ Github" class="cardLink-Item" />
+            <Icon url="https://github.com/RocketChat/Rocket.Chat/search?q=AdrianoCahete&type=Commits" icon="link" title="RocketChat @ Github" class="cardLink-Item" />
           </h2>
           <h3 class="cardSubTitle">
             Updated the stylesheet architecture and made some small UI fixes across the project
@@ -70,7 +70,7 @@
         <div class="card minor">
           <h2 class="cardTitle">
             [Minor] Google Chrome Lighthouse
-            <svgLinks url="https://github.com/GoogleChrome/lighthouse/blob/468c10bb9df7ded215b7a3c47e23f48c1af656f7/changelog.md#new-contributors-24" icon="link" title="Google Chrome Lighthouse @ Github" class="cardLink-Item" />
+            <Icon url="https://github.com/GoogleChrome/lighthouse/blob/468c10bb9df7ded215b7a3c47e23f48c1af656f7/changelog.md#new-contributors-24" icon="link" title="Google Chrome Lighthouse @ Github" class="cardLink-Item" />
           </h2>
           <!-- <a href="https://github.com/GoogleChrome/lighthouse/pull/1307" /> -->
           <h3 class="cardSubTitle">
@@ -98,13 +98,13 @@
 
 <script>
 import navbarMenu from '~/components/common/navbar'
-import svgLinks from '~/components/common/svgLinks.vue'
+import Icon from '~/components/common/Icon.vue'
 
 export default {
   // layout: 'blog'
   components: {
     navbarMenu,
-    svgLinks
+    Icon
     // modal
   },
   head () {

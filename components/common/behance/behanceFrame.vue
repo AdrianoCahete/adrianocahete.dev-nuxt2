@@ -19,10 +19,6 @@ export default {
       required: true,
       default: ''
     }
-    // hideMobile: {
-    //   type: Boolean,
-    //   default: false
-    // }
   }
 }
 </script>
