@@ -20,8 +20,7 @@
   },
   "dependencies": {
     "@nuxtjs/device": "^1.2.7",
-    "nuxt": "^2.12.1",
-    "vue-js-modal": "^2.0.0-rc.3"
+    "nuxt": "^2.12.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.0.0",
