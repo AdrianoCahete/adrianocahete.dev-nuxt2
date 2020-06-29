@@ -27,18 +27,9 @@ export default {
     navbarMenu
   },
 
-  // data () {
-  //   return {
-  //     dataLoaded: false
-  //   }
-  // },
-
   head () {
     return {
       title: 'Home'
-      // bodyAttrs: {
-      //   class: this.dataLoaded ? 'loading' : ''
-      // }
     }
   }
 }

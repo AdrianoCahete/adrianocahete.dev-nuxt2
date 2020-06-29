@@ -9,8 +9,6 @@
     </h3>
     <ul class="cardItems">
       <li>Fixed major issues from the original repository</li>
-      <li>Tested and merged Pull Requests from original repository</li>
-      <li>Updated documentation to match the current implementation</li>
     </ul>
   </div>
 </template>

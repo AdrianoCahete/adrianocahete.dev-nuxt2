@@ -105,16 +105,10 @@ export default {
   components: {
     navbarMenu,
     Icon
-    // modal
   },
   head () {
     return {
-      title: 'Projects',
-      meta: [
-      ]
-      // bodyAttrs: {
-      //   class: 'test123'
-      // }
+      title: 'Projects'
     }
   }
 }

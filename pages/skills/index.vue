@@ -92,12 +92,7 @@ export default {
 
   head () {
     return {
-      title: 'Skills',
-      meta: [
-      ]
-      // bodyAttrs: {
-      //   class: 'work'
-      // }
+      title: 'Skills'
     }
   }
 }
@@ -117,7 +112,8 @@ export default {
   margin-bottom: 3rem;
 
   .title {
-    color: var(--primaryColor, #ffffff);
+    color: var(--textColor, #ffffff);
+    font-weight: 500;
   }
 
   .list {
