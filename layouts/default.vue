@@ -1,12 +1,11 @@
 <template>
-  <section :class="$nuxt.isOffline ? 'isOffline' : ''">
+  <section :class="[ $nuxt.isOffline ? 'isOffline' : '', $device.isMobile || $device.isTablet ? 'page isMobile' : 'page' ]">
     <svgLibrary />
     <nuxt />
   </section>
 </template>
 
 <script>
-// import behanceFrame from '~/components/common/behance/behanceFrame.vue'
 import svgLibrary from '~/components/common/svgLibrary'
 
 export default {

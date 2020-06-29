@@ -1,5 +1,5 @@
 <template>
-  <section :class="$device.isMobile || $device.isTablet ? 'page isMobile' : 'page'">
+  <section class="page">
     <navbar-menu />
     <section class="content home">
       <section id="home" class="section isCentered">

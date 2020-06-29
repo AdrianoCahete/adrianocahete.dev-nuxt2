@@ -28,9 +28,6 @@
       <nuxt-link v-if="isDevMode" to="/debug">
         Debug
       </nuxt-link>
-      <!-- <nuxt-link v-if="isDevMode" to="/writings">
-        Writings
-      </nuxt-link> -->
     </nav>
     <section class="links">
       <Icon url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
@@ -43,10 +40,6 @@
         </feature-toggle>
       -->
       <Icon url="./resume/[en-US]-Adriano_Cahete__2020.06.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
-    </section>
-    <!-- TODO: Fix flex disposition of about section -->
-    <section class="about" style="display: none">
-      <Icon url="https://github.com/AdrianoCahete/adrianocahete.dev" icon="github" title="This site is OpenSourced @ Github" />
     </section>
   </section>
 </template>

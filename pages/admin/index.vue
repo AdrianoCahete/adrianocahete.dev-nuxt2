@@ -1,5 +1,5 @@
 <template>
-  <section :class="$device.isMobile || $device.isTablet ? 'page isMobile' : 'page'">
+  <section class="page">
     <section class="content" style="margin-left: auto;">
       <section id="nopelandia" class="section isCentered">
         <p>Not a default CMS site, sorry about that. :)</p>

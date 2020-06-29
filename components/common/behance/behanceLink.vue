@@ -15,6 +15,7 @@
         {{ displayName }}
       </span>
     </a>
+
     <!-- if isMobile -->
     <a
       v-if="$device.isMobile"

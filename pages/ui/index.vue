@@ -1,5 +1,5 @@
 <template>
-  <section :class="$device.isMobile || $device.isTablet ? 'page isMobile' : 'page'">
+  <section class="page">
     <navbar-menu show-avatar />
     <section class="content">
       <section id="interfaces" class="section">

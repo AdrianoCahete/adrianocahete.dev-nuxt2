@@ -1,5 +1,5 @@
 <template>
-  <section :class="$device.isMobile || $device.isTablet ? 'page isMobile' : 'page'">
+  <section class="page">
     <section class="content error">
       <section id="error" class="section isCentered">
         <!-- <logo /> -->
@@ -10,7 +10,7 @@
           An error occurred
         </h1>
         <nuxt-link to="/">
-          Home page
+          Home
         </nuxt-link>
       </section>
     </section>
