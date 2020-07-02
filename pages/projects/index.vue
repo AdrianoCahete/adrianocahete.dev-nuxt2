@@ -52,6 +52,16 @@
         </Card>
 
         <Card
+          title="Detect.JS"
+          subtitle="Keeping the library updated with the latest browsers at the time"
+          url="https://github.com/darcyclarke/Detect.js"
+          tooltip="Detect.JS @ Github"
+        >
+          <li>Added detection of Edge, Opera, Internet Explorer 10/11 and some mobile browsers</li>
+          <li>Added detection of some new Operational Systems</li>
+        </Card>
+
+        <Card
           title="Google Chrome Lighthouse"
           subtitle="Small fixes for CLI"
           url="https://github.com/GoogleChrome/lighthouse/blob/468c10bb9df7ded215b7a3c47e23f48c1af656f7/changelog.md#new-contributors-24"

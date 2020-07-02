@@ -4,7 +4,8 @@
 ## Deploy
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bffddeca-83de-4641-807a-ac12aa617fae/deploy-status)](https://app.netlify.com/sites/adrianocahete-dev/deploys)
 
-All the changes are automatically deployed to Netlify
+All the changes are automatically deployed to Netlify.  
+You can see that live demo [here](https://adrianocahete.dev/).
 
 
 ### Lighthouse Performance
@@ -41,17 +42,18 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - ~~Add Hotjar to know the user~~ *[Implemented on 2020-05-28]*
 - ~~Fix Navbar on Mobile~~ *[Fixed on 2020-06-26]*
 - ~~Move `isMobile` function/feature to more global scope instead of on `page` scope~~ *[Fixed on 2020-06-29]*
-- Create a changelog
+- Add micro animations to entire portfolio *[In Progress]*
 - Move to latest [Nuxt available](https://nuxtjs.org/guide/release-notes)
-- Try modern mode from latest Nuxt
-- Make a better error/not found page
 - Change every `div` to `section`
-- Move CSS to SASS instead of Stylus ([stylus seems to be deprecated or, at least, stagnated](https://github.com/stylus/stylus/issues/2282))
 - Move to i18n instead of hardcoded text
+- Customize Nuxt loading page (up to v2.13)
 - Create specific page for every project/interface
 - Create a blog to explain the steps of each project
+- Try modern mode from latest Nuxt
+- Make a better error/not found page
+- Move CSS to SASS instead of Stylus ([stylus seems to be deprecated or, at least, stagnated](https://github.com/stylus/stylus/issues/2282))
+- Create a changelog
 - Generate Lighthouse badges from Github Actions and update the correct files in repository
-- Add micro animations to entire portfolio
 - Add a `build date`/`last updated on` string on page
 - Add a toggle to show different information to different industries
 - Add proper favicons
