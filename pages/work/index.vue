@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <!-- <navbar-menu show-avatar /> -->
+    <navbar-menu show-avatar />
     <section class="content">
       <section id="work" class="section">
         <p class="description">
@@ -47,12 +47,12 @@
 </template>
 
 <script>
-// import navbarMenu from '~/components/common/navbar'
+import navbarMenu from '~/components/common/navbar'
 import Card from '~/components/common/card.vue'
 
 export default {
   components: {
-    // navbarMenu,
+    navbarMenu,
     Card
   },
 

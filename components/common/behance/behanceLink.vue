@@ -1,7 +1,7 @@
 <template>
   <div :class="$device.isMobile ? 'beLinkMobile' : 'beLink'" :style="'animation-delay:'+ animationDelay + 's'">
     <a
-      v-if="!$device.isMobile || !$nuxt.isOffline"
+      v-if="!$device.isMobile"
       :href="'https://www.behance.net/gallery/'+ projectId +'/'+ projectName"
       target="_blank"
       rel="nofollow,noopener,external"
@@ -18,7 +18,7 @@
     </a>
 
     <a
-      v-if="$device.isMobile || $nuxt.isOffline"
+      v-if="$device.isMobile"
       :href="'https://www.behance.net/gallery/'+ projectId +'/'+ projectName"
       target="_blank"
       rel="nofollow,noopener,external"
@@ -121,6 +121,10 @@ export default {
   a {
     display: inline-block;
     padding: 1vh 0;
+
+    > img {
+      display: none;
+    }
   }
 
   &:hover {
