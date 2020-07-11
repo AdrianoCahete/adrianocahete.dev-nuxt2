@@ -61,8 +61,6 @@ export default {
   head () {
     return {
       title: 'Interfaces',
-      // meta: [
-      // ]
       bodyAttrs: {
         class: 'page-ui'
       }
@@ -73,13 +71,6 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~assets/styles/components/section.styl'
-
-// TODO: Move to base style
-.title {
-  display: block;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
 
 // TODO: Move to base style
 .uiGrid {

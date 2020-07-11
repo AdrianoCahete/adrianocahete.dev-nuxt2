@@ -54,12 +54,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.title {
-  display: block;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
 .listItem {
   margin-top: 2rem;
   margin-bottom: 3rem;

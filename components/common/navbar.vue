@@ -14,7 +14,7 @@
         Home
       </nuxt-link>
       <nuxt-link v-else to="/" exact>
-        *
+        <Icon icon="home" title="Home" />
       </nuxt-link>
       <nuxt-link to="/work">
         Work
@@ -131,6 +131,8 @@ export default {
     flex-direction: column;
     width: 100%;
 
+
+
     a {
       display: flex;
       justify-content: center;
@@ -139,6 +141,7 @@ export default {
       text-transform: uppercase;
       height: 3rem;
       color: var(--navColor);
+      fill: var(--navColor);
       animation: fromUp2Down .5s ease-in;
 
       &:hover {
@@ -152,10 +155,6 @@ export default {
         transition: .3s ease color;
         cursor: default;
       }
-
-      // &.isIcon {
-      //   font-size: 0; // TODO: Move to Icon instead of text
-      // }
     }
   }
 
@@ -168,6 +167,10 @@ export default {
   &.navbarMobile {
     &::before {
       display: none;
+    }
+
+    .links {
+      animation: fromUp2Down .5s ease-in;
     }
   }
 }

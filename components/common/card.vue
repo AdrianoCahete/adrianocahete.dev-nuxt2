@@ -94,9 +94,7 @@ export default {
 
 <style lang="stylus" scoped>
 .card {
-  margin-top: 2rem;
-  padding-left: 2rem;
-  padding-top: .5rem;
+  margin-bottom: 2rem;
   padding-bottom: .8rem;
   opacity: 0;
   animation: fadeIn .5s ease-in;

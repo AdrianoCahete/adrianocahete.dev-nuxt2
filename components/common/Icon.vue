@@ -1,15 +1,24 @@
 <template>
   <a
-    v-if="!($device.isMobile && hideMobile)"
+    v-if="url && (!($device.isMobile && hideMobile))"
     :href="url"
     :title="title"
     target="_blank"
     rel="nofollow,noopener,external"
   >
-    <svg class="">
+    <svg>
       <use :xlink:href="'#'+ icon"></use>
     </svg>
   </a>
+  <i
+    v-else-if="!($device.isMobile && hideMobile)"
+    :title="title"
+    class="icon"
+  >
+    <svg>
+      <use :xlink:href="'#'+ icon"></use>
+    </svg>
+  </i>
 </template>
 
 <script>
@@ -17,8 +26,8 @@ export default {
   props: {
     url: {
       type: String,
-      required: true,
-      default: '#'
+      required: false,
+      default: ''
     },
     icon: {
       type: String,
@@ -40,6 +49,12 @@ export default {
 <style lang="stylus" scoped>
   a {
     color: var(--navbarIconColorAlt, inherit);
+  }
+
+  .icon {
+    > svg {
+      height: 1.7rem;
+    }
   }
 
   svg {

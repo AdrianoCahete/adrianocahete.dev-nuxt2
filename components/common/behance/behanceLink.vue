@@ -16,15 +16,13 @@
       </span>
     </a>
 
-    <!-- if isMobile -->
     <a
       v-if="$device.isMobile"
       :href="'https://www.behance.net/gallery/'+ projectId +'/'+ projectName"
       target="_blank"
       rel="nofollow,noopener,external"
     >
-      <Icon :url="'https://www.behance.net/gallery/'+ projectId +'/'+ projectName" icon="behance" :title="displayName" class="cardLink-Item" />
-      {{ displayName }}
+      <Icon icon="behance" :title="displayName" class="cardLink-Item" /><span>{{ displayName }}</span>
     </a>
   </div>
 </template>
