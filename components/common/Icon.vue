@@ -1,8 +1,8 @@
 <template>
   <a
+    v-if="!($device.isMobile && hideMobile)"
     :href="url"
     :title="title"
-    :class="{ hideOnMobile: hideMobile }"
     target="_blank"
     rel="nofollow,noopener,external"
   >
@@ -48,7 +48,7 @@ export default {
     fill: inherit;
 
     &:hover {
-      fill: var(--primaryColor, rgba(255, 255, 255, .5));
+      fill: var(--primaryColor, rgba(0, 0, 0, .5));
       transition: .3s ease fill;
     }
   }

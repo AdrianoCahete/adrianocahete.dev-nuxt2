@@ -16,6 +16,20 @@ export default {
   async asyncData ({ $axios, $payloadURL, route }) {
     // DreaMinder/nuxt-payload-extractor config
     if (process.static && process.client && $payloadURL) { return await $axios.$get($payloadURL(route)) }
+  },
+
+  data() {
+    return {
+      mobileState: this.$device.isMobile
+    }
+  },
+
+  head () {
+    return {
+      bodyAttrs: {
+        class: this.mobileState ? 'isMobile' : ''
+      }
+    }
   }
 }
 </script>

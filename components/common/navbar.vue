@@ -10,8 +10,11 @@
     <nav id="nav" class="menu">
       <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
       <!-- TODO: Move Home to Icon instead of text and remove isHidden -->
-      <nuxt-link to="/" :class="$device.isMobile ? 'isIcon' : ''" exact>
+      <nuxt-link v-if="!$device.isMobile" to="/" exact>
         Home
+      </nuxt-link>
+      <nuxt-link v-else to="/" exact>
+        *
       </nuxt-link>
       <nuxt-link to="/work">
         Work
@@ -31,7 +34,7 @@
     </nav>
     <section class="links">
       <Icon url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
-      <Icon url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
+      <Icon :hide-mobile="true" url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
       <Icon :hide-mobile="true" url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       <Icon :hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
       <!--
@@ -147,6 +150,7 @@ export default {
         font-weight: bold;
         color: var(--textColor, rgba(255, 255, 255, .5));
         transition: .3s ease color;
+        cursor: default;
       }
 
       // &.isIcon {
@@ -163,7 +167,7 @@ export default {
 
   &.navbarMobile {
     &::before {
-      display: none; // TODO: Fix the blur on mobile
+      display: none;
     }
   }
 }
@@ -181,7 +185,7 @@ export default {
     background-image: linear-gradient(180deg, #212121 0%, #212121 10%, var(--bgColor) 100%);
 
     &::before {
-      display: none; // TODO: Fix the blur on mobile
+      display: none;
     }
 
     .headerInfo {

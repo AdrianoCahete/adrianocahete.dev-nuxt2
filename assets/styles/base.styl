@@ -17,8 +17,9 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   height: 100vh;
+  color: #FFFFFF; // Sometimes Chrome bugs color when changed from mobile to desktop or vice-versa
   color: var(--textColor, #ffffff);
-  scrollbar-color: rgba(255, 255, 255, .8) @background; // <Thumb> <Track> -- Browser Customizations
+  scrollbar-color: var(--scrollBarHandle) var(--scrollbarColor); // <Thumb> <Track> -- Browser Customizations
   scrollbar-width: thin;  // Browser Customizations
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -65,11 +66,11 @@ body {
 
 // Handle
 ::-webkit-scrollbar-thumb {
-    background: rgb(110, 110, 110);
+    background: var(--scrollBarHandle);
     border-radius: 10px;
 
   &:hover {
-      background: rgb(110, 110, 110);
+      background: var(--scrollBarHandle);
   }
 }
 

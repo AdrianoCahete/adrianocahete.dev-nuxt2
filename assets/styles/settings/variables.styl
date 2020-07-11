@@ -9,20 +9,21 @@
 
 // Default Dark Mode
 :root {
-  --primaryColor: rgba(1, 19, 49, 1); // rgb(131, 194, 210);
+  --primaryColor: rgba(1, 19, 49, 1);
 
   --bgColor: linear-gradient(-45deg, rgba(23, 205, 205, 1), rgba(23, 46, 95, 1), rgba(23, 46, 95, 1), rgba(23, 205, 205, 1)); // radial-gradient( circle farthest-corner at 10% -5%,  rgba(23, 205, 205, 1) -14.1%, rgba(23, 46, 95, 1) 91% );
 
   --defaultBorderColor: rgba(26, 120, 146, 1);
 
-  --scrollbarColor: rgba(51, 51, 51, 1);
+  --scrollBarHandle: var(--defaultBorderColor);
+  --scrollbarColor:rgba(23, 46, 95, 1);
 
-  --navbarColor: transparent; // rgba(40, 40, 40, 1);
+  --navbarColor: transparent;
 
   --navbarBorder: 1px solid var(--defaultBorderColor);
 
   --navbarIconColor: rgba(255, 255, 255, 1);
-  --navbarIconColorAlt: rgba(25, 107, 137, 1); // rgba(40, 40, 40, 1);
+  --navbarIconColorAlt: rgba(25, 107, 137, 1);
 
   --navColor: rgba(255, 255, 255, .7);
   --navColorHover: rgba(255, 255, 255, 1);
@@ -37,8 +38,8 @@
   --alertWarning: rgba(255, 195, 36, 1);
 }
 
-// Light Mode -- Disabled when the color gradient background was made default
-// @media (prefers-color-scheme: light) {
+// Dark Mode -- Disabled when the color gradient background was made default
+// @media (prefers-color-scheme: dark) {
 //   :root {
 //     --primaryColor: rgba(0, 108, 136, 1);
 

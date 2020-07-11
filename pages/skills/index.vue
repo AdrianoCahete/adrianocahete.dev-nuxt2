@@ -3,80 +3,65 @@
     <navbar-menu show-avatar />
     <section class="content">
       <section id="skills" class="section">
-        <!-- <p class="description">
-          General skills, other knowledges
-        </p> -->
-        <div class="listItem">
-          <h3 class="title">
-            Knowledge / Soft Skills
-          </h3>
-          <div class="listContent">
-            <ul class="list colList">
-              <li>Microsoft Azure DevOps</li>
-              <li>Git</li>
-              <li>Working with remote teams for the past ~5 years</li>
-              <li>Customer focused</li>
-            </ul>
-            <ul class="list colList">
-              <li>Scrum / Kanban / Agile</li>
-              <li>Atlassian Jira/Confluence</li>
-              <li>Quality in mind</li>
-              <li>English (Read/Write/Speak)</li>
-            </ul>
-          </div>
-        </div>
+        <listItem
+          title="Knowledge / Soft Skills"
+          :items-col-left="[
+            {name: 'Microsoft Azure DevOps'},
+            {name: 'Git'},
+            {name: 'Working with remote teams for the past ~5 years'},
+            {name: 'Customer focused'}
+          ]"
+          :items-col-right="[
+            {name: 'Scrum / Kanban / Agile'},
+            {name: 'Atlassian Jira/Confluence'},
+            {name: 'Quality in mind'},
+            {name: 'English (Read/Write/Speak)'}
+          ]"
+        />
 
-        <div class="listItem">
-          <h3 class="title">
-            Basic Notions
-          </h3>
-          <div class="listContent">
-            <ul class="list colList">
-              <li>Javascript</li>
-              <li>jQuery</li>
-              <li>VueJS</li>
-              <li>NuxtJS</li>
-              <li>ReactJS</li>
-              <li>Webpack</li>
-              <li>Algolia Instant Search</li>
-              <li>Github Actions</li>
-              <li>IIS/Apache</li>
-              <li>MS SQLServer/MySQL</li>
-            </ul>
-            <ul class="list colList">
-              <li>C#/.NET/.NET Core</li>
-              <li>ASP.NET (WebForms/MVC)</li>
-              <li>Java (Android)</li>
-              <li>Python</li>
-              <li>WordPress</li>
-              <li>PHP</li>
-              <li>Microsoft PowerBI</li>
-              <li>Adobe Premiere</li>
-              <li>Adobe After Effects</li>
-            </ul>
-          </div>
-        </div>
-        <div class="listItem">
-          <h3 class="title">
-            Advanced
-          </h3>
-          <div class="listContent">
-            <ul class="list colList">
-              <li>HTML5</li>
-              <li>CSS 3/4 (Selectors 3 and 4)</li>
-              <li>CSS Preprocessors (Stylus/Saas/Less)</li>
-              <li>CSS Variables (Custom properties)</li>
-              <li>Adobe Photoshop</li>
-            </ul>
-            <ul class="list colList">
-              <li>Powershell</li>
-              <li>GruntJS</li>
-              <li>NodeJS/npm</li>
-              <li>Adobe XD</li>
-              <li>Sketch</li>
-            </ul>
-          </div>
-        </div>
+        <listItem
+          title="Basic Notions"
+          :items-col-left="[
+            {name: 'Javascript'},
+            {name: 'jQuery'},
+            {name: 'VueJS'},
+            {name: 'NuxtJS'},
+            {name: 'ReactJS'},
+            {name: 'Webpack'},
+            {name: 'Github Actions'},
+            {name: 'IIS/Apache'},
+            {name: 'MS SQLServer/MySQL'}
+          ]"
+          :items-col-right="[
+            {name: 'C#/.NET/.NET Core'},
+            {name: 'ASP.NET (WebForms/MVC)'},
+            {name: 'Java (Android)'},
+            {name: 'Python'},
+            {name: 'WordPress'},
+            {name: 'PHP'},
+            {name: 'Microsoft PowerBI'},
+            {name: 'Adobe Premiere'},
+            {name: 'Adobe After Effects'}
+          ]"
+        />
+
+        <listItem
+          title="Advanced"
+          :items-col-left="[
+            {name: 'HTML5'},
+            {name: 'CSS 3/4 (Selectors 3 and 4)'},
+            {name: 'CSS Preprocessors (Stylus/Saas/Less)'},
+            {name: 'CSS Variables (Custom properties)'},
+            {name: 'Adobe Photoshop'}
+          ]"
+          :items-col-right="[
+            {name: 'Powershell'},
+            {name: 'GruntJS'},
+            {name: 'NodeJS/npm'},
+            {name: 'Adobe XD'},
+            {name: 'Sketch'}
+          ]"
+        />
       </section>
     </section>
   </section>
@@ -84,10 +69,12 @@
 
 <script>
 import navbarMenu from '~/components/common/navbar'
+import listItem from '~/components/common/listItem'
 
 export default {
   components: {
-    navbarMenu
+    navbarMenu,
+    listItem
   },
 
   head () {
@@ -100,36 +87,4 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~assets/styles/components/section.styl'
-
-.title {
-  display: block;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
-.listItem {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-
-  .title {
-    color: var(--textColor, #ffffff);
-    font-weight: 500;
-  }
-
-  .list {
-    list-style: circle;
-    padding-left: 2rem;
-  }
-
-  .listContent {
-    display: flex;
-
-    .colList {
-      flex: 1;
-      margin-right: 3vw;
-      min-width: 50%;
-      margin-top: 1rem;
-    }
-  }
-}
 </style>

@@ -1,25 +1,27 @@
 <template>
-  <div class="card" :class="{ isMinor: isMinor }">
-    <h2 class="cardTitle">
-      <span v-if="isMinor">[Minor] </span>
-      {{ title }}
-      <Icon v-if="url" :url="url" :icon="icon" :title="tooltip" class="cardLink-Item" />
-    </h2>
-    <h3 class="cardSubTitle">
-      {{ subtitle }}
-    </h3>
-    <h4 v-if="info" class="cardInfo">
-      {{ info }}
-    </h4>
-    <div v-if="supportLink" class="cardLinks">
-      <a :href="supportLink" target="_blank" rel="nofollow,noopener,external">
-        <img v-if="supportImg" :src="supportImg" :alt="supportTooltip">
-      </a>
+  <transition name="slide-fade">
+    <div class="card" :class="{ isMinor: isMinor }" :style="'animation-delay:'+ animationDelay + 's'">
+      <h2 class="cardTitle">
+        <span v-if="isMinor">[Minor] </span>
+        {{ title }}
+        <Icon v-if="url" :url="url" :icon="icon" :title="tooltip" class="cardLink-Item" />
+      </h2>
+      <h3 class="cardSubTitle">
+        {{ subtitle }}
+      </h3>
+      <h4 v-if="info" class="cardInfo">
+        {{ info }}
+      </h4>
+      <div v-if="supportLink" class="cardLinks">
+        <a :href="supportLink" target="_blank" rel="nofollow,noopener,external">
+          <img v-if="supportImg" :src="supportImg" :alt="supportTooltip">
+        </a>
+      </div>
+      <ul class="cardItems">
+        <slot />
+      </ul>
     </div>
-    <ul class="cardItems">
-      <slot />
-    </ul>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -31,6 +33,11 @@ export default {
   },
 
   props: {
+    animationDelay: {
+      type: String,
+      required: false,
+      default: '0'
+    },
     title: {
       type: String,
       required: true,
@@ -91,6 +98,9 @@ export default {
   padding-left: 2rem;
   padding-top: .5rem;
   padding-bottom: .8rem;
+  opacity: 0;
+  animation: fadeIn .5s ease-in;
+  animation-fill-mode: forwards;
 
   .cardSubTitle,
   .cardInfo {

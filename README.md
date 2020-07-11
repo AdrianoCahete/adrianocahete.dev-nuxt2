@@ -5,7 +5,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bffddeca-83de-4641-807a-ac12aa617fae/deploy-status)](https://app.netlify.com/sites/adrianocahete-dev/deploys)
 
 All the changes are automatically deployed to Netlify.  
-You can see that live demo [here](https://adrianocahete.dev/).
+You can see that live portfolio [here](https://adrianocahete.dev/).
 
 
 ### Lighthouse Performance
@@ -14,6 +14,8 @@ You can see that live demo [here](https://adrianocahete.dev/).
 [![Lighthouse Best Practices Badge](https://adrianocahete.dev/performance/lighthouse_best-practices.svg)](https://adrianocahete.dev/)
 [![Lighthouse SEO Badge](https://adrianocahete.dev/performance/lighthouse_seo.svg)](https://adrianocahete.dev/)
 [![Lighthouse PWA Badge](https://adrianocahete.dev/performance/lighthouse_pwa.svg)](https://adrianocahete.dev/)
+
+You can see the latest performance state with artifacts on [Github Actions](https://github.com/AdrianoCahete/adrianocahete.dev/actions).
 
 
 
@@ -48,6 +50,7 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - Move to i18n instead of hardcoded text
 - Customize Nuxt loading page (up to v2.13)
 - Create specific page for every project/interface
+- Add all licenses to project page "This portfolio"
 - Create a blog to explain the steps of each project
 - Try modern mode from latest Nuxt
 - Make a better error/not found page
@@ -56,7 +59,7 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - Generate Lighthouse badges from Github Actions and update the correct files in repository
 - Add a `build date`/`last updated on` string on page
 - Add a toggle to show different information to different industries
-- Add proper favicons
+- Add proper favicons (to increase Lighthouse Audit score on PWA)
 - Add a switch to change themes
 - Add more themes than just light/dark theme
 - Add custom themes (add the ability to user modify the theme on-the-fly)
@@ -64,3 +67,10 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - Add CSS regression tests (BackstopJS or Helpscout Barista?)
 - Add Vue code tests
 - Add CSS to mock IE users :)
+
+# Icons
+- [Behance](https://www.flaticon.com/free-icon/behance_254383) icon made by RoundIcons
+- [PDF](https://www.flaticon.com/free-icon/pdf_1839630) and [Home](https://www.flaticon.com/free-icon/home_846551) icons made by Freepik
+- [Codepen](https://www.flaticon.com/free-icon/codepen_2111262) and [OpenSource](https://www.flaticon.com/free-icon/open-source_732090) icons made by Pixel Perfect
+
+All icons are from [FlatIcons](https://www.flaticon.com/)

@@ -20,28 +20,13 @@ jobs:
       uses: juliangruber/sleep-action@v1
       with:
         time: 30s
-    - name: Check performance and generate badges
-      run: |
-        npm install
-        npm run performance
     - name: Audit live URL
       uses: jakejarvis/lighthouse-action@v0.3.2
       with:
         url: 'https://adrianocahete.dev/'
-    - name: Check changes
-      uses: rdietrick/did-files-change@v1.2
-      with:
-        pathspec: './static/performance'
-    - name: Push back to repository
-      if: "steps.check-changes.outputs.changed == 1"
-      run: |
-        git config --global user.name 'Github Action Bot'
-        git config --global user.email 'action@github.com'
-        git commit -am "[AutoCommit from Actions] Update Performance files"
-        git push
     - name: Upload results as an artifact
       uses: actions/upload-artifact@master
       with:
-        name: report
+        name: lighthouse-report
         path: './report'
 

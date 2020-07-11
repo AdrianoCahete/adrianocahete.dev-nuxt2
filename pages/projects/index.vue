@@ -4,6 +4,7 @@
     <section class="content">
       <section id="projects" class="section">
         <Card
+          animation-delay="0.1"
           title="This portfolio"
           subtitle="Made with NuxtJS (VueJS) and auto deployed on Netlify"
           url="https://github.com/AdrianoCahete/adrianocahete.dev"
@@ -11,7 +12,7 @@
           tooltip="adrianocahete.dev @ Github"
           support-link="https://app.netlify.com/sites/adrianocahete-dev/deploys"
           support-img="https://api.netlify.com/api/v1/badges/bffddeca-83de-4641-807a-ac12aa617fae/deploy-status"
-          support-alt="Netlify Status"
+          support-tooltip="Netlify Status"
         >
           <li>Scoped styles</li>
           <li>Vue Components</li>
@@ -20,6 +21,7 @@
         </Card>
 
         <Card
+          animation-delay="0.3"
           title="Webfont Generator CLI"
           subtitle="Forked a somewhat abandoned tool to generate font-icons from SVGs for use in some work projects"
           url="https://github.com/AdrianoCahete/webfont-generator-cli"
@@ -31,6 +33,7 @@
         </Card>
 
         <Card
+          animation-delay="0.5"
           title="Better Adrena"
           subtitle="Chrome/Firefox extension to add new functionalities to a Brazilian forum"
           url="https://github.com/AdrianoCahete/AdrenalineLight"
@@ -41,6 +44,7 @@
         </Card>
 
         <Card
+          animation-delay="0.7"
           title="RocketChat"
           subtitle="Updated the stylesheet architecture and made some small UI fixes across the project"
           url="https://github.com/RocketChat/Rocket.Chat/search?q=AdrianoCahete&type=Commits"
@@ -52,6 +56,7 @@
         </Card>
 
         <Card
+          animation-delay="1"
           title="Detect.JS"
           subtitle="Keeping the library updated with the latest browsers at the time"
           url="https://github.com/darcyclarke/Detect.js"
@@ -62,6 +67,7 @@
         </Card>
 
         <Card
+          animation-delay="1.3"
           title="Google Chrome Lighthouse"
           subtitle="Small fixes for CLI"
           url="https://github.com/GoogleChrome/lighthouse/blob/468c10bb9df7ded215b7a3c47e23f48c1af656f7/changelog.md#new-contributors-24"

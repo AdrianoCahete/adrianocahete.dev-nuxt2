@@ -8,6 +8,7 @@
         </p>
 
         <Card
+          animation-delay="0.1"
           title="Lead Product Designer & UI Developer"
           subtitle="SAI Global (US/Netherlands)"
           info="Jan 2017 - Apr 2020 | Remote"
@@ -25,6 +26,7 @@
         </Card>
 
         <Card
+          animation-delay="0.3"
           title="UI/UX Designer & FrontEnd Developer"
           subtitle="Modulo Security Solutions (Brazil)"
           info="Oct 2012 - Dec 2016 | Partially Remote"
