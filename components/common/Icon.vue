@@ -1,7 +1,6 @@
 <template>
   <a
     v-if="url"
-    v-show="!($device.isMobile && hideMobile)"
     :href="url"
     :title="title"
     :class="{ hideSmall: hideMobile }"
@@ -14,10 +13,9 @@
   </a>
   <i
     v-else-if="!url"
-    v-show="!($device.isMobile && hideMobile)"
     :title="title"
     class=""
-    :class="'icon' + { hideSmall: hideMobile }"
+    :class="'icon ' + { hideSmall: hideMobile }"
   >
     <svg>
       <use :xlink:href="'#'+ icon"></use>
