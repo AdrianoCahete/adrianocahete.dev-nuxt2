@@ -3,7 +3,7 @@
     v-if="url"
     :href="url"
     :title="title"
-    :class="{ hideSmall: hideMobile }"
+    :class="[ hideMobile ? 'hideSmall ' : '', $device.isMobile && hideMobile ? 'hideMobile' : '' ]"
     target="_blank"
     rel="nofollow,noopener,external"
   >
@@ -14,8 +14,7 @@
   <i
     v-else-if="!url"
     :title="title"
-    class=""
-    :class="'icon ' + { hideSmall: hideMobile }"
+    :class="[ 'icon ', hideMobile ? 'hideSmall ' : '', $device.isMobile && hideMobile ? 'hideMobile' : '' ]"
   >
     <svg>
       <use :xlink:href="'#'+ icon"></use>
@@ -28,7 +27,6 @@ export default {
   props: {
     url: {
       type: String,
-      required: false,
       default: ''
     },
     icon: {

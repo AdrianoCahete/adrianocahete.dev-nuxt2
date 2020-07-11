@@ -243,6 +243,12 @@ export default {
       justify-content: left;
       overflow: auto;
     }
+
+    .links a {
+      &.hideSmall {
+        display: none;
+      }
+    }
   }
 }
 
@@ -255,12 +261,6 @@ export default {
   .navbar {
     .menu {
       justify-content: left;
-    }
-
-    .links a {
-      &.hideSmall {
-        display: none;
-      }
     }
   }
 }
