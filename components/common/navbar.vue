@@ -131,8 +131,6 @@ export default {
     flex-direction: column;
     width: 100%;
 
-
-
     a {
       display: flex;
       justify-content: center;
@@ -140,6 +138,7 @@ export default {
       text-decoration: none;
       text-transform: uppercase;
       height: 3rem;
+      cursor: pointer;
       color: var(--navColor);
       fill: var(--navColor);
       animation: fromUp2Down .5s ease-in;

@@ -52,6 +52,7 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - Create specific page for every project/interface
 - Add all licenses to project page "This portfolio"
 - Create a blog to explain the steps of each project
+- Add an interactable animation on Main page (home)
 - Try modern mode from latest Nuxt
 - Make a better error/not found page
 - Move CSS to SASS instead of Stylus ([stylus seems to be deprecated or, at least, stagnated](https://github.com/stylus/stylus/issues/2282))
