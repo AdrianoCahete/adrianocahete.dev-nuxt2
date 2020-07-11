@@ -10,12 +10,12 @@
     <nav id="nav" class="menu">
       <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
       <!-- TODO: Move Home to Icon instead of text and remove isHidden -->
-      <nuxt-link v-if="!$device.isMobile" to="/" exact>
+      <nuxt-link to="/" exact>
         Home
       </nuxt-link>
-      <nuxt-link v-else-if="$device.isMobile" to="/" exact>
+      <!-- <nuxt-link v-else-if="$device.isMobile" to="/" exact>
         <Icon icon="home" title="Home" />
-      </nuxt-link>
+      </nuxt-link> -->
       <nuxt-link to="/work">
         Work
       </nuxt-link>

@@ -1,13 +1,13 @@
 <template>
   <div class="page">
-    <navbar-menu show-avatar />
+    <!-- <navbar-menu show-avatar /> -->
     <section class="content">
       <section id="work" class="section">
         <p class="description">
           I have over 8 years of experience in Product Design and UI Development and I know the basics of a few Front End and Backend languages/frameworks
         </p>
 
-        <!-- <Card
+        <Card
           animation-delay="0.1"
           title="Lead Product Designer & UI Developer"
           subtitle="SAI Global (US/Netherlands)"
@@ -16,16 +16,16 @@
           <li>
             SAI360 Digital Risk
             <!-- <Icon url="https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity" icon="link" title="SAI360 Digital Risk" class="cardLink-Item" /> -->
-          <!-- </li>
+          </li>
           <li>
             SAI360 Risk Intelligence
           </li>
           <li>
             SAI360 BWise Vendor Risk Management
           </li>
-        </Card> -->
+        </Card>
 
-        <!-- <Card
+        <Card
           animation-delay="0.3"
           title="UI/UX Designer & FrontEnd Developer"
           subtitle="Modulo Security Solutions (Brazil)"
@@ -40,20 +40,20 @@
           <li>
             Command and Control Integrated System
           </li>
-        </Card> -->
+        </Card>
       </section>
     </section>
   </div>
 </template>
 
 <script>
-import navbarMenu from '~/components/common/navbar'
-// import Card from '~/components/common/card.vue'
+// import navbarMenu from '~/components/common/navbar'
+import Card from '~/components/common/card.vue'
 
 export default {
   components: {
-    navbarMenu,
-    // Card
+    // navbarMenu,
+    Card
   },
 
   head () {
