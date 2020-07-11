@@ -1,6 +1,7 @@
 <template>
   <a
-    v-if="url && (!($device.isMobile && hideMobile))"
+    v-if="url"
+    v-show="!($device.isMobile && hideMobile)"
     :href="url"
     :title="title"
     target="_blank"
@@ -11,7 +12,8 @@
     </svg>
   </a>
   <i
-    v-else-if="!($device.isMobile && hideMobile)"
+    v-else-if="!url"
+    v-show="!($device.isMobile && hideMobile)"
     :title="title"
     class="icon"
   >
