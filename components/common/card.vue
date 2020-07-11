@@ -65,7 +65,7 @@ export default {
     },
     tooltip: {
       type: String,
-      required: true,
+      required: false,
       default: ''
     },
     supportLink: {
