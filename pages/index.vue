@@ -55,7 +55,7 @@ export default {
 
 @media (max-width: 800px) {
   .titleMain {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }
 </style>

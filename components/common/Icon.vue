@@ -4,6 +4,7 @@
     v-show="!($device.isMobile && hideMobile)"
     :href="url"
     :title="title"
+    :class="{ hideSmall: hideMobile }"
     target="_blank"
     rel="nofollow,noopener,external"
   >
@@ -15,7 +16,8 @@
     v-else-if="!url"
     v-show="!($device.isMobile && hideMobile)"
     :title="title"
-    class="icon"
+    class=""
+    :class="'icon' + { hideSmall: hideMobile }"
   >
     <svg>
       <use :xlink:href="'#'+ icon"></use>
@@ -49,32 +51,32 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  a {
-    color: var(--navbarIconColorAlt, inherit);
-  }
+a {
+  color: var(--navbarIconColorAlt, inherit);
+}
 
-  .icon {
-    > svg {
-      height: 1.7rem;
-    }
+.icon {
+  > svg {
+    height: 1.7rem;
   }
+}
+
+svg {
+  width: 24px;
+  height: @width;
+  fill: inherit;
+
+  &:hover {
+    fill: var(--primaryColor, rgba(0, 0, 0, .5));
+    transition: .3s ease fill;
+  }
+}
+
+.cardLink-Item {
+  fill: var(--textColor, #fff);
 
   svg {
-    width: 24px;
-    height: @width;
-    fill: inherit;
-
-    &:hover {
-      fill: var(--primaryColor, rgba(0, 0, 0, .5));
-      transition: .3s ease fill;
-    }
+    height: 15px;
   }
-
-  .cardLink-Item {
-    fill: var(--textColor, #fff);
-
-    svg {
-      height: 15px;
-    }
-  }
+}
 </style>

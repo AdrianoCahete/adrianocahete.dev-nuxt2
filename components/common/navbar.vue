@@ -256,6 +256,12 @@ export default {
     .menu {
       justify-content: left;
     }
+
+    .links a {
+      &.hideSmall {
+        display: none;
+      }
+    }
   }
 }
 </style>

@@ -93,4 +93,11 @@ export default {
 .uiMobile {
   margin: 1vh 0;
 }
+
+// Phone
+@media (max-width: 390px) {
+  .uiGrid {
+    justify-content: center;
+  }
+}
 </style>
