@@ -15,7 +15,7 @@
         >
           <li>
             SAI360 Digital Risk
-            <Icon url="https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity" icon="link" title="SAI360 Digital Risk" class="cardLink-Item" />
+            <!-- <Icon url="https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity" icon="link" title="SAI360 Digital Risk" class="cardLink-Item" /> -->
           </li>
           <li>
             SAI360 Risk Intelligence
@@ -49,12 +49,10 @@
 <script>
 import navbarMenu from '~/components/common/navbar'
 import Card from '~/components/common/card.vue'
-import Icon from '~/components/common/Icon.vue'
 
 export default {
   components: {
     navbarMenu,
-    Icon,
     Card
   },
 

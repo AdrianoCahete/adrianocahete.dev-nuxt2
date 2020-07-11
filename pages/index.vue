@@ -3,7 +3,6 @@
     <navbar-menu />
     <section class="content home">
       <section id="home" class="section isCentered">
-        <!-- <logo /> -->
         <!-- TODO: Move to component with variables -->
         <h1 class="titleMain">
           Adriano Cahete

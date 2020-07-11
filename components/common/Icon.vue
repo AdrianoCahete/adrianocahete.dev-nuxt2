@@ -3,10 +3,11 @@
     v-if="url"
     :href="url"
     :title="title"
-    :class="[ hideMobile ? 'hideSmall ' : '', $device.isMobile && hideMobile ? 'hideMobile' : '' ]"
+    :class="hideMobile ? 'hideSmall ' : ''"
     target="_blank"
     rel="nofollow,noopener,external"
   >
+    <!-- :class="[ hideMobile ? 'hideSmall ' : '', $device.isMobile && hideMobile ? 'hideMobile' : '' ]" -->
     <svg>
       <use :xlink:href="'#'+ icon"></use>
     </svg>
@@ -14,8 +15,9 @@
   <i
     v-else-if="!url"
     :title="title"
-    :class="[ 'icon ', hideMobile ? 'hideSmall ' : '', $device.isMobile && hideMobile ? 'hideMobile' : '' ]"
+    :class="[ 'icon ', hideMobile ? 'hideSmall ' : '']"
   >
+    <!-- :class="[ 'icon ', hideMobile ? 'hideSmall ' : '', $device.isMobile && hideMobile ? 'hideMobile' : '' ]" -->
     <svg>
       <use :xlink:href="'#'+ icon"></use>
     </svg>

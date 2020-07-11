@@ -13,7 +13,7 @@
       <nuxt-link v-if="!$device.isMobile" to="/" exact>
         Home
       </nuxt-link>
-      <nuxt-link v-if="$device.isMobile" to="/" exact>
+      <nuxt-link v-else-if="$device.isMobile" to="/" exact>
         <Icon icon="home" title="Home" />
       </nuxt-link>
       <nuxt-link to="/work">
