@@ -15,26 +15,31 @@
         </div>
         <div :class="$device.isMobile ? 'uiMobile' : 'uiGrid'">
           <behanceLink
+            animation-delay="0.1"
             project-id="99975665"
             project-name="Risk-Intelligence-20172019"
             display-name="Risk Intelligence | 2017 - 2019"
           />
           <behanceLink
+            animation-delay="0.3"
             project-id="96780423"
             project-name="Risk-Heat-Map-2018"
             display-name="Risk Heat Map | 2018"
           />
           <behanceLink
+            animation-delay="0.5"
             project-id="95161793"
             project-name="Survey-Anonymous-Portal-2019"
             display-name="Survey Anonymous Portal | 2019"
           />
           <behanceLink
+            animation-delay="0.7"
             project-id="94559463"
             project-name="SAI360-Digital-Risk-Login-(Sign-in)-Portal-2016-2018"
             display-name="SAI360 Digital Risk Login | 2016-2018"
           />
           <behanceLink
+            animation-delay="0.9"
             project-id="94434203"
             project-name="Modulo-RiskManager-Login-(Sign-in)-Portal-2012-2016"
             display-name="Modulo RiskManager Login | 2012-2016"

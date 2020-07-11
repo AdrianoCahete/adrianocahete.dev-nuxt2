@@ -1,13 +1,14 @@
 <template>
-  <div :class="$device.isMobile ? 'beLinkMobile' : 'beLink'">
+  <div :class="$device.isMobile ? 'beLinkMobile' : 'beLink'" :style="'animation-delay:'+ animationDelay + 's'">
     <a
-      v-if="!$device.isMobile"
+      v-if="!$device.isMobile || !$nuxt.isOffline"
       :href="'https://www.behance.net/gallery/'+ projectId +'/'+ projectName"
       target="_blank"
       rel="nofollow,noopener,external"
       :title="displayName"
     >
       <img
+        v-if="!($nuxt.isOffline)"
         :src="'./behance/projects/' + projectId + '.png'"
         :alt="displayName"
       >
@@ -17,7 +18,7 @@
     </a>
 
     <a
-      v-if="$device.isMobile"
+      v-if="$device.isMobile || $nuxt.isOffline"
       :href="'https://www.behance.net/gallery/'+ projectId +'/'+ projectName"
       target="_blank"
       rel="nofollow,noopener,external"
@@ -36,6 +37,11 @@ export default {
   },
 
   props: {
+    animationDelay: {
+      type: String,
+      required: false,
+      default: '0'
+    },
     projectId: {
       type: String,
       required: true,
@@ -63,6 +69,7 @@ export default {
 <style lang="stylus" scoped>
 .beLink {
   display: flex;
+  opacity: 0;
   width: 280px;
   height: auto;
   border: 2px solid var(--scrollbarColor);
@@ -78,6 +85,7 @@ export default {
     > img {
       height: inherit;
       width: inherit;
+      text-align: center;
     }
 
     .projectName {
@@ -106,6 +114,10 @@ export default {
 }
 
 .beLinkMobile {
+  opacity: 0;
+  animation: fadeIn .5s ease-in;
+  animation-fill-mode: forwards;
+
   a {
     display: inline-block;
     padding: 1vh 0;
@@ -116,5 +128,11 @@ export default {
       text-decoration-color: red;
     }
   }
+}
+
+.beLink,
+.beLinkMobile {
+  animation: fadeIn .5s ease-in;
+  animation-fill-mode: forwards;
 }
 </style>

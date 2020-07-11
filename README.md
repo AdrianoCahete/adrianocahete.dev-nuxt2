@@ -1,5 +1,8 @@
-# adrianocahete.dev
-> My Portfolio
+# My Portfolio 
+> [adrianocahete.dev](https://adrianocahete.dev)
+
+This Portfolio has [SSR](https://ssr.vuejs.org/#what-is-server-side-rendering-ssr) enabled, so has a pretty fast loading!
+### [Try it!](https://adrianocahete.dev) (you can try offline too, after the first visit of course... ;))
 
 ## Deploy
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bffddeca-83de-4641-807a-ac12aa617fae/deploy-status)](https://app.netlify.com/sites/adrianocahete-dev/deploys)
@@ -8,14 +11,14 @@ All the changes are automatically deployed to Netlify.
 You can see that live portfolio [here](https://adrianocahete.dev/).
 
 
-### Lighthouse Performance
+### Google Lighthouse Performance Audit
 [![Lighthouse Performance Badge](https://adrianocahete.dev/performance/lighthouse_performance.svg)](https://adrianocahete.dev/)
 [![Lighthouse Accessibility Badge](https://adrianocahete.dev/performance/lighthouse_accessibility.svg)](https://adrianocahete.dev/)
 [![Lighthouse Best Practices Badge](https://adrianocahete.dev/performance/lighthouse_best-practices.svg)](https://adrianocahete.dev/)
 [![Lighthouse SEO Badge](https://adrianocahete.dev/performance/lighthouse_seo.svg)](https://adrianocahete.dev/)
 [![Lighthouse PWA Badge](https://adrianocahete.dev/performance/lighthouse_pwa.svg)](https://adrianocahete.dev/)
 
-You can see the latest performance state with artifacts on [Github Actions](https://github.com/AdrianoCahete/adrianocahete.dev/actions).
+You can see the latest performance state with artifacts on [Github Actions](https://github.com/AdrianoCahete/adrianocahete.dev/actions) or [online here](https://adrianocahete.dev/performance/adrianocahete_dev_.html) (not so updated)
 
 
 
@@ -37,7 +40,6 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 
 
 ## ToDo
-
 - ~~Move to PWA to accommodate better the content~~ *[Implemented on 2020-05-16]*
 - ~~Add animations to page loading~~  *[Implemented on 2020-05-16]*
 - ~~Add an offline mode~~  *[Implemented on 2020-05-16]*
