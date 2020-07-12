@@ -5,7 +5,7 @@
       <section id="interfaces" class="section">
         <p class="description">
           Most UIs created by me over the last years are under a non-disclosure agreement, so I'm working with stakeholders to obtain their permission to make them publicly available.<br>
-          You can see some of these projects below or on <a href="https://behance.net/AdrianoCahete/" title="Behance" rel="nofollow,noopener,external">Behance<Icon url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" class="cardLink-Item" /></a>
+          You can see some of these projects below or on <a href="https://behance.net/AdrianoCahete/" title="Behance" target="_blank" rel="nofollow,noopener,external">Behance<Icon url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" class="cardLink-Item" /></a>
         </p>
         <div v-if="$device.isMobile">
           <alert

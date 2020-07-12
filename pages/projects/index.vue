@@ -34,6 +34,16 @@
 
         <Card
           animation-delay="0.5"
+          title="Simple Badges"
+          subtitle="Simple Badges for Github profiles"
+          url="https://github.com/AdrianoCahete/SimpleBadges"
+          tooltip="Simple Badges @ Github"
+        >
+          <li>Some generic SVG badges to use in Github README.</li>
+        </Card>
+
+        <Card
+          animation-delay="0.7"
           title="Better Adrena"
           subtitle="Chrome/Firefox extension to add new functionalities to a Brazilian forum"
           url="https://github.com/AdrianoCahete/AdrenalineLight"
@@ -44,7 +54,7 @@
         </Card>
 
         <Card
-          animation-delay="0.7"
+          animation-delay="0.9"
           title="RocketChat"
           subtitle="Updated the stylesheet architecture and made some small UI fixes across the project"
           url="https://github.com/RocketChat/Rocket.Chat/search?q=AdrianoCahete&type=Commits"

@@ -50,27 +50,23 @@ export default {
     name: 'Adriano Cahete Portfolio',
     short_name: 'Adriano Cahete',
     description: '',
-    theme_color: '#172b4d'
+    theme_color: '#175e80'
   },
 
   meta: {
-    // apple-mobile-web-app-capable=yes
-    // https://medium.com/@firt/dont-use-ios-web-app-meta-tag-irresponsibly-in-your-progressive-web-apps-85d70f4438cb
     mobileAppIOS: true,
-    appleStatusBarStyle: '#172b4d'
+    appleStatusBarStyle: 'black-translucent',
+    theme_color: '#175e80'
   },
 
   // Customize the progress-bar color
   // https://nuxtjs.org/api/configuration-loading
   // loading: '~/components/common/loading.vue',
-  loading: { color: '#172b4d' },
+  loading: { color: '#1a7892' },
 
   pageTransition: {
     name: 'page',
     mode: 'out-in'
-    // beforeEnter(el) {
-    //   console.log('Before enter...');
-    // }
   },
 
   layoutTransition: {
