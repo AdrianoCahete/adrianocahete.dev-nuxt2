@@ -13,12 +13,13 @@
           support-link="https://app.netlify.com/sites/adrianocahete-dev/deploys"
           support-img="https://api.netlify.com/api/v1/badges/bffddeca-83de-4641-807a-ac12aa617fae/deploy-status"
           support-tooltip="Netlify Status"
-        >
-          <li>Scoped styles</li>
-          <li>Vue Components</li>
-          <li>CSS Custom Properties</li>
-          <!-- <li>Dark and Light Themes (<a href="https://stackoverflow.com/a/59223868/1032384" target="_blank" rel="nofollow,noopener,external">Try it!</a>)</li> -->
-        </Card>
+          :items="[
+            {name: 'Scoped styles'},
+            {name: 'Vue Components'},
+            {name: 'CSS Custom Properties'},
+          ]"
+        />
+        <!-- <li>Dark and Light Themes (<a href="https://stackoverflow.com/a/59223868/1032384" target="_blank" rel="nofollow,noopener,external">Try it!</a>)</li> -->
 
         <Card
           animation-delay="0.3"
@@ -26,11 +27,11 @@
           subtitle="Forked a somewhat abandoned tool to generate font-icons from SVGs for use in some work projects"
           url="https://github.com/AdrianoCahete/webfont-generator-cli"
           tooltip="webfont-generator-cli @ Github"
-        >
-          <li>Fixed major issues from the original repository</li>
-          <li>Tested and merged Pull Requests from original repository</li>
-          <li>Updated documentation to match the current implementation</li>
-        </Card>
+          :items="[
+            {name: 'Tested and merged Pull Requests from original repository'},
+            {name: 'Updated documentation to match the current implementation'}
+          ]"
+        />
 
         <Card
           animation-delay="0.5"
@@ -38,9 +39,10 @@
           subtitle="Simple Badges for Github profiles"
           url="https://github.com/AdrianoCahete/SimpleBadges"
           tooltip="Simple Badges @ Github"
-        >
-          <li>Some generic SVG badges to use in Github README.</li>
-        </Card>
+          :items="[
+            {name: 'Some generic SVG badges to use in Github README'}
+          ]"
+        />
 
         <Card
           animation-delay="0.7"
@@ -48,10 +50,11 @@
           subtitle="Chrome/Firefox extension to add new functionalities to a Brazilian forum"
           url="https://github.com/AdrianoCahete/AdrenalineLight"
           tooltip="BetterAdrena @ Github"
-        >
-          <li>Applied some styles to make the UI more readable</li>
-          <li>Added more styles and js content to create some useful features</li>
-        </Card>
+          :items="[
+            {name: 'Applied some styles to make the UI more readable'},
+            {name: 'Added more styles and js content to create some useful features'}
+          ]"
+        />
 
         <Card
           animation-delay="0.9"
@@ -59,11 +62,12 @@
           subtitle="Updated the stylesheet architecture and made some small UI fixes across the project"
           url="https://github.com/RocketChat/Rocket.Chat/search?q=AdrianoCahete&type=Commits"
           tooltip="RocketChat @ Github"
-        >
-          <li>Better organization for stylesheets/css variables</li>
-          <li>A few small fixes for UI issues</li>
-          <li>UX/UI definitions and implementation for ChatOps feature</li>
-        </Card>
+          :items="[
+            {name: 'Better organization for stylesheets/css variables'},
+            {name: 'A few small fixes for UI issues'},
+            {name: 'UX/UI definitions and implementation for ChatOps feature'}
+          ]"
+        />
 
         <Card
           animation-delay="1"
@@ -71,10 +75,11 @@
           subtitle="Keeping the library updated with the latest browsers at the time"
           url="https://github.com/darcyclarke/Detect.js"
           tooltip="Detect.JS @ Github"
-        >
-          <li>Added detection of Edge, Opera, Internet Explorer 10/11 and some mobile browsers</li>
-          <li>Added detection of some new Operational Systems</li>
-        </Card>
+          :items="[
+            {name: 'Added detection of Edge, Opera, Internet Explorer 10/11 and some mobile browsers'},
+            {name: 'Added detection of some new Operational Systems'}
+          ]"
+        />
 
         <Card
           animation-delay="1.3"
@@ -82,11 +87,12 @@
           subtitle="Small fixes for CLI"
           url="https://github.com/GoogleChrome/lighthouse/blob/468c10bb9df7ded215b7a3c47e23f48c1af656f7/changelog.md#new-contributors-24"
           tooltip="Google Chrome Lighthouse @ Github"
+          :items="[
+            {name: 'Fixes on CLI version on Windows OS'}
+          ]"
           is-minor
-        >
-          <li>Fixes on CLI version on Windows OS</li>
-          <!-- <a href="https://github.com/GoogleChrome/lighthouse/pull/1307" /> -->
-        </Card>
+        />
+        <!-- <a href="https://github.com/GoogleChrome/lighthouse/pull/1307" /> -->
       </section>
     </section>
   </section>

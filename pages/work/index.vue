@@ -12,35 +12,24 @@
           title="Lead Product Designer & UI Developer"
           subtitle="SAI Global (US/Netherlands)"
           info="Jan 2017 - Apr 2020 | Remote"
-        >
-          <li>
-            SAI360 Digital Risk
-            <Icon url="https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity" icon="link" title="SAI360 Digital Risk" class="cardLink-Item" />
-          </li>
-          <li>
-            SAI360 Risk Intelligence
-          </li>
-          <li>
-            SAI360 BWise Vendor Risk Management
-          </li>
-        </Card>
+          :items="[
+            {name: 'SAI360 Digital Risk', url: 'https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity'},
+            {name: 'SAI360 Risk Intelligence'},
+            {name: 'SAI360 BWise Vendor Risk Management'},
+          ]"
+        />
 
         <Card
           animation-delay="0.3"
           title="UI/UX Designer & FrontEnd Developer"
           subtitle="Modulo Security Solutions (Brazil)"
           info="Oct 2012 - Dec 2016 | Partially Remote"
-        >
-          <li>
-            Modulo Risk Manager
-          </li>
-          <li>
-            Modulo Smart Cities
-          </li>
-          <li>
-            Command and Control Integrated System
-          </li>
-        </Card>
+          :items="[
+            {name: 'Modulo Risk Manager'},
+            {name: 'Modulo Smart Cities'},
+            {name: 'Command and Control Integrated System'},
+          ]"
+        />
       </section>
     </section>
   </section>

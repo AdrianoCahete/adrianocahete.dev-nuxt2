@@ -1,6 +1,6 @@
 <template>
   <transition name="slide-fade">
-    <div class="card" :class="{ isMinor: isMinor }" :style="'animation-delay:'+ animationDelay + 's'">
+    <section class="card" :class="{ isMinor: isMinor }" :style="'animation-delay:'+ animationDelay + 's'">
       <h2 class="cardTitle">
         <span v-if="isMinor">[Minor] </span>
         {{ title }}
@@ -12,15 +12,17 @@
       <h4 v-if="info" class="cardInfo">
         {{ info }}
       </h4>
-      <div v-if="supportLink" class="cardLinks">
+      <section v-if="supportLink" class="cardLinks">
         <a :href="supportLink" target="_blank" rel="nofollow,noopener,external">
           <img v-if="supportImg" :src="supportImg" :alt="supportTooltip">
         </a>
-      </div>
-      <ul class="cardItems">
-        <slot />
-      </ul>
-    </div>
+      </section>
+      <transition-group v-if="items" tag="ul" name="list" class="cardItems" appear>
+        <li v-for="(item, idx) in items" :key="idx + 0">
+          {{ item.name }} <Icon v-if="item.url" :url="item.url" icon="link" :title="item.name" class="cardLink-Item" />
+        </li>
+      </transition-group>
+    </section>
   </transition>
 </template>
 
@@ -47,6 +49,11 @@ export default {
       type: String,
       required: true,
       default: ''
+    },
+    items: {
+      type: Array,
+      required: true,
+      default: () => []
     },
     info: {
       type: String,
