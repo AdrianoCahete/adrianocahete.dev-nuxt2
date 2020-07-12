@@ -46,14 +46,14 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - ~~Add Hotjar to know the user~~ *[Implemented on 2020-05-28]*
 - ~~Fix Navbar on Mobile~~ *[Fixed on 2020-06-26]*
 - ~~Move `isMobile` function/feature to more global scope instead of on `page` scope~~ *[Fixed on 2020-06-29]*
+- ~~Change every `div` to `section`~~ *[Fixed on 2020-07-11]*
 - Add micro animations to entire portfolio *[In Progress]*
-- Move to latest [Nuxt available](https://nuxtjs.org/guide/release-notes)
-- Change every `div` to `section`
 - Move to i18n instead of hardcoded text
+- Move to latest [Nuxt available](https://nuxtjs.org/guide/release-notes)
 - Customize Nuxt loading page (up to v2.13)
+- Create a blog to explain the steps of each project
 - Create specific page for every project/interface
 - Add all licenses to project page "This portfolio"
-- Create a blog to explain the steps of each project
 - Add an interactable animation on Main page (home)
 - Try modern mode from latest Nuxt
 - Make a better error/not found page
@@ -67,7 +67,7 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - Add more themes than just light/dark theme
 - Add custom themes (add the ability to user modify the theme on-the-fly)
 - Make styles documentation (using [SassDoc](http://sassdoc.com/) and maybe Docusaurus?)
-- Add CSS regression tests (BackstopJS or Helpscout Barista?)
+- Add CSS regression tests (BackstopJS, BrowserStack or Helpscout Barista?)
 - Add Vue code tests
 - Add CSS to mock IE users :)
 
