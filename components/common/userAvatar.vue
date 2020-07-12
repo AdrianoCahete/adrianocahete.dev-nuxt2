@@ -1,12 +1,12 @@
 <template>
-  <div class="avatar">
+  <section class="avatar">
     <!-- TODO: Make a default image to load/cache for offline mode -->
     <img
       :src="'https://github.com/'+ userName + '.png'"
       :alt="$nuxt.isOffline ? '' : userName"
       :title="$nuxt.isOffline ? 'You appear to be offline' : ''"
     >
-  </div>
+  </section>
 </template>
 
 <script>

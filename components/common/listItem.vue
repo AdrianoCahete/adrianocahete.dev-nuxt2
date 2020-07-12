@@ -1,10 +1,10 @@
 <template>
   <transition name="slide-fade">
-    <div class="listItem">
+    <section class="listItem">
       <h3 class="title">
         {{ title }}
       </h3>
-      <div class="listContent">
+      <section class="listContent">
         <transition-group v-if="itemsColLeft" tag="ul" name="list" class="list colList" appear>
           <!-- https://github.com/vuejs/eslint-plugin-vue/issues/726#issuecomment-451740732 -->
           <li v-for="(item, idx) in itemsColLeft" :key="idx + 0">
@@ -16,8 +16,8 @@
             {{ item.name }}
           </li>
         </transition-group>
-      </div>
-    </div>
+      </section>
+    </section>
   </transition>
 </template>
 

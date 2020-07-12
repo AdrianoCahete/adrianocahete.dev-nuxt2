@@ -1,5 +1,5 @@
 <template>
-  <div :class="$device.isMobile ? 'beLinkMobile' : 'beLink'" :style="'animation-delay:'+ animationDelay + 's'">
+  <section :class="$device.isMobile ? 'beLinkMobile' : 'beLink'" :style="'animation-delay:'+ animationDelay + 's'">
     <a
       v-if="!$device.isMobile"
       :href="'https://www.behance.net/gallery/'+ projectId +'/'+ projectName"
@@ -25,7 +25,7 @@
     >
       <Icon icon="behance" :title="displayName" class="cardLink-Item" /><span>{{ displayName }}</span>
     </a>
-  </div>
+  </section>
 </template>
 
 <script>

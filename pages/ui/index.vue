@@ -7,13 +7,13 @@
           Most UIs created by me over the last years are under a non-disclosure agreement, so I'm working with stakeholders to obtain their permission to make them publicly available.<br>
           You can see some of these projects below or on <a href="https://behance.net/AdrianoCahete/" title="Behance" target="_blank" rel="nofollow,noopener,external">Behance<Icon url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" class="cardLink-Item" /></a>
         </p>
-        <div v-if="$device.isMobile">
+        <section v-if="$device.isMobile">
           <alert
             message="Pay attention that Behance projects may be difficult to view on small screens"
             type="info"
           />
-        </div>
-        <div :class="$device.isMobile ? 'uiMobile' : 'uiGrid'">
+        </section>
+        <section :class="$device.isMobile ? 'uiMobile' : 'uiGrid'">
           <behanceLink
             animation-delay="0.1"
             project-id="99975665"
@@ -44,7 +44,7 @@
             project-name="Modulo-RiskManager-Login-(Sign-in)-Portal-2012-2016"
             display-name="Modulo RiskManager Login | 2012-2016"
           />
-        </div>
+        </section>
       </section>
     </section>
   </section>

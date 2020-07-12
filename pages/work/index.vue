@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <section class="page">
     <navbar-menu show-avatar />
     <section class="content">
       <section id="work" class="section">
@@ -15,7 +15,7 @@
         >
           <li>
             SAI360 Digital Risk
-            <!-- <Icon url="https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity" icon="link" title="SAI360 Digital Risk" class="cardLink-Item" /> -->
+            <Icon url="https://www.saiglobal.com/risk/solutions/it-risk-cybersecurity" icon="link" title="SAI360 Digital Risk" class="cardLink-Item" />
           </li>
           <li>
             SAI360 Risk Intelligence
@@ -43,7 +43,7 @@
         </Card>
       </section>
     </section>
-  </div>
+  </section>
 </template>
 
 <script>
