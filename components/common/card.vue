@@ -1,17 +1,17 @@
 <template>
   <transition name="slide-fade">
     <section class="card" :class="{ isMinor: isMinor }" :style="'animation-delay:'+ animationDelay + 's'">
-      <h2 class="cardTitle">
+      <h3 class="cardTitle">
         <span v-if="isMinor">[Minor] </span>
         {{ title }}
         <Icon v-if="url" :url="url" :icon="icon" :title="tooltip" class="cardLink-Item" />
-      </h2>
-      <h3 class="cardSubTitle">
-        {{ subtitle }}
       </h3>
-      <h4 v-if="info" class="cardInfo">
-        {{ info }}
+      <h4 class="cardSubTitle">
+        {{ subtitle }}
       </h4>
+      <h5 v-if="info" class="cardInfo">
+        {{ info }}
+      </h5>
       <section v-if="supportLink" class="cardLinks">
         <a :href="supportLink" target="_blank" rel="nofollow,noopener,external">
           <img v-if="supportImg" :src="supportImg" :alt="supportTooltip">
@@ -118,14 +118,14 @@ export default {
   }
 
   .cardSubTitle {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--grayedOut, #FFFFFF);
     margin-bottom: .5rem;
   }
 
   .cardInfo {
     margin-bottom: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .cardItems {

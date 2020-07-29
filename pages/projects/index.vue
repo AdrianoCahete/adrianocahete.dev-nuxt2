@@ -14,12 +14,13 @@
           support-img="https://api.netlify.com/api/v1/badges/bffddeca-83de-4641-807a-ac12aa617fae/deploy-status"
           support-tooltip="Netlify Status"
           :items="[
+            {name: 'Auto-deploy from Github'},
             {name: 'Scoped styles'},
             {name: 'Vue Components'},
             {name: 'CSS Custom Properties'},
+            {name: 'Works offline'},
           ]"
         />
-        <!-- <li>Dark and Light Themes (<a href="https://stackoverflow.com/a/59223868/1032384" target="_blank" rel="nofollow,noopener,external">Try it!</a>)</li> -->
 
         <Card
           animation-delay="0.3"
@@ -28,7 +29,7 @@
           url="https://github.com/AdrianoCahete/webfont-generator-cli"
           tooltip="webfont-generator-cli @ Github"
           :items="[
-            {name: 'Tested and merged Pull Requests from original repository'},
+            {name: 'Fixed problems from original repository'},
             {name: 'Updated documentation to match the current implementation'}
           ]"
         />
@@ -63,9 +64,9 @@
           url="https://github.com/RocketChat/Rocket.Chat/search?q=AdrianoCahete&type=Commits"
           tooltip="RocketChat @ Github"
           :items="[
-            {name: 'Better organization for stylesheets/css variables'},
+            {name: 'UX/UI definitions and implementation for ChatOps feature'},
             {name: 'A few small fixes for UI issues'},
-            {name: 'UX/UI definitions and implementation for ChatOps feature'}
+            {name: 'Better organization for stylesheets/css variables'},
           ]"
         />
 

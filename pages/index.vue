@@ -49,7 +49,14 @@ export default {
 }
 
 .descriptionMain {
-  color: var(--grayedOut, #FFFFFF);
+  color: var(--textColor, #FFFFFF);
+  opacity: 0.6;
+  transition: opacity .5s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+  }
 }
 
 @media (max-width: 800px) {

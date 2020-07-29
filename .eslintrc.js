@@ -13,13 +13,13 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    "vue/html-self-closing": ["error", {
-      "html": {
-        "void": "never",
-        "normal": "always",
-        "component": "always"
+    'vue/html-self-closing': ['error', {
+      html: {
+        void: 'never',
+        normal: 'always',
+        component: 'always'
       },
-      "svg": "any"
+      svg: 'any'
     }]
   }
 }

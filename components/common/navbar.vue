@@ -16,21 +16,18 @@
       <!-- <nuxt-link v-else-if="$device.isMobile" to="/" exact>
         <Icon icon="home" title="Home" />
       </nuxt-link> -->
-      <nuxt-link to="/work">
-        Work
-      </nuxt-link>
-      <nuxt-link to="/skills">
-        Skills
-      </nuxt-link>
-      <nuxt-link to="/projects">
-        Projects
+      <nuxt-link to="/about">
+        About
       </nuxt-link>
       <nuxt-link to="/ui">
         Interfaces
       </nuxt-link>
-      <nuxt-link v-if="isDevMode" to="/debug">
-        Debug
+      <nuxt-link to="/projects">
+        Projects
       </nuxt-link>
+      <!-- <nuxt-link v-if="isDevMode" to="/debug">
+        Debug
+      </nuxt-link> -->
     </nav>
     <section class="links">
       <Icon url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />

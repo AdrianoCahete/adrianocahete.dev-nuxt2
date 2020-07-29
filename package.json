@@ -1,9 +1,12 @@
 {
   "name": "adrianocahete.dev",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Adriano Cahete's Portfolio",
   "author": "Adriano Cahete",
   "private": true,
+  "project": {
+    "theme_color": "#175e80"
+  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development nuxt",
     "dev-debug": "cross-env NODE_OPTIONS='--trace-warnings' npm run dev",

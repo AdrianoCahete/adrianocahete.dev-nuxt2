@@ -28,7 +28,7 @@ export default {
   head: {
     title: process.env.npm_package_name || '',
     // titleTemplate: '%s @ Adriano Cahete\'s Portfolio ',
-    titleTemplate: '%s @ Adriano Cahete\'s Portfolio ',
+    titleTemplate: '%s @ Adriano Cahete | Product Designer & UI Developer',
     htmlAttrs: {
       lang: 'en-US'
     },
@@ -48,22 +48,22 @@ export default {
   },
 
   manifest: {
-    name: 'Adriano Cahete Portfolio',
-    short_name: 'Adriano Cahete',
-    description: '',
-    theme_color: '#175e80'
+    name: 'Adriano Cahete | Product Designer & UI Developer',
+    short_name: 'Adriano Cahete | Product Designer',
+    description: process.env.npm_package_description || '',
+    theme_color: process.env.npm_package_project_theme_color || '#175e80'
   },
 
   meta: {
     mobileAppIOS: true,
     appleStatusBarStyle: 'black-translucent',
-    theme_color: '#175e80'
+    theme_color: process.env.npm_package_project_theme_color || '#175e80'
   },
 
   // Customize the progress-bar color
   // https://nuxtjs.org/api/configuration-loading
   // loading: '~/components/common/loading.vue',
-  loading: { color: '#1a7892' },
+  loading: { color: '#FFFFFF' },
 
   pageTransition: {
     name: 'page',
@@ -76,10 +76,7 @@ export default {
   },
 
   // Global CSS
-  css: [
-    // '@fortawesome/fontawesome-free/css/all.css',
-    // '~assets/transitions.css'
-  ],
+  // css: [],
 
   // Plugins to load before mounting the App
   plugins: [
@@ -131,9 +128,5 @@ export default {
   },
 
   // Build configuration
-  build: {
-    // You can extend webpack config here
-    // extend (config, ctx) {
-    // }
-  }
+  build: {}
 }

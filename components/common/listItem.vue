@@ -5,13 +5,20 @@
         {{ title }}
       </h3>
       <section class="listContent">
-        <transition-group v-if="itemsColLeft" tag="ul" name="list" class="list colList" appear>
+        <transition-group
+          v-if="itemsColLeft"
+          tag="ul"
+          name="list"
+          class="list colList"
+          :class="itemsColRight.length ? '' : 'colList-single'"
+          appear
+        >
           <!-- https://github.com/vuejs/eslint-plugin-vue/issues/726#issuecomment-451740732 -->
           <li v-for="(item, idx) in itemsColLeft" :key="idx + 0">
             {{ item.name }}
           </li>
         </transition-group>
-        <transition-group v-if="itemsColRight" tag="ul" name="list" class="list colList" appear>
+        <transition-group v-if="itemsColRight.length" tag="ul" name="list" class="list colList" appear>
           <li v-for="(item, idx) in itemsColRight" :key="idx + 0">
             {{ item.name }}
           </li>
@@ -46,7 +53,7 @@ export default {
     },
     itemsColRight: {
       type: Array,
-      required: true,
+      required: false,
       default: () => []
     }
   }
@@ -55,8 +62,6 @@ export default {
 
 <style lang="stylus" scoped>
 .listItem {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
 
   .title {
     color: var(--textColor, #ffffff);
@@ -73,9 +78,13 @@ export default {
 
     .colList {
       flex: 1;
+      margin-top: 1rem;
       margin-right: 3vw;
       min-width: 50%;
-      margin-top: 1rem;
+
+      &.colList-single {
+        margin-right: 0;
+      }
     }
   }
 }
