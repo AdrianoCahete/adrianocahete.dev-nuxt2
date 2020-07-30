@@ -11,11 +11,9 @@
       <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
       <!-- TODO: Move Home to Icon instead of text and remove isHidden -->
       <nuxt-link to="/" exact>
-        <span>Home</span>
+        <span v-if="!$device.isMobile">Home</span>
+        <span v-if="$device.isMobile"><Icon icon="home" title="Home" /></span>
       </nuxt-link>
-      <!-- <nuxt-link v-else-if="$device.isMobile" to="/" exact>
-        <Icon icon="home" title="Home" />
-      </nuxt-link> -->
       <nuxt-link to="/about">
         About
       </nuxt-link>

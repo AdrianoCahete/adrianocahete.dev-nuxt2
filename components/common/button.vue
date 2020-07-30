@@ -50,6 +50,7 @@ export default {
   border-radius: 5px;
   padding: 1rem 2rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   text-decoration: none;
   transition: all ease-in-out .5s;
 
@@ -63,4 +64,10 @@ export default {
 .btn-primary {
   // border-color: var(--defaultBorderColor);
 }
+
+// @media (max-width: 1024px) {
+//   .btn {
+//     padding: 1rem 2rem;
+//   }
+// }
 </style>

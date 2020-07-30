@@ -59,6 +59,16 @@ export default {
   }
 }
 
+.isMobile {
+  .home {
+    overflow: hidden;
+
+    .section {
+      min-height: 94vh;
+    }
+  }
+}
+
 @media (max-width: 800px) {
   .titleMain {
     font-size: 4.5rem;

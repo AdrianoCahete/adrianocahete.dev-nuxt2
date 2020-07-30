@@ -69,7 +69,7 @@
         <p>
           You can find me in
         </p>
-        <p class="mail">
+        <p class="primaryContact">
           me@adrianocahete.dev
         </p>
         <section class="findme-icons">
@@ -114,7 +114,7 @@ export default {
 <style lang="stylus" scoped>
 @import '~assets/styles/components/section.styl';
 
-.mail {
+.primaryContact {
   font-size: 2rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
