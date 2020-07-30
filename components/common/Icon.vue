@@ -3,7 +3,7 @@
     v-if="url"
     :href="url"
     :title="title"
-    :class="hideMobile ? 'hideSmall ' : ''"
+    :class="[ 'iconDefault', hideMobile ? ' hideSmall ' : '']"
     target="_blank"
     rel="nofollow,noopener,external"
   >
@@ -15,7 +15,7 @@
   <i
     v-else-if="!url"
     :title="title"
-    :class="[ 'icon ', hideMobile ? 'hideSmall ' : '']"
+    :class="[ 'icon', hideMobile ? ' hideSmall ' : '']"
   >
     <!-- :class="[ 'icon ', hideMobile ? 'hideSmall ' : '', $device.isMobile && hideMobile ? 'hideMobile' : '' ]" -->
     <svg>
@@ -65,7 +65,7 @@ svg {
   fill: inherit;
 
   &:hover {
-    fill: var(--primaryColor, rgba(0, 0, 0, .5));
+    fill: var(--iconColorHover, rgba(0, 0, 0, .5));
     transition: .3s ease fill;
   }
 }

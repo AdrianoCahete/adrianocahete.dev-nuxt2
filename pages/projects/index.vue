@@ -6,7 +6,7 @@
         <Card
           animation-delay="0.1"
           title="This portfolio"
-          subtitle="Made with NuxtJS (VueJS) and auto deployed on Netlify"
+          subtitle="Made with NuxtJS (VueJS), with constant updates and auto deployed on Netlify"
           url="https://github.com/AdrianoCahete/adrianocahete.dev"
           icon="oss"
           tooltip="adrianocahete.dev @ Github"

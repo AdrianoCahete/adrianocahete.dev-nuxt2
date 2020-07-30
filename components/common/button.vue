@@ -43,10 +43,24 @@ export default {
 
 <style lang="stylus" scoped>
 .btn {
+  display: inline-block;
+  text-align: center;
   color: var(--textColor, #FFFFFF);
+  border: 2px solid currentColor;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  transition: all ease-in-out .5s;
+
+  &:hover {
+    background-color: var(--textColor, #FFFFFF);
+    color: var(--btnColorHover);
+    transition: all ease-in-out .5s;
+  }
 }
 
 .btn-primary {
-  text-text-decoration: none;
+  // border-color: var(--defaultBorderColor);
 }
 </style>
