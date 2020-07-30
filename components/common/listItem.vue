@@ -69,8 +69,17 @@ export default {
   }
 
   .list {
-    list-style: circle;
-    padding-left: 2rem;
+    list-style: none;
+    padding-left: .5rem;
+
+    li {
+      list-style-type: none;
+
+      &::before {
+        content: "▹";
+        // color: var(--textColor);
+      }
+    }
   }
 
   .listContent {

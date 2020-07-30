@@ -64,7 +64,7 @@
           url="https://github.com/RocketChat/Rocket.Chat/search?q=AdrianoCahete&type=Commits"
           tooltip="RocketChat @ Github"
           :items="[
-            {name: 'UX/UI definitions and implementation for ChatOps feature'},
+            {name: 'Built and shipped the Ui for ChatOps feature'},
             {name: 'A few small fixes for UI issues'},
             {name: 'Better organization for stylesheets/css variables'},
           ]"

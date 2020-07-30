@@ -6,12 +6,11 @@
         <section id="about-me" class="section-col">
           <h1>I'm Adriano Cahete, a Product Designer from Rio de Janeiro</h1>
           <p class="description">
-            Working across some Product Design areas (Interaction, Motion, UX, UI), being a Design Lead and crafting awesome User Experiences on digital products with +8 years of experience with companies in Brazil and US.
+            Working across some <strong>Product Design</strong> areas (Interaction, Motion, UX, UI), being a <strong>Lead Designer</strong> and crafting awesome User Experiences on digital products <strong>with +8 years of experience</strong> with companies in Brazil and US.
           </p>
           <p class="description">
             With a broad of skills, from Design to Code, specialized to fullfil the gap between Designers and Developers and creating tools to help designers to do a faster and better work.
           </p>
-          <a class="btn btnPrimary" href="./resume/[en-US]-Adriano_Cahete__2020.06.pdf" target="_blank" rel="nofollow,noopener,external">Download resume</a>
         </section>
         <section id="skills" class="section-col">
           <listItem
@@ -32,7 +31,10 @@
         </section>
       </section>
       <section id="work" class="section-simple">
-        <h1>Work</h1>
+        <h1>Where I've Worked</h1>
+        <!-- Developed highly interactive prototypes and shipped the same UIs on delivered product -->
+        <!-- Worked closely with Product Owners and developer team to design and document features for SAI360 Digital Risk & SAI360 BWise Vendor Risk Management -->
+        <!-- Interfaced with other designers and developers to ensure coherent UI/UX across five different products with different technologies -->
         <Card
           animation-delay="0.1"
           title="Lead Product Designer & UI Developer"
@@ -45,6 +47,9 @@
           ]"
         />
 
+        <!-- Write modern, maintainable and performant code for Modulo Risk Manager  -->
+
+        <!-- Proposed and implemented a solution to make Ui's more alike to the designed ones -->
         <Card
           animation-delay="0.3"
           title="UI/UX Designer & FrontEnd Developer"
@@ -69,7 +74,11 @@
         <p>
           LinkedIn, Github and Behance.
         </p>
-        <a href="./resume/[en-US]-Adriano_Cahete__2020.06.pdf" target="_blank" rel="nofollow,noopener,external">Download resume</a>
+        <Btn
+          url="./resume/[en-US]-Adriano_Cahete.pdf"
+          title="Download resume"
+        />
+        <!-- <a href="./resume/[en-US]-Adriano_Cahete__2020.06.pdf" target="_blank" rel="nofollow,noopener,external">Download resume</a> -->
       </section>
     </section>
   </section>
@@ -79,12 +88,14 @@
 import navbarMenu from '~/components/common/navbar'
 import listItem from '~/components/common/listItem'
 import Card from '~/components/common/card.vue'
+import Btn from '~/components/common/button.vue'
 
 export default {
   components: {
     navbarMenu,
     listItem,
-    Card
+    Card,
+    Btn
   },
 
   head () {

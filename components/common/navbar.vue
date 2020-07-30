@@ -11,7 +11,7 @@
       <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
       <!-- TODO: Move Home to Icon instead of text and remove isHidden -->
       <nuxt-link to="/" exact>
-        Home
+        <span>Home</span>
       </nuxt-link>
       <!-- <nuxt-link v-else-if="$device.isMobile" to="/" exact>
         <Icon icon="home" title="Home" />
@@ -39,7 +39,7 @@
           <Icon url="" icon="steam" title="" />
         </feature-toggle>
       -->
-      <Icon url="./resume/[en-US]-Adriano_Cahete__2020.06.pdf" icon="pdf" title="Resume" /> <!-- TODO: Update when update static file -->
+      <Icon url="./resume/[en-US]-Adriano_Cahete__2020.06.pdf" icon="pdf" title="Resume" /> <!-- TODO: Rename to avoid update when update static file -->
     </section>
   </section>
 </template>

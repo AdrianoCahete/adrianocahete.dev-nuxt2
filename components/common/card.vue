@@ -129,8 +129,15 @@ export default {
   }
 
   .cardItems {
-    list-style-type: circle;
-    padding-left: 2rem;
+    list-style-type: none;
+    padding-left: .5rem;
+
+    li {
+      &::before {
+        content: "▹";
+        // color: var(--textColor);
+      }
+    }
   }
 
   &.isMinor {
