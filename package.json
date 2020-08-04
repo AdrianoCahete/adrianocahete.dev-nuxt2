@@ -1,6 +1,6 @@
 {
   "name": "adrianocahete.dev",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Adriano Cahete's Portfolio",
   "author": "Adriano Cahete",
   "private": true,
@@ -34,7 +34,6 @@
     "cross-env": "^7.0.2",
     "eslint": "^7.0.0",
     "eslint-plugin-nuxt": ">=0.5.2",
-    "nuxt-feature-toggle": "^1.0.1",
     "nuxt-payload-extractor": "^1.0.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2"

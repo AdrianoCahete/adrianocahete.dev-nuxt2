@@ -83,12 +83,12 @@ export default {
     ]
   },
 
-  featureToggle: {
-    queryString: true,
-    toggles: {
-      gaming: false
-    }
-  },
+  // featureToggle: {
+  //   queryString: true,
+  //   toggles: {
+  //     gaming: false
+  //   }
+  // },
 
   pwa: {
     // workbox: {
@@ -101,13 +101,10 @@ export default {
     }
   },
 
-  // Global CSS
-  // css: [],
-
   // Plugins to load before mounting the App
   plugins: [
     // '~/plugins/common.js'
-    '~/plugins/queryStrings',
+    // '~/plugins/queryStrings',
     '~/plugins/hj'
   ],
 
@@ -115,6 +112,7 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     // '@nuxtjs/eslint-module'
+
     // Doc: https://github.com/nuxt-community/stylelint-module
     // '@nuxtjs/stylelint-module'
     [
@@ -130,8 +128,8 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     // '@nuxtjs/axios'
-    '@nuxtjs/device',
     // 'nuxt-feature-toggle',
+    '@nuxtjs/device',
     'nuxt-payload-extractor',
     '@nuxtjs/sitemap'
   ],
