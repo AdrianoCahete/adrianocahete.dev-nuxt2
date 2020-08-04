@@ -27,7 +27,6 @@ export default {
   // Headers of the page
   head: {
     title: process.env.npm_package_name || '',
-    // titleTemplate: '%s @ Adriano Cahete\'s Portfolio ',
     titleTemplate: '%s @ Adriano Cahete | Product Designer & UI Developer',
     htmlAttrs: {
       lang: 'en-US'
@@ -36,6 +35,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'X-UA-Compatible', content: 'IE=edge' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=2, user-scalable=1, shrink-to-fit=no' },
+      { name: 'keywords', content: 'product design, product designer, designer de produto, UI, UX, UI/UX, UI developer, Desenvovledor de Interface, Designer, Cahete, Adriano Cahete' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
       { name: 'author', content: 'Adriano Cahete' }
     ],
@@ -75,6 +75,32 @@ export default {
     mode: 'out-in'
   },
 
+  sitemap: {
+    hostname: 'https://adrianocahete.dev',
+    gzip: true,
+    exclude: [
+      '/debug'
+    ]
+  },
+
+  featureToggle: {
+    queryString: true,
+    toggles: {
+      gaming: false
+    }
+  },
+
+  pwa: {
+    // workbox: {
+    //   // Offline
+    //   offline: true,
+    //   offlineStrategy: 'NetworkFirst'
+    // },
+    manifest: {
+      display: 'browser'
+    }
+  },
+
   // Global CSS
   // css: [],
 
@@ -105,27 +131,10 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     // '@nuxtjs/axios'
     '@nuxtjs/device',
-    'nuxt-feature-toggle',
-    'nuxt-payload-extractor'
+    // 'nuxt-feature-toggle',
+    'nuxt-payload-extractor',
+    '@nuxtjs/sitemap'
   ],
-
-  featureToggle: {
-    queryString: true,
-    toggles: {
-      gaming: false
-    }
-  },
-
-  pwa: {
-    // workbox: {
-    //   // Offline
-    //   offline: true,
-    //   offlineStrategy: 'NetworkFirst'
-    // },
-    manifest: {
-      display: 'browser'
-    }
-  },
 
   // Build configuration
   build: {}

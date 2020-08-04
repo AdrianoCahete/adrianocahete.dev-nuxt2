@@ -29,7 +29,7 @@
       </nuxt-link> -->
     </nav>
     <section class="links">
-      <Icon url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
+      <Icon :hide-mobile="true" url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
       <Icon :hide-mobile="true" url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
       <Icon :hide-mobile="true" url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       <Icon :hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
@@ -38,7 +38,8 @@
           <Icon url="" icon="steam" title="" />
         </feature-toggle>
       -->
-      <Icon url="./resume/[en-US]-Adriano_Cahete__2020.06.pdf" icon="pdf" title="Resume" /> <!-- TODO: Rename to avoid update when update static file -->
+      <Icon :hide-mobile="true" url="./resume/[en-US]-Adriano_Cahete.pdf" icon="pdf" title="Resume" />
+      <!-- TODO: Rename to avoid update when update static file -->
     </section>
   </section>
 </template>
@@ -240,10 +241,8 @@ export default {
       overflow: auto;
     }
 
-    .links a {
-      &.hideSmall {
-        display: none;
-      }
+    .links {
+      display: none;
     }
   }
 }
