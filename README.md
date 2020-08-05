@@ -48,6 +48,7 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - ~~Move `isMobile` function/feature to more global scope instead of on `page` scope~~ *[Fixed on 2020-06-29]*
 - ~~Change every `div` to `section`~~ *[Fixed on 2020-07-11]*
 - ~~Move to latest [Nuxt available](https://nuxtjs.org/guide/release-notes)~~  *[Fixed on 2020-08-05]*
+- ~~Try modern mode from latest Nuxt~~ *[Fixed on 2020-08-05]*
 - Add micro animations to entire portfolio *[In Progress]*
 - Move to i18n instead of hardcoded text
 - Customize Nuxt loading page (up to v2.13)
@@ -55,7 +56,6 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - Create specific page for every project/interface
 - Add all licenses to project page "This portfolio"
 - Add an interactable animation on Main page (home)
-- Try modern mode from latest Nuxt
 - Make a better error/not found page
 - Move CSS to SASS instead of Stylus ([stylus seems to be deprecated or, at least, stagnated](https://github.com/stylus/stylus/issues/2282))
 - Create a changelog
