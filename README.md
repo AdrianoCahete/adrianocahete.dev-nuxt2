@@ -47,9 +47,9 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - ~~Fix Navbar on Mobile~~ *[Fixed on 2020-06-26]*
 - ~~Move `isMobile` function/feature to more global scope instead of on `page` scope~~ *[Fixed on 2020-06-29]*
 - ~~Change every `div` to `section`~~ *[Fixed on 2020-07-11]*
+- ~~Move to latest [Nuxt available](https://nuxtjs.org/guide/release-notes)~~  *[Fixed on 2020-08-05]*
 - Add micro animations to entire portfolio *[In Progress]*
 - Move to i18n instead of hardcoded text
-- Move to latest [Nuxt available](https://nuxtjs.org/guide/release-notes)
 - Customize Nuxt loading page (up to v2.13)
 - Create a blog to explain the steps of each project
 - Create specific page for every project/interface

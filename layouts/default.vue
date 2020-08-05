@@ -1,16 +1,19 @@
 <template>
   <section :class="[ $nuxt.isOffline ? 'isOffline' : '', $device.isMobile || $device.isTablet ? 'page isMobile' : 'page' ]">
     <IconLibrary />
+    <navbar-menu />
     <nuxt />
   </section>
 </template>
 
 <script>
 import IconLibrary from '~/components/common/iconLibrary'
+import navbarMenu from '~/components/common/navbar'
 
 export default {
   components: {
-    IconLibrary
+    IconLibrary,
+    navbarMenu
   },
 
   async asyncData ({ $axios, $payloadURL, route }) {

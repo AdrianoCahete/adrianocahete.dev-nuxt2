@@ -1,6 +1,5 @@
 <template>
   <section class="page">
-    <navbar-menu show-avatar />
     <section class="content">
       <section id="projects" class="section">
         <Card
@@ -100,12 +99,10 @@
 </template>
 
 <script>
-import navbarMenu from '~/components/common/navbar'
-import Card from '~/components/common/card.vue'
+import Card from '~/components/common/card'
 
 export default {
   components: {
-    navbarMenu,
     Card
   },
   head () {

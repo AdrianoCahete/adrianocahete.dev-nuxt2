@@ -1,6 +1,5 @@
 <template>
   <section class="page">
-    <navbar-menu show-avatar />
     <section class="content">
       <section id="interfaces" class="section">
         <p class="description">
@@ -51,17 +50,15 @@
 </template>
 
 <script>
-import navbarMenu from '~/components/common/navbar'
-import behanceLink from '~/components/common/behance/behanceLink.vue'
-import Icon from '~/components/common/Icon.vue'
-import alert from '~/components/common/alert.vue'
+import behanceLink from '~/components/common/behance/behanceLink'
+import Icon from '~/components/common/Icon'
+// import alert from '~/components/common/alert'
 
 export default {
   components: {
-    navbarMenu,
     behanceLink,
-    Icon,
-    alert
+    Icon
+    // alert
   },
   head () {
     return {

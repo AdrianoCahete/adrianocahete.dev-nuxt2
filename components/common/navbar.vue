@@ -1,6 +1,6 @@
 <template>
   <section :class="$device.isMobile ? 'navbar navbarMobile' : 'navbar'">
-    <section class="headerInfo" :class="showAvatar ? '' : ' noAvatar'">
+    <section class="headerInfo" :class="this.$route.name == 'index' ? 'noAvatar' : ''">
       <userAvatar user-name="AdrianoCahete" />
       <!-- TODO: Move to Component -->
       <h1>Adriano Cahete</h1>
@@ -24,9 +24,9 @@
       <nuxt-link to="/projects">
         Projects
       </nuxt-link>
-      <!-- <nuxt-link v-if="isDevMode" to="/debug">
-        Debug
-      </nuxt-link> -->
+      <nuxt-link v-if="isDevMode" to="/debug">
+        {{ this.$route.name }}
+      </nuxt-link>
     </nav>
     <section class="links">
       <Icon :hide-mobile="true" url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
@@ -39,27 +39,18 @@
         </feature-toggle>
       -->
       <Icon :hide-mobile="true" url="./resume/[en-US]-Adriano_Cahete.pdf" icon="pdf" title="Resume" />
-      <!-- TODO: Rename to avoid update when update static file -->
     </section>
   </section>
 </template>
 
 <script>
-import userAvatar from '~/components/common/userAvatar.vue'
-import Icon from '~/components/common/Icon.vue'
+import userAvatar from '~/components/common/userAvatar'
+import Icon from '~/components/common/Icon'
 
 export default {
   components: {
     userAvatar,
     Icon
-  },
-
-  props: {
-    showAvatar: {
-      type: Boolean,
-      required: false,
-      default: false
-    }
   },
 
   data () {
@@ -107,6 +98,7 @@ export default {
 
   .headerInfo {
     opacity: 0;
+    transition: .3s ease-in-out all;
 
     &:not(.noAvatar) {
       animation: fadeIn .5s ease-in;
@@ -120,6 +112,7 @@ export default {
     &.noAvatar {
       opacity: 0;
       pointer-events none;
+      transition: 1s ease-in-out opacity;
     }
   }
 

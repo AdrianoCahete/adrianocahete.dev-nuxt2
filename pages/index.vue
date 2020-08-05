@@ -1,6 +1,5 @@
 <template>
   <section class="page">
-    <navbar-menu />
     <section class="content home">
       <section id="home" class="section isCentered">
         <!-- TODO: Move to component with variables -->
@@ -19,13 +18,7 @@
 </template>
 
 <script>
-import navbarMenu from '~/components/common/navbar'
-
 export default {
-  components: {
-    navbarMenu
-  },
-
   head () {
     return {
       title: 'Home'

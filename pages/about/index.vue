@@ -1,6 +1,5 @@
 <template>
   <section class="page">
-    <navbar-menu show-avatar />
     <section class="content">
       <section class="section-row">
         <section id="about-me" class="section-col">
@@ -88,15 +87,13 @@
 </template>
 
 <script>
-import navbarMenu from '~/components/common/navbar'
 import listItem from '~/components/common/listItem'
-import Card from '~/components/common/card.vue'
-import Btn from '~/components/common/button.vue'
-import Icon from '~/components/common/Icon.vue'
+import Card from '~/components/common/card'
+import Btn from '~/components/common/button'
+import Icon from '~/components/common/Icon'
 
 export default {
   components: {
-    navbarMenu,
     listItem,
     Card,
     Btn,

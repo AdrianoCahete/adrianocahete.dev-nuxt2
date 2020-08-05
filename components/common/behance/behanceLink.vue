@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import Icon from '~/components/common/Icon.vue'
+import Icon from '~/components/common/Icon'
 
 export default {
   components: {
