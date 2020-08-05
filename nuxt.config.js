@@ -37,7 +37,13 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=2, user-scalable=1, shrink-to-fit=no' },
       { name: 'keywords', content: 'product design, product designer, designer de produto, UI, UX, UI/UX, UI developer, Desenvovledor de Interface, Designer, Cahete, Adriano Cahete' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
-      { name: 'author', content: 'Adriano Cahete' }
+      { name: 'author', content: 'Adriano Cahete' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: process.env.npm_package_name },
+      { property: 'og:site_name', content: process.env.npm_package_description },
+      { property: 'og:description', content: process.env.npm_package_description },
+      { property: 'og:url', content: 'https://AdrianoCahete.dev' },
+      { name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
