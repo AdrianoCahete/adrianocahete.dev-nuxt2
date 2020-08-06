@@ -1,18 +1,16 @@
 <template>
-  <section class="page">
-    <section class="content home">
-      <section id="home" class="section isCentered">
-        <!-- TODO: Move to component with variables -->
-        <h1 class="titleMain">
-          Adriano Cahete
-        </h1>
-        <p class="descriptionMain">
-          I am a <strong>Product Designer</strong> & <strong>User Interface Developer</strong>
-        </p>
-        <!-- <p class="descriptionMain">
-          currently working at <a href="#">SAI Global</a>
-        </p> -->
-      </section>
+  <section class="content home">
+    <section id="home" class="section isCentered">
+      <!-- TODO: Move to component with variables -->
+      <h1 class="titleMain">
+        Adriano Cahete
+      </h1>
+      <p class="descriptionMain">
+        I am a <strong>Product Designer</strong> & <strong>User Interface Developer</strong>
+      </p>
+      <!-- <p class="descriptionMain">
+        currently working at <a href="#">SAI Global</a>
+      </p> -->
     </section>
   </section>
 </template>

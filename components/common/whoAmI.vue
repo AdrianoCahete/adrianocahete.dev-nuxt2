@@ -21,7 +21,8 @@ export default {
     },
     jobTitle: {
       type: String,
-      required: true
+      required: false,
+      default: ''
     },
     currentCompany: {
       type: String,
@@ -33,6 +34,10 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+h1 {
+  white-space: nowrap;
+}
+
 p {
   font-size: 1.3rem;
 }

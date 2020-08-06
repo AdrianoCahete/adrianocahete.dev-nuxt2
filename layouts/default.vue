@@ -1,8 +1,10 @@
 <template>
-  <section :class="[ $nuxt.isOffline ? 'isOffline' : '', $device.isMobile || $device.isTablet ? 'page isMobile' : 'page' ]">
+  <section>
     <IconLibrary />
     <navbar-menu />
-    <nuxt />
+    <section :class="[ $nuxt.isOffline ? 'isOffline' : '', $device.isMobile || $device.isTablet ? 'page isMobile' : 'page' ]">
+      <nuxt />
+    </section>
   </section>
 </template>
 

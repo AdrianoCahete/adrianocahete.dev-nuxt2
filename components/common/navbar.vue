@@ -1,17 +1,15 @@
 <template>
   <section :class="$device.isMobile ? 'navbar navbarMobile' : 'navbar'">
-    <section class="headerInfo" :class="this.$route.name == 'index' ? 'noAvatar' : ''">
-      <userAvatar user-name="AdrianoCahete" />
-      <whoAmI author-name="Adriano Cahete" job-title="Product Designer & User Interface Developer" current-company="" />
+    <section class="headerInfo">
+      <nuxt-link to="/" exact>
+        <whoAmI author-name="Adriano Cahete" job-title="" current-company="" />
+        <!-- Product Designer & User Interface Developer -->
+      </nuxt-link>
     </section>
     <nav id="nav" class="menu">
-      <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
-      <!-- TODO: Move Home to Icon instead of text and remove isHidden -->
-      <nuxt-link to="/" exact>
+      <!-- <nuxt-link to="/" exact>
         <span>Home</span>
-        <!-- <span v-if="!$device.isMobile">Home</span> -->
-        <!-- <span v-if="$device.isMobile"><Icon icon="home" title="Home" /></span> -->
-      </nuxt-link>
+      </nuxt-link> -->
       <nuxt-link to="/about">
         About
       </nuxt-link>
@@ -30,24 +28,17 @@
       <Icon :hide-mobile="true" url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
       <Icon :hide-mobile="true" url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       <Icon :hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
-      <!--
-        <feature-toggle name="gaming" :value="false" prefix="_t">
-          <Icon url="" icon="steam" title="" />
-        </feature-toggle>
-      -->
       <Icon :hide-mobile="true" url="./resume/[en-US]-Adriano_Cahete.pdf" icon="pdf" title="Resume" />
     </section>
   </section>
 </template>
 
 <script>
-import userAvatar from '~/components/common/userAvatar'
 import whoAmI from '~/components/common/whoAmI'
 import Icon from '~/components/common/Icon'
 
 export default {
   components: {
-    userAvatar,
     whoAmI,
     Icon
   },
@@ -63,41 +54,41 @@ export default {
 <style lang="stylus" scoped>
 .navbar {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 20vw; // Move to Vars
+  background: var(--bgColor);
+  background-attachment: fixed;
+  background-size: 500% 500%;
+  background-position: 0 50%;
+  animation: gradient-2 3s ease-in-out 1;
+  animation-fill-mode: forwards;
+  width: 100%;
   padding: 0 2vw;
-  max-width: 20%;
-  min-height: 100%;
-  height: 100vh;
-  position fixed;
+  height: 8vh;
+  position sticky;
   top: 0;
   left: 0;
-  background-color: var(--navbarColor);
-  border-right: var(--navbarBorder);
+  border-bottom: var(--navbarBorder);
+  color: var(--navColor);
+  z-index: 2;
 
   @supports (backdrop-filter: blur(0px)) {
     backdrop-filter: blur(160px);
   }
 
-  @supports not (backdrop-filter: blur(0px)) {
-    &::before {
-      display: flex;
-      content: "";
-      background: rgba(0, 0, 0, .1);
-      filter: blur(4px);
-      height: 100%;
-      position: fixed; // Sticky bugs desktop version
-      width: 20vw;
-      z-index: -1;
-    }
-  }
-
   .headerInfo {
     opacity: 0;
     transition: .3s ease-in-out all;
+
+    a {
+      color: var(--navColor);
+      text-decoration: none;
+
+      &.nuxt-link-exact-active {
+        pointer-events: none;
+      }
+    }
 
     &:not(.noAvatar) {
       animation: fadeIn .5s ease-in;
@@ -113,8 +104,8 @@ export default {
 
   .menu {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    height: 100%;
+    align-items: center;
 
     a {
       display: flex;
@@ -122,28 +113,31 @@ export default {
       align-items: center;
       text-decoration: none;
       text-transform: uppercase;
-      height: 3rem;
+      height: 100%;
+      padding: 0 2rem;
       cursor: pointer;
       color: var(--navColor);
       fill: var(--navColor);
       animation: fromUp2Down .5s ease-in;
+      border-bottom: 3px solid transparent;
 
       &:hover {
-        color: var(--navColorHover);
+        color: var(--navColorActive);
       }
 
       &:active,
       &.nuxt-link-exact-active {
-        font-weight: bold;
-        color: var(--textColor, rgba(255, 255, 255, .5));
+        // font-weight: bold;
+        border-bottom-color: currentColor;
+        color: var(--navColorActive, rgba(255, 255, 255, 1));
         transition: .3s ease color;
         cursor: default;
+        margin-bottom: -2px;
       }
     }
   }
 
   .links {
-    margin-top: 2vh;
     fill: var(--navbarIconColor, #ffffff);
     animation: fromDown2Up .5s ease-in;
   }
@@ -162,7 +156,6 @@ export default {
 // Small Desktop
 @media (max-width: 1024px) {
   .navbar {
-    flex-direction: row;
     width: 100%;
     max-width: @width;
     height: 40px; // TODO: Move to vars

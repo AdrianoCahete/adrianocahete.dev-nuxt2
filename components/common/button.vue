@@ -45,24 +45,66 @@ export default {
 .btn {
   display: inline-block;
   text-align: center;
-  color: var(--textColor, #FFFFFF);
-  border: 2px solid currentColor;
-  border-radius: 5px;
+  position: relative;
+  background-size: 100% 100%;
+  background: transparent;
+  outline: 0;
+  border-radius: 10px;
   padding: 1rem 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-decoration: none;
   transition: all ease-in-out .5s;
+  z-index: 0;
+
+  span {
+    z-index: 2;
+    // color: var(--btnColorHover);
+  }
 
   &:hover {
     background-color: var(--textColor, #FFFFFF);
-    color: var(--btnColorHover);
     transition: all ease-in-out .5s;
   }
-}
 
-.btn-primary {
-  // border-color: var(--defaultBorderColor);
+  &.btn-primary {
+    &::before,
+    &::after {
+      content: " ";
+      position: absolute;
+      border-radius: 5px;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -2;
+      background: var(--btnPrimaryBorderColor);
+    }
+
+    &:after {
+      top: 3px;
+      bottom: 3px;
+      left: 3px;
+      right: 3px;
+      background-color: #fff;
+      z-index: -1;
+      opacity: 1;
+      transition-property: all;
+      transition-duration: 0.6s;
+      transition-timing-function: ease-in-out;
+    }
+
+    &:hover {
+      color: #FFFFFF;
+
+      &:after {
+        opacity: 0;
+      }
+    }
+  }
 }
 
 // @media (max-width: 1024px) {

@@ -73,6 +73,8 @@ export default {
   width: 280px;
   height: auto;
   border: 2px solid var(--scrollbarColor);
+  margin-right: 1rem;
+  margin-bottom: @margin-right;
 
   a {
     display: flex;

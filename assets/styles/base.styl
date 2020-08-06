@@ -33,12 +33,6 @@ body {
   height: 100vh;
   max-height: 100vh;
   font-size: 1.6rem;
-  background: var(--bgColor);
-  background-attachment: fixed;
-  background-size: 500% 500%;
-  background-position: 0 50%;
-  animation: gradient-2 3s ease-in-out 1;
-  animation-fill-mode: forwards;
 
   &.page-ui {
     animation: gradient-1 3s ease-in-out 1;
@@ -116,12 +110,7 @@ h1 {
 
 .page {
   display: flex;
-}
-
-@media (max-width: 1024px) {
-  .page {
-    flex-direction: column;
-  }
+  flex-direction: column;
 }
 
 .content {
@@ -130,9 +119,9 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: var(--contentBg, transparent);
   margin: 0 auto;
-  margin-left: 20vw; // Get from vars
-  width: 80vw;
+  width: 100%;
   scroll-snap-type: y mandatory;
 }
 
@@ -141,11 +130,4 @@ h1 {
     margin-left: 0;
     width: 100vw;
   }
-}
-
-// Utils
-.isHidden {
-  opacity: 0;
-  height: 0;
-  width: 0;
 }
