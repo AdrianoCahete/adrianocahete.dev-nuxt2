@@ -2,10 +2,7 @@
   <section :class="$device.isMobile ? 'navbar navbarMobile' : 'navbar'">
     <section class="headerInfo" :class="this.$route.name == 'index' ? 'noAvatar' : ''">
       <userAvatar user-name="AdrianoCahete" />
-      <!-- TODO: Move to Component -->
-      <h1>Adriano Cahete</h1>
-      <p>Product Designer & User Interface Developer</p>
-      <!-- <p>currently working at SAI Global</p> -->
+      <whoAmI author-name="Adriano Cahete" job-title="Product Designer & User Interface Developer" current-company="" />
     </section>
     <nav id="nav" class="menu">
       <!-- https://br.vuejs.org/v2/guide/syntax.html#Parametros -->
@@ -24,9 +21,9 @@
       <nuxt-link to="/projects">
         Projects
       </nuxt-link>
-      <nuxt-link v-if="isDevMode" to="/debug">
+      <!-- <nuxt-link v-if="isDevMode" to="/debug">
         {{ this.$route.name }}
-      </nuxt-link>
+      </nuxt-link> -->
     </nav>
     <section class="links">
       <Icon :hide-mobile="true" url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
@@ -45,11 +42,13 @@
 
 <script>
 import userAvatar from '~/components/common/userAvatar'
+import whoAmI from '~/components/common/whoAmI'
 import Icon from '~/components/common/Icon'
 
 export default {
   components: {
     userAvatar,
+    whoAmI,
     Icon
   },
 
@@ -103,10 +102,6 @@ export default {
     &:not(.noAvatar) {
       animation: fadeIn .5s ease-in;
       animation-fill-mode: forwards;
-    }
-
-    p {
-      font-size: 1.3rem;
     }
 
     &.noAvatar {
