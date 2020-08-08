@@ -34,9 +34,15 @@ export default {
 
 .titleMain {
   display: block;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 10rem;
   letter-spacing: 1px;
+  color: transparent;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); // var(--bgColor);
+  background-size: 400% 400%;
+  background-clip: text;
+  animation: gradient-title 5s ease-in-out infinite;
+  // animation-direction: alternate;
 }
 
 .descriptionMain {

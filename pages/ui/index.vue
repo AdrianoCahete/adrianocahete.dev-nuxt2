@@ -11,6 +11,12 @@
           type="info"
         />
       </section>
+      <section v-if="$nuxt.isOffline">
+        <alert
+          message="You appear to be offline. This links won't load, but you can still navigate on this portfolio."
+          type="info"
+        />
+      </section>
       <section :class="$device.isMobile ? 'uiMobile' : 'uiGrid'">
         <behanceLink
           animation-delay="0.1"
@@ -50,13 +56,13 @@
 <script>
 import behanceLink from '~/components/common/behance/behanceLink'
 import Icon from '~/components/common/Icon'
-// import alert from '~/components/common/alert'
+import alert from '~/components/common/alert'
 
 export default {
   components: {
     behanceLink,
-    Icon
-    // alert
+    Icon,
+    alert
   },
   head () {
     return {

@@ -13,6 +13,7 @@
         </p>
       </section>
       <section id="skills" class="section-col">
+        <!-- {name: 'Worked with High Performance Teams'}, -->
         <listItem
           title="Some Skills"
           :items-col-left="[
@@ -32,32 +33,27 @@
     </section>
     <section id="work" class="section-simple">
       <h1>Where I've Worked</h1>
-      <!-- Developed highly interactive prototypes and shipped the same UIs on delivered product -->
-      <!-- Worked closely with Product Owners and developer team to design and document features for SAI360 Digital Risk & SAI360 BWise Vendor Risk Management -->
-      <!-- Interfaced with other designers and developers in different timezones to ensure coherent UI/UX across five different products with different technologies -->
       <Card
         animation-delay="0.1"
         title="Lead Product Designer & UI Developer"
         subtitle="SAI Global (US/Netherlands)"
         info="Jan 2017 - Apr 2020 | Remote"
         :items="[
-          {name: 'SAI360 Digital Risk'},
-          {name: 'SAI360 Risk Intelligence'},
-          {name: 'SAI360 BWise Vendor Risk Management'},
+          {name: 'Developed highly interactive prototypes and shipped the same UIs on delivered product'},
+          {name: 'Worked closely with Product Owners and developer team to design and document features for SAI360 Digital Risk & SAI360 BWise Vendor Risk Management'},
+          {name: 'Interfaced with other designers and developers in different timezones to ensure coherent UI/UX across five different products with different technologies'},
         ]"
       />
-
-      <!-- Write modern, maintainable and performant code for Modulo Risk Manager  -->
-      <!-- Proposed and implemented a solution to make Ui's more alike to the designed ones -->
+      <!--   -->
       <Card
         animation-delay="0.3"
         title="UI/UX Designer & FrontEnd Developer"
         subtitle="Modulo Security Solutions (Brazil)"
         info="Oct 2012 - Dec 2016 | Partially Remote"
         :items="[
-          {name: 'Modulo Risk Manager'},
-          {name: 'Modulo Smart Cities'},
-          {name: 'Command and Control Integrated System'},
+          {name: 'Write modern, maintainable and performant code for Modulo Risk Manager'},
+          {name: 'Proposed and implemented a solution to make UIs more alike to the designed ones'},
+          {name: 'Worked with Public Security\'s Stakeholders in Command & Control Integrated System to bring a most efficient Interface for 911 operators'},
         ]"
       />
     </section>
