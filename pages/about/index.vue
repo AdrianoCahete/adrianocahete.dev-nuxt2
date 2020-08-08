@@ -2,7 +2,7 @@
   <section class="content">
     <section class="section-row">
       <section id="about-me" class="section-col">
-        <p class="title">
+        <p class="description">
           I'm <strong>Adriano Cahete</strong>, a <strong>Product Designer</strong> from Rio de Janeiro
         </p>
         <p class="description">
@@ -75,7 +75,6 @@
         url="./resume/[en-US]-Adriano_Cahete.pdf"
         title="Download resume"
       />
-      <!-- <a href="./resume/[en-US]-Adriano_Cahete__2020.06.pdf" target="_blank" rel="nofollow,noopener,external">Download resume</a> -->
     </section>
   </section>
 </template>
@@ -110,6 +109,15 @@ export default {
   margin-top: 1rem;
   margin-bottom: 2rem;
   margin-left: 1rem;
+  color: transparent;
+  background: var(--titleColor);
+  background-size: 400% 400%;
+  background-clip: text;
+  transition: background-position ease-in-out 2s;
+
+  &:hover {
+    animation: gradient-title 5s ease-in-out 1;
+  }
 }
 
 .findme-icons {

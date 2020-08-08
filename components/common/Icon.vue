@@ -74,7 +74,7 @@ svg {
   fill: var(--textColor, #fff);
 
   svg {
-    height: 15px;
+    height: 1.3rem;;
   }
 }
 </style>

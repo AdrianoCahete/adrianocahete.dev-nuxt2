@@ -9,7 +9,7 @@
     >
       <img
         v-if="!($nuxt.isOffline)"
-        :src="'./behance/projects/' + projectId + '.png'"
+        :src="'../behance/projects/' + projectId + '.png'"
         :alt="displayName"
       >
       <span class="projectName">

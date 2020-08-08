@@ -59,7 +59,6 @@ export default {
 
   span {
     z-index: 2;
-    // color: var(--btnColorHover);
   }
 
   &:hover {

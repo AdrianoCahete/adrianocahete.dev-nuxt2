@@ -64,7 +64,7 @@ export default {
 .listItem {
 
   .title {
-    color: var(--textColor, #ffffff);
+    color: var(--subTitleColor);
     font-weight: 500;
   }
 
@@ -77,7 +77,7 @@ export default {
 
       &::before {
         content: "▹";
-        // color: var(--textColor);
+        color: var(--subTitleColor);
       }
     }
   }

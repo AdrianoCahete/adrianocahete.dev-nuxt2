@@ -8,6 +8,7 @@
       <p class="descriptionMain">
         I am a <strong>Product Designer</strong> & <strong>User Interface Developer</strong>
       </p>
+      <!-- {{ appVersion }} -->
       <!-- <p class="descriptionMain">
         currently working at <a href="#">SAI Global</a>
       </p> -->
@@ -17,6 +18,11 @@
 
 <script>
 export default {
+  // computed: {
+  //   appVersion () {
+  //     return process.env.version
+  //   }
+  // },
   head () {
     return {
       title: 'Home'
@@ -38,11 +44,12 @@ export default {
   font-size: 10rem;
   letter-spacing: 1px;
   color: transparent;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); // var(--bgColor);
+  background: var(--titleColor);
   background-size: 400% 400%;
   background-clip: text;
   animation: gradient-title 5s ease-in-out infinite;
   // animation-direction: alternate;
+  transition: font-size .5s ease-in-out;
 }
 
 .descriptionMain {

@@ -156,50 +156,20 @@ export default {
 // Small Desktop
 @media (max-width: 1024px) {
   .navbar {
-    width: 100%;
-    max-width: @width;
-    height: 40px; // TODO: Move to vars
-    padding: 0 1vw;
-    position: sticky;
-    text-align: start;
-    background-image: linear-gradient(180deg, #212121 0%, #212121 10%, var(--bgColor) 100%);
-
-    &::before {
-      display: none;
-    }
-
-    .headerInfo {
-      font-weight: normal;
-      white-space: nowrap;
-
-      p {
-        display: none;
-      }
-    }
-
     .menu {
-      flex-direction: row;
-      justify-content: center;
-      width: 100%;
-
-      a {
-        height: 40px; // TODO: Get from vars
-        padding: 0 2vw;
-      }
+      // justify-content: center;
     }
 
     .links {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
       align-items: center;
-      margin-top: 0;
+      height: 100%;
 
       a {
         display: flex;
         align-items: center;
         margin: 0;
-        height: 40px; // TODO: Get from vars
+        height: 100%;
         padding: 0 1vw;
       }
     }
@@ -208,6 +178,27 @@ export default {
 
 // Tablet
 @media (max-width: 670px) {
+  .headerInfo {
+    // display: none;
+  }
+
+  .section {
+    padding-left: 2vw;
+  }
+
+  .navbar {
+    .menu {
+      justify-content: right;
+    }
+
+    .links {
+      display: none;
+    }
+  }
+}
+
+// Phone
+@media (max-width: 490px) {
   .headerInfo {
     display: none;
   }
@@ -218,25 +209,8 @@ export default {
 
   .navbar {
     .menu {
-      justify-content: left;
-      overflow: auto;
-    }
-
-    .links {
-      display: none;
-    }
-  }
-}
-
-// Phone
-@media (max-width: 390px) {
-  .section {
-    padding-left: 2vw;
-  }
-
-  .navbar {
-    .menu {
-      justify-content: left;
+      justify-content: center;
+      width: 100%;
     }
   }
 }
