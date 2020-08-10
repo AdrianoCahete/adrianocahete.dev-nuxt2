@@ -3,7 +3,6 @@
     <section class="headerInfo">
       <nuxt-link to="/" exact>
         <whoAmI author-name="Adriano Cahete" job-title="" current-company="" />
-        <!-- Product Designer & User Interface Developer -->
       </nuxt-link>
     </section>
     <nav id="nav" class="menu">
@@ -27,7 +26,7 @@
       <Icon :hide-mobile="true" url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
       <Icon :hide-mobile="true" url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
       <Icon :hide-mobile="true" url="https://github.com/AdrianoCahete" icon="github" title="Github" />
-      <Icon :hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" />
+      <!-- <Icon :hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" /> -->
       <Icon :hide-mobile="true" url="./resume/[en-US]-Adriano_Cahete.pdf" icon="pdf" title="Resume" />
     </section>
   </section>
@@ -61,7 +60,7 @@ export default {
   background-attachment: fixed;
   background-size: 500% 500%;
   background-position: 0 50%;
-  animation: gradient-2 3s ease-in-out 1;
+  animation: gradient-2 1.5s ease-in-out 1;
   animation-fill-mode: forwards;
   width: 100%;
   padding: 0 2vw;
@@ -94,18 +93,13 @@ export default {
       animation: fadeIn .5s ease-in;
       animation-fill-mode: forwards;
     }
-
-    &.noAvatar {
-      opacity: 0;
-      pointer-events none;
-      transition: 1s ease-in-out opacity;
-    }
   }
 
   .menu {
     display: flex;
     height: 100%;
     align-items: center;
+    animation: fromUp2Down .5s ease-in;
 
     a {
       display: flex;
@@ -118,7 +112,6 @@ export default {
       cursor: pointer;
       color: var(--navColor);
       fill: var(--navColor);
-      animation: fromUp2Down .5s ease-in;
       border-bottom: 3px solid transparent;
 
       &:hover {
@@ -138,8 +131,17 @@ export default {
   }
 
   .links {
-    fill: var(--navbarIconColor, #ffffff);
-    animation: fromDown2Up .5s ease-in;
+    animation: fromUp2Down .5s ease-in;
+
+    a {
+      color: var(--navColor);
+      fill: currentColor;
+
+      &:hover {
+        color: var(--navColorActive, rgba(255, 255, 255, 1));
+        fill: currentColor;
+      }
+    }
   }
 
   &.navbarMobile {

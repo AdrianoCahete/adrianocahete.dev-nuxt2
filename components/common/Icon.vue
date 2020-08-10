@@ -65,7 +65,7 @@ svg {
   fill: inherit;
 
   &:hover {
-    fill: var(--iconColorHover, rgba(0, 0, 0, .5));
+    fill: currentColor;
     transition: .3s ease fill;
   }
 }
