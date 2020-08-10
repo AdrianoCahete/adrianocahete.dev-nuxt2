@@ -33,6 +33,8 @@
     </section>
     <section id="work" class="section-simple">
       <h1>Where I've Worked</h1>
+      <!--  -->
+      <!-- -->
       <Card
         animation-delay="0.1"
         title="Lead Product Designer & UI Developer"
@@ -42,6 +44,7 @@
           {name: 'Developed highly interactive prototypes and shipped the same UIs on delivered product'},
           {name: 'Worked closely with Product Owners and developer team to design and document features for SAI360 Digital Risk & SAI360 BWise Vendor Risk Management'},
           {name: 'Interfaced with other designers and developers in different timezones to ensure coherent UI/UX across five different products with different technologies'},
+          {name: 'Developed Style Guides for multiple different products and technologies'}
         ]"
       />
       <!--   -->
@@ -53,13 +56,14 @@
         :items="[
           {name: 'Write modern, maintainable and performant code for Modulo Risk Manager'},
           {name: 'Proposed and implemented a solution to make UIs more alike to the designed ones'},
-          {name: 'Worked with Public Security\'s Stakeholders in Command & Control Integrated System to bring a most efficient Interface for 911 operators'},
+          {name: 'Worked with Rio\'s Public Security Stakeholders in Integrated Command & Control Center to bring a most efficient Interface for 911 operators'},
+          {name: 'Performed the layer between design and development, talking in the way that the developer understand'}
         ]"
       />
     </section>
 
     <section id="find-me" class="section-simple">
-      <h1>Work Inquiries</h1>
+      <h1>Get in touch</h1>
       <p>
         You can find me in
       </p>
@@ -67,8 +71,8 @@
         me@adrianocahete.dev
       </p>
       <section class="findme-icons">
-        <Icon url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
-        <Icon url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
+        <Icon url="https://linkedin.com/in/AdrianoCahete" icon="linkedin" title="LinkedIn" />
+        <Icon url="https://behance.net/AdrianoCahete" icon="behance" title="Behance" />
         <Icon url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       </section>
       <Btn
@@ -124,8 +128,13 @@ export default {
   margin-top: 1rem;
 
   a {
-    color: var(--textColor);
+    color: var(--subTitleColor);
     fill: currentColor;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 </style>

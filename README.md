@@ -51,6 +51,7 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - ~~Try modern mode from latest Nuxt~~ *[Fixed on 2020-08-05]*
 - Add micro animations to entire portfolio *[In Progress]*
 - Move to i18n instead of hardcoded text
+- Add [Nuxt Storybook](https://storybook.nuxtjs.org/) to documentation system
 - Customize Nuxt loading page (up to v2.13)
 - Create a blog to explain the steps of each project
 - Create specific page for every project/interface

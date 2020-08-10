@@ -1,10 +1,10 @@
 <template>
   <section class="WhoAmI">
-    <h1 v-if="authorName">
+    <h1 v-if="authorName" :class="isMain ? 'titleMain':''">
       {{ authorName }}
     </h1>
-    <p v-if="jobTitle">
-      {{ jobTitle }}
+    <p v-if="jobTitle" :class="isMain ? 'descriptionMain':''">
+      I am a <strong>{{ jobTitle }}</strong>
     </p>
     <p v-if="currentCompany">
       currently working at {{ currentCompany }}
@@ -28,6 +28,11 @@ export default {
       type: String,
       required: false,
       default: ''
+    },
+    isMain: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   }
 }
@@ -38,7 +43,38 @@ h1 {
   white-space: nowrap;
 }
 
-p {
+p:not(.descriptionMain) {
   font-size: 1.3rem;
+}
+
+.titleMain {
+  display: block;
+  font-weight: 400;
+  font-size: 10rem;
+  letter-spacing: 1px;
+  color: transparent;
+  background: var(--titleColor);
+  background-size: 400% 400%;
+  background-clip: text;
+  animation: gradient-title 5s ease-in-out infinite;
+  // animation-direction: alternate;
+  transition: font-size .5s ease-in-out;
+}
+
+.descriptionMain {
+  color: var(--textColor, #FFFFFF);
+  opacity: 0.6;
+  transition: opacity .5s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+  }
+}
+
+@media (max-width: 800px) {
+  .titleMain {
+    font-size: 4.5rem;
+  }
 }
 </style>
