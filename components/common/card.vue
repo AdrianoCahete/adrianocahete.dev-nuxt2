@@ -1,29 +1,29 @@
 <template>
-  <transition name="slide-fade">
-    <section class="card" :class="{ isMinor: isMinor }" :style="'animation-delay:'+ animationDelay + 's'">
-      <h3 class="cardTitle">
-        <span v-if="isMinor">[Minor] </span>
-        {{ title }}
-        <Icon v-if="url" :url="url" :icon="icon" :title="tooltip" class="cardLink-Item" />
-      </h3>
-      <h4 class="cardSubTitle">
-        {{ subtitle }}
-      </h4>
-      <h5 v-if="info" class="cardInfo">
-        {{ info }}
-      </h5>
-      <section v-if="supportLink" class="cardLinks">
-        <a :href="supportLink" target="_blank" rel="nofollow,noopener,external">
-          <img v-if="supportImg" :src="supportImg" :alt="supportTooltip">
-        </a>
-      </section>
-      <transition-group v-if="items" tag="ul" name="list" class="cardItems" appear>
-        <li v-for="(item, idx) in items" :key="idx + 0">
-          {{ item.name }} <Icon v-if="item.url" :url="item.url" icon="link" :title="item.name" class="cardLink-Item" />
-        </li>
-      </transition-group>
+  <!-- <transition name="slide-fade"> -->
+  <section class="card" :class="{ isMinor: isMinor, noAnimation: noAnimation }" :style="'animation-delay:'+ animationDelay + 's'">
+    <h3 class="cardTitle">
+      <span v-if="isMinor">[Minor] </span>
+      {{ title }}
+      <Icon v-if="url" :url="url" :icon="icon" :title="tooltip" class="cardLink-Item" />
+    </h3>
+    <h4 class="cardSubTitle">
+      {{ subtitle }}
+    </h4>
+    <h5 v-if="info" class="cardInfo">
+      {{ info }}
+    </h5>
+    <section v-if="supportLink" class="cardLinks">
+      <a :href="supportLink" target="_blank" rel="nofollow,noopener,external">
+        <img v-if="supportImg" :src="supportImg" :alt="supportTooltip">
+      </a>
     </section>
-  </transition>
+    <transition-group v-if="items" tag="ul" name="list" class="cardItems" appear>
+      <li v-for="(item, idx) in items" :key="idx + 0">
+        {{ item.name }} <Icon v-if="item.url" :url="item.url" icon="link" :title="item.name" class="cardLink-Item" />
+      </li>
+    </transition-group>
+  </section>
+  <!-- </transition> -->
 </template>
 
 <script>
@@ -94,6 +94,11 @@ export default {
       type: Boolean,
       required: false,
       default: false
+    },
+    noAnimation: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   }
 }
@@ -103,9 +108,12 @@ export default {
 .card {
   margin-bottom: 2rem;
   padding-bottom: .8rem;
-  opacity: 0;
-  animation: fadeIn .5s ease-in;
-  animation-fill-mode: forwards;
+
+  &:not(.noAnimation) {
+    opacity: 0;
+    animation: fadeIn .5s ease-in;
+    animation-fill-mode: forwards;
+  }
 
   .cardSubTitle,
   .cardInfo {
