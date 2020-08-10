@@ -80,6 +80,10 @@
         title="Download resume"
       />
     </section>
+
+    <section id="appInfo" class="section-simple appInfo">
+      Portfolio v{{ $config.appVersion }}
+    </section>
   </section>
 </template>
 
@@ -136,5 +140,11 @@ export default {
       opacity: 1;
     }
   }
+}
+
+.appInfo {
+  font-size: 1rem;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
 }
 </style>

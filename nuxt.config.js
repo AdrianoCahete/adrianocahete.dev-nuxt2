@@ -1,6 +1,4 @@
 /* eslint-disable no-labels */
-// import path from 'path'
-// import fs from 'fs'
 
 export default {
   mode: 'universal',
@@ -24,6 +22,11 @@ export default {
     port: 3002
   },
 
+  publicRuntimeConfig: {
+    appVersion: require('./package.json').version,
+    appAuthor: require('./package.json').author
+  },
+
   // Headers of the page
   head: {
     title: process.env.npm_package_name || '',
@@ -37,7 +40,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=2, user-scalable=1, shrink-to-fit=no' },
       { name: 'keywords', content: 'product design, product designer, designer de produto, UI, UX, UI/UX, UI developer, Desenvovledor de Interface, Designer, Cahete, Adriano Cahete' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
-      { name: 'author', content: 'Adriano Cahete' },
+      { name: 'author', content: process.env.npm_package_author || 'Adriano Cahete' },
       { property: 'og:type', content: 'website' },
       { property: 'og:title', content: process.env.npm_package_name },
       { property: 'og:site_name', content: process.env.npm_package_description },
@@ -85,7 +88,8 @@ export default {
     hostname: 'https://adrianocahete.dev',
     gzip: true,
     exclude: [
-      '/debug'
+      '/debug',
+      '/resume'
     ]
   },
 
@@ -107,6 +111,56 @@ export default {
     }
   },
 
+  // https://github.com/ch99q/nuxt-pdf
+  pdf: {
+    // Output folder for generated pdf.
+    dir: 'dist',
+
+    // Function options for page.pdf([options])
+    // Read more: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-pagepdfoptions
+    pdf: {
+      // Change the format of the pdfs.
+      format: 'A4',
+      printBackground: true // Include background in pdf.
+    },
+
+    // PDF Meta configuration
+    meta: {
+      title: process.env.npm_package_description,
+      // titleTemplate: 'Example ─ %s',
+
+      author: process.env.npm_package_author,
+      subject: process.env.npm_package_description + ' @ https://' + process.env.name,
+
+      producer: 'Example Inc.',
+
+      // Control the date the file is created.
+      creationDate: new Date(),
+
+      keywords: ['pdf', 'resume', process.env.npm_package_author]
+    },
+
+    // PDF generation routes. (expanding nuxt.generate)
+    routes: [
+      {
+        // PDF Filename
+        filename: 'Adriano_Cahete-Resume.pdf',
+
+        // Output directory for pdf.
+        // Combined with 'dir' value in options. (default 'dist')
+        directory: 'resume/',
+
+        // Route to content that should be converted into pdf.
+        route: '/resume/',
+
+        // Override global meta with individual meta for each pdf.
+        meta: {
+          title: process.env.npm_package_description
+        }
+      }
+    ]
+  },
+
   // Plugins to load before mounting the App
   plugins: [
     // '~/plugins/common.js'
@@ -116,11 +170,6 @@ export default {
 
   // Nuxt.js dev-modules
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    // '@nuxtjs/eslint-module'
-
-    // Doc: https://github.com/nuxt-community/stylelint-module
-    // '@nuxtjs/stylelint-module'
     [
       '@nuxtjs/pwa', // https://pwa.nuxtjs.org/
       {
@@ -135,6 +184,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     // '@nuxtjs/axios'
     // 'nuxt-feature-toggle',
+    'nuxt-pdf',
     '@nuxtjs/device',
     'nuxt-payload-extractor',
     '@nuxtjs/sitemap'

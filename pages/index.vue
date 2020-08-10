@@ -6,7 +6,6 @@
         job-title="Product Designer & User Interface Developer"
         is-main
       />
-      <!-- {{ appVersion }} -->
     </section>
   </section>
 </template>
@@ -15,6 +14,7 @@
 import whoAmI from '~/components/common/whoAmI'
 
 export default {
+
   components: {
     whoAmI
   },
