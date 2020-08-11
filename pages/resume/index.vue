@@ -79,7 +79,7 @@
 </template>
 
 <script>
-import Card from '~/components/common/card'
+import Card from '~/components/common/Card/simpleCard'
 
 export default {
   layout: 'resume',

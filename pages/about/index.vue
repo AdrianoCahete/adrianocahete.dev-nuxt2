@@ -18,9 +18,10 @@
           title="Some Skills"
           :items-col-left="[
             {name: 'Design for Desktop & Mobile'},
-            {name: 'Working with remote teams for the past ~5 years'},
+            {name: 'Working with remote and multi-cultural teams for the past ~5 years'},
             {name: 'Customer focused'},
-            {name: 'Specialized to fullfil the gap between Designers and Developers'},
+            {name: 'Specialized to fulfill the gap between Designers and Developers'},
+            {name: 'Knowledge in Developer Experience'},
             {name: 'HTML/CSS (and Stylus/Saas/Less)'},
             {name: 'Adobe XD & Sketch'},
             {name: 'Scrum / Kanban / Agile'},
@@ -70,9 +71,13 @@
       <p class="primaryContact">
         me@adrianocahete.dev
       </p>
+      <p>
+        I'm located in Rio de Janeiro/Brazil
+      </p>
       <section class="findme-icons">
         <Icon url="https://linkedin.com/in/AdrianoCahete" icon="linkedin" title="LinkedIn" />
         <Icon url="https://behance.net/AdrianoCahete" icon="behance" title="Behance" />
+        <!-- <Icon url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" /> -->
         <Icon url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       </section>
       <Btn
@@ -82,14 +87,14 @@
     </section>
 
     <section id="appInfo" class="section-simple appInfo">
-      Portfolio v{{ $config.appVersion }}
+      This portfolio is under constant update | 2020 - v{{ $config.appVersion }}
     </section>
   </section>
 </template>
 
 <script>
 import listItem from '~/components/common/listItem'
-import Card from '~/components/common/card'
+import Card from '~/components/common/Card/simpleCard'
 import Btn from '~/components/common/button'
 import Icon from '~/components/common/Icon'
 
@@ -103,7 +108,7 @@ export default {
 
   head () {
     return {
-      title: 'Skills'
+      title: 'About'
     }
   }
 }

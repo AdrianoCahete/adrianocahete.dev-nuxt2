@@ -112,54 +112,55 @@ export default {
   },
 
   // https://github.com/ch99q/nuxt-pdf
-  pdf: {
-    // Output folder for generated pdf.
-    dir: 'dist',
+  // Doesn't work right now: https://github.com/ch99q/nuxt-pdf/issues/7
+  // pdf: {
+  //   // Output folder for generated pdf.
+  //   dir: 'dist',
 
-    // Function options for page.pdf([options])
-    // Read more: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-pagepdfoptions
-    pdf: {
-      // Change the format of the pdfs.
-      format: 'A4',
-      printBackground: true // Include background in pdf.
-    },
+  //   // Function options for page.pdf([options])
+  //   // Read more: https://pptr.dev/#?product=Puppeteer&version=v2.0.0&show=api-pagepdfoptions
+  //   pdf: {
+  //     // Change the format of the pdfs.
+  //     format: 'A4',
+  //     printBackground: true // Include background in pdf.
+  //   },
 
-    // PDF Meta configuration
-    meta: {
-      title: process.env.npm_package_description,
-      // titleTemplate: 'Example ─ %s',
+  //   // PDF Meta configuration
+  //   meta: {
+  //     title: process.env.npm_package_description,
+  //     // titleTemplate: 'Example ─ %s',
 
-      author: process.env.npm_package_author,
-      subject: process.env.npm_package_description + ' @ https://' + process.env.name,
+  //     author: process.env.npm_package_author,
+  //     subject: process.env.npm_package_description + ' @ https://' + process.env.name,
 
-      producer: 'Example Inc.',
+  //     producer: 'Example Inc.',
 
-      // Control the date the file is created.
-      creationDate: new Date(),
+  //     // Control the date the file is created.
+  //     creationDate: new Date(),
 
-      keywords: ['pdf', 'resume', process.env.npm_package_author]
-    },
+  //     keywords: ['pdf', 'resume', process.env.npm_package_author]
+  //   },
 
-    // PDF generation routes. (expanding nuxt.generate)
-    routes: [
-      {
-        // PDF Filename
-        filename: 'Adriano_Cahete-Resume.pdf',
+  //   // PDF generation routes. (expanding nuxt.generate)
+  //   routes: [
+  //     {
+  //       // PDF Filename
+  //       filename: 'Adriano_Cahete-Resume.pdf',
 
-        // Output directory for pdf.
-        // Combined with 'dir' value in options. (default 'dist')
-        directory: 'resume/',
+  //       // Output directory for pdf.
+  //       // Combined with 'dir' value in options. (default 'dist')
+  //       directory: 'resume/',
 
-        // Route to content that should be converted into pdf.
-        route: '/resume/',
+  //       // Route to content that should be converted into pdf.
+  //       route: '/resume/',
 
-        // Override global meta with individual meta for each pdf.
-        meta: {
-          title: process.env.npm_package_description
-        }
-      }
-    ]
-  },
+  //       // Override global meta with individual meta for each pdf.
+  //       meta: {
+  //         title: process.env.npm_package_description
+  //       }
+  //     }
+  //   ]
+  // },
 
   // Plugins to load before mounting the App
   plugins: [

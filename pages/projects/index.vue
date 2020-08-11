@@ -1,7 +1,8 @@
 <template>
   <section class="content">
     <section id="projects" class="section">
-      <Card
+      <!-- Move to DesignCard (Side-by-side) -->
+      <designCard
         animation-delay="0.1"
         title="This portfolio"
         subtitle="Made with NuxtJS (VueJS), with constant updates and auto deployed on Netlify"
@@ -20,7 +21,7 @@
         ]"
       />
 
-      <Card
+      <designCard
         animation-delay="0.3"
         title="Webfont Generator CLI"
         subtitle="Forked a somewhat abandoned tool to generate font-icons from SVGs for use in some work projects"
@@ -32,7 +33,7 @@
         ]"
       />
 
-      <Card
+      <designCard
         animation-delay="0.5"
         title="Simple Badges"
         subtitle="Simple Badges for Github profiles"
@@ -43,7 +44,7 @@
         ]"
       />
 
-      <Card
+      <designCard
         animation-delay="0.7"
         title="Better Adrena"
         subtitle="Chrome/Firefox extension to add new functionalities to a Brazilian forum"
@@ -55,7 +56,7 @@
         ]"
       />
 
-      <Card
+      <designCard
         animation-delay="0.9"
         title="RocketChat"
         subtitle="Updated the stylesheet architecture and made some small UI fixes across the project"
@@ -68,7 +69,7 @@
         ]"
       />
 
-      <Card
+      <designCard
         animation-delay="1"
         title="Detect.JS"
         subtitle="Keeping the library updated with the latest browsers at the time"
@@ -80,7 +81,7 @@
         ]"
       />
 
-      <Card
+      <designCard
         animation-delay="1.3"
         title="Google Chrome Lighthouse"
         subtitle="Small fixes for CLI"
@@ -97,11 +98,11 @@
 </template>
 
 <script>
-import Card from '~/components/common/card'
+import designCard from '~/components/common/Card/designCard'
 
 export default {
   components: {
-    Card
+    designCard
   },
   head () {
     return {
