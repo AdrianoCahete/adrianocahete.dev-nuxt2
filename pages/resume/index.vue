@@ -99,17 +99,23 @@ export default {
 <style lang="stylus" scoped>
 // Sizes are in mm because it's a PDF
 
+@media print {
+  .resume-page {
+    visibility: visible !important;
+  }
+}
+
 .resume-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: var(--bgColor);
-  color: #fff;
+  color: #ffffff;
   background-attachment: fixed;
   background-size: 500% 500%;
   background-position: 0 50%;
   border-bottom: var(--navbarBorder);
-  padding: 10mm 20mm 10mm 30mm;
+  padding: 10mm;
   height: 50mm;
 
   .resume-author {
@@ -131,7 +137,7 @@ export default {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 10mm 20mm 0 30mm;
+  padding: 10mm 10mm 0 10mm;
 
   .resume-section {
     margin-bottom: 10mm;
@@ -144,7 +150,7 @@ export default {
 }
 
 .resume-footer {
-  padding: 10mm 20mm 20mm 30mm;
+  padding: 10mm;
   text-align: right;
   font-size: 1rem;
 }

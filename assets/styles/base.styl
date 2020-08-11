@@ -131,3 +131,19 @@ h1 {
     width: 100vw;
   }
 }
+
+@media print {
+  html,
+  body {
+    visibility: visible !important;
+  }
+
+  .resume-header {
+    background-attachment: initial !important;
+  }
+
+  .resume-content,
+  .resume-footer {
+    background: #ffffff !important;
+  }
+}

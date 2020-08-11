@@ -21,8 +21,7 @@ export default {
 
 @media print {
   .resume-page {
-    width: 210mm;
-    min-height: 297mm;
+    min-height: 290mm;
   }
 }
 </style>
