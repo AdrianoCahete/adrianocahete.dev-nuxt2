@@ -47,12 +47,12 @@ export default {
     },
     subtitle: {
       type: String,
-      required: true,
+      required: false,
       default: ''
     },
     items: {
       type: Array,
-      required: true,
+      required: false,
       default: () => []
     },
     info: {

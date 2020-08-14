@@ -13,7 +13,7 @@
       </section>
       <section v-if="$nuxt.isOffline">
         <alert
-          message="You appear to be offline. This links won't load, but you can still navigate on this portfolio."
+          message="You appear to be offline. These links won't load, but you can still navigate on this portfolio."
           type="info"
         />
       </section>

@@ -35,7 +35,7 @@ $ npm run dev
 $ npm run generate
 ```
 
-## Test SW Locally
+## Test ServiceWork (and offline mode) locally
 You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.com/a/34161385
 
 
@@ -54,9 +54,9 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - Add [Nuxt Storybook](https://storybook.nuxtjs.org/) to documentation system
 - Customize Nuxt loading page (up to v2.13)
 - Create a blog to explain the steps of each project
-- Create specific page for every project/interface
+- Create a specific page for every project/interface
 - Add all licenses to project page "This portfolio"
-- Add an interactable animation on Main page (home)
+- Add an interactable animation on the Main page (home)
 - Make a better error/not found page
 - Move CSS to SASS instead of Stylus ([stylus seems to be deprecated or, at least, stagnated](https://github.com/stylus/stylus/issues/2282))
 - Create a changelog
@@ -67,7 +67,6 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - Add a switch to change themes
 - Add more themes than just light/dark theme
 - Add custom themes (add the ability to user modify the theme on-the-fly)
-- Make styles documentation (using [SassDoc](http://sassdoc.com/) and maybe Docusaurus?)
 - Add CSS regression tests (BackstopJS, BrowserStack or Helpscout Barista?)
 - Add Vue code tests
 - Add CSS to mock IE users :)

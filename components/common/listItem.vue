@@ -38,7 +38,7 @@ export default {
     },
     title: {
       type: String,
-      required: true,
+      required: false,
       default: ''
     },
     description: {
@@ -62,7 +62,6 @@ export default {
 
 <style lang="stylus" scoped>
 .listItem {
-
   .title {
     color: var(--subTitleColor);
     font-weight: 500;
@@ -122,4 +121,13 @@ export default {
   transform: scaleY(0);
   transform-origin: center top;
 }
+
+// @media print {
+//   .listItem .listContent .colList {
+//     li {
+//       page-break-after: auto !important;
+//       page-break-inside: avoid !important;
+//     }
+//   }
+// }
 </style>

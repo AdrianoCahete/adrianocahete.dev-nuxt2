@@ -6,16 +6,16 @@
           I'm <strong>Adriano Cahete</strong>, a <strong>Product Designer</strong> from Rio de Janeiro
         </p>
         <p class="description">
-          Working across some <strong>Product Design</strong> areas (Interaction, Motion, UX, UI), as a <strong>Lead Designer</strong>, and crafting awesome User Experiences on digital products <strong>with +8 years of experience</strong> with companies in Brazil and US.
+          Working across some <strong>Product Design</strong> areas (Interaction, Motion, UX, UI) as a <strong>Lead Designer</strong> and crafting awesome User Experiences on digital products <strong>with +8 years of experience</strong> with companies in Brazil, Netherlands and US.
         </p>
         <p class="description">
-          With a broad of skills, from Design to Code, specialized to fulfil the gap between Designers and Developers and creating tools to help designers to do a faster and better work.
+          With a broad range of skills, from Design to Code, specialized to fulfil the gap between Designers and Developers and creating tools to help designers to do a faster and better work.
         </p>
       </section>
       <section id="skills" class="section-col">
         <!-- {name: 'Worked with High Performance Teams'}, -->
         <listItem
-          title="Some Skills"
+          title="Quick facts"
           :items-col-left="[
             {name: 'Design for Desktop & Mobile'},
             {name: 'Working with remote and multi-cultural teams for the past ~5 years'},
@@ -35,7 +35,6 @@
     <section id="work" class="section-simple">
       <h1>Where I've Worked</h1>
       <!--  -->
-      <!-- -->
       <Card
         animation-delay="0.1"
         title="Lead Product Designer & UI Developer"
@@ -58,7 +57,7 @@
           {name: 'Write modern, maintainable and performant code for Modulo Risk Manager'},
           {name: 'Proposed and implemented a solution to make UIs more alike to the designed ones'},
           {name: 'Worked with Rio\'s Public Security Stakeholders in Integrated Command & Control Center to bring a most efficient Interface for 911 operators'},
-          {name: 'Performed the layer between design and development, talking in the way that the developer understand'}
+          {name: 'Performed the layer between design and development, talking in the way that the developer understands'}
         ]"
       />
     </section>
@@ -81,13 +80,20 @@
         <Icon url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       </section>
       <Btn
-        url="./resume/[en-US]-Adriano_Cahete.pdf"
+        url="./resume-arctifacts/[en-US]-Adriano_Cahete.pdf"
         title="Download resume"
       />
+      <Btn
+        v-if="isDevMode"
+        url="./resume-arctifacts/Adriano_Cahete-Resume.pdf"
+        title="Test Nuxt-PDF"
+      />
+      <!-- url="./resume/Adriano_Cahete-Resume.pdf" -- Nuxt-PDF -->
+      <!-- url="./resume/[en-US]-Adriano_Cahete.pdf" -- Default -->
     </section>
 
     <section id="appInfo" class="section-simple appInfo">
-      This portfolio is under constant update | 2020 - v{{ $config.appVersion }}
+      This portfolio is under constant update | {{ year }}.{{ month }} - v{{ $config.appVersion }}
     </section>
   </section>
 </template>
@@ -104,6 +110,33 @@ export default {
     Card,
     Btn,
     Icon
+  },
+
+  asyncData () {
+    return {
+      date: new Date()
+    }
+  },
+
+  data () {
+    return {
+      isDevMode: process.env.NODE_ENV === 'development'
+    }
+  },
+
+  computed: {
+    year () {
+      return this.date.getFullYear()
+    },
+    month () {
+      return this.date.getMonth() + 1
+    }
+  },
+
+  created () {
+    if (typeof this.date === 'string') {
+      this.date = new Date(this.date)
+    }
   },
 
   head () {

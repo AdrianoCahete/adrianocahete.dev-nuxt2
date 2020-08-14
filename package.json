@@ -3,6 +3,7 @@
   "version": "2.2.0",
   "description": "Adriano Cahete's Portfolio",
   "author": "Adriano Cahete",
+  "url": "https://adrianocahete.dev",
   "private": true,
   "project": {
     "theme_color": "#175e80"
@@ -13,7 +14,8 @@
     "build": "nuxt build --modern",
     "start": "cross-env NODE_ENV=development nuxt start --modern",
     "generate": "nuxt generate --modern",
-    "resume": "chromehtml2pdf --out=./static/resume/AdrianoCahete-Resume.pdf http://localhost:3002/resume/",
+    "resume": "echo 'rsume task is deprecated, running `npm run generate` instead' && npm run generate",
+    "resume-test": "chromehtml2pdf --out=./static/resume/AdrianoCahete-Resume-test.pdf http://localhost:3002/resume/",
     "performance": "cross-env LIGHTHOUSE_BADGES_PARAMS=\"--emulated-form-factor desktop\" npx lighthouse-badges --urls https://adrianocahete.dev/ -r -o ./static/performance/ -b flat",
     "perf_single": "cross-env LIGHTHOUSE_BADGES_PARAMS=\"--emulated-form-factor desktop\" npx lighthouse-badges --urls https://adrianocahete.dev/ -s -o ./static/performance/ -b flat",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
@@ -37,7 +39,7 @@
     "eslint": "^7.6.0",
     "eslint-plugin-nuxt": ">=1.0.0",
     "nuxt-payload-extractor": "^1.1.1",
-    "nuxt-pdf": "^1.0.4",
+    "nuxt-pdf": "^1.1.1",
     "stylus": "^0.54.8",
     "stylus-loader": "^3.0.2"
   }
