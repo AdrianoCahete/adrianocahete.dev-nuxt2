@@ -1,27 +1,33 @@
 <template>
   <!-- <transition name="slide-fade"> -->
   <section class="card-design" :class="{ isMinor: isMinor, noAnimation: noAnimation }" :style="'animation-delay:'+ animationDelay + 's'">
-    <h3 class="cardTitle">
-      <span v-if="isMinor">[Minor] </span>
-      {{ title }}
-      <Icon v-if="url" :url="url" :icon="icon" :title="tooltip" class="cardLink-Item" />
-    </h3>
-    <h4 class="cardSubTitle">
-      {{ subtitle }}
-    </h4>
-    <h5 v-if="info" class="cardInfo">
-      {{ info }}
-    </h5>
-    <section v-if="supportLink" class="cardLinks">
-      <a :href="supportLink" target="_blank" rel="nofollow,noopener,external">
-        <img v-if="supportImg" :src="supportImg" :alt="supportTooltip">
-      </a>
-    </section>
-    <transition-group v-if="items" tag="ul" name="list" class="cardItems" appear>
-      <li v-for="(item, idx) in items" :key="idx + 0">
-        {{ item.name }} <Icon v-if="item.url" :url="item.url" icon="link" :title="item.name" class="cardLink-Item" />
-      </li>
-    </transition-group>
+    <a
+      :href="url"
+      target="_blank"
+      rel="nofollow,noopener,external"
+    >
+      <h3 class="cardTitle">
+        <span v-if="isMinor">[Minor] </span>
+        {{ title }}
+        <Icon v-if="url" :url="url" :icon="icon" :title="tooltip" class="cardLink-Item" />
+      </h3>
+      <h4 class="cardSubTitle">
+        {{ subtitle }}
+      </h4>
+      <h5 v-if="info" class="cardInfo">
+        {{ info }}
+      </h5>
+      <section v-if="supportLink" class="cardLinks">
+        <a :href="supportLink" target="_blank" rel="nofollow,noopener,external">
+          <img v-if="supportImg" :src="supportImg" :alt="supportTooltip">
+        </a>
+      </section>
+      <!-- <transition-group v-if="items" tag="ul" name="list" class="cardItems" appear>
+        <li v-for="(item, idx) in items" :key="idx + 0">
+          {{ item.name }} <Icon v-if="item.url" :url="item.url" icon="link" :title="item.name" class="cardLink-Item" />
+        </li>
+      </transition-group> -->
+    </a>
   </section>
   <!-- </transition> -->
 </template>
@@ -106,8 +112,23 @@ export default {
 
 <style lang="stylus" scoped>
 .card-design {
+  display: flex;
+  flex-direction: column;
+  height: 25vw;
+  width: 25vw;
+  max-height: 300px;
+  max-width: 300px;
+  border: 1px solid #000;
   margin-bottom: 2rem;
-  padding-bottom: .8rem;
+  padding: .8rem;
+  border-radius: 5px;
+  margin-right: 2rem;
+
+  a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+  }
 
   &:not(.noAnimation) {
     opacity: 0;
