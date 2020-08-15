@@ -81,7 +81,7 @@ export default {
     transition: .3s ease-in-out all;
 
     a {
-      color: var(--navColor);
+      color: var(--navColorActive);
       text-decoration: none;
 
       &.nuxt-link-exact-active {

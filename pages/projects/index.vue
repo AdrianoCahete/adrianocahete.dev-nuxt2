@@ -89,6 +89,7 @@
           :items="[
             {name: 'Fixes on CLI version on Windows OS'}
           ]"
+          self-made
         />
       </section>
       <!-- <a href="https://github.com/GoogleChrome/lighthouse/pull/1307" /> -->
@@ -122,5 +123,11 @@ export default {
 .grid {
   display: flex;
   flex-wrap: wrap;
+}
+
+@media (max-width: 670px) {
+  .grid {
+    justify-content: center;
+  }
 }
 </style>

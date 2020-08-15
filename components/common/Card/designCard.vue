@@ -1,31 +1,31 @@
 <template>
-  <!-- <transition name="slide-fade"> -->
-  <section class="card-design" :class="{ isMinor: isMinor }" :style="'animation-delay:'+ animationDelay + 's'">
-    <a
-      :href="url"
-      target="_blank"
-      rel="nofollow,noopener,external"
-    >
-      <section class="cardContent">
-        <h3 class="cardTitle">
-          <span v-if="isMinor">[Minor] </span>
-          {{ title }}
-        </h3>
-        <h4 class="cardSubTitle">
-          {{ subtitle }}
-        </h4>
-        <h5 v-if="info" class="cardInfo">
-          {{ info }}
-        </h5>
-        <!-- <transition-group v-if="items" tag="ul" name="list" class="cardItems" appear>
-          <li v-for="(item, idx) in items" :key="idx + 0">
-            {{ item.name }} <Icon v-if="item.url" :url="item.url" icon="link" :title="item.name" class="cardLink-Item" />
-          </li>
-        </transition-group> -->
-      </section>
-    </a>
-  </section>
-  <!-- </transition> -->
+  <transition name="slide-fade">
+    <section class="card-design" :class="{ isMinor: isMinor, selfMade: isSelfMade }" :style="'animation-delay:'+ animationDelay + 's'">
+      <a
+        :href="url"
+        target="_blank"
+        rel="nofollow,noopener,external"
+      >
+        <section class="cardContent">
+          <h3 class="cardTitle">
+            <span v-if="isMinor">[Minor] </span>
+            {{ title }}
+          </h3>
+          <h4 class="cardSubTitle">
+            {{ subtitle }}
+          </h4>
+          <h5 v-if="info" class="cardInfo">
+            {{ info }}
+          </h5>
+          <!-- <transition-group v-if="items" tag="ul" name="list" class="cardItems" appear>
+            <li v-for="(item, idx) in items" :key="idx + 0">
+              {{ item.name }} <Icon v-if="item.url" :url="item.url" icon="link" :title="item.name" class="cardLink-Item" />
+            </li>
+          </transition-group> -->
+        </section>
+      </a>
+    </section>
+  </transition>
 </template>
 
 <script>
@@ -73,6 +73,11 @@ export default {
       type: Boolean,
       required: false,
       default: false
+    },
+    isSelfMade: {
+      type: Boolean,
+      required: false,
+      default: true
     }
   }
 }
@@ -164,6 +169,28 @@ export default {
     transition: all .7s ease-in-out;
     transform: scale(1.02);
     z-index: 2;
+  }
+}
+
+// Tablet
+@media (max-width: 670px) {
+  .card-design {
+    max-width: 100%;
+    width: calc(50% - 1rem);
+    height: 20vh;
+    max-height: 30%;
+    margin-bottom: 2rem;
+  }
+}
+
+// Phone
+@media (max-width: 490px) {
+  .card-design {
+    max-width: 100%;
+    width: 100%;
+    height: 20vh;
+    max-height: 30%;
+    margin-bottom: 2rem;
   }
 }
 </style>
