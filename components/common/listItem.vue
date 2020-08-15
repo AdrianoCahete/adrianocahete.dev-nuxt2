@@ -63,7 +63,7 @@ export default {
 <style lang="stylus" scoped>
 .listItem {
   .title {
-    color: var(--subTitleColor);
+    color: var(--subtitleColor);
     font-weight: 500;
   }
 
@@ -76,7 +76,7 @@ export default {
 
       &::before {
         content: "▹";
-        color: var(--subTitleColor);
+        color: var(--subtitleColor);
       }
     }
   }

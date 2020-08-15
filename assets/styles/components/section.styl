@@ -30,12 +30,24 @@
 
 .section-simple {
   padding-left: 2vw;
-  padding-top: 2vh;
+  padding-top: 3rem;
   text-align: left;
   align-self: flex-start;
 
   h1 {
-    color: var(--subTitleColor);
+    margin-bottom: 1rem;
+  }
+}
+
+.section-simple,
+.section-row {
+  h1 {
+    color: transparent;
+    background: var(--titleColor);
+    background-size: 100% 100%;
+    background-position: 150% 100%;
+    background-clip: text;
+    font-size: 2rem;
   }
 }
 
@@ -59,7 +71,7 @@
 
     .section-col {
       max-width: 100%;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
   }
 }

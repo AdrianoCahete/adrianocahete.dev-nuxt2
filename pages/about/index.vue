@@ -13,9 +13,9 @@
         </p>
       </section>
       <section id="skills" class="section-col">
+        <h1>Quick Facts</h1>
         <!-- {name: 'Worked with High Performance Teams'}, -->
         <listItem
-          title="Quick facts"
           :items-col-left="[
             {name: 'Design for Desktop & Mobile'},
             {name: 'Working with remote and multi-cultural teams for the past ~5 years'},
@@ -170,7 +170,7 @@ export default {
   margin-top: 1rem;
 
   a {
-    color: var(--subTitleColor);
+    color: var(--subtitleColor);
     fill: currentColor;
     opacity: 0.8;
 

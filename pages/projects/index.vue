@@ -4,18 +4,13 @@
       <p class="description">
         Some projects and experiments that I directly made or being part of.
       </p>
-      <!-- Move to DesignCard (Side-by-side) -->
       <section class="grid">
         <designCard
           animation-delay="0.1"
           title="This portfolio"
-          subtitle="Made with NuxtJS (VueJS), with constant updates and auto deployed on Netlify"
+          subtitle="Made with NuxtJS (Vue), with constant updates and auto deployed on Netlify"
           url="https://github.com/AdrianoCahete/adrianocahete.dev"
-          icon="oss"
           tooltip="adrianocahete.dev @ Github"
-          support-link="https://app.netlify.com/sites/adrianocahete-dev/deploys"
-          support-img="https://api.netlify.com/api/v1/badges/bffddeca-83de-4641-807a-ac12aa617fae/deploy-status"
-          support-tooltip="Netlify Status"
           :items="[
             {name: 'Auto-deploy from Github'},
             {name: 'Scoped styles'},
@@ -28,7 +23,7 @@
         <designCard
           animation-delay="0.3"
           title="Webfont Generator CLI"
-          subtitle="Forked a somewhat abandoned tool to generate font-icons from SVGs for use in some work projects"
+          subtitle="Easy-to-use, pre-configured tool to generate webfont icon kits from a .svg files"
           url="https://github.com/AdrianoCahete/webfont-generator-cli"
           tooltip="webfont-generator-cli @ Github"
           :items="[
@@ -63,8 +58,8 @@
         <designCard
           animation-delay="0.9"
           title="RocketChat"
-          subtitle="Updated the stylesheet architecture and made some small UI fixes across the project"
-          url="https://github.com/RocketChat/Rocket.Chat/search?q=AdrianoCahete&type=Commits"
+          subtitle="Made some Product Design decisions, updated the stylesheet architecture and made some small UI fixes."
+          url="https://github.com/RocketChat/Rocket.Chat/"
           tooltip="RocketChat @ Github"
           :items="[
             {name: 'Built and shipped the Ui for ChatOps feature'},
@@ -88,13 +83,12 @@
         <designCard
           animation-delay="1.3"
           title="Google Chrome Lighthouse"
-          subtitle="Small fixes for CLI"
+          subtitle="Automated auditing, performance metrics, and best practices for the web."
           url="https://github.com/GoogleChrome/lighthouse/blob/468c10bb9df7ded215b7a3c47e23f48c1af656f7/changelog.md#new-contributors-24"
           tooltip="Google Chrome Lighthouse @ Github"
           :items="[
             {name: 'Fixes on CLI version on Windows OS'}
           ]"
-          is-minor
         />
       </section>
       <!-- <a href="https://github.com/GoogleChrome/lighthouse/pull/1307" /> -->

@@ -1,43 +1,36 @@
 <template>
   <!-- <transition name="slide-fade"> -->
-  <section class="card-design" :class="{ isMinor: isMinor, noAnimation: noAnimation }" :style="'animation-delay:'+ animationDelay + 's'">
+  <section class="card-design" :class="{ isMinor: isMinor }" :style="'animation-delay:'+ animationDelay + 's'">
     <a
       :href="url"
       target="_blank"
       rel="nofollow,noopener,external"
     >
-      <h3 class="cardTitle">
-        <span v-if="isMinor">[Minor] </span>
-        {{ title }}
-        <Icon v-if="url" :url="url" :icon="icon" :title="tooltip" class="cardLink-Item" />
-      </h3>
-      <h4 class="cardSubTitle">
-        {{ subtitle }}
-      </h4>
-      <h5 v-if="info" class="cardInfo">
-        {{ info }}
-      </h5>
-      <section v-if="supportLink" class="cardLinks">
-        <a :href="supportLink" target="_blank" rel="nofollow,noopener,external">
-          <img v-if="supportImg" :src="supportImg" :alt="supportTooltip">
-        </a>
+      <section class="cardContent">
+        <h3 class="cardTitle">
+          <span v-if="isMinor">[Minor] </span>
+          {{ title }}
+        </h3>
+        <h4 class="cardSubTitle">
+          {{ subtitle }}
+        </h4>
+        <h5 v-if="info" class="cardInfo">
+          {{ info }}
+        </h5>
+        <!-- <transition-group v-if="items" tag="ul" name="list" class="cardItems" appear>
+          <li v-for="(item, idx) in items" :key="idx + 0">
+            {{ item.name }} <Icon v-if="item.url" :url="item.url" icon="link" :title="item.name" class="cardLink-Item" />
+          </li>
+        </transition-group> -->
       </section>
-      <!-- <transition-group v-if="items" tag="ul" name="list" class="cardItems" appear>
-        <li v-for="(item, idx) in items" :key="idx + 0">
-          {{ item.name }} <Icon v-if="item.url" :url="item.url" icon="link" :title="item.name" class="cardLink-Item" />
-        </li>
-      </transition-group> -->
     </a>
   </section>
   <!-- </transition> -->
 </template>
 
 <script>
-import Icon from '~/components/common/Icon'
-
 export default {
   components: {
-    Icon
   },
 
   props: {
@@ -71,37 +64,12 @@ export default {
       required: false,
       default: ''
     },
-    icon: {
-      type: String,
-      required: false,
-      default: 'link'
-    },
     tooltip: {
       type: String,
       required: false,
       default: ''
     },
-    supportLink: {
-      type: String,
-      required: false,
-      default: ''
-    },
-    supportImg: {
-      type: String,
-      required: false,
-      default: ''
-    },
-    supportTooltip: {
-      type: String,
-      required: false,
-      default: ''
-    },
     isMinor: {
-      type: Boolean,
-      required: false,
-      default: false
-    },
-    noAnimation: {
       type: Boolean,
       required: false,
       default: false
@@ -118,11 +86,13 @@ export default {
   width: 25vw;
   max-height: 300px;
   max-width: 300px;
-  border: 1px solid #000;
-  margin-bottom: 2rem;
-  padding: .8rem;
+  margin-bottom: .3rem;
+  margin-right: .3rem;
+  padding: 1.2rem;
   border-radius: 5px;
-  margin-right: 2rem;
+  text-align: center;
+  transition: all .5s ease-in-out;
+  background-color: #2E3944;
 
   a {
     height: 100%;
@@ -136,19 +106,25 @@ export default {
     animation-fill-mode: forwards;
   }
 
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
   .cardSubTitle,
   .cardInfo {
     font-weight: normal;
   }
 
   .cardTitle {
-    color: var(--subTitleColor);
-    font-weight: 500;
+    color: #fff;
   }
 
   .cardSubTitle {
     font-size: 1.6rem;
-    color: var(--grayedOut, #FFFFFF);
+    color: #f3f3f3;
     margin-bottom: .5rem;
   }
 
@@ -164,7 +140,7 @@ export default {
     li {
       &::before {
         content: "▹";
-        color: var(--subTitleColor);
+        color: var(--subtitleColor);
       }
     }
   }
@@ -181,6 +157,13 @@ export default {
     .cardInfo {
       font-size: 1.3rem;
     }
+  }
+
+  &:hover {
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, .7);
+    transition: all .7s ease-in-out;
+    transform: scale(1.02);
+    z-index: 2;
   }
 }
 </style>

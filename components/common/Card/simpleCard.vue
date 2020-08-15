@@ -121,7 +121,7 @@ export default {
   }
 
   .cardTitle {
-    color: var(--subTitleColor);
+    color: var(--subtitleColor);
     font-weight: 500;
   }
 
@@ -143,7 +143,7 @@ export default {
     li {
       &::before {
         content: "▹";
-        color: var(--subTitleColor);
+        color: var(--subtitleColor);
       }
     }
   }

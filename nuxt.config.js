@@ -38,14 +38,16 @@ export default {
       { charset: 'utf-8' },
       { name: 'X-UA-Compatible', content: 'IE=edge' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=2, user-scalable=1, shrink-to-fit=no' },
-      { name: 'keywords', content: 'product design, product designer, designer de produto, UI, UX, UI/UX, UI developer, Desenvovledor de Interface, Designer, Cahete, Adriano Cahete' },
+      { name: 'keywords', content: 'product design, product designer, designer de produto, UI, UX, UI/UX, UI developer, Desenvolvedor de Interface, Designer, Cahete, Adriano Cahete, Design Enginner' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
       { name: 'author', content: process.env.npm_package_author || 'Adriano Cahete' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:title', content: process.env.npm_package_name },
+      { property: 'og:title', content: process.env.npm_package_description },
+      { property: 'og:url', content: process.env.npm_package_url },
       { property: 'og:site_name', content: process.env.npm_package_description },
       { property: 'og:description', content: process.env.npm_package_description },
-      { property: 'og:url', content: 'https://AdrianoCahete.dev' },
+      { property: 'og:image', itemprop: 'image', content: process.env.npm_package_url + '/cover.png' },
+      { property: 'og:image:secure_url', itemprop: 'image', content: process.env.npm_package_url + '/cover.png' },
       { name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [
@@ -57,8 +59,8 @@ export default {
   },
 
   manifest: {
-    name: 'Adriano Cahete | Product Designer & UI Developer',
-    short_name: 'Adriano Cahete | Product Designer',
+    name: process.env.npm_package_author_title,
+    short_name: process.env.npm_package_author_title,
     description: process.env.npm_package_description || '',
     theme_color: process.env.npm_package_project_theme_color || '#175e80'
   },
