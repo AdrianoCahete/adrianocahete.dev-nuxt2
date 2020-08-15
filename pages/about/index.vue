@@ -20,14 +20,14 @@
             {name: 'Design for Desktop & Mobile'},
             {name: 'Working with remote and multi-cultural teams for the past ~5 years'},
             {name: 'Customer focused'},
+            {name: 'Worked with Adobe XD & Sketch'},
             {name: 'Specialized to fulfill the gap between Designers and Developers'},
             {name: 'Knowledge in Developer Experience'},
-            {name: 'HTML/CSS (and Stylus/Saas/Less)'},
-            {name: 'Adobe XD & Sketch'},
-            {name: 'Scrum / Kanban / Agile'},
+            {name: 'Expertise with HTML/CSS (and Stylus/Saas/Less)'},
+            {name: 'Clear understanding of Scrum/Kanban/Agile methodologies'},
             {name: 'Quality in mind'},
-            {name: 'Git'},
-            {name: 'Javascript (React, Vue/Nuxt, Node)'},
+            {name: 'Git proficiency'},
+            {name: 'Javascript (React, Vue/Nuxt, Node) knolowedge'},
           ]"
         />
       </section>
@@ -83,11 +83,11 @@
         url="./resume-arctifacts/[en-US]-Adriano_Cahete.pdf"
         title="Download resume"
       />
-      <Btn
+      <!-- <Btn
         v-if="isDevMode"
         url="./resume-arctifacts/Adriano_Cahete-Resume.pdf"
         title="Test Nuxt-PDF"
-      />
+      /> -->
       <!-- url="./resume/Adriano_Cahete-Resume.pdf" -- Nuxt-PDF -->
       <!-- url="./resume/[en-US]-Adriano_Cahete.pdf" -- Default -->
     </section>

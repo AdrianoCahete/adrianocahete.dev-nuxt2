@@ -175,7 +175,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     // '@nuxtjs/axios'
     // 'nuxt-feature-toggle',
-    'nuxt-pdf',
+    // 'nuxt-pdf',
     '@nuxtjs/device',
     'nuxt-payload-extractor',
     '@nuxtjs/sitemap'
