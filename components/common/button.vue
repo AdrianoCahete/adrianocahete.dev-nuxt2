@@ -89,7 +89,7 @@ export default {
       bottom: 3px;
       left: 3px;
       right: 3px;
-      background-color: #fff;
+      background-color: #FFFFFF;
       z-index: -1;
       opacity: 1;
       transition-property: all;
@@ -97,7 +97,14 @@ export default {
       transition-timing-function: ease-in-out;
     }
 
-    &:hover {
+    &:focus {
+      &:after {
+        opacity: .5;
+      }
+    }
+
+    &:hover,
+    &:active {
       color: #FFFFFF;
 
       &:after {

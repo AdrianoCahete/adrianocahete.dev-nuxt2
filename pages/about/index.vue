@@ -163,9 +163,19 @@ export default {
   background-size: 400% 400%;
   background-clip: text;
   transition: background-position ease-in-out 2s;
+  user-select: all
 
   &:hover {
     animation: gradient-title 5s ease-in-out 1;
+  }
+
+  // &:focus {
+  //   outline: 1px solid #000000;
+  // }
+
+  &::selection {
+    background-color: var(--selectionBG);
+    color: #FFFFFF;
   }
 }
 

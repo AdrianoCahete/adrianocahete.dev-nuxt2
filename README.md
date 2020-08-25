@@ -45,6 +45,8 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - Add all licenses to project page "This portfolio" *[In Progress]*
 - Add an interactable animation on the Main page (home) *[In Progress]*
 - Move to i18n instead of hardcoded text
+- Create a Logo
+- Use newly created Logo as link to back Home
 - Add [Nuxt Storybook](https://storybook.nuxtjs.org/) to documentation system
 - Customize Nuxt loading page (up to v2.13)
 - Create a specific page for every project/interface
@@ -62,16 +64,16 @@ You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.co
 - Add CSS to mock IE users :)
 
 ## Fixed
-- ~~Move to PWA to accommodate better the content~~ *[Implemented on 2020-05-16]*
-- ~~Add animations to page loading~~  *[Implemented on 2020-05-16]*
-- ~~Add an offline mode~~  *[Implemented on 2020-05-16]*
-- ~~Add Hotjar to know the user~~ *[Implemented on 2020-05-28]*
-- ~~Fix Navbar on Mobile~~ *[Fixed on 2020-06-26]*
-- ~~Move `isMobile` function/feature to more global scope instead of on `page` scope~~ *[Fixed on 2020-06-29]*
-- ~~Change every `div` to `section`~~ *[Fixed on 2020-07-11]*
-- ~~Move to latest [Nuxt available](https://nuxtjs.org/guide/release-notes)~~  *[Fixed on 2020-08-05]*
-- ~~Try modern mode from latest Nuxt~~ *[Fixed on 2020-08-05]*
 - ~~Add a `build date`/`last updated on` string on page~~  *[Fixed on 2020-08-10]*
+- ~~Try modern mode from latest Nuxt~~ *[Fixed on 2020-08-05]*
+- ~~Move to latest [Nuxt available](https://nuxtjs.org/guide/release-notes)~~  *[Fixed on 2020-08-05]*
+- ~~Change every `div` to `section`~~ *[Fixed on 2020-07-11]*
+- ~~Move `isMobile` function/feature to more global scope instead of on `page` scope~~ *[Fixed on 2020-06-29]*
+- ~~Fix Navbar on Mobile~~ *[Fixed on 2020-06-26]*
+- ~~Add Hotjar to know the user~~ *[Implemented on 2020-05-28]*
+- ~~Add an offline mode~~  *[Implemented on 2020-05-16]*
+- ~~Add animations to page loading~~  *[Implemented on 2020-05-16]*
+- ~~Move to PWA to accommodate better the content~~ *[Implemented on 2020-05-16]*
 
 # Font
 This project uses [Inter](https://github.com/rsms/inter) as a default typography

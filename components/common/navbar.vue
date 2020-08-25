@@ -6,9 +6,6 @@
       </nuxt-link>
     </section>
     <nav id="nav" class="menu">
-      <!-- <nuxt-link to="/" exact>
-        <span>Home</span>
-      </nuxt-link> -->
       <nuxt-link to="/about">
         About
       </nuxt-link>
