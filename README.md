@@ -36,7 +36,7 @@ $ npm run generate
 ```
 
 ## Test ServiceWork (and offline mode) locally
-You need to make localhost trustable on Firefox/Chrome: https://stackoverflow.com/a/34161385
+You need to make [localhost trustable on Firefox/Chrome](https://stackoverflow.com/a/34161385).
 
 
 ## ToDo
