@@ -24,7 +24,8 @@ export default {
 
   publicRuntimeConfig: {
     appVersion: require('./package.json').version,
-    appAuthor: require('./package.json').author
+    appAuthor: require('./package.json').author,
+    appContact: require('./package.json').mail
   },
 
   // Headers of the page

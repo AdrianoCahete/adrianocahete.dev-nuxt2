@@ -27,7 +27,7 @@
       <Icon :hide-mobile="true" url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
       <Icon :hide-mobile="true" url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       <!-- <Icon :hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" /> -->
-      <!-- <Icon :hide-mobile="true" url="./resume-arctifacts/[en-US]-Adriano_Cahete.pdf" icon="pdf" title="Resume" /> -->
+      <Icon :hide-mobile="true" url="./resume-artifacts/[en-US]-Adriano_Cahete.pdf" icon="pdf" title="Resume" />
     </section>
   </section>
 </template>
@@ -107,7 +107,7 @@ export default {
       align-items: center;
       text-decoration: none;
       text-transform: uppercase;
-      fonmt-weight: 400;
+      font-weight: 400;
       height: 100%;
       padding: 0 2rem;
       cursor: pointer;

@@ -3,7 +3,7 @@
     <section class="section-row">
       <section id="about-me" class="section-col">
         <p class="description">
-          I'm <strong>Adriano Cahete</strong>, a <strong>Product Designer</strong> from Rio de Janeiro
+          I'm <strong>{{ $config.appAuthor }}</strong>, a <strong>Product Designer</strong> from Rio de Janeiro
         </p>
         <p class="description">
           Working across some <strong>Product Design</strong> areas (Interaction, Motion, UX, UI) as a <strong>Lead Designer</strong> and crafting awesome User Experiences on digital products <strong>with +8 years of experience</strong> with companies in Brazil, Netherlands and US.
@@ -27,7 +27,7 @@
             {name: 'Clear understanding of Scrum/Kanban/Agile methodologies'},
             {name: 'Quality in mind'},
             {name: 'Git proficiency'},
-            {name: 'Javascript (React, Vue/Nuxt, Node) knolowedge'},
+            {name: 'Javascript (React, Vue/Nuxt, Node) knowledge'},
           ]"
         />
       </section>
@@ -68,9 +68,10 @@
         You can find me in
       </p>
       <p class="primaryContact">
-        me@adrianocahete.dev
+        {{ $config.appContact }}
       </p>
       <p>
+        <Icon icon="location" title="Rio de Janeiro/Brazil" />
         I'm located in Rio de Janeiro/Brazil
       </p>
       <section class="findme-icons">
@@ -79,13 +80,13 @@
         <!-- <Icon url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" /> -->
         <Icon url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       </section>
-      <!-- <Btn
-        url="./resume-arctifacts/[en-US]-Adriano_Cahete.pdf"
+      <Btn
+        url="./resume-artifacts/[en-US]-Adriano_Cahete.pdf"
         title="Download resume"
-      /> -->
+      />
       <!-- <Btn
         v-if="isDevMode"
-        url="./resume-arctifacts/Adriano_Cahete-Resume.pdf"
+        url="./resume-artifacts/Adriano_Cahete-Resume.pdf"
         title="Test Nuxt-PDF"
       /> -->
       <!-- url="./resume/Adriano_Cahete-Resume.pdf" -- Nuxt-PDF -->
