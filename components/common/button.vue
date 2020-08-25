@@ -6,6 +6,7 @@
     :class="'btn-' + type"
     target="_blank"
     rel="nofollow,noopener,external"
+    download
   >
     <svg v-if="icon">
       <use :xlink:href="'#'+ icon"></use>

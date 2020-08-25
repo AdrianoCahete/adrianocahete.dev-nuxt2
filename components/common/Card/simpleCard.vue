@@ -117,17 +117,18 @@ export default {
 
   .cardSubTitle,
   .cardInfo {
-    font-weight: normal;
+    font-weight: 400;
   }
 
   .cardTitle {
     color: var(--subtitleColor);
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .cardSubTitle {
     font-size: 1.6rem;
     color: var(--grayedOut, #FFFFFF);
+    margin-top: .3rem;
     margin-bottom: .5rem;
   }
 

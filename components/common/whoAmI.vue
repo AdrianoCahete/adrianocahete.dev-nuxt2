@@ -17,7 +17,8 @@ export default {
   props: {
     authorName: {
       type: String,
-      required: true
+      required: true,
+      default: ''
     },
     jobTitle: {
       type: String,
@@ -47,11 +48,14 @@ p:not(.descriptionMain) {
   font-size: 1.3rem;
 }
 
+h1:not(.titleMain) {
+  font-weight: 500;
+}
+
 .titleMain {
   display: block;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 10rem;
-  letter-spacing: 1px;
   color: transparent;
   background: var(--titleColor);
   background-size: 400% 400%;

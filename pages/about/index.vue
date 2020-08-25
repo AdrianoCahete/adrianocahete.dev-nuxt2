@@ -79,10 +79,10 @@
         <!-- <Icon url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" /> -->
         <Icon url="https://github.com/AdrianoCahete" icon="github" title="Github" />
       </section>
-      <Btn
+      <!-- <Btn
         url="./resume-arctifacts/[en-US]-Adriano_Cahete.pdf"
         title="Download resume"
-      />
+      /> -->
       <!-- <Btn
         v-if="isDevMode"
         url="./resume-arctifacts/Adriano_Cahete-Resume.pdf"
@@ -152,6 +152,8 @@ export default {
 
 .primaryContact {
   font-size: 2rem;
+  font-weight: 600;
+  font-feature-settings: "calt";
   margin-top: 1rem;
   margin-bottom: 2rem;
   margin-left: 1rem;

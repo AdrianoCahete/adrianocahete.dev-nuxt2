@@ -120,11 +120,12 @@ export default {
 
   .cardSubTitle,
   .cardInfo {
-    font-weight: normal;
+    font-weight: 300;
   }
 
   .cardTitle {
     color: #fff;
+    font-weight: 500;
   }
 
   .cardSubTitle {
