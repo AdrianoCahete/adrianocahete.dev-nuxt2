@@ -5,7 +5,7 @@ on:
       - master
 jobs:
   audit:
-    name: [Audit] Run Lighthouse on deployed portfolio
+    name: Audit - Run Lighthouse on deployed portfolio
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -24,11 +24,19 @@ jobs:
       uses: jakejarvis/lighthouse-action@v0.3.2
       with:
         url: 'https://adrianocahete.dev/'
+    - name: Generate Lighthouse SVG badges
+      run: |
+        npm install
+        npm run performance
+      with:
+        name: lighthouse-report
+        path: './report'
     - name: Upload results as an artifact
       uses: actions/upload-artifact@master
       with:
         name: lighthouse-report
         path: './report'
+
   snapshot:
     name: Historical Snapshot
     strategy:
