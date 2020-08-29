@@ -5,7 +5,7 @@ on:
       - master
 jobs:
   audit:
-    name: Audit - Run Lighthouse on deployed portfolio
+    name: Run Lighthouse on deployed portfolio
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -34,7 +34,7 @@ jobs:
     name: Historical Snapshot
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os: [macos-latest, windows-latest]
         width: [1920, 1440, 1024, 670, 490]
     runs-on: ${{ matrix.os }}
     steps:
