@@ -1,11 +1,11 @@
-name: Audit Deployed
+name: Workflow Actions
 on:
   push:
     branches:
       - master
 jobs:
   audit:
-    name: Run Lighthouse on deployed portfolio
+    name: [Audit] Run Lighthouse on deployed portfolio
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -43,5 +43,3 @@ jobs:
         source: https://adrianocahete.dev/
         destination: snapshot-${{ matrix.os }}-${{ matrix.width }}.png
         full-page: true
-        waitForElement: .titleMain
-        disableAnimations: true
