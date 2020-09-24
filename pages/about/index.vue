@@ -14,13 +14,12 @@
       </section>
       <section id="skills" class="section-col">
         <h1>Quick Facts</h1>
-        <!-- {name: 'Worked with High Performance Teams'}, -->
         <listItem
           :items-col-left="[
             {name: 'Design for Desktop & Mobile'},
-            {name: 'Working with remote and multi-cultural teams for the past ~5 years'},
+            {name: 'Working with remote, multi-cultural and High Performance Teams for the past ~5 years'},
             {name: 'Customer focused'},
-            {name: 'Worked with Adobe XD & Sketch'},
+            {name: 'Worked with Adobe XD, Sketch and Figma'},
             {name: 'Specialized to fulfill the gap between Designers and Developers'},
             {name: 'Knowledge in Developer Experience'},
             {name: 'Expertise with HTML/CSS (and Stylus/Saas/Less)'},
@@ -34,7 +33,6 @@
     </section>
     <section id="work" class="section-simple">
       <h1>Where I've Worked</h1>
-      <!--  -->
       <Card
         animation-delay="0.1"
         title="Lead Product Designer & UI Developer"

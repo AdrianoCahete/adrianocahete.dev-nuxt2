@@ -21,7 +21,7 @@ export default {
 
   head () {
     return {
-      title: 'Home'
+      titleTemplate: 'Adriano Cahete | Product Designer & UI Developer'
     }
   }
 }

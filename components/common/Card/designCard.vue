@@ -1,6 +1,11 @@
 <template>
   <transition name="slide-fade">
-    <section class="card-design" :class="{ isMinor: isMinor, selfMade: isSelfMade }" :style="'animation-delay:'+ animationDelay + 's'">
+    <section
+      class="card-design"
+      :class="{ isMinor: isMinor, selfMade: isSelfMade }"
+      :data-theme="cardTheme ? 'theme-' + cardTheme : ''"
+      :style="'animation-delay:'+ animationDelay + 's'"
+    >
       <a
         :href="url"
         target="_blank"
@@ -11,6 +16,9 @@
             <span v-if="isMinor">[Minor] </span>
             {{ title }}
           </h3>
+          <section v-if="logoImage">
+            logoImage
+          </section>
           <h4 class="cardSubTitle">
             {{ subtitle }}
           </h4>
@@ -39,9 +47,19 @@ export default {
       required: false,
       default: '0'
     },
+    cardTheme: {
+      type: String,
+      required: false,
+      default: ''
+    },
     title: {
       type: String,
       required: true,
+      default: ''
+    },
+    logoImage: {
+      type: String,
+      required: false,
       default: ''
     },
     subtitle: {
@@ -124,7 +142,7 @@ export default {
   }
 
   .cardTitle {
-    color: #fff;
+    color: #FFFFFF;
     font-weight: 500;
   }
 
@@ -170,6 +188,11 @@ export default {
     transition: all .7s ease-in-out;
     transform: scale(1.02);
     z-index: 2;
+  }
+
+  &[data-theme$='1'] {
+    background: red;
+    color: #ffffff;
   }
 }
 

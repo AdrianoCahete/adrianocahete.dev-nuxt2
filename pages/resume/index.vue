@@ -79,7 +79,7 @@
             {name: 'Worked with High Performance Teams'},
             {name: 'Knowledge in Developer Experience'},
             {name: 'HTML/CSS (and Stylus/Saas/Less)'},
-            {name: 'Adobe Photoshop, Adobe XD and Sketch'},
+            {name: 'Adobe Photoshop, Adobe XD, Sketch and Figma'},
             {name: 'Scrum / Kanban / Agile'},
             {name: 'Quality in mind'},
             {name: 'Git'},

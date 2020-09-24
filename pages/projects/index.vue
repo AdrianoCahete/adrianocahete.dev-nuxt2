@@ -11,6 +11,7 @@
           subtitle="Made with NuxtJS (Vue), with constant updates and auto deployed on Netlify"
           url="https://github.com/AdrianoCahete/adrianocahete.dev"
           tooltip="adrianocahete.dev @ Github"
+
           :items="[
             {name: 'Auto-deploy from Github'},
             {name: 'Scoped styles'},
@@ -19,6 +20,8 @@
             {name: 'Works offline'},
           ]"
         />
+        <!-- logo-image="teste"
+        card-theme="1" -->
 
         <designCard
           animation-delay="0.3"

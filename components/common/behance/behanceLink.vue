@@ -83,6 +83,7 @@ export default {
     height: 213px; // TODO: Get from image
     text-decoration none;
     color: #FFFFFF;
+    position: relative;
 
     > img {
       height: inherit;
@@ -93,25 +94,31 @@ export default {
     .projectName {
       opacity: 0;
       transition: ease opacity .5s;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
     }
 
-    // &:hover { // TODO: Fix on Chrome
-    //   .projectName {
-    //     opacity: 1;
-    //     transition: ease opacity .5s;
-    //   }
-    // }
+    &:hover { // TODO: Fix on Chrome
+      .projectName {
+        opacity: 1;
+        transition: ease opacity .5s;
+      }
+    }
   }
 
   .projectName {
-    // display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    bottom: 46px;
-    padding-left: 2%;
-    padding-bottom: 2px;
-    background: linear-gradient(180deg, rgba(57,57,57,0) 0%, rgba(0,0,0,.7) 100%);
+    background: rgba(0, 0, 0, .5);
     text-shadow: 1px 1px 2px black, 0 0 1rem black, 0 0 0.2rem black;
     text-decoration: none;
+    text-align: center;
+    padding: 0 10%;
   }
 }
 

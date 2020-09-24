@@ -23,7 +23,6 @@
       <Icon :hide-mobile="true" url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
       <Icon :hide-mobile="true" url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
       <Icon :hide-mobile="true" url="https://github.com/AdrianoCahete" icon="github" title="Github" />
-      <!-- <Icon :hide-mobile="true" url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" /> -->
       <Icon :hide-mobile="true" url="./resume-artifacts/[en-US]-Adriano_Cahete.pdf" icon="pdf" title="Resume" />
     </section>
   </section>
@@ -178,10 +177,6 @@ export default {
 
 // Tablet
 @media (max-width: 670px) {
-  .headerInfo {
-    // display: none;
-  }
-
   .section {
     padding-left: 2vw;
   }
