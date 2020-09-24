@@ -34,7 +34,7 @@ jobs:
     name: Historical Snapshot
     strategy:
       matrix:
-        os: [macos-latest, windows-latest]
+        os: [macos-latest, ubuntu-latest]
         width: [1920, 1440, 1024, 670, 490]
     runs-on: ${{ matrix.os }}
     steps:
