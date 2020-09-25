@@ -1,7 +1,6 @@
 /* eslint-disable no-labels */
 
 export default {
-  mode: 'universal',
   render: {
     // csp: true
     // csp: { // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
