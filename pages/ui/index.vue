@@ -20,33 +20,45 @@
       <section :class="$device.isMobile ? 'uiMobile' : 'uiGrid'">
         <behanceLink
           animation-delay="0.1"
-          project-id="99975665"
-          project-name="Risk-Intelligence-20172019"
-          display-name="Risk Intelligence | 2017 - 2019"
+          project-id="106491447"
+          project-name="Software-do-Bem-2020"
+          display-name="Software do Bem | 2020"
         />
         <behanceLink
           animation-delay="0.3"
+          project-id="99975665"
+          project-name="Risk-Intelligence-2017-2019"
+          display-name="Risk Intelligence | 2017 - 2019"
+        />
+        <behanceLink
+          animation-delay="0.5"
           project-id="96780423"
           project-name="Risk-Heat-Map-2018"
           display-name="Risk Heat Map | 2018"
         />
         <behanceLink
-          animation-delay="0.5"
+          animation-delay="0.7"
           project-id="95161793"
           project-name="Survey-Anonymous-Portal-2019"
           display-name="Survey Anonymous Portal | 2019"
         />
         <behanceLink
-          animation-delay="0.7"
+          animation-delay="0.9"
           project-id="94559463"
-          project-name="SAI360-Digital-Risk-Login-(Sign-in)-Portal-2016-2018"
+          project-name="SAI360-Digital-Risk-Login-Portal-2016-2018"
           display-name="SAI360 Digital Risk Login | 2016-2018"
         />
         <behanceLink
-          animation-delay="0.9"
+          animation-delay="1.2"
           project-id="94434203"
-          project-name="Modulo-RiskManager-Login-(Sign-in)-Portal-2012-2016"
+          project-name="Modulo-RiskManager-Login-Portal-2012-2016"
           display-name="Modulo RiskManager Login | 2012-2016"
+        />
+        <behanceLink
+          animation-delay="1.5"
+          project-id="60118875"
+          project-name="Integrated-Command-and-Control-Center"
+          display-name="Integrated Command & Control Center | 2017 - 2019"
         />
       </section>
     </section>
