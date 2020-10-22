@@ -1,0 +1,12 @@
+
+[build]
+  publish = "dist"
+  command = "npm run generate"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    # Content-Security-Policy = "frame-ancestors https://www.adrianocahete.dev"

@@ -41,6 +41,7 @@ export default {
       { name: 'keywords', content: 'product design, product designer, designer de produto, UI, UX, UI/UX, UI developer, Desenvolvedor de Interface, Designer, Cahete, Adriano Cahete, Design Enginner' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
       { name: 'author', content: process.env.npm_package_author || 'Adriano Cahete' },
+      { name: 'theme-color', content: process.env.npm_package_project_theme_color || '#175e80' },
       { property: 'og:type', content: 'website' },
       { property: 'og:title', content: process.env.npm_package_description },
       { property: 'og:url', content: process.env.npm_package_url },
@@ -59,16 +60,16 @@ export default {
   },
 
   manifest: {
-    name: process.env.npm_package_author_title,
-    short_name: process.env.npm_package_author_title,
-    description: process.env.npm_package_description || '',
-    theme_color: process.env.npm_package_project_theme_color || '#175e80'
+    name: process.env.npm_package_author_title || 'Adriano Cahete | Product Designer & UI Developer',
+    short_name: process.env.npm_package_author_title || 'Adriano Cahete | Product Designer & UI Developer',
+    description: process.env.npm_package_description || 'Product Designer & UI Developer',
+    theme_color: process.env.npm_package_project_theme_color || '#175e80',
+    display: 'minimal- ui'
   },
 
   meta: {
     mobileAppIOS: true,
-    appleStatusBarStyle: 'black-translucent',
-    theme_color: process.env.npm_package_project_theme_color || '#175e80'
+    appleStatusBarStyle: 'black-translucent'
   },
 
   // Customize the progress-bar color
