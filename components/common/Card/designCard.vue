@@ -25,11 +25,6 @@
           <h5 v-if="info" class="cardInfo">
             {{ info }}
           </h5>
-          <!-- <transition-group v-if="items" tag="ul" name="list" class="cardItems" appear>
-            <li v-for="(item, idx) in items" :key="idx + 0">
-              {{ item.name }} <Icon v-if="item.url" :url="item.url" icon="link" :title="item.name" class="cardLink-Item" />
-            </li>
-          </transition-group> -->
         </section>
       </a>
     </section>
