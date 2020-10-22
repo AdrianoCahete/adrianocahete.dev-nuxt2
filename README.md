@@ -1,5 +1,5 @@
 # My Portfolio 
-> [adrianocahete.dev](https://adrianocahete.dev)
+> [adrianocahete.dev](https://adrianocahete.dev/?ref=gh)
 
 This Portfolio has [SSR](https://ssr.vuejs.org/#what-is-server-side-rendering-ssr) enabled, so has a pretty fast loading!
 ### [Try it!](https://adrianocahete.dev) (you can try offline too, after the first visit of course... ;))
@@ -8,17 +8,11 @@ This Portfolio has [SSR](https://ssr.vuejs.org/#what-is-server-side-rendering-ss
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bffddeca-83de-4641-807a-ac12aa617fae/deploy-status)](https://app.netlify.com/sites/adrianocahete-dev/deploys)
 
 All the changes are automatically deployed to Netlify.  
-You can see that live portfolio [here](https://adrianocahete.dev/).
+You can see that live portfolio [here](https://adrianocahete.dev/?ref=gh).
 
 
 ### Google Lighthouse Performance Audit
-[![Lighthouse Performance Badge](https://adrianocahete.dev/performance/lighthouse_performance.svg)](https://adrianocahete.dev/)
-[![Lighthouse Accessibility Badge](https://adrianocahete.dev/performance/lighthouse_accessibility.svg)](https://adrianocahete.dev/)
-[![Lighthouse Best Practices Badge](https://adrianocahete.dev/performance/lighthouse_best-practices.svg)](https://adrianocahete.dev/)
-[![Lighthouse SEO Badge](https://adrianocahete.dev/performance/lighthouse_seo.svg)](https://adrianocahete.dev/)
-[![Lighthouse PWA Badge](https://adrianocahete.dev/performance/lighthouse_pwa.svg)](https://adrianocahete.dev/)
-
-You can see the latest performance state with artifacts on [Github Actions](https://github.com/AdrianoCahete/adrianocahete.dev/actions) or [online here](https://adrianocahete.dev/performance/adrianocahete_dev_.html) (not so updated)
+You can see the latest performance state with artifacts on [Github Actions](https://github.com/AdrianoCahete/adrianocahete.dev/actions)
 
 
 
@@ -44,11 +38,11 @@ You need to make [localhost trustable on Firefox/Chrome](https://stackoverflow.c
 - Create a blog to explain the steps of each project *[In Progress]*
 - Add all licenses to project page "This portfolio" *[In Progress]*
 - Add an interactable animation on the Main page (home) *[In Progress]*
-- Move to i18n instead of hardcoded text
 - Create a Logo
 - Use newly created Logo as link to back Home
+- Move to i18n instead of hardcoded text
 - Add [Nuxt Storybook](https://storybook.nuxtjs.org/) to documentation system
-- Customize Nuxt loading page (up to v2.13)
+- Customize Nuxt loading page
 - Create a specific page for every project/interface
 - Make a better error/not found page
 - Move CSS to SASS instead of Stylus ([stylus seems to be deprecated or, at least, stagnated](https://github.com/stylus/stylus/issues/2282))

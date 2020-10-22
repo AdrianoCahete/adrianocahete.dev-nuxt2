@@ -18,8 +18,6 @@
     "generate": "nuxt generate --modern",
     "resume": "echo 'resume task is deprecated, running `npm run generate` instead' && npm run generate",
     "resume-test": "chromehtml2pdf --out=./static/resume/AdrianoCahete-Resume-test.pdf http://localhost:3002/resume/",
-    "performance": "cross-env LIGHTHOUSE_BADGES_PARAMS=\"--emulated-form-factor desktop\" npx lighthouse-badges --urls https://adrianocahete.dev/ -r -o ./static/performance/ -b flat",
-    "perf_single": "cross-env LIGHTHOUSE_BADGES_PARAMS=\"--emulated-form-factor desktop\" npx lighthouse-badges --urls https://adrianocahete.dev/ -s -o ./static/performance/ -b flat",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "engines": {
