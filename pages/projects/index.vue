@@ -7,6 +7,19 @@
       <section class="grid">
         <designCard
           animation-delay="0.1"
+          title="phpMyAdmin Website"
+          subtitle="Redesign and brand update to phpMyAdmin project"
+          url="https://github.com/phpmyadmin/website/pull/137"
+          tooltip="phpMyAdmin @ Github"
+
+          :items="[
+            {name: 'Update brand to 2020'},
+            {name: 'Redesign site to have a more up-to-date visuals'},
+          ]"
+        />
+
+        <designCard
+          animation-delay="0.3"
           title="This portfolio"
           subtitle="Made with NuxtJS (Vue), with constant updates and auto deployed on Netlify"
           url="https://github.com/AdrianoCahete/adrianocahete.dev"
@@ -20,11 +33,13 @@
             {name: 'Works offline'},
           ]"
         />
-        <!-- logo-image="teste"
-        card-theme="1" -->
+        <!--
+          logo-image="teste"
+          card-theme="1"
+        -->
 
         <designCard
-          animation-delay="0.3"
+          animation-delay="0.5"
           title="Webfont Generator CLI"
           subtitle="Easy-to-use, pre-configured tool to generate webfont icon kits from a .svg files"
           url="https://github.com/AdrianoCahete/webfont-generator-cli"
@@ -36,7 +51,7 @@
         />
 
         <designCard
-          animation-delay="0.5"
+          animation-delay="0.7"
           title="Simple Badges"
           subtitle="Simple Badges for Github profiles"
           url="https://github.com/AdrianoCahete/SimpleBadges"
@@ -47,7 +62,7 @@
         />
 
         <designCard
-          animation-delay="0.7"
+          animation-delay="0.9"
           title="Better Adrena"
           subtitle="Chrome/Firefox extension to add new functionalities to a Brazilian forum"
           url="https://github.com/AdrianoCahete/AdrenalineLight"
@@ -59,7 +74,7 @@
         />
 
         <designCard
-          animation-delay="0.9"
+          animation-delay="1"
           title="RocketChat"
           subtitle="Made some Product Design decisions, updated the stylesheet architecture and made some small UI fixes."
           url="https://github.com/RocketChat/Rocket.Chat/"
@@ -72,7 +87,7 @@
         />
 
         <designCard
-          animation-delay="1"
+          animation-delay="1.3"
           title="Detect.JS"
           subtitle="Keeping the library updated with the latest browsers at the time"
           url="https://github.com/darcyclarke/Detect.js"
@@ -84,7 +99,7 @@
         />
 
         <designCard
-          animation-delay="1.3"
+          animation-delay="1.5"
           title="Google Chrome Lighthouse"
           subtitle="Automated auditing, performance metrics, and best practices for the web."
           url="https://github.com/GoogleChrome/lighthouse/blob/468c10bb9df7ded215b7a3c47e23f48c1af656f7/changelog.md#new-contributors-24"
