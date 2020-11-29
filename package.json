@@ -25,21 +25,21 @@
     "npm": "~13.11.0"
   },
   "dependencies": {
-    "nuxt": "^2.14.6",
+    "nuxt": "^2.14.7",
     "@nuxtjs/device": "^1.2.7",
     "@nuxtjs/sitemap": "^2.4.0"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^3.1.0",
-    "@nuxtjs/eslint-module": "^2.0.0",
-    "@nuxtjs/pwa": "^3.0.2",
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.1",
+    "@nuxtjs/pwa": "^3.2.2",
     "babel-eslint": "^10.1.0",
     "chromehtml2pdf": "^1.0.4",
     "cross-env": "^7.0.2",
-    "eslint": "^7.9.0",
-    "eslint-plugin-nuxt": ">=1.0.0",
+    "eslint": "^7.14.0",
+    "eslint-plugin-nuxt": ">=2.0.0",
     "nuxt-payload-extractor": "^1.1.1",
     "stylus": "^0.54.8",
-    "stylus-loader": "^3.0.2"
+    "stylus-loader": "^4.3.0"
   }
 }
