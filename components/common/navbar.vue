@@ -52,7 +52,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: var(--bgColor);
+  background: var(--navbarBgColor);
   background-attachment: fixed;
   background-size: 500% 500%;
   background-position: 0 50%;

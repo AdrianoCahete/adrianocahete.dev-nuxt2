@@ -31,33 +31,47 @@
         />
       </section>
     </section>
-    <section id="work" class="section-simple">
-      <h1>Where I've Worked</h1>
-      <Card
-        animation-delay="0.1"
-        title="Lead Product Designer & UI Developer"
-        subtitle="SAI Global (US/Netherlands)"
-        info="Jan 2017 - Apr 2020 | Remote"
-        :items="[
-          {name: 'Developed highly interactive prototypes and shipped the same UIs on delivered product'},
-          {name: 'Worked closely with Product Owners and developer team to design and document features for SAI360 Digital Risk & SAI360 BWise Vendor Risk Management'},
-          {name: 'Interfaced with other designers and developers in different timezones to ensure coherent UI/UX across five different products with different technologies'},
-          {name: 'Developed Style Guides for multiple different products and technologies'}
-        ]"
-      />
-      <!--   -->
-      <Card
-        animation-delay="0.3"
-        title="UI/UX Designer & FrontEnd Developer"
-        subtitle="Modulo Security Solutions (Brazil)"
-        info="Oct 2012 - Dec 2016 | Partially Remote"
-        :items="[
-          {name: 'Write modern, maintainable and performant code for Modulo Risk Manager'},
-          {name: 'Proposed and implemented a solution to make UIs more alike to the designed ones'},
-          {name: 'Worked with Rio\'s Public Security Stakeholders in Integrated Command & Control Center to bring a most efficient Interface for 911 operators'},
-          {name: 'Performed the layer between design and development, talking in the way that the developer understands'}
-        ]"
-      />
+    <section class="section-row">
+      <section id="work" class="section-col">
+        <h1>Where I've Worked</h1>
+        <Card
+          animation-delay="0.1"
+          title="Lead Product Designer & UI Developer"
+          subtitle="SAI Global (US/Netherlands)"
+          info="Jan 2017 - Apr 2020 | Remote"
+          :items="[
+            {name: 'Developed highly interactive prototypes and shipped the same UIs on delivered product'},
+            {name: 'Worked closely with Product Owners and developer team to design and document features for SAI360 Digital Risk & SAI360 BWise Vendor Risk Management'},
+            {name: 'Interfaced with other designers and developers in different timezones to ensure coherent UI/UX across five different products with different technologies'},
+            {name: 'Developed Style Guides for multiple different products and technologies'}
+          ]"
+        />
+        <!--   -->
+        <Card
+          animation-delay="0.3"
+          title="UI/UX Designer & FrontEnd Developer"
+          subtitle="Modulo Security Solutions (Brazil)"
+          info="Oct 2012 - Dec 2016 | Partially Remote"
+          :items="[
+            {name: 'Write modern, maintainable and performant code for Modulo Risk Manager'},
+            {name: 'Proposed and implemented a solution to make UIs more alike to the designed ones'},
+            {name: 'Worked with Rio\'s Public Security Stakeholders in Integrated Command & Control Center to bring a most efficient Interface for 911 operators'},
+            {name: 'Performed the layer between design and development, talking in the way that the developer understands'}
+          ]"
+        />
+      </section>
+      <section id="work" class="section-col">
+        <h1>Certifications</h1>
+        <listItem
+          :items-col-left="[
+            {name: 'Visual Elements of User Interface Design (California Institute of the Arts) - 2020'},
+            {name: 'Design Thinking and Global Startup (Korea Advanced Institute of Science and Technology - KAIST) - 2020'},
+            {name: 'UX/UI: Principles of Interface Design (University of Sao Paulo/Brazil) - 2020'},
+            {name: 'Microsoft Front End Web Development (DEV237x) – 2019'},
+            {name: 'Programming in HTML5 with JavaScript and CSS3 – 2019'},
+          ]"
+        />
+      </section>
     </section>
 
     <section id="find-me" class="section-simple">
@@ -123,6 +137,12 @@ export default {
     }
   },
 
+  head () {
+    return {
+      title: 'About'
+    }
+  },
+
   computed: {
     year () {
       return this.date.getFullYear()
@@ -136,12 +156,6 @@ export default {
     if (typeof this.date === 'string') {
       this.date = new Date(this.date)
     }
-  },
-
-  head () {
-    return {
-      title: 'About'
-    }
   }
 }
 </script>
@@ -153,7 +167,7 @@ export default {
   font-size: 2rem;
   font-weight: 600;
   font-feature-settings: "calt";
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   margin-left: 1rem;
   color: transparent;
@@ -178,7 +192,8 @@ export default {
 }
 
 .findme-icons {
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 
   a {
     color: var(--subtitleColor);

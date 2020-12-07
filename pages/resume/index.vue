@@ -163,7 +163,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--bgColor);
+  background: var(--navbarBgColor);
   color: #ffffff;
   background-attachment: fixed;
   background-size: 500% 500%;

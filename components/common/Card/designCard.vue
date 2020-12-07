@@ -100,17 +100,18 @@ export default {
 .card-design {
   display: flex;
   flex-direction: column;
-  height: 25vw;
+  height: 12vw;
   width: 25vw;
-  max-height: 300px;
+  max-height: 200px;
   max-width: 300px;
-  margin-bottom: .3rem;
-  margin-right: .3rem;
+  margin-bottom: .5rem;
+  margin-right: .5rem;
   padding: 1.2rem;
   border-radius: 5px;
   text-align: center;
   transition: all .5s ease-in-out;
-  background-color: #2E3944;
+  background-color: #e3e3e3;
+  // color: inherit;
 
   a {
     height: 100%;
@@ -137,13 +138,11 @@ export default {
   }
 
   .cardTitle {
-    color: #FFFFFF;
     font-weight: 500;
   }
 
   .cardSubTitle {
     font-size: 1.6rem;
-    color: #f3f3f3;
     margin-bottom: .5rem;
   }
 
@@ -186,8 +185,26 @@ export default {
   }
 
   &[data-theme$='1'] {
-    background: red;
-    color: #ffffff;
+    background: var(--colorHighlight-100);
+    color: #000;
+  }
+
+  &[data-theme$='2'] {
+    background: var(--colorHighlight-200);
+
+    // a {
+    //   color: #FFFFFF;
+    // }
+  }
+
+  &[data-theme$='3'] {
+    background: var(--colorHighlight-300);
+    color: #000;
+  }
+
+  &[data-theme$='4'] {
+    background: var(--colorHighlight-400);
+    color: #000;
   }
 }
 

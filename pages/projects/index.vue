@@ -11,6 +11,7 @@
           subtitle="Redesign and brand update to phpMyAdmin project"
           url="https://github.com/phpmyadmin/website/pull/137"
           tooltip="phpMyAdmin @ Github"
+          data-theme="3"
 
           :items="[
             {name: 'Update brand to 2020'},
@@ -24,6 +25,7 @@
           subtitle="Made with NuxtJS (Vue), with constant updates and auto deployed on Netlify"
           url="https://github.com/AdrianoCahete/adrianocahete.dev"
           tooltip="adrianocahete.dev @ Github"
+          data-theme="1"
 
           :items="[
             {name: 'Auto-deploy from Github'},
@@ -44,6 +46,8 @@
           subtitle="Easy-to-use, pre-configured tool to generate webfont icon kits from a .svg files"
           url="https://github.com/AdrianoCahete/webfont-generator-cli"
           tooltip="webfont-generator-cli @ Github"
+          data-theme="2"
+
           :items="[
             {name: 'Fixed problems from original repository'},
             {name: 'Updated documentation to match the current implementation'}
@@ -56,6 +60,8 @@
           subtitle="Simple Badges for Github profiles"
           url="https://github.com/AdrianoCahete/SimpleBadges"
           tooltip="Simple Badges @ Github"
+          data-theme="4"
+
           :items="[
             {name: 'Some generic SVG badges to use in Github README'}
           ]"
@@ -67,6 +73,8 @@
           subtitle="Chrome/Firefox extension to add new functionalities to a Brazilian forum"
           url="https://github.com/AdrianoCahete/AdrenalineLight"
           tooltip="BetterAdrena @ Github"
+          data-theme="3"
+
           :items="[
             {name: 'Applied some styles to make the UI more readable'},
             {name: 'Added more styles and js content to create some useful features'}
@@ -79,6 +87,8 @@
           subtitle="Made some Product Design decisions, updated the stylesheet architecture and made some small UI fixes."
           url="https://github.com/RocketChat/Rocket.Chat/"
           tooltip="RocketChat @ Github"
+          data-theme="1"
+
           :items="[
             {name: 'Built and shipped the Ui for ChatOps feature'},
             {name: 'A few small fixes for UI issues'},
@@ -92,6 +102,8 @@
           subtitle="Keeping the library updated with the latest browsers at the time"
           url="https://github.com/darcyclarke/Detect.js"
           tooltip="Detect.JS @ Github"
+          data-theme="2"
+
           :items="[
             {name: 'Added detection of Edge, Opera, Internet Explorer 10/11 and some mobile browsers'},
             {name: 'Added detection of some new Operational Systems'}
@@ -104,6 +116,8 @@
           subtitle="Automated auditing, performance metrics, and best practices for the web."
           url="https://github.com/GoogleChrome/lighthouse/blob/468c10bb9df7ded215b7a3c47e23f48c1af656f7/changelog.md#new-contributors-24"
           tooltip="Google Chrome Lighthouse @ Github"
+          data-theme="4"
+
           :items="[
             {name: 'Fixes on CLI version on Windows OS'}
           ]"

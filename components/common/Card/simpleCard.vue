@@ -122,6 +122,7 @@ export default {
 
   .cardTitle {
     color: var(--subtitleColor);
+    margin-top: 2rem;
     font-weight: 600;
   }
 
