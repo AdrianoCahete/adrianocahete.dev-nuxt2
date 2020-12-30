@@ -160,6 +160,22 @@ export default {
     '~/plugins/hj'
   ],
 
+  components: true,
+
+  content: {
+    nestedProperties: ['posts'],
+    fullTextSearchFields: ['title']
+  },
+
+  generate: {
+    async routes () {
+      const { $content } = require('@nuxt/content')
+      const files = await $content('posts').only(['path']).fetch()
+
+      return files.map(file => (file.path === '/index' ? '/' : file.path))
+    }
+  },
+
   // Nuxt.js dev-modules
   buildModules: [
     [
@@ -178,6 +194,7 @@ export default {
     // 'nuxt-feature-toggle',
     // 'nuxt-pdf',
     '@nuxtjs/device',
+    '@nuxt/content',
     'nuxt-payload-extractor',
     '@nuxtjs/sitemap'
   ],
