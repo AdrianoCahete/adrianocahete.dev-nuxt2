@@ -63,12 +63,14 @@ h1:not(.titleMain) {
   animation: gradient-title 5s ease-in-out infinite;
   // animation-direction: alternate;
   transition: font-size .5s ease-in-out;
+  cursor: default;
 }
 
 .descriptionMain {
   color: var(--textColor, #FFFFFF);
   opacity: 0.6;
   transition: opacity .5s ease-in-out;
+  cursor: default;
 
   &:hover {
     opacity: 1;

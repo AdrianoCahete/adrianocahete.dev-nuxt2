@@ -14,10 +14,11 @@
 import whoAmI from '~/components/common/whoAmI'
 
 export default {
-
   components: {
     whoAmI
   },
+
+  // transition: 'home',
 
   head () {
     return {

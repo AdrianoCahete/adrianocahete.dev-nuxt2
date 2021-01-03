@@ -32,7 +32,8 @@ export default {
     title: process.env.npm_package_name || '',
     titleTemplate: '%s @ Adriano Cahete | Product Designer & UI Developer',
     htmlAttrs: {
-      lang: 'en-US'
+      lang: 'en-US',
+      amp: false
     },
     meta: [
       { charset: 'utf-8' },

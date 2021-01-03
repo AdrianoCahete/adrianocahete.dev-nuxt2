@@ -46,7 +46,6 @@ You need to make [localhost trustable on Firefox/Chrome](https://stackoverflow.c
 - Create a specific page for every project/interface
 - Make a better error/not found page
 - Move CSS to SASS instead of Stylus ([stylus seems to be deprecated or, at least, stagnated](https://github.com/stylus/stylus/issues/2282))
-- Create a changelog
 - Generate Lighthouse badges from Github Actions and update the correct files in repository
 - Add a toggle to show different information to different industries
 - Add proper favicons (to increase Lighthouse Audit score on PWA)
