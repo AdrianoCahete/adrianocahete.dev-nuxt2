@@ -20,30 +20,36 @@
       <section :class="$device.isMobile ? 'uiMobile' : 'uiGrid'">
         <behanceLink
           animation-delay="0.1"
+          project-id="110773235"
+          project-name="phpMyAdmin-Brand-Refresh"
+          display-name="phpMyAdmin Brand Refresh | 2020"
+        />
+        <behanceLink
+          animation-delay="0.3"
           project-id="106491447"
           project-name="Software-do-Bem-2020"
           display-name="Software do Bem | 2020"
         />
         <behanceLink
-          animation-delay="0.3"
+          animation-delay="0.5"
           project-id="99975665"
           project-name="Risk-Intelligence-2017-2019"
           display-name="Risk Intelligence | 2017 - 2019"
         />
         <behanceLink
-          animation-delay="0.5"
+          animation-delay="0.7"
           project-id="96780423"
           project-name="Risk-Heat-Map-2018"
           display-name="Risk Heat Map | 2018"
         />
         <behanceLink
-          animation-delay="0.7"
+          animation-delay="0.9"
           project-id="95161793"
           project-name="Survey-Anonymous-Portal-2019"
           display-name="Survey Anonymous Portal | 2019"
         />
         <behanceLink
-          animation-delay="0.9"
+          animation-delay="1.0"
           project-id="94559463"
           project-name="SAI360-Digital-Risk-Login-Portal-2016-2018"
           display-name="SAI360 Digital Risk Login | 2016-2018"
