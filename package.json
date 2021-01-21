@@ -32,9 +32,12 @@
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/pwa": "^3.3.3",
     "babel-eslint": "^10.1.0",
+    "chromedriver": "^87.0.7",
     "cross-env": "^7.0.3",
     "eslint": "^7.16.0",
     "eslint-plugin-nuxt": ">=2.0.0",
+    "geckodriver": "^1.21.1",
+    "nightwatch": "^1.5.1",
     "nuxt-payload-extractor": "^1.1.1",
     "stylus": "^0.54.8",
     "stylus-loader": "^4.3.1"

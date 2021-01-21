@@ -116,16 +116,23 @@ import Card from '~/components/common/Card/simpleCard'
 import listItem from '~/components/common/listItem'
 
 export default {
-  layout: 'resume',
 
   components: {
     Card,
     listItem
   },
 
+  layout: 'resume',
+
   asyncData () {
     return {
       date: new Date()
+    }
+  },
+
+  head () {
+    return {
+      title: 'Resume'
     }
   },
   computed: {
@@ -139,12 +146,6 @@ export default {
   created () {
     if (typeof this.date === 'string') {
       this.date = new Date(this.date)
-    }
-  },
-
-  head () {
-    return {
-      title: 'Resume'
     }
   }
 }
