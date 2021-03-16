@@ -10,7 +10,7 @@ module.exports = {
     'color-no-hex': true,
     'color-named': 'never',
     'number-max-precision': 2,
-    'number-leading-zero': 0,
+    'number-leading-zero': 'never',
     'unit-case': 'lower',
     'value-keyword-case': 'lower',
     'declaration-bang-space-after': 'never',
