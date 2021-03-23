@@ -22,7 +22,7 @@ export default {
 
   head () {
     return {
-      titleTemplate: 'Adriano Cahete | Product Designer & UI Developer'
+      titleTemplate: 'Adriano Cahete | Product Designer & Design Technologist'
     }
   }
 }

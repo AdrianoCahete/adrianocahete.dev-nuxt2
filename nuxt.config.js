@@ -14,10 +14,6 @@ export default {
   },
 
   server: {
-    // https: {
-    //   key: fs.readFileSync(path.resolve(__dirname, 'server.key')),
-    //   cert: fs.readFileSync(path.resolve(__dirname, 'server.crt'))
-    // }
     port: 3002
   },
 
@@ -30,7 +26,7 @@ export default {
   // Headers of the page
   head: {
     title: process.env.npm_package_name || '',
-    titleTemplate: '%s @ Adriano Cahete | Product Designer & UI Developer',
+    titleTemplate: '%s @ Adriano Cahete | Product Designer & Design Technologist',
     htmlAttrs: {
       lang: 'en-US',
       amp: false
@@ -39,7 +35,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'X-UA-Compatible', content: 'IE=edge' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=2, user-scalable=1, shrink-to-fit=no' },
-      { name: 'keywords', content: 'product design, product designer, designer de produto, UI, UX, UI/UX, UI developer, Desenvolvedor de Interface, Designer, Cahete, Adriano Cahete, Design Enginner' },
+      { name: 'keywords', content: 'product design, product designer, designer de produto, UI, UX, UI/UX, UI developer, Desenvolvedor de Interface, Designer, Cahete, Adriano Cahete, Design Enginner, Design Technologist' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
       { name: 'author', content: process.env.npm_package_author || 'Adriano Cahete' },
       { name: 'theme-color', content: process.env.npm_package_project_theme_color || '#175e80' },
@@ -61,9 +57,9 @@ export default {
   },
 
   manifest: {
-    name: process.env.npm_package_author_title || 'Adriano Cahete | Product Designer & UI Developer',
-    short_name: process.env.npm_package_author_title || 'Adriano Cahete | Product Designer & UI Developer',
-    description: process.env.npm_package_description || 'Product Designer & UI Developer',
+    name: process.env.npm_package_author_title || 'Adriano Cahete | Product Designer & Design Technologist',
+    short_name: process.env.npm_package_author_title || 'Adriano Cahete | Product Designer & Design Technologist',
+    description: process.env.npm_package_description || 'Product Designer & Design Technologist',
     theme_color: process.env.npm_package_project_theme_color || '#175e80',
     display: 'minimal- ui'
   },

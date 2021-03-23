@@ -6,7 +6,7 @@
           {{ $config.appAuthor }}
         </section>
         <section class="resume-job">
-          Product Designer & UI Developer
+          Product Designer & Design Technologist
         </section>
       </section>
       <section class="resume-contact">
@@ -41,7 +41,7 @@
           Experience
         </h1>
         <Card
-          title="Lead Product Designer & UI Developer"
+          title="Lead Product Designer & Design Technologist"
           subtitle="SAI Global (US/Netherlands)"
           info="Jan 2017 - Apr 2020 | Remote"
           :items="[

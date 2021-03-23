@@ -36,7 +36,7 @@
         <h1>Where I've Worked</h1>
         <Card
           animation-delay="0.1"
-          title="Lead Product Designer & UI Developer"
+          title="Lead Product Designer & Design Technologist"
           subtitle="SAI Global (US/Netherlands)"
           info="Jan 2017 - Apr 2020 | Remote"
           :items="[
