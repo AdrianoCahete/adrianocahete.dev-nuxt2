@@ -3,7 +3,7 @@
     <section id="home" class="section isCentered">
       <whoAmI
         author-name="Adriano Cahete"
-        job-title="Product Designer & User Interface Developer"
+        job-title="Product Designer & Design Technologist"
         is-main
       />
     </section>

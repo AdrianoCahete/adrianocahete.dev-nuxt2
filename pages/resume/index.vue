@@ -33,7 +33,7 @@
           Objective
         </h1>
         <p>
-          Develop and maintain integrity on interfaces for sites, software, and interactive systems as Product Designer and User Interface Developer, and filling the gap between Designers and Developers.
+          Develop and maintain integrity on interfaces for sites, software, and interactive systems as Product Designer and Design Technologist, and filling the gap between Designers and Developers.
         </p>
       </section>
       <section class="resume-section">
