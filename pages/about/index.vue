@@ -3,11 +3,10 @@
     <section class="section-row">
       <section id="about-me" class="section-col">
         <p class="description">
-          I'm <strong>{{ $config.appAuthor }}</strong>, a <strong>Product Designer</strong> from Rio de Janeiro
+          I'm <strong>{{ $config.appAuthor }}</strong>, a <strong>Product Designer & Design Technologist</strong> from Brazil.
         </p>
         <p class="description">
-          Working across some <strong>Product Design</strong> areas (Interaction, Motion, UX, UI) as a <strong>Lead Designer</strong> and crafting awesome User Experiences on digital products <strong>with +9 years of experience</strong> with companies in Brazil, Netherlands and US.
-          <!-- TODO: Auto-upate work years based on date -->
+          Working across some <strong>Product Design</strong> areas (Interaction, Motion, UX, UI) as a <strong>Lead Designer</strong> and crafting awesome User Experiences on digital products <strong>with +{{ workyears }} years of experience</strong> with companies in Brazil, Netherlands and US.
         </p>
         <p class="description">
           With a broad range of skills, from Design to Code, specialized to fulfil the gap between Designers and Developers and creating tools to help designers to do a faster and better work.
@@ -118,7 +117,7 @@
     </section>
 
     <section id="appInfo" class="section-simple appInfo">
-      This portfolio is under constant update | {{ year }}.{{ month }} - v{{ $config.appVersion }}
+      Last update: {{ year }}.{{ month }} - v{{ $config.appVersion }}
     </section>
   </section>
 </template>
@@ -161,6 +160,9 @@ export default {
     },
     month () {
       return this.date.getMonth() + 1
+    },
+    workyears () {
+      return Math.abs(this.date.getFullYear() - 2012)
     }
   },
 

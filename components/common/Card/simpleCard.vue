@@ -106,7 +106,7 @@ export default {
 
 <style lang="stylus" scoped>
 .card {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding-bottom: .8rem;
 
   &:not(.noAnimation) {
