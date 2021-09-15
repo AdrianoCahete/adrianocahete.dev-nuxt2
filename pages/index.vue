@@ -4,6 +4,7 @@
       <whoAmI
         author-name="Adriano Cahete"
         job-title="Product Designer & Design Technologist"
+        current-company="Capgemini"
         is-main
       />
     </section>

@@ -4,10 +4,7 @@
       {{ authorName }}
     </h1>
     <p v-if="jobTitle" :class="isMain ? 'descriptionMain':''">
-      I am a <strong>{{ jobTitle }}</strong>
-    </p>
-    <p v-if="currentCompany">
-      currently working at {{ currentCompany }}
+      I am a <strong>{{ jobTitle }}</strong><span v-if="currentCompany"> @ {{ currentCompany }}</span>
     </p>
   </section>
 </template>

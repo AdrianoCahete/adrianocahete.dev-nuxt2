@@ -6,7 +6,8 @@
           I'm <strong>{{ $config.appAuthor }}</strong>, a <strong>Product Designer</strong> from Rio de Janeiro
         </p>
         <p class="description">
-          Working across some <strong>Product Design</strong> areas (Interaction, Motion, UX, UI) as a <strong>Lead Designer</strong> and crafting awesome User Experiences on digital products <strong>with +8 years of experience</strong> with companies in Brazil, Netherlands and US.
+          Working across some <strong>Product Design</strong> areas (Interaction, Motion, UX, UI) as a <strong>Lead Designer</strong> and crafting awesome User Experiences on digital products <strong>with +9 years of experience</strong> with companies in Brazil, Netherlands and US.
+          <!-- TODO: Auto-upate work years based on date -->
         </p>
         <p class="description">
           With a broad range of skills, from Design to Code, specialized to fulfil the gap between Designers and Developers and creating tools to help designers to do a faster and better work.
@@ -36,6 +37,17 @@
         <h1>Where I've Worked</h1>
         <Card
           animation-delay="0.1"
+          title="Product Designer & Design Technologist"
+          subtitle="Capgemini (France/Brazil)"
+          info="Mai 2021 - Currently | Remote"
+          :items="[
+            {name: 'Be the UI expert of the team on client\'s Design System'},
+            {name: 'Worked closely with Product and Developer teams to design and document features for one of biggest banks in Brazil'},
+            {name: 'Interfaced with other designers and developers to ensure coherent UI/UX across different products'},
+          ]"
+        />
+        <Card
+          animation-delay="0.3"
           title="Lead Product Designer & Design Technologist"
           subtitle="SAI Global (US/Netherlands)"
           info="Jan 2017 - Apr 2020 | Remote"
@@ -48,15 +60,15 @@
         />
         <!--   -->
         <Card
-          animation-delay="0.3"
-          title="UI/UX Designer & FrontEnd Developer"
+          animation-delay="0.5"
+          title="Product Designer & FrontEnd Developer"
           subtitle="Modulo Security Solutions (Brazil)"
           info="Oct 2012 - Dec 2016 | Partially Remote"
           :items="[
             {name: 'Write modern, maintainable and performant code for Modulo Risk Manager'},
-            {name: 'Proposed and implemented a solution to make UIs more alike to the designed ones'},
-            {name: 'Worked with Rio\'s Public Security Stakeholders in Integrated Command & Control Center to bring a most efficient Interface for 911 operators'},
-            {name: 'Performed the layer between design and development, talking in the way that the developer understands'}
+            {name: 'Created a workflow to make UIs more alike to the designed ones'},
+            {name: 'Worked with Rio\'s Public Security Stakeholders in Integrated Command & Control Center to bring a most efficient Interface for 911 operators in Brazil'},
+            {name: 'Performed the layer between design and development, talking in a way that the developers understands'}
           ]"
         />
       </section>

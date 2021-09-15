@@ -2,7 +2,7 @@
   <section :class="$device.isMobile ? 'navbar navbarMobile' : 'navbar'">
     <section class="headerInfo">
       <nuxt-link to="/" exact>
-        <whoAmI author-name="Adriano Cahete" job-title="" current-company="" />
+        <whoAmI author-name="Adriano Cahete" />
       </nuxt-link>
     </section>
     <nav id="nav" class="menu">
