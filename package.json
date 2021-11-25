@@ -1,6 +1,6 @@
 {
   "name": "adrianocahete.dev",
-  "version": "2.2.8",
+  "version": "2.2.9",
   "description": "Adriano Cahete | Product Designer & Design Technologist",
   "author": "Adriano Cahete",
   "mail": "me@adrianocahete.dev",
@@ -22,7 +22,7 @@
     "npm": "~13.11.0"
   },
   "dependencies": {
-    "@nuxt/content": "^1.14.0",
+    "@nuxt/content": "^1.15.1",
     "@nuxtjs/device": "^2.1.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "nuxt": "^2.15.8"
@@ -32,12 +32,9 @@
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/pwa": "^3.3.5",
     "babel-eslint": "^10.1.0",
-    "chromedriver": "^93.0.1",
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-plugin-nuxt": ">=2.0.0",
-    "geckodriver": "^2.0.4",
-    "nightwatch": "^1.7.9",
     "nuxt-payload-extractor": "^1.1.1",
     "stylus": "^0.55.0",
     "stylus-loader": "4.3.1"

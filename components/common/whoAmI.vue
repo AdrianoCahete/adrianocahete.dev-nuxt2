@@ -1,11 +1,14 @@
 <template>
   <section class="WhoAmI">
-    <h1 v-if="authorName" :class="isMain ? 'titleMain':''">
-      {{ authorName }}
-    </h1>
-    <p v-if="jobTitle" :class="isMain ? 'descriptionMain':''">
-      I am a <strong>{{ jobTitle }}</strong><span v-if="currentCompany"> @ {{ currentCompany }}</span>
-    </p>
+    <nuxt-link :to="isMain ? '/about' : '/'">
+      <h1 v-if="authorName" :class="isMain ? 'titleMain' : ''">
+        {{ authorName }}
+      </h1>
+      <p v-if="jobTitle" :class="isMain ? 'descriptionMain' : ''">
+        I am a <strong>{{ jobTitle }}</strong
+        ><span v-if="currentCompany"> @ {{ currentCompany }}</span>
+      </p>
+    </nuxt-link>
   </section>
 </template>
 
@@ -15,17 +18,17 @@ export default {
     authorName: {
       type: String,
       required: true,
-      default: ''
+      default: ""
     },
     jobTitle: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     currentCompany: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     isMain: {
       type: Boolean,
@@ -33,7 +36,7 @@ export default {
       default: false
     }
   }
-}
+};
 </script>
 
 <style lang="stylus" scoped>
@@ -49,6 +52,12 @@ h1:not(.titleMain) {
   font-weight: 500;
 }
 
+.WhoAmI > a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
 .titleMain {
   display: block;
   font-weight: 500;
@@ -60,14 +69,12 @@ h1:not(.titleMain) {
   animation: gradient-title 5s ease-in-out infinite;
   // animation-direction: alternate;
   transition: font-size .5s ease-in-out;
-  cursor: default;
 }
 
 .descriptionMain {
   color: var(--textColor, #FFFFFF);
   opacity: 0.6;
   transition: opacity .5s ease-in-out;
-  cursor: default;
 
   &:hover {
     opacity: 1;

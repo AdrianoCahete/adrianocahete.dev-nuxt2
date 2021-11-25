@@ -4,7 +4,7 @@
       <whoAmI
         author-name="Adriano Cahete"
         job-title="Product Designer & Design Technologist"
-        current-company="Capgemini"
+        current-company="Capgemini | Bradesco"
         is-main
       />
     </section>
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import whoAmI from '~/components/common/whoAmI'
+import whoAmI from "~/components/common/whoAmI";
 
 export default {
   components: {
@@ -21,12 +21,12 @@ export default {
 
   // transition: 'home',
 
-  head () {
+  head() {
     return {
-      titleTemplate: 'Adriano Cahete | Product Designer & Design Technologist'
-    }
+      titleTemplate: "Adriano Cahete | Product Designer & Design Technologist"
+    };
   }
-}
+};
 </script>
 
 <style lang="stylus" scoped>
