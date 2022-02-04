@@ -1,0 +1,10 @@
+# Netflify Redirects file -- https://docs.netlify.com/routing/redirects/
+
+# Remove AMP links -- https://developers.google.com/search/docs/advanced/experience/remove-amp#remove-only-amp
+/:context/amp /:context 301
+
+# Portuguese to English
+/sobre /about
+/interfaces /ui
+/projetos /projects
+/contato /about#find-me

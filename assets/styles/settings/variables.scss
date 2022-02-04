@@ -1,0 +1,63 @@
+// Test bgColors:
+// linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% ); - https://gradienthunt.com/gradient/13685
+// linear-gradient(to top, #ffffff 0%, #e9edef 100%)
+// radial-gradient( circle farthest-corner at 10% 20%, rgba(0,93,133,1) 0%, rgba(0,181,149,1) 90% )
+// linear-gradient( 65.5deg,  rgba(23,205,205,1) -15.1%, rgb(23, 46, 95) 90% )
+// radial-gradient(circle farthest-corner at 10% 20%, rgba(90, 92, 106, 1) 0%, rgba(32, 45, 58, 1) 81.3% ) -- Default [2020-05]
+// radial-gradient( circle farthest-corner at 10% -5%,  rgba(23,205,205,1) -14.1%, rgb(23, 46, 95) 91% )
+// linear-gradient(-45deg, rgba(23, 205, 205, 1), rgba(23, 46, 95, 1), rgba(23, 46, 95, 1), rgba(23, 205, 205, 1));
+// linear-gradient(-45deg, rgba(23, 205, 205, 1), rgba(23, 46, 95, 1), rgba(23, 46, 95, 1), rgba(23, 205, 205, 1), rgba(255, 255, 255, 1));
+
+// Default Dark Mode
+:root {
+  --primaryColor: rgba(26, 120, 146, 1);
+
+  --colorHighlight-100: rgba(234, 144, 116, 1);
+  --colorHighlight-200:  rgba(231, 60, 126, 1);
+  --colorHighlight-300:  rgba(35, 166, 213, 1);
+  --colorHighlight-400:  rgba(17, 204, 160, 1);
+
+  --bgColor: linear-gradient(-45deg, rgba(238, 237, 240, 1), rgba(243, 241, 245, 1));
+
+  --defaultBorderColor: rgba(26, 120, 146, 1);
+
+  --scrollBarHandle: rgba(3, 76, 150, 1);
+  --scrollbarColor: var(--contentBg);
+
+  // Selection
+  --selectionBG: var(--primaryColor);
+  --selectionColor: var(--navColor);
+
+  // Navbar
+  --navbarBgColor: linear-gradient(-45deg, rgba(23, 205, 205, 1), rgba(1, 59, 143, 1), rgba(1, 59, 143, 1), rgba(23, 205, 205, 1));
+  --navbarColor: transparent;
+
+  --navbarBorder: 1px solid var(--defaultBorderColor);
+
+  --navbarIconColor: rgba(255, 255, 255, 1);
+  --navbarIconColorAlt: rgba(25, 107, 137, 1);
+
+  --navColor: rgba(255, 255, 255, .7);
+  --navColorActive: rgba(255, 255, 255, 1);
+
+  --iconColorHover: rgba(1, 19, 49, 1);
+
+  // Content
+  --contentBg: rgba(245, 245, 245, 1);
+  --contentColor: rgba(1, 19, 49, 1);
+
+  --titleColor: linear-gradient(-45deg, rgba(234, 144, 116, 1), rgba(231, 60, 126, 1), rgba(35, 166, 213, 1), rgba(35, 213, 171, 1));
+  --subtitleColor: var(--primaryColor);
+
+  // Buttons
+  --btnPrimaryBorderColor: linear-gradient(-45deg, rgba(23, 205, 205, 1) 0%, rgba(1, 59, 143, 1) 100%);
+
+  --textColor: rgba(1, 19, 49, 1);
+  --grayedOut: rgba(1, 19, 49, .7);
+
+  // Same in both themes
+  --alertInfo: rgba(40, 143, 235, 1);
+  --alertError: rgba(207, 39, 30, 1);
+  --alertSuccess: rgba(122, 193, 66, 1);
+  --alertWarning: rgba(255, 195, 36, 1);
+}
