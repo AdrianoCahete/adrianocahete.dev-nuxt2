@@ -9,7 +9,7 @@
     download
   >
     <svg v-if="icon">
-      <use :xlink:href="'#'+ icon"></use>
+      <use :xlink:href="'#' + icon"></use>
     </svg>
     <span>{{ title }}</span>
   </a>
@@ -20,29 +20,29 @@ export default {
   props: {
     url: {
       type: String,
-      default: ''
+      default: ""
     },
     icon: {
       type: String,
-      default: ''
+      default: ""
     },
     title: {
       type: String,
-      default: ''
+      default: ""
     },
     type: {
       type: String,
-      default: 'primary'
+      default: "primary"
     },
     hideMobile: {
       type: Boolean,
       default: false
     }
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 .btn {
   display: inline-block;
   text-align: center;
@@ -55,7 +55,7 @@ export default {
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-decoration: none;
-  transition: all ease-in-out .5s;
+  transition: all ease-in-out 0.5s;
   z-index: 0;
 
   span {
@@ -63,8 +63,8 @@ export default {
   }
 
   &:hover {
-    background-color: var(--textColor, #FFFFFF);
-    transition: all ease-in-out .5s;
+    background-color: var(--textColor, #ffffff);
+    transition: all ease-in-out 0.5s;
   }
 
   &.btn-primary {
@@ -89,7 +89,7 @@ export default {
       bottom: 3px;
       left: 3px;
       right: 3px;
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       z-index: -1;
       opacity: 1;
       transition-property: all;
@@ -99,13 +99,13 @@ export default {
 
     &:focus {
       &:after {
-        opacity: .5;
+        opacity: 0.5;
       }
     }
 
     &:hover,
     &:active {
-      color: #FFFFFF;
+      color: #ffffff;
 
       &:after {
         opacity: 0;

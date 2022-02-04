@@ -2,10 +2,10 @@
   <section class="avatar">
     <!-- TODO: Make a default image to load/cache for offline mode -->
     <img
-      :src="'https://github.com/'+ userName + '.png'"
+      :src="'https://github.com/' + userName + '.png'"
       :alt="$nuxt.isOffline ? '' : userName"
       :title="$nuxt.isOffline ? 'You appear to be offline' : ''"
-    >
+    />
   </section>
 </template>
 
@@ -15,29 +15,29 @@ export default {
     userName: {
       type: String,
       required: true,
-      default: 'github'
+      default: "github"
     }
   },
-  head () {
+  head() {
     return {
       // script: [
       //   { img: 'https://github.com/AdrianoCahete.png' } // TODO: Make a default image to load/cache for offline mode
       // ]
-    }
+    };
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 .avatar {
   > img {
     width: 8rem;
-    max-width: @width;
-    height: @width;
-    min-height: @height;
+    max-width: 8rem;
+    height: 8rem;
+    min-height: 8rem;
     background-color: var(--textColor, #ffffff);
     border-radius: 50%;
-    border: 2px solid var(--defaultBorderColor, #FFFFFF);
+    border: 2px solid var(--defaultBorderColor, #ffffff);
     animation: fadeIn 1s ease-in;
     overflow: hidden;
   }
@@ -52,7 +52,7 @@ export default {
 .isOffline {
   .avatar > img {
     border-color: var(--alertError);
-    transition: border-color .5s ease-in-out;
+    transition: border-color 0.5s ease-in-out;
   }
 }
 </style>

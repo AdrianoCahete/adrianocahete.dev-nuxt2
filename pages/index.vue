@@ -4,7 +4,7 @@
       <whoAmI
         author-name="Adriano Cahete"
         job-title="Product Designer & Design Technologist"
-        current-company="Capgemini | Bradesco"
+        current-company="Bradesco | Capgemini"
         is-main
       />
     </section>
@@ -29,11 +29,11 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
-@import '~assets/styles/components/section.styl'
+<style lang="scss" scoped>
+@import "~assets/styles/components/section.scss";
 
 .home {
-  animation: fadeIn .5s ease-in;
+  animation: fadeIn 0.5s ease-in;
 }
 
 .isMobile {

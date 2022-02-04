@@ -33,7 +33,9 @@
           Objective
         </h1>
         <p>
-          Develop and maintain integrity on interfaces for sites, software, and interactive systems as Product Designer and Design Technologist, and filling the gap between Designers and Developers.
+          Develop and maintain integrity on interfaces for sites, software, and
+          interactive systems as Product Designer and Design Technologist, and
+          filling the gap between Designers and Developers.
         </p>
       </section>
       <section class="resume-section">
@@ -45,10 +47,22 @@
           subtitle="SAI Global (US/Netherlands)"
           info="Jan 2017 - Apr 2020 | Remote"
           :items="[
-            {name: 'Developed highly interactive prototypes and shipped the same UIs on delivered product'},
-            {name: 'Worked closely with Product Owners and developer team to design and document features for SAI360 Digital Risk & SAI360 BWise Vendor Risk Management'},
-            {name: 'Interfaced with other designers and developers in different timezones to ensure coherent UI/UX across multiple different products with different technologies'},
-            {name: 'Developed Style Guides for multiple different products and technologies'}
+            {
+              name:
+                'Developed highly interactive prototypes and shipped the same UIs on delivered product'
+            },
+            {
+              name:
+                'Worked closely with Product Owners and developer team to design and document features for SAI360 Digital Risk & SAI360 BWise Vendor Risk Management'
+            },
+            {
+              name:
+                'Interfaced with other designers and developers in different timezones to ensure coherent UI/UX across multiple different products with different technologies'
+            },
+            {
+              name:
+                'Developed Style Guides for multiple different products and technologies'
+            }
           ]"
           no-animation
         />
@@ -58,10 +72,22 @@
           subtitle="Modulo Security Solutions (Brazil)"
           info="Oct 2012 - Dec 2016 | Partially Remote"
           :items="[
-            {name: 'Write modern, maintainable and performant code for Modulo Risk Manager'},
-            {name: 'Proposed and implemented a solution to make UIs more alike to the designed ones'},
-            {name: 'Worked with Rio\'s Department of Public Security stakeholders in Integrated Command & Control Center to bring a most efficient interface for 911 operators'},
-            {name: 'Performed the layer between design and development, talking in the way that the developer understands'}
+            {
+              name:
+                'Write modern, maintainable and performant code for Modulo Risk Manager'
+            },
+            {
+              name:
+                'Proposed and implemented a solution to make UIs more alike to the designed ones'
+            },
+            {
+              name:
+                'Worked with Rio\'s Department of Public Security stakeholders in Integrated Command & Control Center to bring a most efficient interface for 911 operators'
+            },
+            {
+              name:
+                'Performed the layer between design and development, talking in the way that the developer understands'
+            }
           ]"
           no-animation
         />
@@ -72,18 +98,24 @@
         </h1>
         <listItem
           :items-col-left="[
-            {name: 'Design for Desktop & Mobile'},
-            {name: 'Working with remote and multi-cultural teams for the past ~5 years'},
-            {name: 'Customer focused'},
-            {name: 'Specialized to fulfill the gap between Designers and Developers'},
-            {name: 'Worked with High Performance Teams'},
-            {name: 'Knowledge in Developer Experience'},
-            {name: 'HTML/CSS (and Stylus/Saas/Less)'},
-            {name: 'Adobe Photoshop, Adobe XD, Sketch and Figma'},
-            {name: 'Scrum / Kanban / Agile'},
-            {name: 'Quality in mind'},
-            {name: 'Git'},
-            {name: 'Javascript (React, Vue/Nuxt, Node)'},
+            { name: 'Design for Desktop & Mobile' },
+            {
+              name:
+                'Working with remote and multi-cultural teams for the past ~5 years'
+            },
+            { name: 'Customer focused' },
+            {
+              name:
+                'Specialized to fulfill the gap between Designers and Developers'
+            },
+            { name: 'Worked with High Performance Teams' },
+            { name: 'Knowledge in Developer Experience' },
+            { name: 'HTML/CSS (and Stylus/Saas/Less)' },
+            { name: 'Adobe Photoshop, Adobe XD, Sketch and Figma' },
+            { name: 'Scrum / Kanban / Agile' },
+            { name: 'Quality in mind' },
+            { name: 'Git' },
+            { name: 'Javascript (React, Vue/Nuxt, Node)' }
           ]"
         />
       </section>
@@ -102,7 +134,8 @@
     </section>
     <footer class="resume-footer">
       <section class="resume-appInfo">
-        Auto-generated by {{ $config.appAuthor }}'s portfolio @ https://adrianocahete.dev/
+        Auto-generated by {{ $config.appAuthor }}'s portfolio @
+        https://adrianocahete.dev/
       </section>
       <section class="resume-appVersion">
         {{ year }}.{{ month }} - v{{ $config.appVersion }}
@@ -112,46 +145,45 @@
 </template>
 
 <script>
-import Card from '~/components/common/Card/simpleCard'
-import listItem from '~/components/common/listItem'
+import Card from "~/components/common/Card/simpleCard";
+import listItem from "~/components/common/listItem";
 
 export default {
-
   components: {
     Card,
     listItem
   },
 
-  layout: 'resume',
+  layout: "resume",
 
-  asyncData () {
+  asyncData() {
     return {
       date: new Date()
-    }
+    };
   },
 
-  head () {
+  head() {
     return {
-      title: 'Resume'
-    }
+      title: "Resume"
+    };
   },
   computed: {
-    year () {
-      return this.date.getFullYear()
+    year() {
+      return this.date.getFullYear();
     },
-    month () {
-      return this.date.getMonth() + 1
+    month() {
+      return this.date.getMonth() + 1;
     }
   },
-  created () {
-    if (typeof this.date === 'string') {
-      this.date = new Date(this.date)
+  created() {
+    if (typeof this.date === "string") {
+      this.date = new Date(this.date);
     }
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 // Sizes are in mm because it's a PDF
 
 @media print {

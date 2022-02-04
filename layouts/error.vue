@@ -19,15 +19,15 @@
 
 <script>
 export default {
-  props: ['error']
-}
+  props: ["error"]
+};
 </script>
 
-<style lang="stylus" scoped>
-@import '~assets/styles/components/section.styl'
+<style lang="scss" scoped>
+@import "~assets/styles/components/section.scss";
 
-  .error {
-    margin-left: 0;
-    width: 100vw;
-  }
+.error {
+  margin-left: 0;
+  width: 100vw;
+}
 </style>

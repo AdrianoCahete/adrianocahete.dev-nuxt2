@@ -91,3 +91,6 @@ sw.*
 
 # Ignore Ideas folder
 .ideas
+
+# Local Netlify folder
+.netlify

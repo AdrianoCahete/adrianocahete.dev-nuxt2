@@ -12,10 +12,9 @@
           url="https://github.com/phpmyadmin/website/pull/137"
           tooltip="phpMyAdmin @ Github"
           data-theme="3"
-
           :items="[
-            {name: 'Update brand to 2020'},
-            {name: 'Redesign site to have a more up-to-date visuals'},
+            { name: 'Update brand to 2020' },
+            { name: 'Redesign site to have a more up-to-date visuals' }
           ]"
         />
 
@@ -26,13 +25,12 @@
           url="https://github.com/AdrianoCahete/adrianocahete.dev"
           tooltip="adrianocahete.dev @ Github"
           data-theme="1"
-
           :items="[
-            {name: 'Auto-deploy from Github'},
-            {name: 'Scoped styles'},
-            {name: 'Vue Components'},
-            {name: 'CSS Custom Properties'},
-            {name: 'Works offline'},
+            { name: 'Auto-deploy from Github' },
+            { name: 'Scoped styles' },
+            { name: 'Vue Components' },
+            { name: 'CSS Custom Properties' },
+            { name: 'Works offline' }
           ]"
         />
         <!--
@@ -47,10 +45,11 @@
           url="https://github.com/AdrianoCahete/webfont-generator-cli"
           tooltip="webfont-generator-cli @ Github"
           data-theme="2"
-
           :items="[
-            {name: 'Fixed problems from original repository'},
-            {name: 'Updated documentation to match the current implementation'}
+            { name: 'Fixed problems from original repository' },
+            {
+              name: 'Updated documentation to match the current implementation'
+            }
           ]"
         />
 
@@ -61,10 +60,7 @@
           url="https://github.com/AdrianoCahete/SimpleBadges"
           tooltip="Simple Badges @ Github"
           data-theme="4"
-
-          :items="[
-            {name: 'Some generic SVG badges to use in Github README'}
-          ]"
+          :items="[{ name: 'Some generic SVG badges to use in Github README' }]"
         />
 
         <designCard
@@ -74,10 +70,12 @@
           url="https://github.com/AdrianoCahete/AdrenalineLight"
           tooltip="BetterAdrena @ Github"
           data-theme="3"
-
           :items="[
-            {name: 'Applied some styles to make the UI more readable'},
-            {name: 'Added more styles and js content to create some useful features'}
+            { name: 'Applied some styles to make the UI more readable' },
+            {
+              name:
+                'Added more styles and js content to create some useful features'
+            }
           ]"
         />
 
@@ -88,11 +86,10 @@
           url="https://github.com/RocketChat/Rocket.Chat/"
           tooltip="RocketChat @ Github"
           data-theme="1"
-
           :items="[
-            {name: 'Built and shipped the Ui for ChatOps feature'},
-            {name: 'A few small fixes for UI issues'},
-            {name: 'Better organization for stylesheets/css variables'},
+            { name: 'Built and shipped the Ui for ChatOps feature' },
+            { name: 'A few small fixes for UI issues' },
+            { name: 'Better organization for stylesheets/css variables' }
           ]"
         />
 
@@ -103,10 +100,12 @@
           url="https://github.com/darcyclarke/Detect.js"
           tooltip="Detect.JS @ Github"
           data-theme="2"
-
           :items="[
-            {name: 'Added detection of Edge, Opera, Internet Explorer 10/11 and some mobile browsers'},
-            {name: 'Added detection of some new Operational Systems'}
+            {
+              name:
+                'Added detection of Edge, Opera, Internet Explorer 10/11 and some mobile browsers'
+            },
+            { name: 'Added detection of some new Operational Systems' }
           ]"
         />
 
@@ -117,10 +116,7 @@
           url="https://github.com/GoogleChrome/lighthouse/blob/468c10bb9df7ded215b7a3c47e23f48c1af656f7/changelog.md#new-contributors-24"
           tooltip="Google Chrome Lighthouse @ Github"
           data-theme="4"
-
-          :items="[
-            {name: 'Fixes on CLI version on Windows OS'}
-          ]"
+          :items="[{ name: 'Fixes on CLI version on Windows OS' }]"
           self-made
         />
       </section>
@@ -130,26 +126,26 @@
 </template>
 
 <script>
-import designCard from '~/components/common/Card/designCard'
+import designCard from "~/components/common/Card/designCard";
 
 export default {
   components: {
     designCard
   },
-  head () {
+  head() {
     return {
-      title: 'Projects'
-    }
+      title: "Projects"
+    };
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
-@import '~assets/styles/components/section.styl'
+<style lang="scss" scoped>
+@import "~assets/styles/components/section.scss";
 
 .description {
   margin-top: 1rem;
-  margin-bottom: @margin-top;
+  margin-bottom: 1rem;
 }
 
 .grid {

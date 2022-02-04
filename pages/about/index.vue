@@ -51,7 +51,7 @@
         <Card
           animation-delay="0.1"
           title="Product Designer & Design Technologist"
-          subtitle="Capgemini (France/Brazil)"
+          subtitle="Bradesco | Capgemini (France/Brazil)"
           info="Mai 2021 - Currently | Remote"
           :items="[
             { name: 'Be the UI expert of the team on client\'s Design System' },
@@ -239,8 +239,8 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
-@import '~assets/styles/components/section.styl';
+<style lang="scss" scoped>
+@import "~assets/styles/components/section.scss";
 
 .primaryContact {
   font-size: 2rem;
@@ -254,7 +254,7 @@ export default {
   background-size: 400% 400%;
   background-clip: text;
   transition: background-position ease-in-out 2s;
-  user-select: all
+  user-select: all;
 
   &:hover {
     animation: gradient-title 5s ease-in-out 1;
@@ -266,7 +266,7 @@ export default {
 
   &::selection {
     background-color: var(--selectionBG);
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 

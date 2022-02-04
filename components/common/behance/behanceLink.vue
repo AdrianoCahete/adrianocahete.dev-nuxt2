@@ -1,17 +1,20 @@
 <template>
-  <section :class="$device.isMobile ? 'beLinkMobile' : 'beLink'" :style="'animation-delay:'+ animationDelay + 's'">
+  <section
+    :class="$device.isMobile ? 'beLinkMobile' : 'beLink'"
+    :style="'animation-delay:' + animationDelay + 's'"
+  >
     <a
       v-if="!$device.isMobile"
-      :href="'https://www.behance.net/gallery/'+ projectId +'/'+ projectName"
+      :href="'https://www.behance.net/gallery/' + projectId + '/' + projectName"
       target="_blank"
       rel="nofollow,noopener,external"
       :title="displayName"
     >
       <img
-        v-if="!($nuxt.isOffline)"
+        v-if="!$nuxt.isOffline"
         :src="'../behance/projects/' + projectId + '.png'"
         :alt="displayName"
-      >
+      />
       <span class="projectName">
         {{ displayName }}
       </span>
@@ -19,17 +22,19 @@
 
     <a
       v-if="$device.isMobile"
-      :href="'https://www.behance.net/gallery/'+ projectId +'/'+ projectName"
+      :href="'https://www.behance.net/gallery/' + projectId + '/' + projectName"
       target="_blank"
       rel="nofollow,noopener,external"
     >
-      <Icon icon="behance" :title="displayName" class="cardLink-Item" /><span>{{ displayName }}</span>
+      <Icon icon="behance" :title="displayName" class="cardLink-Item" /><span>{{
+        displayName
+      }}</span>
     </a>
   </section>
 </template>
 
 <script>
-import Icon from '~/components/common/Icon'
+import Icon from "~/components/common/Icon";
 
 export default {
   components: {
@@ -40,33 +45,33 @@ export default {
     animationDelay: {
       type: String,
       required: false,
-      default: '0'
+      default: "0"
     },
     projectId: {
       type: String,
       required: true,
-      default: ''
+      default: ""
     },
     projectName: {
       type: String,
       required: true,
-      default: ''
+      default: ""
     },
     displayName: {
       type: String,
       required: true,
-      default: ''
+      default: ""
     },
     projectDate: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     }
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 .beLink {
   display: flex;
   opacity: 0;
@@ -74,15 +79,15 @@ export default {
   height: auto;
   border: 2px solid var(--scrollbarColor);
   margin-right: 1rem;
-  margin-bottom: @margin-right;
+  margin-bottom: 1rem;
 
   a {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 213px; // TODO: Get from image
-    text-decoration none;
-    color: #FFFFFF;
+    text-decoration: none;
+    color: #ffffff;
     position: relative;
 
     > img {
@@ -93,7 +98,7 @@ export default {
 
     .projectName {
       opacity: 0;
-      transition: ease opacity .5s;
+      transition: ease opacity 0.5s;
       position: absolute;
       left: 0;
       top: 0;
@@ -101,10 +106,11 @@ export default {
       width: 100%;
     }
 
-    &:hover { // TODO: Fix on Chrome
+    &:hover {
+      // TODO: Fix on Chrome
       .projectName {
         opacity: 1;
-        transition: ease opacity .5s;
+        transition: ease opacity 0.5s;
       }
     }
   }
@@ -114,7 +120,7 @@ export default {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px 2px black, 0 0 1rem black, 0 0 0.2rem black;
     text-decoration: none;
     text-align: center;
@@ -124,7 +130,7 @@ export default {
 
 .beLinkMobile {
   opacity: 0;
-  animation: fadeIn .5s ease-in;
+  animation: fadeIn 0.5s ease-in;
   animation-fill-mode: forwards;
 
   a {
@@ -145,7 +151,7 @@ export default {
 
 .beLink,
 .beLinkMobile {
-  animation: fadeIn .5s ease-in;
+  animation: fadeIn 0.5s ease-in;
   animation-fill-mode: forwards;
 }
 </style>

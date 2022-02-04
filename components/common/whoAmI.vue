@@ -39,7 +39,7 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 h1 {
   white-space: nowrap;
 }
@@ -68,17 +68,17 @@ h1:not(.titleMain) {
   background-clip: text;
   animation: gradient-title 5s ease-in-out infinite;
   // animation-direction: alternate;
-  transition: font-size .5s ease-in-out;
+  transition: font-size 0.5s ease-in-out;
 }
 
 .descriptionMain {
-  color: var(--textColor, #FFFFFF);
+  color: var(--textColor, #ffffff);
   opacity: 0.6;
-  transition: opacity .5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 
   &:hover {
     opacity: 1;
-    transition: opacity .5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
 }
 

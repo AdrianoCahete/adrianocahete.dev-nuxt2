@@ -3,23 +3,23 @@
     v-if="url"
     :href="url"
     :title="title"
-    :class="[ 'iconDefault', hideMobile ? ' hideSmall ' : '']"
+    :class="['iconDefault', hideMobile ? ' hideSmall ' : '']"
     target="_blank"
     rel="nofollow,noopener,external"
   >
     <!-- :class="[ hideMobile ? 'hideSmall ' : '', $device.isMobile && hideMobile ? 'hideMobile' : '' ]" -->
     <svg>
-      <use :xlink:href="'#'+ icon"></use>
+      <use :xlink:href="'#' + icon"></use>
     </svg>
   </a>
   <i
     v-else-if="!url"
     :title="title"
-    :class="[ 'icon', hideMobile ? ' hideSmall ' : '']"
+    :class="['icon', hideMobile ? ' hideSmall ' : '']"
   >
     <!-- :class="[ 'icon ', hideMobile ? 'hideSmall ' : '', $device.isMobile && hideMobile ? 'hideMobile' : '' ]" -->
     <svg>
-      <use :xlink:href="'#'+ icon"></use>
+      <use :xlink:href="'#' + icon"></use>
     </svg>
   </i>
 </template>
@@ -29,26 +29,26 @@ export default {
   props: {
     url: {
       type: String,
-      default: ''
+      default: ""
     },
     icon: {
       type: String,
       required: true,
-      default: ''
+      default: ""
     },
     title: {
       type: String,
-      default: ''
+      default: ""
     },
     hideMobile: {
       type: Boolean,
       default: false
     }
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 a {
   color: var(--navbarIconColorAlt, inherit);
 }
@@ -61,12 +61,12 @@ a {
 
 svg {
   width: 24px;
-  height: @width;
+  height: 24px;
   fill: inherit;
 
   &:hover {
     fill: currentColor;
-    transition: .3s ease fill;
+    transition: 0.3s ease fill;
   }
 }
 
@@ -74,7 +74,7 @@ svg {
   fill: var(--textColor, #fff);
 
   svg {
-    height: 1.3rem;;
+    height: 1.3rem;
   }
 }
 </style>

@@ -8,7 +8,11 @@
     </div>
 
     <div class="post-list">
-      <div v-for="post of posts" :key="post.slug" :class="[ 'post-item', post.isDeprecated ? ' isDeprecated ' : '']">
+      <div
+        v-for="post of posts"
+        :key="post.slug"
+        :class="['post-item', post.isDeprecated ? ' isDeprecated ' : '']"
+      >
         <NuxtLink :to="{ path: 'posts/' + post.slug }">
           <!--
           <div>
@@ -20,7 +24,7 @@
           </div>
           <div class="post-secondaryInfo">
             <div class="tag-list">
-              <div :class="[ 'tag tag-' + post.type]">
+              <div :class="['tag tag-' + post.type]">
                 {{ post.type }}
               </div>
             </div>
@@ -34,7 +38,7 @@
               <span v-if="post.author">{{ post.author }}</span>
             </div>
           </div>
-        </nuxtlink>
+        </NuxtLink>
       </div>
     </div>
   </section>
@@ -49,25 +53,24 @@
 // }
 
 export default {
-  async asyncData ({ $content, params }) {
-    const posts = await $content('posts', params.slug)
+  async asyncData({ $content, params }) {
+    const posts = await $content("posts", params.slug)
       // .only(['title', 'description', 'id', 'img', 'slug', 'releaseStatus', 'version', 'type', 'updatedAt'])
-      .sortBy('title', 'asc')
-      .fetch()
+      .sortBy("title", "asc")
+      .fetch();
 
     return {
       posts
-    }
+    };
   },
 
   methods: {
-    formatDate (date) {
-      const options = { year: 'numeric', month: 'numeric', day: 'numeric' }
-      return new Date(date).toLocaleDateString('en', options)
+    formatDate(date) {
+      const options = { year: "numeric", month: "numeric", day: "numeric" };
+      return new Date(date).toLocaleDateString("en", options);
     }
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
-</style>
+<style lang="scss" scoped></style>

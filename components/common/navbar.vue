@@ -20,17 +20,37 @@
       </nuxt-link> -->
     </nav>
     <section class="links">
-      <Icon :hide-mobile="true" url="https://linkedin.com/in/AdrianoCahete/" icon="linkedin" title="LinkedIn" />
-      <Icon :hide-mobile="true" url="https://behance.net/AdrianoCahete/" icon="behance" title="Behance" />
-      <Icon :hide-mobile="true" url="https://github.com/AdrianoCahete" icon="github" title="Github" />
-      <Icon :hide-mobile="true" url="./resume-artifacts/[en-US]-Adriano_Cahete.pdf" icon="pdf" title="Resume" />
+      <Icon
+        :hide-mobile="true"
+        url="https://linkedin.com/in/AdrianoCahete/"
+        icon="linkedin"
+        title="LinkedIn"
+      />
+      <Icon
+        :hide-mobile="true"
+        url="https://behance.net/AdrianoCahete/"
+        icon="behance"
+        title="Behance"
+      />
+      <Icon
+        :hide-mobile="true"
+        url="https://github.com/AdrianoCahete"
+        icon="github"
+        title="Github"
+      />
+      <Icon
+        :hide-mobile="true"
+        url="./resume-artifacts/[en-US]-Adriano_Cahete.pdf"
+        icon="pdf"
+        title="Resume"
+      />
     </section>
   </section>
 </template>
 
 <script>
-import whoAmI from '~/components/common/whoAmI'
-import Icon from '~/components/common/Icon'
+import whoAmI from "~/components/common/whoAmI";
+import Icon from "~/components/common/Icon";
 
 export default {
   components: {
@@ -38,15 +58,15 @@ export default {
     Icon
   },
 
-  data () {
+  data() {
     return {
-      isDevMode: process.env.NODE_ENV === 'development'
-    }
+      isDevMode: process.env.NODE_ENV === "development"
+    };
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -61,7 +81,7 @@ export default {
   width: 100%;
   padding: 0 2vw;
   height: 8vh;
-  position sticky;
+  position: sticky;
   top: 0;
   left: 0;
   border-bottom: var(--navbarBorder);
@@ -74,7 +94,7 @@ export default {
 
   .headerInfo {
     opacity: 0;
-    transition: .3s ease-in-out all;
+    transition: 0.3s ease-in-out all;
 
     a {
       color: var(--navColorActive);
@@ -86,7 +106,7 @@ export default {
     }
 
     &:not(.noAvatar) {
-      animation: fadeIn .5s ease-in;
+      animation: fadeIn 0.5s ease-in;
       animation-fill-mode: forwards;
     }
   }
@@ -95,7 +115,7 @@ export default {
     display: flex;
     height: 100%;
     align-items: center;
-    animation: fromUp2Down .5s ease-in;
+    animation: fromUp2Down 0.5s ease-in;
 
     a {
       display: flex;
@@ -120,7 +140,7 @@ export default {
         // font-weight: bold;
         border-bottom-color: currentColor;
         color: var(--navColorActive, rgba(255, 255, 255, 1));
-        transition: .3s ease color;
+        transition: 0.3s ease color;
         cursor: default;
         margin-bottom: -2px;
       }
@@ -128,7 +148,7 @@ export default {
   }
 
   .links {
-    animation: fromUp2Down .5s ease-in;
+    animation: fromUp2Down 0.5s ease-in;
 
     a {
       color: var(--navColor);
@@ -147,7 +167,7 @@ export default {
     }
 
     .links {
-      animation: fromUp2Down .5s ease-in;
+      animation: fromUp2Down 0.5s ease-in;
     }
   }
 }

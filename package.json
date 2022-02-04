@@ -1,6 +1,6 @@
 {
   "name": "adrianocahete.dev",
-  "version": "2.2.9",
+  "version": "2.3.0",
   "description": "Adriano Cahete | Product Designer & Design Technologist",
   "author": "Adriano Cahete",
   "mail": "me@adrianocahete.dev",
@@ -36,7 +36,7 @@
     "eslint": "^7.32.0",
     "eslint-plugin-nuxt": ">=2.0.0",
     "nuxt-payload-extractor": "^1.1.1",
-    "stylus": "^0.55.0",
-    "stylus-loader": "4.3.1"
+    "sass": "^1.49.7",
+    "sass-loader": "^10.1.1"
   }
 }

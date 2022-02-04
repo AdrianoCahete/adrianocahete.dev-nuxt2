@@ -2,8 +2,16 @@
   <section class="content">
     <section id="interfaces" class="section">
       <p class="description">
-        Most UIs created by me over the last years are under a non-disclosure agreement, so not everything can be publicly available.<br>
-        You can see some of these projects below or on <a href="https://behance.net/AdrianoCahete/" title="Behance" target="_blank" rel="nofollow,noopener,external">Behance</a>
+        Most UIs created by me over the last years are under a non-disclosure
+        agreement, so not everything can be publicly available.<br />
+        You can see some of these projects below or on
+        <a
+          href="https://behance.net/AdrianoCahete/"
+          title="Behance"
+          target="_blank"
+          rel="nofollow,noopener,external"
+          >Behance</a
+        >
       </p>
       <section v-if="$device.isMobile">
         <alert
@@ -72,32 +80,32 @@
 </template>
 
 <script>
-import behanceLink from '~/components/common/behance/behanceLink'
-import alert from '~/components/common/alert'
+import behanceLink from "~/components/common/behance/behanceLink";
+import alert from "~/components/common/alert";
 
 export default {
   components: {
     behanceLink,
     alert
   },
-  head () {
+  head() {
     return {
-      title: 'Interfaces',
+      title: "Interfaces",
       bodyAttrs: {
-        class: 'page-ui'
+        class: "page-ui"
       }
-    }
+    };
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
-@import '~assets/styles/components/section.styl'
+<style lang="scss" scoped>
+@import "~assets/styles/components/section.scss";
 
 // TODO: Move to base style
 .uiGrid {
   display: flex;
-  flex-wrap:wrap
+  flex-wrap: wrap;
   margin-top: 1vh;
 
   > div {

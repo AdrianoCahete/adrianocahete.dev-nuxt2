@@ -4,13 +4,9 @@
       class="card-design"
       :class="{ isMinor: isMinor, selfMade: isSelfMade }"
       :data-theme="cardTheme ? 'theme-' + cardTheme : ''"
-      :style="'animation-delay:'+ animationDelay + 's'"
+      :style="'animation-delay:' + animationDelay + 's'"
     >
-      <a
-        :href="url"
-        target="_blank"
-        rel="nofollow,noopener,external"
-      >
+      <a :href="url" target="_blank" rel="nofollow,noopener,external">
         <section class="cardContent">
           <h3 class="cardTitle">
             <span v-if="isMinor">[Minor] </span>
@@ -33,34 +29,33 @@
 
 <script>
 export default {
-  components: {
-  },
+  components: {},
 
   props: {
     animationDelay: {
       type: String,
       required: false,
-      default: '0'
+      default: "0"
     },
     cardTheme: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     title: {
       type: String,
       required: true,
-      default: ''
+      default: ""
     },
     logoImage: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     subtitle: {
       type: String,
       required: true,
-      default: ''
+      default: ""
     },
     items: {
       type: Array,
@@ -70,17 +65,17 @@ export default {
     info: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     url: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     tooltip: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     isMinor: {
       type: Boolean,
@@ -93,10 +88,10 @@ export default {
       default: true
     }
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 .card-design {
   display: flex;
   flex-direction: column;
@@ -104,12 +99,12 @@ export default {
   width: 25vw;
   max-height: 200px;
   max-width: 300px;
-  margin-bottom: .5rem;
-  margin-right: .5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
   padding: 1.2rem;
   border-radius: 5px;
   text-align: center;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-color: #e3e3e3;
   // color: inherit;
 
@@ -121,7 +116,7 @@ export default {
 
   &:not(.noAnimation) {
     opacity: 0;
-    animation: fadeIn .5s ease-in;
+    animation: fadeIn 0.5s ease-in;
     animation-fill-mode: forwards;
   }
 
@@ -143,7 +138,7 @@ export default {
 
   .cardSubTitle {
     font-size: 1.6rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 
   .cardInfo {
@@ -153,7 +148,7 @@ export default {
 
   .cardItems {
     list-style-type: none;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
 
     li {
       &::before {
@@ -178,18 +173,18 @@ export default {
   }
 
   &:hover {
-    box-shadow: 0 0 18px 0 rgba(0, 0, 0, .7);
-    transition: all .7s ease-in-out;
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.7);
+    transition: all 0.7s ease-in-out;
     transform: scale(1.02);
     z-index: 2;
   }
 
-  &[data-theme$='1'] {
+  &[data-theme$="1"] {
     background: var(--colorHighlight-100);
     color: #000;
   }
 
-  &[data-theme$='2'] {
+  &[data-theme$="2"] {
     background: var(--colorHighlight-200);
 
     // a {
@@ -197,12 +192,12 @@ export default {
     // }
   }
 
-  &[data-theme$='3'] {
+  &[data-theme$="3"] {
     background: var(--colorHighlight-300);
     color: #000;
   }
 
-  &[data-theme$='4'] {
+  &[data-theme$="4"] {
     background: var(--colorHighlight-400);
     color: #000;
   }

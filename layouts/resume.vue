@@ -6,18 +6,18 @@
 
 <script>
 export default {
-  head () {
+  head() {
     return {
       bodyAttrs: {
-        class: 'resume-page'
+        class: "resume-page"
       }
-    }
+    };
   }
-}
+};
 </script>
 
-<style lang="stylus">
-@import '~assets/styles/base.styl'
+<style lang="scss">
+@import "~assets/styles/base.scss";
 
 @media print {
   .resume-page {

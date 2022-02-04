@@ -19,23 +19,23 @@ export default {
     type: {
       type: String,
       required: true,
-      default: ''
+      default: ""
     },
     icon: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     message: {
       type: String,
       required: true,
-      default: ''
+      default: ""
     }
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 .alert {
   padding: 1vh 1vw;
   background: var(--scrollbarColor); // TODO: Move to var

@@ -2,15 +2,20 @@
   <section>
     <IconLibrary />
     <navbar-menu />
-    <section :class="[ $nuxt.isOffline ? 'isOffline' : '', $device.isMobile || $device.isTablet ? 'page isMobile' : 'page' ]">
+    <section
+      :class="[
+        $nuxt.isOffline ? 'isOffline' : '',
+        $device.isMobile || $device.isTablet ? 'page isMobile' : 'page'
+      ]"
+    >
       <nuxt />
     </section>
   </section>
 </template>
 
 <script>
-import IconLibrary from '~/components/common/iconLibrary'
-import navbarMenu from '~/components/common/navbar'
+import IconLibrary from "~/components/common/iconLibrary";
+import navbarMenu from "~/components/common/navbar";
 
 export default {
   components: {
@@ -18,29 +23,31 @@ export default {
     navbarMenu
   },
 
-  async asyncData ({ $axios, $payloadURL, route }) {
+  async asyncData({ $axios, $payloadURL, route }) {
     // DreaMinder/nuxt-payload-extractor config
-    if (process.static && process.client && $payloadURL) { return await $axios.$get($payloadURL(route)) }
+    if (process.static && process.client && $payloadURL) {
+      return await $axios.$get($payloadURL(route));
+    }
   },
 
-  data () {
+  data() {
     return {
       mobileState: this.$device.isMobile
-    }
+    };
   },
 
-  head () {
+  head() {
     return {
       bodyAttrs: {
-        class: this.mobileState ? 'isMobile' : ''
+        class: this.mobileState ? "isMobile" : ""
       }
-    }
+    };
   }
-}
+};
 </script>
 
-<style lang="stylus">
-@import '~assets/styles/base.styl'
+<style lang="scss">
+@import "~assets/styles/base.scss";
 
 body {
   &.isMobile {
@@ -51,6 +58,6 @@ body {
 .isMobile {
   flex-direction: column;
 
-  @import '~assets/styles/components/isMobile.styl'
+  @import "~assets/styles/components/isMobile.scss";
 }
 </style>

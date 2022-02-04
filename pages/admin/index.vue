@@ -13,20 +13,20 @@
 
 <script>
 export default {
-  layout: 'error',
+  layout: "error",
 
-  head () {
+  head() {
     return {
-      title: 'NOPE!',
+      title: "NOPE!",
 
       bodyAttrs: {
-        class: 'bg-infinite'
+        class: "bg-infinite"
       }
-    }
+    };
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
-  @import '~assets/styles/components/section.styl'
+<style lang="scss" scoped>
+@import "~assets/styles/components/section.scss";
 </style>

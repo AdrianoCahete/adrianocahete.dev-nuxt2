@@ -18,7 +18,13 @@
             {{ item.name }}
           </li>
         </transition-group>
-        <transition-group v-if="itemsColRight.length" tag="ul" name="list" class="list colList" appear>
+        <transition-group
+          v-if="itemsColRight.length"
+          tag="ul"
+          name="list"
+          class="list colList"
+          appear
+        >
           <li v-for="(item, idx) in itemsColRight" :key="idx + 0">
             {{ item.name }}
           </li>
@@ -34,17 +40,17 @@ export default {
     animationDelay: {
       type: String,
       required: false,
-      default: '0'
+      default: "0"
     },
     title: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     description: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     itemsColLeft: {
       type: Array,
@@ -57,10 +63,10 @@ export default {
       default: () => []
     }
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 .listItem {
   .title {
     color: var(--subtitleColor);
@@ -69,7 +75,7 @@ export default {
 
   .list {
     list-style: none;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
 
     li {
       list-style-type: none;

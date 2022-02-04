@@ -1,10 +1,20 @@
 <template>
   <!-- <transition name="slide-fade"> -->
-  <section class="card" :class="{ isMinor: isMinor, noAnimation: noAnimation }" :style="'animation-delay:'+ animationDelay + 's'">
+  <section
+    class="card"
+    :class="{ isMinor: isMinor, noAnimation: noAnimation }"
+    :style="'animation-delay:' + animationDelay + 's'"
+  >
     <h3 class="cardTitle">
       <span v-if="isMinor">[Minor] </span>
       {{ title }}
-      <Icon v-if="url" :url="url" :icon="icon" :title="tooltip" class="cardLink-Item" />
+      <Icon
+        v-if="url"
+        :url="url"
+        :icon="icon"
+        :title="tooltip"
+        class="cardLink-Item"
+      />
     </h3>
     <h4 class="cardSubTitle">
       {{ subtitle }}
@@ -14,12 +24,25 @@
     </h5>
     <section v-if="supportLink" class="cardLinks">
       <a :href="supportLink" target="_blank" rel="nofollow,noopener,external">
-        <img v-if="supportImg" :src="supportImg" :alt="supportTooltip">
+        <img v-if="supportImg" :src="supportImg" :alt="supportTooltip" />
       </a>
     </section>
-    <transition-group v-if="items" tag="ul" name="list" class="cardItems" appear>
+    <transition-group
+      v-if="items"
+      tag="ul"
+      name="list"
+      class="cardItems"
+      appear
+    >
       <li v-for="(item, idx) in items" :key="idx + 0">
-        {{ item.name }} <Icon v-if="item.url" :url="item.url" icon="link" :title="item.name" class="cardLink-Item" />
+        {{ item.name }}
+        <Icon
+          v-if="item.url"
+          :url="item.url"
+          icon="link"
+          :title="item.name"
+          class="cardLink-Item"
+        />
       </li>
     </transition-group>
   </section>
@@ -27,7 +50,7 @@
 </template>
 
 <script>
-import Icon from '~/components/common/Icon'
+import Icon from "~/components/common/Icon";
 
 export default {
   components: {
@@ -38,17 +61,17 @@ export default {
     animationDelay: {
       type: String,
       required: false,
-      default: '0'
+      default: "0"
     },
     title: {
       type: String,
       required: true,
-      default: ''
+      default: ""
     },
     subtitle: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     items: {
       type: Array,
@@ -58,37 +81,37 @@ export default {
     info: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     url: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     icon: {
       type: String,
       required: false,
-      default: 'link'
+      default: "link"
     },
     tooltip: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     supportLink: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     supportImg: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     supportTooltip: {
       type: String,
       required: false,
-      default: ''
+      default: ""
     },
     isMinor: {
       type: Boolean,
@@ -101,17 +124,17 @@ export default {
       default: false
     }
   }
-}
+};
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 .card {
   margin-bottom: 3rem;
-  padding-bottom: .8rem;
+  padding-bottom: 0.8rem;
 
   &:not(.noAnimation) {
     opacity: 0;
-    animation: fadeIn .5s ease-in;
+    animation: fadeIn 0.5s ease-in;
     animation-fill-mode: forwards;
   }
 
@@ -128,9 +151,9 @@ export default {
 
   .cardSubTitle {
     font-size: 1.6rem;
-    color: var(--grayedOut, #FFFFFF);
-    margin-top: .3rem;
-    margin-bottom: .5rem;
+    color: var(--grayedOut, #ffffff);
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
   }
 
   .cardInfo {
@@ -140,7 +163,7 @@ export default {
 
   .cardItems {
     list-style-type: none;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
 
     li {
       &::before {
