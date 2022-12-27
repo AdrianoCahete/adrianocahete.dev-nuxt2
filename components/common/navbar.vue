@@ -6,15 +6,8 @@
       </nuxt-link>
     </section>
     <nav id="nav" class="menu">
-      <nuxt-link to="/about">
-        About
-      </nuxt-link>
-      <nuxt-link to="/ui">
-        Interfaces
-      </nuxt-link>
-      <nuxt-link to="/projects">
-        Projects
-      </nuxt-link>
+      <nuxt-link to="/about"> About </nuxt-link>
+      <nuxt-link to="/work"> Work </nuxt-link>
       <!-- <nuxt-link v-if="isDevMode" to="/debug">
         {{ this.$route.name }}
       </nuxt-link> -->
@@ -55,14 +48,14 @@ import Icon from "~/components/common/Icon";
 export default {
   components: {
     whoAmI,
-    Icon
+    Icon,
   },
 
   data() {
     return {
-      isDevMode: process.env.NODE_ENV === "development"
+      isDevMode: process.env.NODE_ENV === "development",
     };
-  }
+  },
 };
 </script>
 

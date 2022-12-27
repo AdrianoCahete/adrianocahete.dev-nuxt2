@@ -14,65 +14,104 @@ export default {
   },
 
   server: {
-    port: 3002
+    port: 3002,
   },
 
   publicRuntimeConfig: {
-    appVersion: require('./package.json').version,
-    appAuthor: require('./package.json').author,
-    appContact: require('./package.json').mail
+    appVersion: require("./package.json").version,
+    appAuthor: require("./package.json").author,
+    appContact: require("./package.json").mail,
   },
 
   // Headers of the page
   head: {
-    title: process.env.npm_package_name || '',
-    titleTemplate: '%s @ Adriano Cahete | Product Designer & Design Technologist',
+    title: process.env.npm_package_name || "",
+    titleTemplate:
+      "%s @ Adriano Cahete | Product Designer & Design Technologist",
     htmlAttrs: {
-      lang: 'en-US',
-      amp: false
+      lang: "en-US",
+      amp: false,
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'X-UA-Compatible', content: 'IE=edge' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=2, user-scalable=1, shrink-to-fit=no' },
-      { name: 'keywords', content: 'product design, product designer, designer de produto, UI, UX, UI/UX, UI developer, Desenvolvedor de Interface, Designer, Cahete, Adriano Cahete, Design Enginner, Design Technologist' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
-      { name: 'author', content: process.env.npm_package_author || 'Adriano Cahete' },
-      { name: 'theme-color', content: process.env.npm_package_project_theme_color || '#175e80' },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:title', content: process.env.npm_package_description },
-      { property: 'og:url', content: process.env.npm_package_url },
-      { property: 'og:site_name', content: process.env.npm_package_description },
-      { property: 'og:description', content: process.env.npm_package_description },
-      { property: 'og:image', itemprop: 'image', content: process.env.npm_package_url + '/cover.png' },
-      { property: 'og:image:secure_url', itemprop: 'image', content: process.env.npm_package_url + '/cover.png' },
-      { name: 'twitter:card', content: 'summary_large_image' }
+      { charset: "utf-8" },
+      { name: "X-UA-Compatible", content: "IE=edge" },
+      {
+        name: "viewport",
+        content:
+          "width=device-width, initial-scale=1.0, maximum-scale=2, user-scalable=1, shrink-to-fit=no",
+      },
+      {
+        name: "keywords",
+        content:
+          "product design, product designer, designer de produto, UI, UX, UI/UX, UI developer, Desenvolvedor de Interface, Designer, Cahete, Adriano Cahete, Design Enginner, Design Technologist",
+      },
+      {
+        hid: "description",
+        name: "description",
+        content: process.env.npm_package_description || "",
+      },
+      {
+        name: "author",
+        content: process.env.npm_package_author || "Adriano Cahete",
+      },
+      {
+        name: "theme-color",
+        content: process.env.npm_package_project_theme_color || "#175e80",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:title", content: process.env.npm_package_description },
+      { property: "og:url", content: process.env.npm_package_url },
+      {
+        property: "og:site_name",
+        content: process.env.npm_package_description,
+      },
+      {
+        property: "og:description",
+        content: process.env.npm_package_description,
+      },
+      {
+        property: "og:image",
+        itemprop: "image",
+        content: process.env.npm_package_url + "/cover.png",
+      },
+      {
+        property: "og:image:secure_url",
+        itemprop: "image",
+        content: process.env.npm_package_url + "/cover.png",
+      },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'preconnect', href: 'https://in.hotjar.com' },
-      { rel: 'preconnect', href: 'https://script.hotjar.com' },
-      { rel: 'preconnect', href: 'https://vars.hotjar.com' }
-    ]
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "preconnect", href: "https://in.hotjar.com" },
+      { rel: "preconnect", href: "https://script.hotjar.com" },
+      { rel: "preconnect", href: "https://vars.hotjar.com" },
+    ],
   },
 
   manifest: {
-    name: process.env.npm_package_author_title || 'Adriano Cahete | Product Designer & Design Technologist',
-    short_name: process.env.npm_package_author_title || 'Adriano Cahete | Product Designer & Design Technologist',
-    description: process.env.npm_package_description || 'Product Designer & Design Technologist',
-    theme_color: process.env.npm_package_project_theme_color || '#175e80',
-    display: 'minimal- ui'
+    name:
+      process.env.npm_package_author_title ||
+      "Adriano Cahete | Product Designer & Design Technologist",
+    short_name:
+      process.env.npm_package_author_title ||
+      "Adriano Cahete | Product Designer & Design Technologist",
+    description:
+      process.env.npm_package_description ||
+      "Product Designer & Design Technologist",
+    theme_color: process.env.npm_package_project_theme_color || "#175e80",
+    display: "minimal- ui",
   },
 
   meta: {
     mobileAppIOS: true,
-    appleStatusBarStyle: 'black-translucent'
+    appleStatusBarStyle: "black-translucent",
   },
 
   // Customize the progress-bar color
   // https://nuxtjs.org/api/configuration-loading
   // loading: '~/components/common/loading.vue',
-  loading: { color: '#FFFFFF' },
+  loading: { color: "#FFFFFF" },
 
   pageTransition: {
     name: 'page',
@@ -85,12 +124,9 @@ export default {
   },
 
   sitemap: {
-    hostname: 'https://adrianocahete.dev',
+    hostname: "https://adrianocahete.dev",
     gzip: true,
-    exclude: [
-      '/debug',
-      '/resume'
-    ]
+    exclude: ["/debug", "/resume"],
   },
 
   // featureToggle: {
@@ -107,8 +143,8 @@ export default {
     //   offlineStrategy: 'NetworkFirst'
     // },
     manifest: {
-      display: 'browser'
-    }
+      display: "browser",
+    },
   },
 
   // https://github.com/ch99q/nuxt-pdf
@@ -154,34 +190,20 @@ export default {
   plugins: [
     // '~/plugins/common.js'
     // '~/plugins/queryStrings',
-    '~/plugins/hj'
+    "~/plugins/hj",
   ],
 
   components: true,
 
-  content: {
-    nestedProperties: ['posts'],
-    fullTextSearchFields: ['title']
-  },
-
-  generate: {
-    async routes () {
-      const { $content } = require('@nuxt/content')
-      const files = await $content('posts').only(['path']).fetch()
-
-      return files.map(file => (file.path === '/index' ? '/' : file.path))
-    }
-  },
-
   // Nuxt.js dev-modules
   buildModules: [
     [
-      '@nuxtjs/pwa', // https://pwa.nuxtjs.org/
+      "@nuxtjs/pwa", // https://pwa.nuxtjs.org/
       {
         icon: false,
-        meta: false
-      }
-    ]
+        meta: false,
+      },
+    ],
   ],
 
   // Nuxt.js modules
@@ -190,12 +212,12 @@ export default {
     // '@nuxtjs/axios'
     // 'nuxt-feature-toggle',
     // 'nuxt-pdf',
-    '@nuxtjs/device',
-    '@nuxt/content',
-    'nuxt-payload-extractor',
-    '@nuxtjs/sitemap'
+    "@nuxtjs/device",
+    "@nuxt/content",
+    "nuxt-payload-extractor",
+    "@nuxtjs/sitemap",
   ],
 
   // Build configuration
-  build: {}
-}
+  build: {},
+};

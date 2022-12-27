@@ -22,7 +22,6 @@
     "npm": "~13.11.0"
   },
   "dependencies": {
-    "@nuxt/content": "^1.15.1",
     "@nuxtjs/device": "^2.1.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "nuxt": "^2.15.8"

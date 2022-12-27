@@ -5,10 +5,10 @@
     <section
       :class="[
         $nuxt.isOffline ? 'isOffline' : '',
-        $device.isMobile || $device.isTablet ? 'page isMobile' : 'page'
+        $device.isMobile || $device.isTablet ? 'page isMobile' : 'page',
       ]"
     >
-      <nuxt />
+      <Nuxt />
     </section>
   </section>
 </template>
@@ -20,7 +20,7 @@ import navbarMenu from "~/components/common/navbar";
 export default {
   components: {
     IconLibrary,
-    navbarMenu
+    navbarMenu,
   },
 
   async asyncData({ $axios, $payloadURL, route }) {
@@ -32,17 +32,17 @@ export default {
 
   data() {
     return {
-      mobileState: this.$device.isMobile
+      mobileState: this.$device.isMobile,
     };
   },
 
   head() {
     return {
       bodyAttrs: {
-        class: this.mobileState ? "isMobile" : ""
-      }
+        class: this.mobileState ? "isMobile" : "",
+      },
     };
-  }
+  },
 };
 </script>
 

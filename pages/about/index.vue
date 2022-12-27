@@ -26,21 +26,19 @@
           :items-col-left="[
             { name: 'Design for Desktop & Mobile' },
             {
-              name:
-                'Working with remote, multi-cultural and High Performance Teams for the past ~5 years'
+              name: 'Working with remote, multi-cultural and High Performance Teams for the past ~5 years',
             },
             { name: 'Customer focused' },
             { name: 'Worked with Adobe XD, Sketch and Figma' },
             {
-              name:
-                'Specialized to fulfill the gap between Designers and Developers'
+              name: 'Specialized to fulfill the gap between Designers and Developers',
             },
             { name: 'Knowledge in Developer Experience' },
             { name: 'Expertise with HTML/CSS (and Stylus/Saas/Less)' },
             { name: 'Clear understanding of Scrum/Kanban/Agile methodologies' },
             { name: 'Quality in mind' },
             { name: 'Git proficiency' },
-            { name: 'Javascript (React, Vue/Nuxt, Angular, Node) knowledge' }
+            { name: 'Javascript (React, Vue/Nuxt, Angular, Node) knowledge' },
           ]"
         />
       </section>
@@ -56,13 +54,11 @@
           :items="[
             { name: 'Be the UI expert of the team on client\'s Design System' },
             {
-              name:
-                'Worked closely with Product and Developer teams to design and document features for one of biggest banks in Brazil'
+              name: 'Worked closely with Product and Developer teams to design and document features for one of biggest banks in Brazil',
             },
             {
-              name:
-                'Interfaced with other designers and developers to ensure coherent UI/UX across different products'
-            }
+              name: 'Interfaced with other designers and developers to ensure coherent UI/UX across different products',
+            },
           ]"
         />
         <Card
@@ -72,21 +68,17 @@
           info="Jan 2017 - Apr 2020 | Remote"
           :items="[
             {
-              name:
-                'Developed highly interactive prototypes and shipped the same UIs on delivered product'
+              name: 'Developed highly interactive prototypes and shipped the same UIs on delivered product',
             },
             {
-              name:
-                'Worked closely with Product Owners and developer team to design and document features for SAI360 Digital Risk & SAI360 BWise Vendor Risk Management'
+              name: 'Worked closely with Product Owners and developer team to design and document features for SAI360 Digital Risk & SAI360 BWise Vendor Risk Management',
             },
             {
-              name:
-                'Interfaced with other designers and developers in different timezones to ensure coherent UI/UX across five different products with different technologies'
+              name: 'Interfaced with other designers and developers in different timezones to ensure coherent UI/UX across five different products with different technologies',
             },
             {
-              name:
-                'Developed Style Guides for multiple different products and technologies'
-            }
+              name: 'Developed Style Guides for multiple different products and technologies',
+            },
           ]"
         />
         <!--   -->
@@ -97,21 +89,17 @@
           info="Oct 2012 - Dec 2016 | Partially Remote"
           :items="[
             {
-              name:
-                'Write modern, maintainable and performant code for Modulo Risk Manager'
+              name: 'Write modern, maintainable and performant code for Modulo Risk Manager',
             },
             {
-              name:
-                'Created a workflow to make UIs more alike to the designed ones'
+              name: 'Created a workflow to make UIs more alike to the designed ones',
             },
             {
-              name:
-                'Worked with Rio\'s Public Security Stakeholders in Integrated Command & Control Center to bring a most efficient Interface for 911 operators in Brazil'
+              name: 'Worked with Rio\'s Public Security Stakeholders in Integrated Command & Control Center to bring a most efficient Interface for 911 operators in Brazil',
             },
             {
-              name:
-                'Performed the layer between design and development, talking in a way that the developers understands'
-            }
+              name: 'Performed the layer between design and development, talking in a way that the developers understands',
+            },
           ]"
         />
       </section>
@@ -120,19 +108,16 @@
         <listItem
           :items-col-left="[
             {
-              name:
-                'Visual Elements of User Interface Design (California Institute of the Arts) - 2020'
+              name: 'Visual Elements of User Interface Design (California Institute of the Arts) - 2020',
             },
             {
-              name:
-                'Design Thinking and Global Startup (Korea Advanced Institute of Science and Technology - KAIST) - 2020'
+              name: 'Design Thinking and Global Startup (Korea Advanced Institute of Science and Technology - KAIST) - 2020',
             },
             {
-              name:
-                'UX/UI: Principles of Interface Design (University of Sao Paulo/Brazil) - 2020'
+              name: 'UX/UI: Principles of Interface Design (University of Sao Paulo/Brazil) - 2020',
             },
             { name: 'Microsoft Front End Web Development (DEV237x) – 2019' },
-            { name: 'Programming in HTML5 with JavaScript and CSS3 – 2019' }
+            { name: 'Programming in HTML5 with JavaScript and CSS3 – 2019' },
           ]"
         />
       </section>
@@ -140,9 +125,7 @@
 
     <section id="find-me" class="section-simple">
       <h1>Get in touch</h1>
-      <p>
-        You can find me in
-      </p>
+      <p>You can find me in</p>
       <p class="primaryContact">
         {{ $config.appContact }}
       </p>
@@ -198,24 +181,24 @@ export default {
     listItem,
     Card,
     Btn,
-    Icon
+    Icon,
   },
 
   asyncData() {
     return {
-      date: new Date()
+      date: new Date(),
     };
   },
 
   data() {
     return {
-      isDevMode: process.env.NODE_ENV === "development"
+      isDevMode: process.env.NODE_ENV === "development",
     };
   },
 
   head() {
     return {
-      title: "About"
+      title: "Work",
     };
   },
 
@@ -228,14 +211,14 @@ export default {
     },
     workyears() {
       return Math.abs(this.date.getFullYear() - 2012);
-    }
+    },
   },
 
   created() {
     if (typeof this.date === "string") {
       this.date = new Date(this.date);
     }
-  }
+  },
 };
 </script>
 

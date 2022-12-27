@@ -1,8 +1,6 @@
 <template>
-  <section
-    :class="$device.isMobile ? 'beLinkMobile' : 'beLink'"
-    :style="'animation-delay:' + animationDelay + 's'"
-  >
+  <section :class="$device.isMobile ? 'beLinkMobile' : 'beLink'">
+    <!-- :style="'animation-delay:' + animationDelay + 's'" -->
     <a
       v-if="!$device.isMobile"
       :href="'https://www.behance.net/gallery/' + projectId + '/' + projectName"
@@ -38,36 +36,36 @@ import Icon from "~/components/common/Icon";
 
 export default {
   components: {
-    Icon
+    Icon,
   },
 
   props: {
     animationDelay: {
       type: String,
       required: false,
-      default: "0"
+      default: "0",
     },
     projectId: {
       type: String,
       required: true,
-      default: ""
+      default: "",
     },
     projectName: {
       type: String,
       required: true,
-      default: ""
+      default: "",
     },
     displayName: {
       type: String,
       required: true,
-      default: ""
+      default: "",
     },
     projectDate: {
       type: String,
       required: false,
-      default: ""
-    }
-  }
+      default: "",
+    },
+  },
 };
 </script>
 
