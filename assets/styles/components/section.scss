@@ -18,9 +18,11 @@
 
 .section-row {
   display: flex;
+  justify-content: space-between;
   text-align: left;
   padding-top: 2vh;
   padding-left: 2vw;
+  width: 100%;
 
   .section-col {
     max-width: 50%;
