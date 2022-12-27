@@ -26,8 +26,7 @@ export default {
   // Headers of the page
   head: {
     title: process.env.npm_package_name || "",
-    titleTemplate:
-      "%s @ Adriano Cahete | Product Designer & Design Technologist",
+    titleTemplate: "%s @ Adriano Cahete | Design Technologist & DesignOps",
     htmlAttrs: {
       lang: "en-US",
       amp: false,
@@ -43,7 +42,7 @@ export default {
       {
         name: "keywords",
         content:
-          "product design, product designer, designer de produto, UI, UX, UI/UX, UI developer, Desenvolvedor de Interface, Designer, Cahete, Adriano Cahete, Design Enginner, Design Technologist",
+          "Design Technologist, designops, designerops, design ops, designer ops, product design, product designer, designer de produto, UI, UX, UI/UX, UI developer, Desenvolvedor de Interface, Designer, Cahete, Adriano Cahete, Design Enginner",
       },
       {
         hid: "description",
@@ -92,13 +91,12 @@ export default {
   manifest: {
     name:
       process.env.npm_package_author_title ||
-      "Adriano Cahete | Product Designer & Design Technologist",
+      "Adriano Cahete | Design Technologist & DesignOps",
     short_name:
       process.env.npm_package_author_title ||
-      "Adriano Cahete | Product Designer & Design Technologist",
+      "Adriano Cahete | Design Technologist & DesignOps",
     description:
-      process.env.npm_package_description ||
-      "Product Designer & Design Technologist",
+      process.env.npm_package_description || "Design Technologist & DesignOps",
     theme_color: process.env.npm_package_project_theme_color || "#175e80",
     display: "minimal- ui",
   },
@@ -114,13 +112,13 @@ export default {
   loading: { color: "#FFFFFF" },
 
   pageTransition: {
-    name: 'page',
-    mode: 'out-in'
+    name: "page",
+    mode: "out-in",
   },
 
   layoutTransition: {
-    name: 'layout',
-    mode: 'out-in'
+    name: "layout",
+    mode: "out-in",
   },
 
   sitemap: {

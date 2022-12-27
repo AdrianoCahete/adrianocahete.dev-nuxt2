@@ -4,8 +4,7 @@
       <section id="about-me" class="section-col">
         <p class="description">
           I'm <strong>{{ $config.appAuthor }}</strong
-          >, a <strong>Product Designer & Design Technologist</strong> from
-          Brazil.
+          >, a <strong>Design Technologist & DesignOps</strong> from Brazil.
         </p>
         <p class="description">
           Working across some <strong>Product Design</strong> areas
@@ -48,9 +47,24 @@
         <h1>Where I've Worked</h1>
         <Card
           animation-delay="0.1"
+          title="Design Technologist & DesignOps"
+          subtitle="Philips | Hero99 (Netherlands/Brazil)"
+          info="Nov 2022 - Currently | Remote"
+        />
+        <!-- :items="[
+            { name: 'Be the UI expert of the team on client\'s Design System' },
+            {
+              name: 'Worked closely with Product and Developer teams to design and document features for one of biggest banks in Brazil',
+            },
+            {
+              name: 'Interfaced with other designers and developers to ensure coherent UI/UX across different products',
+            },
+          ]" -->
+        <Card
+          animation-delay="0.3"
           title="Product Designer & Design Technologist"
           subtitle="Bradesco | Capgemini (France/Brazil)"
-          info="Mai 2021 - Currently | Remote"
+          info="Mai 2021 - Nov 2022 | Remote"
           :items="[
             { name: 'Be the UI expert of the team on client\'s Design System' },
             {
@@ -62,7 +76,7 @@
           ]"
         />
         <Card
-          animation-delay="0.3"
+          animation-delay="0.4"
           title="Lead Product Designer & Design Technologist"
           subtitle="SAI Global (US/Netherlands)"
           info="Jan 2017 - Apr 2020 | Remote"
@@ -86,7 +100,7 @@
           animation-delay="0.5"
           title="Product Designer & FrontEnd Developer"
           subtitle="Modulo Security Solutions (Brazil)"
-          info="Oct 2012 - Dec 2016 | Partially Remote"
+          info="Oct 2012 - Dec 2016 | Hybrid/Partially Remote"
           :items="[
             {
               name: 'Write modern, maintainable and performant code for Modulo Risk Manager',

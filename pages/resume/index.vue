@@ -5,33 +5,21 @@
         <section class="resume-author">
           {{ $config.appAuthor }}
         </section>
-        <section class="resume-job">
-          Product Designer & Design Technologist
-        </section>
+        <section class="resume-job">Design Technologist & DesignOps</section>
       </section>
       <section class="resume-contact">
-        <section class="resume-item">
-          Rio de Janeiro/Brazil
-        </section>
-        <section class="resume-item">
-          me@adrianocahete.dev
-        </section>
+        <section class="resume-item">Rio de Janeiro/Brazil</section>
+        <section class="resume-item">me@adrianocahete.dev</section>
         <section class="resume-item">
           https://linkedin.com/in/adrianocahete
         </section>
-        <section class="resume-item">
-          https://github.com/AdrianoCahete
-        </section>
-        <section class="resume-item">
-          https://adrianocahete.dev/
-        </section>
+        <section class="resume-item">https://github.com/AdrianoCahete</section>
+        <section class="resume-item">https://adrianocahete.dev/</section>
       </section>
     </header>
     <section class="resume-content">
       <section class="resume-section">
-        <h1>
-          Objective
-        </h1>
+        <h1>Objective</h1>
         <p>
           Develop and maintain integrity on interfaces for sites, software, and
           interactive systems as Product Designer and Design Technologist, and
@@ -39,74 +27,92 @@
         </p>
       </section>
       <section class="resume-section">
-        <h1>
-          Experience
-        </h1>
+        <h1>Experience</h1>
         <Card
+          animation-delay="0.1"
+          title="Design Technologist & DesignOps"
+          subtitle="Philips | Hero99 (Netherlands/Brazil)"
+          info="Nov 2022 - Currently | Remote"
+        />
+        <!-- :items="[
+            { name: 'Be the UI expert of the team on client\'s Design System' },
+            {
+              name: 'Worked closely with Product and Developer teams to design and document features for one of biggest banks in Brazil',
+            },
+            {
+              name: 'Interfaced with other designers and developers to ensure coherent UI/UX across different products',
+            },
+          ]" -->
+        <Card
+          animation-delay="0.3"
+          title="Product Designer & Design Technologist"
+          subtitle="Bradesco | Capgemini (France/Brazil)"
+          info="Mai 2021 - Nov 2022 | Remote"
+          :items="[
+            { name: 'Be the UI expert of the team on client\'s Design System' },
+            {
+              name: 'Worked closely with Product and Developer teams to design and document features for one of biggest banks in Brazil',
+            },
+            {
+              name: 'Interfaced with other designers and developers to ensure coherent UI/UX across different products',
+            },
+          ]"
+        />
+        <Card
+          animation-delay="0.7"
           title="Lead Product Designer & Design Technologist"
           subtitle="SAI Global (US/Netherlands)"
           info="Jan 2017 - Apr 2020 | Remote"
           :items="[
             {
-              name:
-                'Developed highly interactive prototypes and shipped the same UIs on delivered product'
+              name: 'Developed highly interactive prototypes and shipped the same UIs on delivered product',
             },
             {
-              name:
-                'Worked closely with Product Owners and developer team to design and document features for SAI360 Digital Risk & SAI360 BWise Vendor Risk Management'
+              name: 'Worked closely with Product Owners and developer team to design and document features for SAI360 Digital Risk & SAI360 BWise Vendor Risk Management',
             },
             {
-              name:
-                'Interfaced with other designers and developers in different timezones to ensure coherent UI/UX across multiple different products with different technologies'
+              name: 'Interfaced with other designers and developers in different timezones to ensure coherent UI/UX across multiple different products with different technologies',
             },
             {
-              name:
-                'Developed Style Guides for multiple different products and technologies'
-            }
+              name: 'Developed Style Guides for multiple different products and technologies',
+            },
           ]"
           no-animation
         />
         <!--   -->
         <Card
+          animation-delay="0.7"
           title="UI/UX Designer & FrontEnd Developer"
           subtitle="Modulo Security Solutions (Brazil)"
           info="Oct 2012 - Dec 2016 | Partially Remote"
           :items="[
             {
-              name:
-                'Write modern, maintainable and performant code for Modulo Risk Manager'
+              name: 'Write modern, maintainable and performant code for Modulo Risk Manager',
             },
             {
-              name:
-                'Proposed and implemented a solution to make UIs more alike to the designed ones'
+              name: 'Proposed and implemented a solution to make UIs more alike to the designed ones',
             },
             {
-              name:
-                'Worked with Rio\'s Department of Public Security stakeholders in Integrated Command & Control Center to bring a most efficient interface for 911 operators'
+              name: 'Worked with Rio\'s Department of Public Security stakeholders in Integrated Command & Control Center to bring a most efficient interface for 911 operators',
             },
             {
-              name:
-                'Performed the layer between design and development, talking in the way that the developer understands'
-            }
+              name: 'Performed the layer between design and development, talking in the way that the developer understands',
+            },
           ]"
           no-animation
         />
       </section>
       <section class="resume-section">
-        <h1>
-          Skills
-        </h1>
+        <h1>Skills</h1>
         <listItem
           :items-col-left="[
             { name: 'Design for Desktop & Mobile' },
             {
-              name:
-                'Working with remote and multi-cultural teams for the past ~5 years'
+              name: 'Working with remote and multi-cultural teams for the past ~5 years',
             },
             { name: 'Customer focused' },
             {
-              name:
-                'Specialized to fulfill the gap between Designers and Developers'
+              name: 'Specialized to fulfill the gap between Designers and Developers',
             },
             { name: 'Worked with High Performance Teams' },
             { name: 'Knowledge in Developer Experience' },
@@ -115,15 +121,13 @@
             { name: 'Scrum / Kanban / Agile' },
             { name: 'Quality in mind' },
             { name: 'Git' },
-            { name: 'Javascript (React, Vue/Nuxt, Node)' }
+            { name: 'Javascript (React, Vue/Nuxt, Node)' },
           ]"
         />
       </section>
 
       <section class="resume-section">
-        <h1>
-          Certifications
-        </h1>
+        <h1>Certifications</h1>
         <!-- Certifications & Courses -->
         <Card
           title="Microsoft Front End Web Development (DEV237x)"
@@ -151,20 +155,20 @@ import listItem from "~/components/common/listItem";
 export default {
   components: {
     Card,
-    listItem
+    listItem,
   },
 
   layout: "resume",
 
   asyncData() {
     return {
-      date: new Date()
+      date: new Date(),
     };
   },
 
   head() {
     return {
-      title: "Resume"
+      title: "Resume",
     };
   },
   computed: {
@@ -173,13 +177,13 @@ export default {
     },
     month() {
       return this.date.getMonth() + 1;
-    }
+    },
   },
   created() {
     if (typeof this.date === "string") {
       this.date = new Date(this.date);
     }
-  }
+  },
 };
 </script>
 

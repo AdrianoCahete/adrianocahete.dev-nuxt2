@@ -3,8 +3,8 @@
     <section id="home" class="section isCentered">
       <whoAmI
         author-name="Adriano Cahete"
-        job-title="Product Designer & Design Technologist"
-        current-company="Bradesco | Capgemini"
+        job-title="Design Technologist & DesignOps"
+        current-company="Philips | Hero99"
         is-main
       />
     </section>
@@ -16,16 +16,16 @@ import whoAmI from "~/components/common/whoAmI";
 
 export default {
   components: {
-    whoAmI
+    whoAmI,
   },
 
   // transition: 'home',
 
   head() {
     return {
-      titleTemplate: "Adriano Cahete | Product Designer & Design Technologist"
+      titleTemplate: "Adriano Cahete | Design Technologist & DesignOps",
     };
-  }
+  },
 };
 </script>
 
