@@ -211,7 +211,6 @@ export default {
     // 'nuxt-feature-toggle',
     // 'nuxt-pdf',
     "@nuxtjs/device",
-    "@nuxt/content",
     "nuxt-payload-extractor",
     "@nuxtjs/sitemap",
   ],
