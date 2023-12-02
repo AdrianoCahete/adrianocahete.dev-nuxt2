@@ -13,11 +13,15 @@
   --primaryColor: rgba(26, 120, 146, 1);
 
   --colorHighlight-100: rgba(234, 144, 116, 1);
-  --colorHighlight-200:  rgba(231, 60, 126, 1);
-  --colorHighlight-300:  rgba(35, 166, 213, 1);
-  --colorHighlight-400:  rgba(17, 204, 160, 1);
+  --colorHighlight-200: rgba(231, 60, 126, 1);
+  --colorHighlight-300: rgba(35, 166, 213, 1);
+  --colorHighlight-400: rgba(17, 204, 160, 1);
 
-  --bgColor: linear-gradient(-45deg, rgba(238, 237, 240, 1), rgba(243, 241, 245, 1));
+  --bgColor: linear-gradient(
+    -45deg,
+    rgba(238, 237, 240, 1),
+    rgba(243, 241, 245, 1)
+  );
 
   --defaultBorderColor: rgba(26, 120, 146, 1);
 
@@ -29,7 +33,21 @@
   --selectionColor: var(--navColor);
 
   // Navbar
-  --navbarBgColor: linear-gradient(-45deg, rgba(23, 205, 205, 1), rgba(1, 59, 143, 1), rgba(1, 59, 143, 1), rgba(23, 205, 205, 1));
+  --navbarBgColor: linear-gradient(
+    -45deg,
+    rgba(23, 205, 205, 1),
+    rgba(1, 59, 143, 1),
+    rgba(1, 59, 143, 1),
+    rgba(23, 205, 205, 1)
+  );
+
+  --navbarBgColor-blurred: linear-gradient(
+    -45deg,
+    rgba(1, 115, 143, 0.85),
+    rgba(1, 59, 143, 0.85),
+    rgba(1, 59, 143, 0.85),
+    rgba(1, 115, 143, 0.85)
+  );
   --navbarColor: transparent;
 
   --navbarBorder: 1px solid var(--defaultBorderColor);
@@ -37,7 +55,7 @@
   --navbarIconColor: rgba(255, 255, 255, 1);
   --navbarIconColorAlt: rgba(25, 107, 137, 1);
 
-  --navColor: rgba(255, 255, 255, .7);
+  --navColor: rgba(255, 255, 255, 0.7);
   --navColorActive: rgba(255, 255, 255, 1);
 
   --iconColorHover: rgba(1, 19, 49, 1);
@@ -46,14 +64,24 @@
   --contentBg: rgba(245, 245, 245, 1);
   --contentColor: rgba(1, 19, 49, 1);
 
-  --titleColor: linear-gradient(-45deg, rgba(234, 144, 116, 1), rgba(231, 60, 126, 1), rgba(35, 166, 213, 1), rgba(35, 213, 171, 1));
+  --titleColor: linear-gradient(
+    -45deg,
+    rgba(234, 144, 116, 1),
+    rgba(231, 60, 126, 1),
+    rgba(35, 166, 213, 1),
+    rgba(35, 213, 171, 1)
+  );
   --subtitleColor: var(--primaryColor);
 
   // Buttons
-  --btnPrimaryBorderColor: linear-gradient(-45deg, rgba(23, 205, 205, 1) 0%, rgba(1, 59, 143, 1) 100%);
+  --btnPrimaryBorderColor: linear-gradient(
+    -45deg,
+    rgba(23, 205, 205, 1) 0%,
+    rgba(1, 59, 143, 1) 100%
+  );
 
   --textColor: rgba(1, 19, 49, 1);
-  --grayedOut: rgba(1, 19, 49, .7);
+  --grayedOut: rgba(1, 19, 49, 0.7);
 
   // Same in both themes
   --alertInfo: rgba(40, 143, 235, 1);

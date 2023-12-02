@@ -1,6 +1,6 @@
 {
   "name": "adrianocahete.dev",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "Adriano Cahete | Design Technologist & DesignOps",
   "author": "Adriano Cahete",
   "mail": "me@adrianocahete.dev",
@@ -18,8 +18,7 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "engines": {
-    "node": "~13.11.0",
-    "npm": "~13.11.0"
+    "node": "~16.20.2"
   },
   "dependencies": {
     "@nuxtjs/device": "^2.1.0",

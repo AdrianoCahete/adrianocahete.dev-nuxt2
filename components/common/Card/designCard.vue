@@ -12,9 +12,7 @@
             <span v-if="isMinor">[Minor] </span>
             {{ title }}
           </h3>
-          <section v-if="logoImage">
-            logoImage
-          </section>
+          <section v-if="logoImage">logoImage</section>
           <h4 class="cardSubTitle">
             {{ subtitle }}
           </h4>
@@ -35,59 +33,59 @@ export default {
     animationDelay: {
       type: String,
       required: false,
-      default: "0"
+      default: "0",
     },
     cardTheme: {
       type: String,
       required: false,
-      default: ""
+      default: "",
     },
     title: {
       type: String,
       required: true,
-      default: ""
+      default: "",
     },
     logoImage: {
       type: String,
       required: false,
-      default: ""
+      default: "",
     },
     subtitle: {
       type: String,
       required: true,
-      default: ""
+      default: "",
     },
     items: {
       type: Array,
       required: true,
-      default: () => []
+      default: () => [],
     },
     info: {
       type: String,
       required: false,
-      default: ""
+      default: "",
     },
     url: {
       type: String,
       required: false,
-      default: ""
+      default: "",
     },
     tooltip: {
       type: String,
       required: false,
-      default: ""
+      default: "",
     },
     isMinor: {
       type: Boolean,
       required: false,
-      default: false
+      default: false,
     },
     isSelfMade: {
       type: Boolean,
       required: false,
-      default: true
-    }
-  }
+      default: true,
+    },
+  },
 };
 </script>
 

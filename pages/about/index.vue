@@ -7,38 +7,47 @@
           >, a <strong>Design Technologist & DesignOps</strong> from Brazil.
         </p>
         <p class="description">
-          Working across some <strong>Product Design</strong> areas
-          (Interaction, Motion, UX, UI) as a <strong>Lead Designer</strong>,
-          <strong>Design Technologist</strong> and <strong>DesignOps</strong>,
-          and crafting awesome experiences on digital products.
-          <strong>with +{{ workyears }} years of experience</strong> with
-          companies in Netherlands, US and Brazil.
+          I work across multiple product design areas, such as interaction,
+          motion, UX, and UI, with
+          <strong> more than {{ workyears }} years of experience </strong>
+          in the field, in companies in Netherlands, US and Brazil.
         </p>
         <p class="description">
-          With a broad range of skills, from Design to Code, specialized to
-          fulfil the gap between Designers and Developers and creating tools to
-          help designers to do a faster and better work.
+          My core competencies include designing and developing digital
+          products, using React/Nuxt/Vue, that meet the needs and expectations
+          of users and clients. I also specialize in bridging the gap between
+          designers and developers, creating a better design/developer
+          experience (DX) and implementing DesignOps and GitOps practices.
+          <br /><br />
+
+          I am passionate about leveraging design and technology to create
+          positive social impact and improve people's lives.
         </p>
       </section>
       <section id="skills" class="section-col">
         <h1>Quick Facts</h1>
         <listItem
           :items-col-left="[
-            { name: 'Design for Desktop & Mobile' },
             {
-              name: 'Working with remote, multi-cultural and High Performance Teams for the past ~5 years',
+              name: 'Collaborated within High-Performance Teams to drive successful project outcomes',
             },
-            { name: 'Customer focused' },
-            { name: 'Worked with Adobe XD, Sketch and Figma' },
             {
-              name: 'Specialized to fulfill the gap between Designers and Developers',
+              name: 'Demonstrated proficiency in working with remote and multi-cultural teams over the past 10+ years',
             },
-            { name: 'Knowledge in Developer Experience' },
-            { name: 'Expertise with HTML/CSS (and Stylus/Saas/Less)' },
+            { name: 'Knowledgement with Figma and Sketch' },
+            {
+              name: 'Maintained a customer-focused approach, ensuring deliverables align with client expectations',
+            },
+            {
+              name: 'Specialized in bridging the gap between Designers and Developers, fostering effective communication and collaboration.',
+            },
+            { name: 'Expertise with HTML/CSS (and Saas/Stylus/Less)' },
             { name: 'Clear understanding of Scrum/Kanban/Agile methodologies' },
-            { name: 'Quality in mind' },
             { name: 'Git proficiency' },
+            { name: 'Github/Azure proficiency' },
+            { name: 'AWS EC2 proficiency' },
             { name: 'Javascript (React, Vue/Nuxt, Angular, Node) knowledge' },
+            { name: 'Proeficiency in C/C#' },
           ]"
         />
       </section>
@@ -47,26 +56,27 @@
       <section id="work" class="section-col">
         <h1>Where I've Worked</h1>
         <Card
-          animation-delay="0.1"
           title="Design Technologist & DesignOps"
           subtitle="Philips | Hero99 (Netherlands/Brazil)"
           info="Nov 2022 - Currently | Remote"
         />
         <Card
-          animation-delay="0.3"
-          title="Product Designer & Design Technologist"
-          subtitle="Bradesco | Capgemini (France/Brazil)"
-          info="Mai 2021 - Nov 2022 | Remote"
+          title="Design Technologist & Product Designer"
+          subtitle="Mercedes Benz Bank | Capgemini (Brazil)"
+          info="Jun 2022 - Nov 2022 | Remote"
         />
         <Card
-          animation-delay="0.4"
-          title="Lead Product Designer & Design Technologist"
+          title="Design Technologist & Product Designer"
+          subtitle="Bradesco | Capgemini (Brazil)"
+          info="Mai 2021 - Jun 2022 | Remote"
+        />
+        <!-- Sabatic time (~1y) -->
+        <Card
+          title="Design Technologist & Product Designer"
           subtitle="SAI Global (US/Netherlands)"
           info="Jan 2017 - Apr 2020 | Remote"
         />
-        <!--   -->
         <Card
-          animation-delay="0.5"
           title="Product Designer & FrontEnd Developer"
           subtitle="Modulo Security Solutions (Brazil)"
           info="Oct 2012 - Dec 2016 | Hybrid/Partially Remote"
@@ -109,28 +119,22 @@
           title="LinkedIn"
         />
         <Icon
-          url="https://behance.net/AdrianoCahete"
-          icon="behance"
-          title="Behance"
-        />
-        <!-- <Icon url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" /> -->
-        <Icon
           url="https://github.com/AdrianoCahete"
           icon="github"
           title="Github"
         />
+        <Icon
+          url="https://behance.net/AdrianoCahete"
+          icon="behance"
+          title="Behance"
+        />
       </section>
+
+      <!-- <Icon url="https://codepen.io/AdrianoCahete/" icon="codepen" title="CodePen" /> -->
       <Btn
         url="./resume-artifacts/[en-US]-Adriano_Cahete.pdf"
         title="Download resume"
       />
-      <!-- <Btn
-        v-if="isDevMode"
-        url="./resume-artifacts/Adriano_Cahete-Resume.pdf"
-        title="Test Nuxt-PDF"
-      /> -->
-      <!-- url="./resume/Adriano_Cahete-Resume.pdf" -- Nuxt-PDF -->
-      <!-- url="./resume/[en-US]-Adriano_Cahete.pdf" -- Default -->
     </section>
 
     <section id="appInfo" class="section-simple appInfo">

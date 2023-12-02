@@ -1,20 +1,21 @@
-# My Portfolio 
+# My Portfolio
+>
 > [adrianocahete.dev](https://adrianocahete.dev/?ref=gh)
 
 This Portfolio has [SSR](https://ssr.vuejs.org/#what-is-server-side-rendering-ssr) enabled, so has a pretty fast loading!
+
 ### [Try it!](https://adrianocahete.dev) (you can try offline too, after the first visit of course... ;))
 
 ## Deploy
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bffddeca-83de-4641-807a-ac12aa617fae/deploy-status)](https://app.netlify.com/sites/adrianocahete-dev/deploys)
 
 All the changes are automatically deployed to Netlify.  
 You can see that live portfolio [here](https://adrianocahete.dev/?ref=gh).
 
-
 ### Google Lighthouse Performance Audit
+
 You can see the latest performance state with artifacts on [Github Actions](https://github.com/AdrianoCahete/adrianocahete.dev/actions)
-
-
 
 ## Build Setup
 
@@ -30,10 +31,12 @@ $ npm run generate
 ```
 
 ## Test ServiceWork (and offline mode) locally
+
 You need to make [localhost trustable on Firefox/Chrome](https://stackoverflow.com/a/34161385).
 
-
 ## ToDo
+
+- **Migrate to latest Nuxt**
 - Add micro animations to entire portfolio *[In Progress]*
 - Create a blog to explain the steps of each project *[In Progress]*
 - Add all licenses to project page "This portfolio" *[In Progress]*
@@ -57,6 +60,7 @@ You need to make [localhost trustable on Firefox/Chrome](https://stackoverflow.c
 - Add CSS to mock IE users :)
 
 ## Fixed
+
 - ~~Add a `build date`/`last updated on` string on page~~  *[Fixed on 2020-08-10]*
 - ~~Try modern mode from latest Nuxt~~ *[Fixed on 2020-08-05]*
 - ~~Move to latest [Nuxt available](https://nuxtjs.org/guide/release-notes)~~  *[Fixed on 2020-08-05]*
@@ -69,9 +73,11 @@ You need to make [localhost trustable on Firefox/Chrome](https://stackoverflow.c
 - ~~Move to PWA to accommodate better the content~~ *[Implemented on 2020-05-16]*
 
 # Font
+
 This project uses [Inter](https://github.com/rsms/inter) as a default typography
 
 # Icons
+
 - [Home](https://www.flaticon.com/free-icon/home_846551) and [PDF](https://www.flaticon.com/free-icon/pdf_1839630) icons made by Freepik
 - [Behance](https://www.flaticon.com/free-icon/behance_254383) icon made by RoundIcons
 - [Codepen](https://www.flaticon.com/free-icon/codepen_2111262) and [OpenSource](https://www.flaticon.com/free-icon/open-source_732090) icons made by Pixel Perfect

@@ -21,15 +21,15 @@
       />
       <Icon
         :hide-mobile="true"
-        url="https://behance.net/AdrianoCahete/"
-        icon="behance"
-        title="Behance"
-      />
-      <Icon
-        :hide-mobile="true"
         url="https://github.com/AdrianoCahete"
         icon="github"
         title="Github"
+      />
+      <Icon
+        :hide-mobile="true"
+        url="https://behance.net/AdrianoCahete/"
+        icon="behance"
+        title="Behance"
       />
       <Icon
         :hide-mobile="true"
@@ -79,10 +79,11 @@ export default {
   left: 0;
   border-bottom: var(--navbarBorder);
   color: var(--navColor);
-  z-index: 2;
+  z-index: 10;
 
-  @supports (backdrop-filter: blur(0px)) {
-    backdrop-filter: blur(160px);
+  @supports (backdrop-filter: blur(0)) {
+    backdrop-filter: blur(2px);
+    background: var(--navbarBgColor-blurred);
   }
 
   .headerInfo {

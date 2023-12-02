@@ -71,11 +71,13 @@ export default {
       {
         property: "og:image",
         itemprop: "image",
+        name: "image",
         content: process.env.npm_package_url + "/cover.png",
       },
       {
         property: "og:image:secure_url",
         itemprop: "image",
+        name: "image",
         content: process.env.npm_package_url + "/cover.png",
       },
       { name: "twitter:card", content: "summary_large_image" },
