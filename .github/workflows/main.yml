@@ -4,31 +4,31 @@ on:
     branches:
       - master
 jobs:
-  audit:
-    name: Run Lighthouse on deployed portfolio
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2.1.1
-      with:
-        token: ${{ secrets.ACCESS_TOKEN }}
-    - name: Install Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Wait for Netlify
-      uses: juliangruber/sleep-action@v1
-      with:
-        time: 30s
-    - name: Audit live URL
-      uses: jakejarvis/lighthouse-action@v0.3.2
-      with:
-        url: 'https://adrianocahete.dev/'
-    - name: Upload results as an artifact
-      uses: actions/upload-artifact@master
-      with:
-        name: lighthouse-report
-        path: './report'
+  # audit:
+  #   name: Run Lighthouse on deployed portfolio
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: Checkout
+  #     uses: actions/checkout@v2.1.1
+  #     with:
+  #       token: ${{ secrets.ACCESS_TOKEN }}
+  #   - name: Install Node
+  #     uses: actions/setup-node@v1
+  #     with:
+  #       node-version: ${{ matrix.node-version }}
+  #   - name: Wait for Netlify
+  #     uses: juliangruber/sleep-action@v1
+  #     with:
+  #       time: 30s
+  #   - name: Audit live URL
+  #     uses: jakejarvis/lighthouse-action@v0.3.2
+  #     with:
+  #       url: 'https://adrianocahete.dev/'
+  #   - name: Upload results as an artifact
+  #     uses: actions/upload-artifact@master
+  #     with:
+  #       name: lighthouse-report
+  #       path: './report'
 
   snapshot:
     name: Historical Snapshot
@@ -38,9 +38,9 @@ jobs:
         width: [1920, 1440, 1024, 670, 490]
     runs-on: ${{ matrix.os }}
     steps:
-    - name: Screenshot Website (Light)
-      uses: swinton/screenshot-website@v1.x
-      with:
-        source: https://adrianocahete.dev/
-        destination: snapshot-${{ matrix.os }}-${{ matrix.width }}.png
-        full-page: true
+      - name: Screenshot Website (Light)
+        uses: swinton/screenshot-website@v1.x
+        with:
+          source: https://adrianocahete.dev/
+          destination: snapshot-${{ matrix.os }}-${{ matrix.width }}.png
+          full-page: true

@@ -1,6 +1,6 @@
 /* eslint-disable no-labels */
 
-export default {
+export default defineNuxtConfig({
   render: {
     // csp: true
     // csp: { // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
@@ -195,28 +195,15 @@ export default {
 
   components: true,
 
-  // Nuxt.js dev-modules
-  buildModules: [
-    [
-      "@nuxtjs/pwa", // https://pwa.nuxtjs.org/
-      {
-        icon: false,
-        meta: false,
-      },
-    ],
-  ],
-
   // Nuxt.js modules
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    // '@nuxtjs/axios'
-    // 'nuxt-feature-toggle',
-    // 'nuxt-pdf',
-    "@nuxtjs/device",
-    "nuxt-payload-extractor",
-    "@nuxtjs/sitemap",
+    // Update to Nuxt 3:
+    // "@nuxtjs/pwa", // https://pwa.nuxtjs.org/
+    // "@nuxtjs/device",
+    // "nuxt-payload-extractor",
+    // "@nuxtjs/sitemap",
   ],
 
   // Build configuration
   build: {},
-};
+});
