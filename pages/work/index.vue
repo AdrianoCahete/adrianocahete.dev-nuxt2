@@ -205,7 +205,7 @@ export default {
     designCard,
     behanceLink,
   },
-  head() {
+  useHead() {
     return {
       title: "Projects",
     };

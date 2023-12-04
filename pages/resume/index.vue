@@ -152,13 +152,15 @@
 import Card from "~/components/common/Card/simpleCard";
 import listItem from "~/components/common/listItem";
 
+definePageMeta({
+  layout: "resume",
+});
+
 export default {
   components: {
     Card,
     listItem,
   },
-
-  layout: "resume",
 
   asyncData() {
     return {
@@ -166,7 +168,7 @@ export default {
     };
   },
 
-  head() {
+  useHead() {
     return {
       title: "Resume",
     };

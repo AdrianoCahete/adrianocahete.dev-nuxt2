@@ -21,7 +21,7 @@ export default {
 
   // transition: 'home',
 
-  head() {
+  useHead() {
     return {
       titleTemplate: "Adriano Cahete | Design Technologist & DesignOps",
     };

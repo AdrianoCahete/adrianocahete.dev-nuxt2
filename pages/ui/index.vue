@@ -86,16 +86,16 @@ import alert from "~/components/common/alert";
 export default {
   components: {
     behanceLink,
-    alert
+    alert,
   },
-  head() {
+  useHead() {
     return {
       title: "Interfaces",
       bodyAttrs: {
-        class: "page-ui"
-      }
+        class: "page-ui",
+      },
     };
-  }
+  },
 };
 </script>
 

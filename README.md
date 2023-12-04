@@ -36,7 +36,8 @@ You need to make [localhost trustable on Firefox/Chrome](https://stackoverflow.c
 
 ## ToDo
 
-- **Migrate to latest Nuxt**
+- **Migrate to latest Nuxt** *[In Progress]*
+- Migrate to Typescript
 - Add micro animations to entire portfolio *[In Progress]*
 - Create a blog to explain the steps of each project *[In Progress]*
 - Add all licenses to project page "This portfolio" *[In Progress]*

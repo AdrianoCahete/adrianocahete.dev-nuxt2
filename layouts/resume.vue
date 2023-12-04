@@ -1,18 +1,18 @@
 <template>
   <section class="resume-page">
-    <nuxt />
+    <slot />
   </section>
 </template>
 
 <script>
 export default {
-  head() {
-    return {
+  setup() {
+    useMeta({
       bodyAttrs: {
-        class: "resume-page"
-      }
-    };
-  }
+        class: "resume-page",
+      },
+    });
+  },
 };
 </script>
 

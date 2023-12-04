@@ -169,11 +169,9 @@ export default {
     };
   },
 
-  head() {
-    return {
-      title: "Work",
-    };
-  },
+  // useHead() {
+  //   title: "Work",
+  // },
 
   computed: {
     year() {

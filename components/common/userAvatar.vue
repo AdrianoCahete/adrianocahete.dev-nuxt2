@@ -18,12 +18,10 @@ export default {
       default: "github"
     }
   },
-  head() {
-    return {
+  useHead() {
       // script: [
       //   { img: 'https://github.com/AdrianoCahete.png' } // TODO: Make a default image to load/cache for offline mode
       // ]
-    };
   }
 };
 </script>

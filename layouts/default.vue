@@ -8,7 +8,7 @@
         $device.isMobile || $device.isTablet ? 'page isMobile' : 'page',
       ]"
     >
-      <Nuxt />
+      <slot />
     </section>
   </section>
 </template>
@@ -36,12 +36,12 @@ export default {
     };
   },
 
-  head() {
-    return {
+  setup() {
+    useMeta({
       bodyAttrs: {
         class: this.mobileState ? "isMobile" : "",
       },
-    };
+    });
   },
 };
 </script>

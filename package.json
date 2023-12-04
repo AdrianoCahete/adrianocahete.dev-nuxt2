@@ -10,11 +10,11 @@
     "theme_color": "#175e80"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nuxi dev",
+    "dev": "cross-env NODE_ENV=development npx nuxi dev",
     "dev-debug": "cross-env NODE_OPTIONS='--trace-warnings' npm run dev",
-    "build": "nuxi build",
-    "start": "cross-env NODE_ENV=development nuxi build",
-    "generate": "nuxi generate",
+    "build": "npx nuxi build",
+    "start": "cross-env NODE_ENV=development npx nuxi build",
+    "generate": "npx nuxi generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "engines": {
@@ -29,7 +29,6 @@
     "@nuxtjs/eslint-config": "^12.0.0",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/pwa": "^3.3.5",
-    "babel-eslint": "^10.1.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.55.0",
     "eslint-plugin-nuxt": ">=4.0.0",
