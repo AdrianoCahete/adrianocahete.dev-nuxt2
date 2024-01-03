@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/styles/components/section.scss";
+@import "./assets/styles/components/section.scss";
 
 .home {
   animation: fadeIn 0.5s ease-in;

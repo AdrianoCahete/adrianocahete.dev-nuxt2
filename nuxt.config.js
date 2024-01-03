@@ -124,13 +124,6 @@ export default defineNuxtConfig({
     exclude: ["/debug", "/resume"],
   },
 
-  // featureToggle: {
-  //   queryString: true,
-  //   toggles: {
-  //     gaming: false
-  //   }
-  // },
-
   pwa: {
     // workbox: {
     //   // Offline
@@ -150,8 +143,6 @@ export default defineNuxtConfig({
   // Plugins to load before mounting the App
   plugins: [
     // '~/plugins/common.js'
-    // '~/plugins/queryStrings',
-    "~/plugins/hj",
   ],
 
   // Nuxt.js modules

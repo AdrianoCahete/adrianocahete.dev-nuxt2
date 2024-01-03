@@ -36,18 +36,18 @@ export default {
     };
   },
 
-  setup() {
-    useMeta({
-      bodyAttrs: {
-        class: this.mobileState ? "isMobile" : "",
-      },
-    });
-  },
+  // setup() {
+  //   useMeta({
+  //     bodyAttrs: {
+  //       class: this.mobileState ? "isMobile" : "",
+  //     },
+  //   });
+  // },
 };
 </script>
 
 <style lang="scss">
-@import "~assets/styles/base.scss";
+@import "../assets/styles/base.scss";
 
 body {
   &.isMobile {
@@ -58,6 +58,6 @@ body {
 .isMobile {
   flex-direction: column;
 
-  @import "~assets/styles/components/isMobile.scss";
+  @import "../assets/styles/components/isMobile.scss";
 }
 </style>
