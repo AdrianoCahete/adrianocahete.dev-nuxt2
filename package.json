@@ -1,32 +1,35 @@
 {
   "name": "adrianocahete.dev",
   "version": "3.0.0",
-  "description": "Adriano Cahete | Design Technologist & DesignOps",
-  "author": "Adriano Cahete",
-  "mail": "me@adrianocahete.dev",
+  "description": "Adriano Cahete | DesignOps & Design Technologist",
   "url": "https://adrianocahete.dev",
   "private": true,
+  "author": {
+    "name": "Adriano Cahete",
+    "mail": "me@adrianocahete.dev"
+  },
   "project": {
     "theme_color": "#175e80"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development npx nuxi dev",
-    "dev-debug": "cross-env NODE_OPTIONS='--trace-warnings' npm run dev",
-    "build": "npx nuxi build",
-    "start": "cross-env NODE_ENV=development npx nuxi build",
-    "generate": "npx nuxi generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs",
+    "dev": "nuxt dev --trace-warnings",
+    "dev-nuxi": "npx nuxi dev ---trace-warnings",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "update": "npx nuxi upgrade -f && npx nuxi cleanup && npm install",
+    "upgrade": "npm run update"
   },
   "engines": {
     "node": "~20.10.0"
-  },
-  "dependencies": {
-    "nuxt": "^3.8.2"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
     "eslint": "^8.55.0",
     "eslint-plugin-nuxt": ">=4.0.0",
+    "nuxt": "^3.9.0",
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2"
   }
