@@ -5,9 +5,39 @@ export default defineNuxtConfig({
     propsDestructure: true,
   },
 
+  experimental: {
+    viewTransition: true,
+  },
+
   // WebApp Config
+  site: {
+    url: "https://adrianocahete.dev",
+    name: "Adriano Cahete | FrontEnd Developer & DesignOps",
+    description: "FrontEnd Developer & DesignOps",
+    defaultLocale: "pt-BR", // not needed if you have @nuxtjs/i18n installed
+    trailingSlash: false,
+  },
+
+  // SEO
+  schemaOrg: {
+    identity: "Person",
+  },
+
+  ogImage: {
+    enabled: false,
+  },
+
+  linkChecker: {
+    enabled: false,
+  },
+
+  seoExperiments: {
+    enabled: false,
+  },
+
   app: {
     head: {
+      titleTemplate: "%s %separator %siteName",
       meta: [
         {
           name: "viewport",
@@ -60,44 +90,12 @@ export default defineNuxtConfig({
       noscript: [{ children: "JavaScript is required" }],
     },
 
-    // Legacy
-    // manifest: {
-    //   name:
-    //     process.env.npm_package_author_title ||
-    //     "Adriano Cahete | Design Technologist & DesignOps",
-    //   short_name:
-    //     process.env.npm_package_author_title ||
-    //     "Adriano Cahete | Design Technologist & DesignOps",
-    //   description:
-    //     process.env.npm_package_description || "Design Technologist & DesignOps",
-    //   theme_color: process.env.npm_package_project_theme_color || "#175e80",
-    //   display: "minimal- ui",
-    // },
-
     // meta: {
     //   mobileAppIOS: true,
     //   appleStatusBarStyle: "black-translucent",
     // },
-
-    // // Customize the progress-bar color
-    // // https://nuxtjs.org/api/configuration-loading
-    // // loading: '~/components/common/loading.vue',
-    // loading: { color: "#FFFFFF" },
-
-    // pageTransition: {
-    //   name: "page",
-    //   mode: "out-in",
-    // },
-
-    // layoutTransition: {
-    //   name: "layout",
-    //   mode: "out-in",
-    // },
-
-    // sitemap: {
-    //   hostname: "https://adrianocahete.dev",
-    //   gzip: true,
-    //   exclude: ["/debug", "/resume"],
-    // },
   },
+
+  // https://nuxt.com/modules/vue-transitions
+  modules: ["@nuxtjs/seo", "@nuxt/ui"],
 });

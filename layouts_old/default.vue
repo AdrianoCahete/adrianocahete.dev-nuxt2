@@ -14,8 +14,8 @@
 </template>
 
 <script>
-import IconLibrary from "~/components/common/iconLibrary";
-import navbarMenu from "~/components/common/navbar";
+// import IconLibrary from "~/components/common/iconLibrary";
+// import navbarMenu from "~/components/common/navbar";
 
 export default {
   components: {
